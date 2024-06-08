@@ -23,7 +23,7 @@
     {
       "name": "AR23Liberator",
       "type": "animateditem",
-      "sortid": 2,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ar_23_liberator",
@@ -40,7 +40,7 @@
     {
       "name": "SG225Breaker",
       "type": "animateditem",
-      "sortid": 3,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sg_225_breaker",
@@ -57,7 +57,7 @@
     {
       "name": "M105Stalwart",
       "type": "animateditem",
-      "sortid": 4,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "m_105_stalwart",
@@ -74,7 +74,7 @@
     {
       "name": "BasicBullet",
       "type": "projectile",
-      "sortid": 15,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basic_bullet",
@@ -88,7 +88,7 @@
     {
       "name": "BulletItem",
       "type": "animateditem",
-      "sortid": 14,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet_item",
@@ -105,7 +105,7 @@
     {
       "name": "AR23LiberatorFire",
       "type": "procedure",
-      "sortid": 16,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ar_23_liberator_fire",
@@ -145,7 +145,7 @@
     {
       "name": "ReloadKeyOnKeyPressed",
       "type": "procedure",
-      "sortid": 17,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reload_key_on_key_pressed",
@@ -181,7 +181,7 @@
     {
       "name": "ReloadKey",
       "type": "keybind",
-      "sortid": 18,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reload_key",
@@ -195,7 +195,7 @@
     {
       "name": "SG225BreakerFire",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sg_225_breaker_fire",
@@ -235,7 +235,7 @@
     {
       "name": "M105StalwartFire",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "m_105_stalwart_fire",
@@ -275,7 +275,7 @@
     {
       "name": "Ammooverlay",
       "type": "procedure",
-      "sortid": 21,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ammooverlay",
@@ -295,7 +295,7 @@
     {
       "name": "APW1AntiMaterialRifle",
       "type": "animateditem",
-      "sortid": 5,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apw_1_anti_material_rifle",
@@ -312,7 +312,7 @@
     {
       "name": "APW1AntiMaterialRifleFire",
       "type": "procedure",
-      "sortid": 22,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apw_1_anti_material_rifle_fire",
@@ -352,17 +352,17 @@
     {
       "name": "TerminidScavenger",
       "type": "animatedentity",
-      "sortid": 13,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_scavenger",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/entity/TerminidScavengerEntity.java",
-          "src/main/java/net/hytech/helldivers/entity/model/TerminidScavengerModel.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_scavenger_biome_modifier.json",
           "src/main/resources/assets/helldivers/models/item/terminid_scavenger_spawn_egg.json",
+          "src/main/java/net/hytech/helldivers/entity/TerminidScavengerEntity.java",
           "src/main/java/net/hytech/helldivers/client/renderer/TerminidScavengerRenderer.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_scavenger_biome_modifier.json"
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidScavengerModel.java"
         ]
       },
       "path": "~/Entity/Terminid"
@@ -370,16 +370,16 @@
     {
       "name": "FragGrenade",
       "type": "animateditem",
-      "sortid": 6,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/model/FragGrenadeItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/FragGrenadeItem.java",
           "src/main/resources/assets/helldivers/models/item/frag_grenade.json",
           "src/main/java/net/hytech/helldivers/item/renderer/FragGrenadeItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/FragGrenadeItem.java"
+          "src/main/java/net/hytech/helldivers/item/model/FragGrenadeItemModel.java"
         ]
       },
       "path": "~/Other_Items"
@@ -387,7 +387,7 @@
     {
       "name": "FragGrenadeProjectile",
       "type": "projectile",
-      "sortid": 23,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_projectile",
@@ -401,7 +401,7 @@
     {
       "name": "FragGrenadeProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_projectile_projectile_hits_block",
@@ -433,7 +433,7 @@
     {
       "name": "FragGrenadeRightclicked",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_rightclicked",
@@ -453,7 +453,7 @@
     {
       "name": "Terminidhive",
       "type": "block",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidhive",
@@ -471,7 +471,7 @@
     {
       "name": "Terminidwall",
       "type": "block",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidwall",
@@ -489,7 +489,7 @@
     {
       "name": "Terminidstone",
       "type": "block",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidstone",
@@ -507,7 +507,7 @@
     {
       "name": "Terminidreinforcedwall",
       "type": "block",
-      "sortid": 10,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidreinforcedwall",
@@ -525,7 +525,7 @@
     {
       "name": "TerminiddustsporeEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminiddustspore_entity_walks_on_the_block",
@@ -561,7 +561,7 @@
     {
       "name": "Terminiddustspore",
       "type": "animatedblock",
-      "sortid": 11,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminiddustspore",
@@ -584,7 +584,7 @@
     {
       "name": "AutomatoncontactmineEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatoncontactmine_entity_walks_on_the_block",
@@ -616,7 +616,7 @@
     {
       "name": "Automatoncontactmine",
       "type": "animatedblock",
-      "sortid": 12,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatoncontactmine",
@@ -639,7 +639,7 @@
     {
       "name": "Helldivers",
       "type": "tab",
-      "sortid": 28,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "helldivers",
@@ -650,7 +650,7 @@
     {
       "name": "StaticFragGrenadeOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "static_frag_grenade_on_initial_entity_spawn",
@@ -674,7 +674,7 @@
     {
       "name": "StaticFragGrenade",
       "type": "animatedentity",
-      "sortid": 30,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "static_frag_grenade",
@@ -691,7 +691,7 @@
     {
       "name": "HeavyFS23",
       "type": "animatedarmor",
-      "sortid": 31,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heavy_fs_23",
@@ -711,7 +711,7 @@
     {
       "name": "Terminidbiletitan",
       "type": "animatedentity",
-      "sortid": 32,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidbiletitan",
@@ -725,6 +725,153 @@
         ]
       },
       "path": "~/Entity/Terminid"
+    },
+    {
+      "name": "EmptyStratagemorb",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_stratagemorb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/EmptyStratagemorbItem.java",
+          "src/main/resources/assets/helldivers/models/item/empty_stratagemorb.json"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "EmptyStratagemOrbProjectile",
+      "type": "projectile",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_stratagem_orb_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/EmptyStratagemOrbProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "StratagemRemote",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagem_remote",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/stratagem_remote.json",
+          "src/main/java/net/hytech/helldivers/item/StratagemRemoteItem.java",
+          "src/main/java/net/hytech/helldivers/item/inventory/StratagemRemoteInventoryCapability.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote"
+    },
+    {
+      "name": "CallStratagems",
+      "type": "gui",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_stratagems",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/CallStratagemsMenu.java",
+          "src/main/java/net/hytech/helldivers/client/gui/CallStratagemsScreen.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote"
+    },
+    {
+      "name": "StratagemRemoteRightclicked",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagem_remote_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/StratagemRemoteRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote"
+    },
+    {
+      "name": "E710",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "e_710",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/e_710.json",
+          "src/main/java/net/hytech/helldivers/item/E710Item.java"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "Strat_Orb_Need_Remote",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strat_orb_need_remote",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Strat_Orb_Need_RemoteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems"
     }
   ],
   "variable_elements": [],
@@ -827,6 +974,7 @@
   },
   "language_map": {
     "en_us": {
+      "item.helldivers.empty_stratagemorb": "Empty Stratagem Orb",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "item_group.helldivers.helldivers": "Helldivers",
       "subtitles.shotgun_shot": "Gun shot",
@@ -834,6 +982,7 @@
       "subtitles.amr_shot": "Gun shot",
       "block.helldivers.terminidhive": "Terminid Hive",
       "block.helldivers.terminidstone": "Terminid Stone",
+      "item.helldivers.stratagem_remote": "Stratagem Remote",
       "subtitles.basic_shot": "Gun shot",
       "block.helldivers.terminidwall": "Terminid Wall",
       "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
@@ -851,7 +1000,9 @@
       "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
       "entity.helldivers.terminid_scavenger": "Scavenger",
       "subtitles.m105_reload": "Gun reload",
+      "item.helldivers.e_710": "Raw E-710",
       "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
+      "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
       "block.helldivers.terminiddustspore": "Dust Spore",
       "item.helldivers.bullet_item": "Bullet Item",
       "item.helldivers.terminidbiletitan_spawn_egg": "Bile Titan Spawn Egg",
@@ -915,6 +1066,19 @@
       {
         "name": "Blocks",
         "children": []
+      },
+      {
+        "name": "Stratagems",
+        "children": [
+          {
+            "name": "Stratagem_Remote",
+            "children": []
+          },
+          {
+            "name": "Stratagems",
+            "children": []
+          }
+        ]
       }
     ]
   },

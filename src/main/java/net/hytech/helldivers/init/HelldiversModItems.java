@@ -14,10 +14,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ArmorItem;
 
+import net.hytech.helldivers.item.StratagemRemoteItem;
 import net.hytech.helldivers.item.SG225BreakerItem;
 import net.hytech.helldivers.item.M105StalwartItem;
 import net.hytech.helldivers.item.HeavyFS23Item;
 import net.hytech.helldivers.item.FragGrenadeItem;
+import net.hytech.helldivers.item.EmptyStratagemorbItem;
+import net.hytech.helldivers.item.E710Item;
 import net.hytech.helldivers.item.BulletItemItem;
 import net.hytech.helldivers.item.BasicarmorItem;
 import net.hytech.helldivers.item.AR23LiberatorItem;
@@ -51,6 +54,9 @@ public class HelldiversModItems {
 	public static final RegistryObject<HeavyFS23Item> HEAVY_FS_23_LEGGINGS = REGISTRY.register("heavy_fs_23_leggings", () -> new HeavyFS23Item(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<HeavyFS23Item> HEAVY_FS_23_BOOTS = REGISTRY.register("heavy_fs_23_boots", () -> new HeavyFS23Item(ArmorItem.Type.BOOTS, new Item.Properties()));
 	public static final RegistryObject<Item> TERMINIDBILETITAN_SPAWN_EGG = REGISTRY.register("terminidbiletitan_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.TERMINIDBILETITAN, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> EMPTY_STRATAGEMORB = REGISTRY.register("empty_stratagemorb", () -> new EmptyStratagemorbItem());
+	public static final RegistryObject<Item> STRATAGEM_REMOTE = REGISTRY.register("stratagem_remote", () -> new StratagemRemoteItem());
+	public static final RegistryObject<Item> E_710 = REGISTRY.register("e_710", () -> new E710Item());
 
 	// Start of user code block custom items
 	// End of user code block custom items

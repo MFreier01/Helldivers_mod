@@ -87,7 +87,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:E710"
     },
     "livingSound": {
       "value": ""

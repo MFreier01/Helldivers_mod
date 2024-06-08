@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Bile Titan",
     "mobLabel": "",
-    "mobModelTexture": "bt_no_texture.png",
+    "mobModelTexture": "texture1.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -87,7 +87,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:E710"
     },
     "livingSound": {
       "value": ""

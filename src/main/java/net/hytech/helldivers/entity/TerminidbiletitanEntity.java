@@ -46,6 +46,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.hytech.helldivers.init.HelldiversModItems;
 import net.hytech.helldivers.init.HelldiversModEntities;
 
 public class TerminidbiletitanEntity extends Monster implements GeoEntity {
@@ -74,7 +75,7 @@ public class TerminidbiletitanEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "bt_no_texture");
+		this.entityData.define(TEXTURE, "texture1");
 	}
 
 	public void setTexture(String texture) {
@@ -108,6 +109,11 @@ public class TerminidbiletitanEntity extends Monster implements GeoEntity {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(HelldiversModItems.E_710.get()));
 	}
 
 	@Override

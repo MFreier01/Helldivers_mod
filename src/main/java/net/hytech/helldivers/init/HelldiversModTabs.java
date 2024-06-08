@@ -27,6 +27,10 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.BASICARMOR_CHESTPLATE.get());
 				tabData.accept(HelldiversModItems.BASICARMOR_LEGGINGS.get());
 				tabData.accept(HelldiversModItems.BASICARMOR_BOOTS.get());
+				tabData.accept(HelldiversModItems.HEAVY_FS_23_HELMET.get());
+				tabData.accept(HelldiversModItems.HEAVY_FS_23_CHESTPLATE.get());
+				tabData.accept(HelldiversModItems.HEAVY_FS_23_LEGGINGS.get());
+				tabData.accept(HelldiversModItems.HEAVY_FS_23_BOOTS.get());
 				tabData.accept(HelldiversModItems.AR_23_LIBERATOR.get());
 				tabData.accept(HelldiversModItems.SG_225_BREAKER.get());
 				tabData.accept(HelldiversModItems.M_105_STALWART.get());
@@ -39,10 +43,9 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModBlocks.TERMINIDDUSTSPORE.get().asItem());
 				tabData.accept(HelldiversModBlocks.AUTOMATONCONTACTMINE.get().asItem());
 				tabData.accept(HelldiversModItems.TERMINID_SCAVENGER_SPAWN_EGG.get());
-				tabData.accept(HelldiversModItems.HEAVY_FS_23_HELMET.get());
-				tabData.accept(HelldiversModItems.HEAVY_FS_23_CHESTPLATE.get());
-				tabData.accept(HelldiversModItems.HEAVY_FS_23_LEGGINGS.get());
-				tabData.accept(HelldiversModItems.HEAVY_FS_23_BOOTS.get());
+				tabData.accept(HelldiversModItems.EMPTY_STRATAGEMORB.get());
+				tabData.accept(HelldiversModItems.STRATAGEM_REMOTE.get());
+				tabData.accept(HelldiversModItems.E_710.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

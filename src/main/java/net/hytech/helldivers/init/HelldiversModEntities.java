@@ -20,6 +20,7 @@ import net.hytech.helldivers.entity.TerminidbiletitanEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
 import net.hytech.helldivers.entity.FragGrenadeProjectileEntity;
+import net.hytech.helldivers.entity.EmptyStratagemOrbProjectileEntity;
 import net.hytech.helldivers.entity.BasicBulletEntity;
 import net.hytech.helldivers.HelldiversMod;
 
@@ -42,6 +43,9 @@ public class HelldiversModEntities {
 			EntityType.Builder.<TerminidbiletitanEntity>of(TerminidbiletitanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidbiletitanEntity::new)
 
 					.sized(10f, 10f));
+	public static final RegistryObject<EntityType<EmptyStratagemOrbProjectileEntity>> EMPTY_STRATAGEM_ORB_PROJECTILE = register("empty_stratagem_orb_projectile",
+			EntityType.Builder.<EmptyStratagemOrbProjectileEntity>of(EmptyStratagemOrbProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(EmptyStratagemOrbProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
