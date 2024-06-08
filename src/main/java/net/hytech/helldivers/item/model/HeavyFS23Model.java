@@ -19,6 +19,6 @@ public class HeavyFS23Model extends GeoModel<HeavyFS23Item> {
 
 	@Override
 	public ResourceLocation getTextureResource(HeavyFS23Item object) {
-		return new ResourceLocation("helldivers", "textures/item/texture3.png");
+		return new ResourceLocation("helldivers", "textures/item/fs_23_heavy.png");
 	}
 }

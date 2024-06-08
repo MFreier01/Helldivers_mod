@@ -727,35 +727,6 @@
       "path": "~/Entity/Terminid"
     },
     {
-      "name": "EmptyStratagemorb",
-      "type": "item",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_stratagemorb",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/item/EmptyStratagemorbItem.java",
-          "src/main/resources/assets/helldivers/models/item/empty_stratagemorb.json"
-        ]
-      },
-      "path": "~/Stratagems"
-    },
-    {
-      "name": "EmptyStratagemOrbProjectile",
-      "type": "projectile",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_stratagem_orb_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/entity/EmptyStratagemOrbProjectileEntity.java"
-        ]
-      },
-      "path": "~/Stratagems"
-    },
-    {
       "name": "StratagemRemote",
       "type": "item",
       "sortid": 36,
@@ -787,15 +758,261 @@
       "path": "~/Stratagems/Stratagem_Remote"
     },
     {
-      "name": "StratagemRemoteRightclicked",
-      "type": "procedure",
-      "sortid": 38,
+      "name": "E710",
+      "type": "item",
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stratagem_remote_rightclicked",
+      "registry_name": "e_710",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/procedures/StratagemRemoteRightclickedProcedure.java"
+          "src/main/resources/assets/helldivers/models/item/e_710.json",
+          "src/main/java/net/hytech/helldivers/item/E710Item.java"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "EmptyStratagemOrb",
+      "type": "animateditem",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_stratagem_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/EmptyStratagemOrbItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/EmptyStratagemOrbItemModel.java",
+          "src/main/resources/assets/helldivers/models/item/empty_stratagem_orb.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/EmptyStratagemOrbItemRenderer.java"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "EmptyStratagemOrbRightclicked",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_stratagem_orb_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EmptyStratagemOrbRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "ArmedAttackStratagemOrb",
+      "type": "animateditem",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armed_attack_stratagem_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/model/ArmedAttackStratagemOrbItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/ArmedAttackStratagemOrbItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/ArmedAttackStratagemOrbItem.java",
+          "src/main/resources/assets/helldivers/models/item/armed_attack_stratagem_orb.json"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "ArmedSupportStratagemOrb",
+      "type": "animateditem",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armed_support_stratagem_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/ArmedSupportStratagemOrbItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/ArmedSupportStratagemOrbItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/ArmedSupportStratagemOrbItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/armed_support_stratagem_orb.json"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "CallEagleAirStrike",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_eagle_air_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallEagleAirStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Air_Strike"
+    },
+    {
+      "name": "RedBeam",
+      "type": "particle",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/particle/RedBeamParticle.java",
+          "src/main/resources/assets/helldivers/particles/red_beam.json"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "ThrownAttackOrb",
+      "type": "projectile",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thrown_attack_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/ThrownAttackOrbEntity.java"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "ArmedAttackStratagemOrbRightclicked",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armed_attack_stratagem_orb_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/ArmedAttackStratagemOrbRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "AirStrikeBombProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_strike_bomb_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AirStrikeBombProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Air_Strike"
+    },
+    {
+      "name": "AirStrikeBomb",
+      "type": "projectile",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_strike_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/AirStrikeBombEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Air_Strike"
+    },
+    {
+      "name": "AirStrikeBombItem",
+      "type": "animateditem",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_strike_bomb_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/renderer/AirStrikeBombItemItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/model/AirStrikeBombItemItemModel.java",
+          "src/main/resources/assets/helldivers/models/item/air_strike_bomb_item.json",
+          "src/main/java/net/hytech/helldivers/item/AirStrikeBombItemItem.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Air_Strike"
+    },
+    {
+      "name": "OpenStratagemMenuOnKeyPressed",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stratagem_menu_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OpenStratagemMenuOnKeyPressedProcedure.java"
         ],
         "dependencies": [
           {
@@ -823,55 +1040,18 @@
       "path": "~/Stratagems/Stratagem_Remote"
     },
     {
-      "name": "E710",
-      "type": "item",
-      "sortid": 39,
+      "name": "OpenStratagemMenu",
+      "type": "keybind",
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "e_710",
+      "registry_name": "open_stratagem_menu",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/e_710.json",
-          "src/main/java/net/hytech/helldivers/item/E710Item.java"
+          "src/main/java/net/hytech/helldivers/network/OpenStratagemMenuMessage.java"
         ]
       },
-      "path": "~/Other_Items"
-    },
-    {
-      "name": "Strat_Orb_Need_Remote",
-      "type": "procedure",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strat_orb_need_remote",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/procedures/Strat_Orb_Need_RemoteProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Stratagems"
+      "path": "~/Stratagems/Stratagem_Remote"
     }
   ],
   "variable_elements": [],
@@ -974,51 +1154,55 @@
   },
   "language_map": {
     "en_us": {
-      "item.helldivers.empty_stratagemorb": "Empty Stratagem Orb",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
-      "item_group.helldivers.helldivers": "Helldivers",
       "subtitles.shotgun_shot": "Gun shot",
-      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "subtitles.amr_shot": "Gun shot",
+      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
+      "block.helldivers.terminidwall": "Terminid Wall",
+      "subtitles.basic_shot": "Gun shot",
+      "item.helldivers.m_105_stalwart": "M-105 Stalwart",
+      "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
+      "item.helldivers.ar_23_liberator": "AR-23 Liberator",
+      "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
+      "entity.helldivers.terminid_scavenger": "Scavenger",
+      "subtitles.m105_reload": "Gun reload",
+      "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
+      "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
+      "block.helldivers.terminiddustspore": "Dust Spore",
+      "subtitles.sg225_reload": "Gun reload",
+      "subtitles.apw1_shoot": "Gun shoots",
+      "subtitles.sg225_dry_fire": "Gun clicks",
+      "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
+      "entity.helldivers.terminidbiletitan": "Bile Titan",
+      "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
+      "subtitles.awp1_dry_fire": "Gun clicks",
+      "item.helldivers.frag_grenade": "Frag Grenade",
+      "item_group.helldivers.helldivers": "Helldivers",
       "block.helldivers.terminidhive": "Terminid Hive",
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.stratagem_remote": "Stratagem Remote",
-      "subtitles.basic_shot": "Gun shot",
-      "block.helldivers.terminidwall": "Terminid Wall",
+      "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
-      "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "subtitles.ar23_shoot": "Gun shoots",
-      "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
+      "key.helldivers.open_stratagem_menu": "Open Stratagem Menu",
       "key.helldivers.reload_key": "Reload Key",
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
       "item.helldivers.heavy_fs_23_leggings": "FS-23 Leggings",
       "block.helldivers.automatoncontactmine": "Contact Mine",
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
-      "item.helldivers.ar_23_liberator": "AR-23 Liberator",
       "subtitles.sg225_shoot": "Gun shoots",
-      "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
-      "entity.helldivers.terminid_scavenger": "Scavenger",
-      "subtitles.m105_reload": "Gun reload",
+      "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.e_710": "Raw E-710",
-      "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
-      "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
-      "block.helldivers.terminiddustspore": "Dust Spore",
       "item.helldivers.bullet_item": "Bullet Item",
       "item.helldivers.terminidbiletitan_spawn_egg": "Bile Titan Spawn Egg",
+      "item.helldivers.empty_stratagem_orb": "Empty Stratagem Orb",
       "item.helldivers.basicarmor_chestplate": "Helldiver\u0027s Chestplate",
-      "subtitles.sg225_reload": "Gun reload",
       "item.helldivers.heavy_fs_23_helmet": "FS-23 Helmet",
-      "subtitles.apw1_shoot": "Gun shoots",
       "item.helldivers.basicarmor_leggings": "Helldiver\u0027s Leggings",
-      "subtitles.sg225_dry_fire": "Gun clicks",
-      "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
       "subtitles.apw1_reload": "Gun reload",
-      "entity.helldivers.terminidbiletitan": "Bile Titan",
-      "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
-      "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate",
-      "subtitles.awp1_dry_fire": "Gun clicks",
-      "item.helldivers.frag_grenade": "Frag Grenade"
+      "item.helldivers.air_strike_bomb_item": "Air Strike Bomb Item",
+      "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate"
     }
   },
   "foldersRoot": {
@@ -1076,7 +1260,12 @@
           },
           {
             "name": "Stratagems",
-            "children": []
+            "children": [
+              {
+                "name": "Eagle_Air_Strike",
+                "children": []
+              }
+            ]
           }
         ]
       }

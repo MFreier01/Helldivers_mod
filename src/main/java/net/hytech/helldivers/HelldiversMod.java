@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.hytech.helldivers.init.HelldiversModTabs;
 import net.hytech.helldivers.init.HelldiversModSounds;
+import net.hytech.helldivers.init.HelldiversModParticleTypes;
 import net.hytech.helldivers.init.HelldiversModMenus;
 import net.hytech.helldivers.init.HelldiversModItems;
 import net.hytech.helldivers.init.HelldiversModEntities;
@@ -51,6 +52,8 @@ public class HelldiversMod {
 		HelldiversModEntities.REGISTRY.register(bus);
 
 		HelldiversModTabs.REGISTRY.register(bus);
+
+		HelldiversModParticleTypes.REGISTRY.register(bus);
 
 		HelldiversModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init

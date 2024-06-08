@@ -19,10 +19,13 @@ import net.hytech.helldivers.item.SG225BreakerItem;
 import net.hytech.helldivers.item.M105StalwartItem;
 import net.hytech.helldivers.item.HeavyFS23Item;
 import net.hytech.helldivers.item.FragGrenadeItem;
-import net.hytech.helldivers.item.EmptyStratagemorbItem;
+import net.hytech.helldivers.item.EmptyStratagemOrbItem;
 import net.hytech.helldivers.item.E710Item;
 import net.hytech.helldivers.item.BulletItemItem;
 import net.hytech.helldivers.item.BasicarmorItem;
+import net.hytech.helldivers.item.ArmedSupportStratagemOrbItem;
+import net.hytech.helldivers.item.ArmedAttackStratagemOrbItem;
+import net.hytech.helldivers.item.AirStrikeBombItemItem;
 import net.hytech.helldivers.item.AR23LiberatorItem;
 import net.hytech.helldivers.item.APW1AntiMaterialRifleItem;
 import net.hytech.helldivers.block.display.TerminiddustsporeDisplayItem;
@@ -54,9 +57,12 @@ public class HelldiversModItems {
 	public static final RegistryObject<HeavyFS23Item> HEAVY_FS_23_LEGGINGS = REGISTRY.register("heavy_fs_23_leggings", () -> new HeavyFS23Item(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<HeavyFS23Item> HEAVY_FS_23_BOOTS = REGISTRY.register("heavy_fs_23_boots", () -> new HeavyFS23Item(ArmorItem.Type.BOOTS, new Item.Properties()));
 	public static final RegistryObject<Item> TERMINIDBILETITAN_SPAWN_EGG = REGISTRY.register("terminidbiletitan_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.TERMINIDBILETITAN, -1, -1, new Item.Properties()));
-	public static final RegistryObject<Item> EMPTY_STRATAGEMORB = REGISTRY.register("empty_stratagemorb", () -> new EmptyStratagemorbItem());
 	public static final RegistryObject<Item> STRATAGEM_REMOTE = REGISTRY.register("stratagem_remote", () -> new StratagemRemoteItem());
 	public static final RegistryObject<Item> E_710 = REGISTRY.register("e_710", () -> new E710Item());
+	public static final RegistryObject<Item> EMPTY_STRATAGEM_ORB = REGISTRY.register("empty_stratagem_orb", () -> new EmptyStratagemOrbItem());
+	public static final RegistryObject<Item> ARMED_ATTACK_STRATAGEM_ORB = REGISTRY.register("armed_attack_stratagem_orb", () -> new ArmedAttackStratagemOrbItem());
+	public static final RegistryObject<Item> ARMED_SUPPORT_STRATAGEM_ORB = REGISTRY.register("armed_support_stratagem_orb", () -> new ArmedSupportStratagemOrbItem());
+	public static final RegistryObject<Item> AIR_STRIKE_BOMB_ITEM = REGISTRY.register("air_strike_bomb_item", () -> new AirStrikeBombItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

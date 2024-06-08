@@ -1,0 +1,6 @@
+{
+	"parent": "helldivers:item/handheld",
+	"textures": {
+		"layer0": "helldivers:item/frag_grenade"
+	}	
+}

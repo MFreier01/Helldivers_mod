@@ -10,7 +10,6 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
@@ -122,47 +121,14 @@ public class SG225BreakerFireProcedure {
 					}
 				}
 				itemstack.getOrCreateTag().putDouble("SG225 Bullet", (itemstack.getOrCreateTag().getDouble("SG225 Bullet") - 1));
-				if (world instanceof ServerLevel _origLevel) {
-					LevelAccessor _worldorig = world;
-					world = _origLevel.getServer().getLevel(Level.OVERWORLD);
-					if (world != null) {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1, false);
-							}
+				if (!world.isClientSide()) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
-					world = _worldorig;
-				}
-				if (world instanceof ServerLevel _origLevel) {
-					LevelAccessor _worldorig = world;
-					world = _origLevel.getServer().getLevel(Level.NETHER);
-					if (world != null) {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1, false);
-							}
-						}
-					}
-					world = _worldorig;
-				}
-				if (world instanceof ServerLevel _origLevel) {
-					LevelAccessor _worldorig = world;
-					world = _origLevel.getServer().getLevel(Level.END);
-					if (world != null) {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:sg225_shoot")), SoundSource.NEUTRAL, 1, 1, false);
-							}
-						}
-					}
-					world = _worldorig;
 				}
 			}
 		} else if (itemstack.getOrCreateTag().getDouble("SG225 Bullet") == 0) {

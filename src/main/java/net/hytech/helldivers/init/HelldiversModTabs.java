@@ -43,9 +43,11 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModBlocks.TERMINIDDUSTSPORE.get().asItem());
 				tabData.accept(HelldiversModBlocks.AUTOMATONCONTACTMINE.get().asItem());
 				tabData.accept(HelldiversModItems.TERMINID_SCAVENGER_SPAWN_EGG.get());
-				tabData.accept(HelldiversModItems.EMPTY_STRATAGEMORB.get());
 				tabData.accept(HelldiversModItems.STRATAGEM_REMOTE.get());
 				tabData.accept(HelldiversModItems.E_710.get());
+				tabData.accept(HelldiversModItems.EMPTY_STRATAGEM_ORB.get());
+				tabData.accept(HelldiversModItems.ARMED_ATTACK_STRATAGEM_ORB.get());
+				tabData.accept(HelldiversModItems.ARMED_SUPPORT_STRATAGEM_ORB.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

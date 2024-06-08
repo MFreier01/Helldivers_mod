@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/air_strike_bomb.item",
+  "textures": {
+    "layer0": "helldivers:item/air_strke_bomb"
+  }
+}

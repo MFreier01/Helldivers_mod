@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:EmptyStratagemorb"
+      "value": "CUSTOM:ArmedAttackStratagemOrb"
     },
     "showParticles": false,
     "actionSound": {
@@ -12,8 +12,14 @@
     "igniteFire": false,
     "power": 0.5,
     "damage": 1.0,
-    "knockback": 1,
+    "knockback": 5,
     "entityModel": "Default",
-    "customModelTexture": "stratagem_orb.png"
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "CallEagleAirStrike"
+    },
+    "onHitsEntity": {
+      "name": "CallEagleAirStrike"
+    }
   }
 }

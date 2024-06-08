@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "grenade_model",
+    "texture": "frag_grenade_item_3d",
     "name": "Frag Grenade",
     "idle": "animation.frag_grenade_item.idle",
     "rarity": "COMMON",

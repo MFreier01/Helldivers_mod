@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/empty_stratagem_orb.item",
+  "textures": {
+    "layer0": "helldivers:item/empty_stratagem_orb"
+  }
+}

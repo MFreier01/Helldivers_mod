@@ -6,6 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.hytech.helldivers.world.inventory.CallStratagemsMenu;
@@ -19,6 +20,10 @@ public class CallStratagemsScreen extends AbstractContainerScreen<CallStratagems
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	ImageButton imagebutton_up_arrow;
+	ImageButton imagebutton_right_arrow;
+	ImageButton imagebutton_down_arrow;
+	ImageButton imagebutton_right_arrow1;
 
 	public CallStratagemsScreen(CallStratagemsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -71,5 +76,21 @@ public class CallStratagemsScreen extends AbstractContainerScreen<CallStratagems
 	@Override
 	public void init() {
 		super.init();
+		imagebutton_up_arrow = new ImageButton(this.leftPos + 34, this.topPos + 23, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_up_arrow.png"), 16, 32, e -> {
+		});
+		guistate.put("button:imagebutton_up_arrow", imagebutton_up_arrow);
+		this.addRenderableWidget(imagebutton_up_arrow);
+		imagebutton_right_arrow = new ImageButton(this.leftPos + 48, this.topPos + 22, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_right_arrow.png"), 16, 32, e -> {
+		});
+		guistate.put("button:imagebutton_right_arrow", imagebutton_right_arrow);
+		this.addRenderableWidget(imagebutton_right_arrow);
+		imagebutton_down_arrow = new ImageButton(this.leftPos + 62, this.topPos + 23, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_down_arrow.png"), 16, 32, e -> {
+		});
+		guistate.put("button:imagebutton_down_arrow", imagebutton_down_arrow);
+		this.addRenderableWidget(imagebutton_down_arrow);
+		imagebutton_right_arrow1 = new ImageButton(this.leftPos + 76, this.topPos + 23, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_right_arrow1.png"), 16, 32, e -> {
+		});
+		guistate.put("button:imagebutton_right_arrow1", imagebutton_right_arrow1);
+		this.addRenderableWidget(imagebutton_right_arrow1);
 	}
 }

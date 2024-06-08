@@ -1,0 +1,99 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "helldivers:item/frag_grenade_item_3d"
+	},
+	"elements": [
+		{
+			"name": "grenade",
+			"from": [6.5, 0, 6.5],
+			"to": [8.5, 3, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 2.5, 6.75]},
+			"faces": {
+				"north": {"uv": [2, 2, 4, 5], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 5], "texture": "#0"},
+				"south": {"uv": [6, 2, 8, 5], "texture": "#0"},
+				"west": {"uv": [4, 2, 6, 5], "texture": "#0"},
+				"up": {"uv": [4, 2, 2, 0], "texture": "#0"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "grenade",
+			"from": [7, 3.5, 6],
+			"to": [8, 3.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 2.5, 6.75]},
+			"faces": {
+				"north": {"uv": [6, 2, 7, 2], "texture": "#0"},
+				"east": {"uv": [4, 2, 6, 2], "texture": "#0"},
+				"south": {"uv": [9, 2, 10, 2], "texture": "#0"},
+				"west": {"uv": [7, 2, 9, 2], "texture": "#0"},
+				"up": {"uv": [7, 2, 6, 0], "texture": "#0"},
+				"down": {"uv": [8, 0, 7, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "grenade",
+			"from": [7, 2.5, 7],
+			"to": [8, 3.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 2.5, 6.75]},
+			"faces": {
+				"north": {"uv": [1, 6, 2, 7], "texture": "#0"},
+				"east": {"uv": [0, 6, 1, 7], "texture": "#0"},
+				"south": {"uv": [3, 6, 4, 7], "texture": "#0"},
+				"west": {"uv": [2, 6, 3, 7], "texture": "#0"},
+				"up": {"uv": [2, 6, 1, 5], "texture": "#0"},
+				"down": {"uv": [3, 5, 2, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "grenade",
+			"from": [7, 2.5, 6],
+			"to": [8, 3.5, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 2.5, 6.75]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 1], "texture": "#0"},
+				"south": {"uv": [1, 0, 2, 1], "texture": "#0"},
+				"west": {"uv": [1, 0, 1, 1], "texture": "#0"},
+				"up": {"uv": [1, 0, 0, 0], "texture": "#0"},
+				"down": {"uv": [2, 0, 1, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [-0.25, -1.25, 0.5]
+		},
+		"firstperson_righthand": {
+			"translation": [-1.5, -0.5, 0]
+		},
+		"gui": {
+			"translation": [-1.75, -6.25, 0],
+			"scale": [4, 4, 4]
+		},
+		"fixed": {
+			"translation": [-1.25, -5.25, -0.25],
+			"scale": [3, 3, 3]
+		}
+	},
+	"groups": [
+		{
+			"name": "grenade",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [
+				0,
+				1,
+				2,
+				3,
+				{
+					"name": "top",
+					"origin": [0, 0, 0],
+					"color": 1,
+					"children": []
+				}
+			]
+		}
+	]
+}

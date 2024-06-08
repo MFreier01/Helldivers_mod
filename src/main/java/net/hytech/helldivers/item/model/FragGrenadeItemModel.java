@@ -19,6 +19,6 @@ public class FragGrenadeItemModel extends GeoModel<FragGrenadeItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(FragGrenadeItem animatable) {
-		return new ResourceLocation("helldivers", "textures/item/grenade_model.png");
+		return new ResourceLocation("helldivers", "textures/item/frag_grenade_item_3d.png");
 	}
 }

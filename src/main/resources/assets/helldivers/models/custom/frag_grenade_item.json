@@ -1,0 +1,93 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "helldivers:item/frag_grenade_item",
+    "textures": {
+      "0": "helldivers:entities/grenade_model"
+    },
+    "display": {
+      "thirdperson_righthand": {
+        "translation": [
+          0,
+          3,
+          1
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "thirdperson_lefthand": {
+        "translation": [
+          0,
+          3,
+          1
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "firstperson_righthand": {
+        "rotation": [
+          -0,
+          -0,
+          -0
+        ],
+        "translation": [
+          0,
+          3,
+          1
+        ]
+      },
+      "firstperson_lefthand": {
+        "rotation": [
+          0,
+          0,
+          -0
+        ],
+        "translation": [
+          0,
+          3,
+          1
+        ]
+      },
+      "ground": {
+        "translation": [
+          0,
+          3,
+          1
+        ],
+        "scale": [
+          0.55,
+          0.55,
+          0.55
+        ]
+      },
+      "fixed": {
+        "rotation": [
+          0,
+          -90,
+          0
+        ],
+        "translation": [
+          0,
+          3,
+          1
+        ]
+      }
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "helldivers:item/frag_grenade"
+      },
+      "gui_light": "front"
+    }
+  }
+}

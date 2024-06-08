@@ -24,6 +24,7 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.FRAG_GRENADE_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.STATIC_FRAG_GRENADE.get(), StaticFragGrenadeRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.TERMINIDBILETITAN.get(), TerminidbiletitanRenderer::new);
-		event.registerEntityRenderer(HelldiversModEntities.EMPTY_STRATAGEM_ORB_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.THROWN_ATTACK_ORB.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.AIR_STRIKE_BOMB.get(), ThrownItemRenderer::new);
 	}
 }

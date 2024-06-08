@@ -13,7 +13,7 @@
     "creativeTab": {
       "value": "CUSTOM:Helldivers"
     },
-    "armorTextureFile": "texture3.png",
+    "armorTextureFile": "fs_23_heavy.png",
     "model": "heavy_fs-23.geo.json",
     "idle": "animation.heavy_armor.idle",
     "head": "armorHead",
