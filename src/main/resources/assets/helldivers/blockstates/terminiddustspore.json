@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "helldivers:custom/terminiddustspore_particle"
+    },
+    "facing=east": {
+      "model": "helldivers:custom/terminiddustspore_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "helldivers:custom/terminiddustspore_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "helldivers:custom/terminiddustspore_particle",
+      "y": 270
+    }
+  }
+}

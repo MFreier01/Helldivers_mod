@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/sg225.item",
+  "textures": {
+    "layer0": "helldivers:item/sg225"
+  }
+}

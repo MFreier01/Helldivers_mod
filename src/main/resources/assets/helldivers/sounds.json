@@ -1,0 +1,92 @@
+{
+  "ar23_reload": {
+    "subtitle": "subtitles.ar23_reload",
+    "sounds": [
+      {
+        "name": "helldivers:ar23_reload",
+        "stream": false
+      }
+    ]
+  },
+  "apw1_reload": {
+    "subtitle": "subtitles.apw1_reload",
+    "sounds": [
+      {
+        "name": "helldivers:apw1_reload",
+        "stream": false
+      }
+    ]
+  },
+  "sg225_reload": {
+    "subtitle": "subtitles.sg225_reload",
+    "sounds": [
+      {
+        "name": "helldivers:sg225_reload",
+        "stream": false
+      }
+    ]
+  },
+  "m105_reload": {
+    "subtitle": "subtitles.m105_reload",
+    "sounds": [
+      {
+        "name": "helldivers:m105_reload",
+        "stream": false
+      }
+    ]
+  },
+  "ar23_shoot": {
+    "subtitle": "subtitles.ar23_shoot",
+    "sounds": [
+      {
+        "name": "helldivers:ar23_liberator_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "ar23_dry_fire": {
+    "subtitle": "subtitles.ar23_dry_fire",
+    "sounds": [
+      {
+        "name": "helldivers:ar23_liberator_dry_fire",
+        "stream": false
+      }
+    ]
+  },
+  "sg225_shoot": {
+    "subtitle": "subtitles.sg225_shoot",
+    "sounds": [
+      {
+        "name": "helldivers:sg225_breaker_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "sg225_dry_fire": {
+    "subtitle": "subtitles.sg225_dry_fire",
+    "sounds": [
+      {
+        "name": "helldivers:sg225_breaker_dry_fire",
+        "stream": false
+      }
+    ]
+  },
+  "apw1_shoot": {
+    "subtitle": "subtitles.apw1_shoot",
+    "sounds": [
+      {
+        "name": "helldivers:r63cs_diligence_shoot",
+        "stream": false
+      }
+    ]
+  },
+  "awp1_dry_fire": {
+    "subtitle": "subtitles.awp1_dry_fire",
+    "sounds": [
+      {
+        "name": "helldivers:r63cs_diligence_dry_fire",
+        "stream": false
+      }
+    ]
+  }
+}

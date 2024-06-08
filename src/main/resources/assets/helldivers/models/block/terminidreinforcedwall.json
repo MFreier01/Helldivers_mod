@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "helldivers:block/helldivers_renforced_terminid_wall",
+    "up": "helldivers:block/helldivers_renforced_terminid_wall",
+    "north": "helldivers:block/helldivers_renforced_terminid_wall",
+    "east": "helldivers:block/helldivers_renforced_terminid_wall",
+    "south": "helldivers:block/helldivers_renforced_terminid_wall",
+    "west": "helldivers:block/helldivers_renforced_terminid_wall",
+    "particle": "helldivers:block/helldivers_renforced_terminid_wall"
+  },
+  "render_type": "solid"
+}

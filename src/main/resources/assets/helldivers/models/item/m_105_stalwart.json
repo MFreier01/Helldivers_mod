@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/m105.item",
+  "textures": {
+    "layer0": "helldivers:item/m105_stalwart_texture"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/apw1.item",
+  "textures": {
+    "layer0": "helldivers:item/apw1_texture"
+  }
+}

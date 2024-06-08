@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/frag_grenade_item.item",
+  "textures": {
+    "layer0": "helldivers:item/grenade_model"
+  }
+}

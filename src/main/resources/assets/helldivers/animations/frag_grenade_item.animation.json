@@ -1,0 +1,9 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.frag_grenade_item.thrown": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

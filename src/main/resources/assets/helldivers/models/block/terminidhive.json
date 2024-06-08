@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "helldivers:block/helldivers_terminid_hive",
+    "up": "helldivers:block/helldivers_terminid_hive",
+    "north": "helldivers:block/helldivers_terminid_hive",
+    "east": "helldivers:block/helldivers_terminid_hive",
+    "south": "helldivers:block/helldivers_terminid_hive",
+    "west": "helldivers:block/helldivers_terminid_hive",
+    "particle": "helldivers:block/helldivers_terminid_hive"
+  },
+  "render_type": "solid"
+}

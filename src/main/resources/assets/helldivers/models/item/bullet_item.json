@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/bullet.item",
+  "textures": {
+    "layer0": "helldivers:item/bullet"
+  }
+}

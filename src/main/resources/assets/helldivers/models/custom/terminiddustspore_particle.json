@@ -1,0 +1,7 @@
+
+{
+  "parent": "helldivers:displaysettings/terminid_dust_spore.item",
+  "textures": {
+    "particle": "helldivers:block/helldivers_dust_spores"
+  }
+}

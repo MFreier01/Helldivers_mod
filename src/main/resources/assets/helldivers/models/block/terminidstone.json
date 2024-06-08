@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "helldivers:block/helldivers_terminid_stone",
+    "up": "helldivers:block/helldivers_terminid_stone",
+    "north": "helldivers:block/helldivers_terminid_stone",
+    "east": "helldivers:block/helldivers_terminid_stone",
+    "south": "helldivers:block/helldivers_terminid_stone",
+    "west": "helldivers:block/helldivers_terminid_stone",
+    "particle": "helldivers:block/helldivers_terminid_stone"
+  },
+  "render_type": "solid"
+}

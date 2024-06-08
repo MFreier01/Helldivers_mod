@@ -1,0 +1,65 @@
+{
+  "_fv": 60,
+  "_type": "animatedarmor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "helldivers_helmet.item",
+    "enableBody": true,
+    "textureBody": "helldivers_chestplate.item",
+    "enableLeggings": true,
+    "textureLeggings": "helldivers_leggings.item",
+    "enableBoots": true,
+    "textureBoots": "helldivers_boots.item",
+    "creativeTab": {
+      "value": "CUSTOM:Helldivers"
+    },
+    "armorTextureFile": "basic_armor_texture.png",
+    "model": "helldiversarmor.geo.json",
+    "idle": "animation.helldivers.idle",
+    "head": "armorHead",
+    "chest": "armorBody",
+    "rightArm": "armorRightArm",
+    "leftArm": "armorLeftArm",
+    "rightLeg": "armorRightLeg",
+    "leftLeg": "armorLeftLeg",
+    "rightBoot": "armorRightBoot",
+    "leftBoot": "armorLeftBoot",
+    "helmetName": "Helldiver's Helmet",
+    "bodyName": "Helldiver's Chestplate",
+    "leggingsName": "Helldiver's Leggings",
+    "bootsName": "Helldiver's Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "fullyEquipped": false,
+    "maxDamage": 35,
+    "damageValueHelmet": 3,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 10,
+    "toughness": 1.0,
+    "knockbackResistance": 0.05,
+    "equipSound": {
+      "value": "item.armor.equip_netherite"
+    },
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

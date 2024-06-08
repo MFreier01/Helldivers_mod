@@ -1,0 +1,941 @@
+{
+  "mod_elements": [
+    {
+      "name": "Basicarmor",
+      "type": "animatedarmor",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicarmor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/renderer/BasicarmorArmorRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_chestplate.json",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_leggings.json",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_helmet.json",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_boots.json",
+          "src/main/java/net/hytech/helldivers/item/BasicarmorItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/BasicarmorModel.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "AR23Liberator",
+      "type": "animateditem",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ar_23_liberator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/renderer/AR23LiberatorItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/ar_23_liberator.json",
+          "src/main/java/net/hytech/helldivers/item/AR23LiberatorItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/AR23LiberatorItemModel.java"
+        ]
+      },
+      "path": "~/Guns"
+    },
+    {
+      "name": "SG225Breaker",
+      "type": "animateditem",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sg_225_breaker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/sg_225_breaker.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/SG225BreakerItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/SG225BreakerItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/SG225BreakerItemModel.java"
+        ]
+      },
+      "path": "~/Guns"
+    },
+    {
+      "name": "M105Stalwart",
+      "type": "animateditem",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "m_105_stalwart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/m_105_stalwart.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/M105StalwartItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/model/M105StalwartItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/M105StalwartItem.java"
+        ]
+      },
+      "path": "~/Guns"
+    },
+    {
+      "name": "BasicBullet",
+      "type": "projectile",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/BasicBulletEntity.java"
+        ]
+      },
+      "path": "~/Ammo"
+    },
+    {
+      "name": "BulletItem",
+      "type": "animateditem",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/bullet_item.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/BulletItemItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/BulletItemItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/BulletItemItemModel.java"
+        ]
+      },
+      "path": "~/Ammo"
+    },
+    {
+      "name": "AR23LiberatorFire",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ar_23_liberator_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AR23LiberatorFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures"
+    },
+    {
+      "name": "ReloadKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reload_key_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/ReloadKeyOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures/Reload"
+    },
+    {
+      "name": "ReloadKey",
+      "type": "keybind",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reload_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/network/ReloadKeyMessage.java"
+        ]
+      },
+      "path": "~/Shooting_Procedures/Reload"
+    },
+    {
+      "name": "SG225BreakerFire",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sg_225_breaker_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/SG225BreakerFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures"
+    },
+    {
+      "name": "M105StalwartFire",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "m_105_stalwart_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/M105StalwartFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures"
+    },
+    {
+      "name": "Ammooverlay",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammooverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AmmooverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ammo/Ammo_Overlay"
+    },
+    {
+      "name": "APW1AntiMaterialRifle",
+      "type": "animateditem",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apw_1_anti_material_rifle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/renderer/APW1AntiMaterialRifleItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/model/APW1AntiMaterialRifleItemModel.java",
+          "src/main/resources/assets/helldivers/models/item/apw_1_anti_material_rifle.json",
+          "src/main/java/net/hytech/helldivers/item/APW1AntiMaterialRifleItem.java"
+        ]
+      },
+      "path": "~/Guns"
+    },
+    {
+      "name": "APW1AntiMaterialRifleFire",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apw_1_anti_material_rifle_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/APW1AntiMaterialRifleFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures"
+    },
+    {
+      "name": "TerminidScavenger",
+      "type": "animatedentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminid_scavenger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/TerminidScavengerEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidScavengerModel.java",
+          "src/main/resources/assets/helldivers/models/item/terminid_scavenger_spawn_egg.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidScavengerRenderer.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_scavenger_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entity/Terminid"
+    },
+    {
+      "name": "FragGrenade",
+      "type": "animateditem",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frag_grenade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/model/FragGrenadeItemModel.java",
+          "src/main/resources/assets/helldivers/models/item/frag_grenade.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/FragGrenadeItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/FragGrenadeItem.java"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "FragGrenadeProjectile",
+      "type": "projectile",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frag_grenade_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/FragGrenadeProjectileEntity.java"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "FragGrenadeProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frag_grenade_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/FragGrenadeProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "FragGrenadeRightclicked",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frag_grenade_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/FragGrenadeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "Terminidhive",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidhive",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminidhive.json",
+          "src/main/resources/assets/helldivers/models/block/terminidhive.json",
+          "src/main/resources/assets/helldivers/models/item/terminidhive.json",
+          "src/main/resources/assets/helldivers/blockstates/terminidhive.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidhiveBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Terminidwall",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidwall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/blockstates/terminidwall.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidwallBlock.java",
+          "src/main/resources/assets/helldivers/models/block/terminidwall.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminidwall.json",
+          "src/main/resources/assets/helldivers/models/item/terminidwall.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Terminidstone",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidstone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/block/TerminidstoneBlock.java",
+          "src/main/resources/assets/helldivers/models/block/terminidstone.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminidstone.json",
+          "src/main/resources/assets/helldivers/blockstates/terminidstone.json",
+          "src/main/resources/assets/helldivers/models/item/terminidstone.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Terminidreinforcedwall",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidreinforcedwall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/terminidreinforcedwall.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminidreinforcedwall.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidreinforcedwallBlock.java",
+          "src/main/resources/assets/helldivers/blockstates/terminidreinforcedwall.json",
+          "src/main/resources/assets/helldivers/models/block/terminidreinforcedwall.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TerminiddustsporeEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminiddustspore_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TerminiddustsporeEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Terminiddustspore",
+      "type": "animatedblock",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminiddustspore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/block/model/TerminiddustsporeBlockModel.java",
+          "src/main/java/net/hytech/helldivers/block/entity/TerminiddustsporeTileEntity.java",
+          "src/main/resources/assets/helldivers/models/custom/terminiddustspore_particle.json",
+          "src/main/resources/assets/helldivers/blockstates/terminiddustspore.json",
+          "src/main/java/net/hytech/helldivers/block/TerminiddustsporeBlock.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/TerminiddustsporeDisplayItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/TerminiddustsporeTileRenderer.java",
+          "src/main/java/net/hytech/helldivers/block/model/TerminiddustsporeDisplayModel.java",
+          "src/main/resources/assets/helldivers/models/item/terminiddustspore.json",
+          "src/main/java/net/hytech/helldivers/block/display/TerminiddustsporeDisplayItem.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AutomatoncontactmineEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatoncontactmine_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AutomatoncontactmineEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Automatoncontactmine",
+      "type": "animatedblock",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatoncontactmine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/block/model/AutomatoncontactmineBlockModel.java",
+          "src/main/java/net/hytech/helldivers/block/display/AutomatoncontactmineDisplayItem.java",
+          "src/main/resources/assets/helldivers/blockstates/automatoncontactmine.json",
+          "src/main/java/net/hytech/helldivers/block/model/AutomatoncontactmineDisplayModel.java",
+          "src/main/java/net/hytech/helldivers/block/entity/AutomatoncontactmineTileEntity.java",
+          "src/main/resources/assets/helldivers/models/item/automatoncontactmine.json",
+          "src/main/java/net/hytech/helldivers/block/renderer/AutomatoncontactmineDisplayItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/custom/automatoncontactmine_particle.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatoncontactmineBlock.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/AutomatoncontactmineTileRenderer.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Helldivers",
+      "type": "tab",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helldivers",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "StaticFragGrenadeOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "static_frag_grenade_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/StaticFragGrenadeOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "StaticFragGrenade",
+      "type": "animatedentity",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "static_frag_grenade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/model/StaticFragGrenadeModel.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/static_frag_grenade_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/entity/StaticFragGrenadeEntity.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/StaticFragGrenadeRenderer.java"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "HeavyFS23",
+      "type": "animatedarmor",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_fs_23",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/renderer/HeavyFS23ArmorRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_leggings.json",
+          "src/main/java/net/hytech/helldivers/item/HeavyFS23Item.java",
+          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_chestplate.json",
+          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_boots.json",
+          "src/main/java/net/hytech/helldivers/item/model/HeavyFS23Model.java",
+          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_helmet.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "Terminidbiletitan",
+      "type": "animatedentity",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidbiletitan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidbiletitanModel.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminidbiletitan_biome_modifier.json",
+          "src/main/resources/assets/helldivers/models/item/terminidbiletitan_spawn_egg.json",
+          "src/main/java/net/hytech/helldivers/entity/TerminidbiletitanEntity.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidbiletitanRenderer.java"
+        ]
+      },
+      "path": "~/Entity/Terminid"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "ar23_reload",
+      "files": [
+        "ar23_reload"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun reloads"
+    },
+    {
+      "name": "apw1_reload",
+      "files": [
+        "apw1_reload"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun reload"
+    },
+    {
+      "name": "sg225_reload",
+      "files": [
+        "sg225_reload"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun reload"
+    },
+    {
+      "name": "m105_reload",
+      "files": [
+        "m105_reload"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun reload"
+    },
+    {
+      "name": "ar23_shoot",
+      "files": [
+        "ar23_liberator_shoot"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun shoots"
+    },
+    {
+      "name": "ar23_dry_fire",
+      "files": [
+        "ar23_liberator_dry_fire"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun clicks"
+    },
+    {
+      "name": "sg225_shoot",
+      "files": [
+        "sg225_breaker_shoot"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun shoots"
+    },
+    {
+      "name": "sg225_dry_fire",
+      "files": [
+        "sg225_breaker_dry_fire"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun clicks"
+    },
+    {
+      "name": "apw1_shoot",
+      "files": [
+        "r63cs_diligence_shoot"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun shoots"
+    },
+    {
+      "name": "awp1_dry_fire",
+      "files": [
+        "r63cs_diligence_dry_fire"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun clicks"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Automatoncontactmine",
+      "~CUSTOM:Terminidstone",
+      "~CUSTOM:Terminidwall"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:Terminidstone",
+      "~CUSTOM:Terminidwall"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.helldivers.sg_225_breaker": "SG-225 Breaker",
+      "item_group.helldivers.helldivers": "Helldivers",
+      "subtitles.shotgun_shot": "Gun shot",
+      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
+      "subtitles.amr_shot": "Gun shot",
+      "block.helldivers.terminidhive": "Terminid Hive",
+      "block.helldivers.terminidstone": "Terminid Stone",
+      "subtitles.basic_shot": "Gun shot",
+      "block.helldivers.terminidwall": "Terminid Wall",
+      "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
+      "item.helldivers.m_105_stalwart": "M-105 Stalwart",
+      "subtitles.ar23_shoot": "Gun shoots",
+      "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
+      "key.helldivers.reload_key": "Reload Key",
+      "subtitles.ar23_reload": "Gun reloads",
+      "subtitles.ar23_dry_fire": "Gun clicks",
+      "item.helldivers.heavy_fs_23_leggings": "FS-23 Leggings",
+      "block.helldivers.automatoncontactmine": "Contact Mine",
+      "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
+      "item.helldivers.ar_23_liberator": "AR-23 Liberator",
+      "subtitles.sg225_shoot": "Gun shoots",
+      "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
+      "entity.helldivers.terminid_scavenger": "Scavenger",
+      "subtitles.m105_reload": "Gun reload",
+      "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
+      "block.helldivers.terminiddustspore": "Dust Spore",
+      "item.helldivers.bullet_item": "Bullet Item",
+      "item.helldivers.terminidbiletitan_spawn_egg": "Bile Titan Spawn Egg",
+      "item.helldivers.basicarmor_chestplate": "Helldiver\u0027s Chestplate",
+      "subtitles.sg225_reload": "Gun reload",
+      "item.helldivers.heavy_fs_23_helmet": "FS-23 Helmet",
+      "subtitles.apw1_shoot": "Gun shoots",
+      "item.helldivers.basicarmor_leggings": "Helldiver\u0027s Leggings",
+      "subtitles.sg225_dry_fire": "Gun clicks",
+      "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
+      "subtitles.apw1_reload": "Gun reload",
+      "entity.helldivers.terminidbiletitan": "Bile Titan",
+      "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
+      "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate",
+      "subtitles.awp1_dry_fire": "Gun clicks",
+      "item.helldivers.frag_grenade": "Frag Grenade"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Guns",
+        "children": []
+      },
+      {
+        "name": "Ammo",
+        "children": [
+          {
+            "name": "Ammo_Overlay",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Shooting_Procedures",
+        "children": [
+          {
+            "name": "Reload",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Entity",
+        "children": [
+          {
+            "name": "Terminid",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Other_Items",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "helldivers",
+    "modName": "Helldivers",
+    "version": "0.0.2",
+    "description": "Distribute Managed Democracy across the world!",
+    "author": "HyTech01",
+    "websiteURL": "https://www.youtube.com/c/HyTechInc",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Gun models by GGlecoucougnette, all else by HyTech01",
+    "modElementsPackage": "net.hytech.helldivers"
+  },
+  "mcreatorVersion": 202400118518
+}

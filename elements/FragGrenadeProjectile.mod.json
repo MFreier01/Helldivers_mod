@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:FragGrenade"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.snowball.throw"
+    },
+    "igniteFire": false,
+    "power": 0.5,
+    "damage": 2.0,
+    "knockback": 1,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "FragGrenadeProjectileProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "FragGrenadeProjectileProjectileHitsBlock"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+
+{
+  "parent": "helldivers:displaysettings/automaton_contact_mine.item",
+  "textures": {
+    "particle": "helldivers:block/helldivers_automaton_contact_mine"
+  }
+}

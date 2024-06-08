@@ -1,0 +1,9 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.automaton_contact_mine.idle": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

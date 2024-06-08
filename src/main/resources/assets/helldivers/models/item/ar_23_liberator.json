@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/ar23_liberator.item",
+  "textures": {
+    "layer0": "helldivers:item/ar23_liberator_texture"
+  }
+}

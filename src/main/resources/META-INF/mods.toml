@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+
+[[mods]]
+modId="helldivers"
+version="0.0.2"
+displayName="Helldivers"
+displayURL="https://www.youtube.com/c/HyTechInc"
+credits="Gun models by GGlecoucougnette, all else by HyTech01"
+authors="HyTech01"
+description="Distribute Managed Democracy across the world!"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.helldivers]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.helldivers]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
