@@ -20,7 +20,9 @@ import net.hytech.helldivers.entity.ThrownAttackOrbEntity;
 import net.hytech.helldivers.entity.TerminidbiletitanEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
+import net.hytech.helldivers.entity.Projectile500KGEntity;
 import net.hytech.helldivers.entity.FragGrenadeProjectileEntity;
+import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
 import net.hytech.helldivers.entity.BasicBulletEntity;
 import net.hytech.helldivers.entity.AirStrikeBombEntity;
 import net.hytech.helldivers.HelldiversMod;
@@ -48,6 +50,13 @@ public class HelldiversModEntities {
 			.setCustomClientFactory(ThrownAttackOrbEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<AirStrikeBombEntity>> AIR_STRIKE_BOMB = register("air_strike_bomb",
 			EntityType.Builder.<AirStrikeBombEntity>of(AirStrikeBombEntity::new, MobCategory.MISC).setCustomClientFactory(AirStrikeBombEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<Projectile500KGEntity>> PROJECTILE_500_KG = register("projectile_500_kg", EntityType.Builder.<Projectile500KGEntity>of(Projectile500KGEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(Projectile500KGEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EagleStrikeBombEntityEntity>> EAGLE_STRIKE_BOMB_ENTITY = register("eagle_strike_bomb_entity",
+			EntityType.Builder.<EagleStrikeBombEntityEntity>of(EagleStrikeBombEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(EagleStrikeBombEntityEntity::new)
+
+					.sized(1f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -59,6 +68,7 @@ public class HelldiversModEntities {
 			TerminidScavengerEntity.init();
 			StaticFragGrenadeEntity.init();
 			TerminidbiletitanEntity.init();
+			EagleStrikeBombEntityEntity.init();
 		});
 	}
 
@@ -67,5 +77,6 @@ public class HelldiversModEntities {
 		event.put(TERMINID_SCAVENGER.get(), TerminidScavengerEntity.createAttributes().build());
 		event.put(STATIC_FRAG_GRENADE.get(), StaticFragGrenadeEntity.createAttributes().build());
 		event.put(TERMINIDBILETITAN.get(), TerminidbiletitanEntity.createAttributes().build());
+		event.put(EAGLE_STRIKE_BOMB_ENTITY.get(), EagleStrikeBombEntityEntity.createAttributes().build());
 	}
 }

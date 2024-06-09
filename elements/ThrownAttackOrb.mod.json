@@ -16,10 +16,10 @@
     "entityModel": "Default",
     "customModelTexture": "",
     "onHitsBlock": {
-      "name": "CallEagleAirStrike"
+      "name": "Call500KG"
     },
     "onHitsEntity": {
-      "name": "CallEagleAirStrike"
+      "name": "Call500KG"
     }
   }
 }

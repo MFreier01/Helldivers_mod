@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:AirStrikeBombItem"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.blaze.shoot"
+    },
+    "igniteFire": false,
+    "power": 3.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "air_strke_bomb.png",
+    "onHitsBlock": {
+      "name": "Projectile500KGProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "Projectile500KGProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "Projectile500KGProjectileHitsBlock"
+    }
+  }
+}

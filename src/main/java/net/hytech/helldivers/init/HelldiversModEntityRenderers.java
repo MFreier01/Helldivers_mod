@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.hytech.helldivers.client.renderer.TerminidbiletitanRenderer;
 import net.hytech.helldivers.client.renderer.TerminidScavengerRenderer;
 import net.hytech.helldivers.client.renderer.StaticFragGrenadeRenderer;
+import net.hytech.helldivers.client.renderer.EagleStrikeBombEntityRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HelldiversModEntityRenderers {
@@ -26,5 +27,7 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.TERMINIDBILETITAN.get(), TerminidbiletitanRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.THROWN_ATTACK_ORB.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.AIR_STRIKE_BOMB.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.PROJECTILE_500_KG.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.EAGLE_STRIKE_BOMB_ENTITY.get(), EagleStrikeBombEntityRenderer::new);
 	}
 }

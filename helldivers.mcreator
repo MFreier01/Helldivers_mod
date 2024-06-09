@@ -1052,6 +1052,125 @@
         ]
       },
       "path": "~/Stratagems/Stratagem_Remote"
+    },
+    {
+      "name": "Call500KG",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_500_kg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Call500KGProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/500KG"
+    },
+    {
+      "name": "Projectile500KGProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_500_kg_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Projectile500KGProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/500KG"
+    },
+    {
+      "name": "Projectile500KG",
+      "type": "projectile",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_500_kg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/Projectile500KGEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/500KG"
+    },
+    {
+      "name": "EagleStrikeBombEntity",
+      "type": "animatedentity",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_strike_bomb_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/EagleStrikeBombEntityEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/EagleStrikeBombEntityModel.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/eagle_strike_bomb_entity_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/EagleStrikeBombEntityRenderer.java"
+        ]
+      },
+      "path": "~/Entity"
+    },
+    {
+      "name": "EagleStrikeBombEntityOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_strike_bomb_entity_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EagleStrikeBombEntityOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entity"
     }
   ],
   "variable_elements": [],
@@ -1156,10 +1275,10 @@
     "en_us": {
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "subtitles.shotgun_shot": "Gun shot",
-      "subtitles.amr_shot": "Gun shot",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
-      "block.helldivers.terminidwall": "Terminid Wall",
+      "subtitles.amr_shot": "Gun shot",
       "subtitles.basic_shot": "Gun shot",
+      "block.helldivers.terminidwall": "Terminid Wall",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
@@ -1169,14 +1288,15 @@
       "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
       "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
       "block.helldivers.terminiddustspore": "Dust Spore",
-      "subtitles.sg225_reload": "Gun reload",
       "subtitles.apw1_shoot": "Gun shoots",
+      "subtitles.sg225_reload": "Gun reload",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
       "entity.helldivers.terminidbiletitan": "Bile Titan",
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
       "subtitles.awp1_dry_fire": "Gun clicks",
       "item.helldivers.frag_grenade": "Frag Grenade",
+      "entity.helldivers.eagle_strike_bomb_entity": "Eagle Strike Bomb",
       "item_group.helldivers.helldivers": "Helldivers",
       "block.helldivers.terminidhive": "Terminid Hive",
       "block.helldivers.terminidstone": "Terminid Stone",
@@ -1185,6 +1305,7 @@
       "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
       "subtitles.ar23_shoot": "Gun shoots",
       "key.helldivers.open_stratagem_menu": "Open Stratagem Menu",
+      "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
       "key.helldivers.reload_key": "Reload Key",
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
@@ -1263,6 +1384,10 @@
             "children": [
               {
                 "name": "Eagle_Air_Strike",
+                "children": []
+              },
+              {
+                "name": "500KG",
                 "children": []
               }
             ]
