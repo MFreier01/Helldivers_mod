@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Bile Titan",
     "mobLabel": "",
-    "mobModelTexture": "texture1.png",
+    "mobModelTexture": "bt_texture.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0

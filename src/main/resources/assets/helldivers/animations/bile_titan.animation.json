@@ -258,6 +258,19 @@
 							"vector": [5, 0, 0]
 						}
 					}
+				},
+				"TopMouth": {
+					"rotation": {
+						"vector": [15, 0, 0]
+					},
+					"position": {
+						"vector": [0, -2, 2]
+					}
+				},
+				"BottomMouth": {
+					"position": {
+						"vector": [0, 5, -3]
+					}
 				}
 			}
 		}

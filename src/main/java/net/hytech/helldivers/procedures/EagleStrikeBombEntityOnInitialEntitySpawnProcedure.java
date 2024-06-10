@@ -14,6 +14,10 @@ public class EagleStrikeBombEntityOnInitialEntitySpawnProcedure {
 			return;
 		HelldiversMod.queueServerWork(40, () -> {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 100, 4));
+		});
+		HelldiversMod.queueServerWork(40, () -> {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 4));
 		});
 	}

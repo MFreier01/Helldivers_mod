@@ -1,8 +1,11 @@
 package net.hytech.helldivers.procedures;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.hytech.helldivers.init.HelldiversModEntities;
@@ -30,6 +33,10 @@ public class ArmedAttackStratagemOrbRightclickedProcedure {
 				_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 	}
 }

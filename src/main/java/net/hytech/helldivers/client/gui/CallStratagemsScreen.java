@@ -6,10 +6,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.ImageButton;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.hytech.helldivers.world.inventory.CallStratagemsMenu;
+import net.hytech.helldivers.network.CallStratagemsButtonMessage;
+import net.hytech.helldivers.HelldiversMod;
 
 import java.util.HashMap;
 
@@ -20,10 +22,8 @@ public class CallStratagemsScreen extends AbstractContainerScreen<CallStratagems
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_up_arrow;
-	ImageButton imagebutton_right_arrow;
-	ImageButton imagebutton_down_arrow;
-	ImageButton imagebutton_right_arrow1;
+	Button button_eagle_air_strike;
+	Button button_eagle_500kg_strike;
 
 	public CallStratagemsScreen(CallStratagemsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -33,7 +33,7 @@ public class CallStratagemsScreen extends AbstractContainerScreen<CallStratagems
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 177;
-		this.imageHeight = 123;
+		this.imageHeight = 187;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("helldivers:textures/screens/call_stratagems.png");
@@ -70,27 +70,27 @@ public class CallStratagemsScreen extends AbstractContainerScreen<CallStratagems
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.helldivers.call_stratagems.label_call_a_stratagem"), 5, 5, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.helldivers.call_stratagems.label_call_a_stratagem"), 6, 4, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_up_arrow = new ImageButton(this.leftPos + 34, this.topPos + 23, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_up_arrow.png"), 16, 32, e -> {
-		});
-		guistate.put("button:imagebutton_up_arrow", imagebutton_up_arrow);
-		this.addRenderableWidget(imagebutton_up_arrow);
-		imagebutton_right_arrow = new ImageButton(this.leftPos + 48, this.topPos + 22, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_right_arrow.png"), 16, 32, e -> {
-		});
-		guistate.put("button:imagebutton_right_arrow", imagebutton_right_arrow);
-		this.addRenderableWidget(imagebutton_right_arrow);
-		imagebutton_down_arrow = new ImageButton(this.leftPos + 62, this.topPos + 23, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_down_arrow.png"), 16, 32, e -> {
-		});
-		guistate.put("button:imagebutton_down_arrow", imagebutton_down_arrow);
-		this.addRenderableWidget(imagebutton_down_arrow);
-		imagebutton_right_arrow1 = new ImageButton(this.leftPos + 76, this.topPos + 23, 16, 16, 0, 0, 16, new ResourceLocation("helldivers:textures/screens/atlas/imagebutton_right_arrow1.png"), 16, 32, e -> {
-		});
-		guistate.put("button:imagebutton_right_arrow1", imagebutton_right_arrow1);
-		this.addRenderableWidget(imagebutton_right_arrow1);
+		button_eagle_air_strike = Button.builder(Component.translatable("gui.helldivers.call_stratagems.button_eagle_air_strike"), e -> {
+			if (true) {
+				HelldiversMod.PACKET_HANDLER.sendToServer(new CallStratagemsButtonMessage(0, x, y, z));
+				CallStratagemsButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 6, this.topPos + 17, 108, 20).build();
+		guistate.put("button:button_eagle_air_strike", button_eagle_air_strike);
+		this.addRenderableWidget(button_eagle_air_strike);
+		button_eagle_500kg_strike = Button.builder(Component.translatable("gui.helldivers.call_stratagems.button_eagle_500kg_strike"), e -> {
+			if (true) {
+				HelldiversMod.PACKET_HANDLER.sendToServer(new CallStratagemsButtonMessage(1, x, y, z));
+				CallStratagemsButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}).bounds(this.leftPos + 5, this.topPos + 41, 119, 20).build();
+		guistate.put("button:button_eagle_500kg_strike", button_eagle_500kg_strike);
+		this.addRenderableWidget(button_eagle_500kg_strike);
 	}
 }

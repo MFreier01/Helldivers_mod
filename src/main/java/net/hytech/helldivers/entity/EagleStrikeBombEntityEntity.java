@@ -19,8 +19,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -66,7 +64,7 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 	public EagleStrikeBombEntityEntity(EntityType<EagleStrikeBombEntityEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
-		setNoAi(false);
+		setNoAi(true);
 		setMaxUpStep(0.3f);
 	}
 
@@ -89,13 +87,6 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 	@Override
 	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
-	protected void registerGoals() {
-		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(2, new FloatGoal(this));
 	}
 
 	@Override

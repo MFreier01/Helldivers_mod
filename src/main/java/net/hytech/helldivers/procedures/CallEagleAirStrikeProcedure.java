@@ -4,39 +4,115 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.SimpleParticleType;
 
 import net.hytech.helldivers.init.HelldiversModParticleTypes;
 import net.hytech.helldivers.init.HelldiversModEntities;
+import net.hytech.helldivers.entity.Projectile500KGEntity;
 import net.hytech.helldivers.entity.AirStrikeBombEntity;
 import net.hytech.helldivers.HelldiversMod;
 
 public class CallEagleAirStrikeProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (HelldiversModParticleTypes.RED_BEAM.get()), x, y, z, 3000, 0.1, 200, 0.1, 0);
-		HelldiversMod.queueServerWork(70, () -> {
-			if (world instanceof ServerLevel projectileLevel) {
-				Projectile _entityToSpawn = new Object() {
-					public Projectile getArrow(Level level, float damage, int knockback) {
-						AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
-						entityToSpawn.setBaseDamage(damage);
-						entityToSpawn.setKnockback(knockback);
-						entityToSpawn.setSilent(true);
-						entityToSpawn.setCritArrow(true);
-						return entityToSpawn;
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleAirStrike")) {
+			HelldiversMod.queueServerWork(70, () -> {
+				if (world instanceof ServerLevel projectileLevel) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							entityToSpawn.setCritArrow(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, 5, 1);
+					_entityToSpawn.setPos((x + 73), (y + 100), (z + -74));
+					_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
+				HelldiversMod.queueServerWork(10, () -> {
+					if (world instanceof ServerLevel projectileLevel) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, float damage, int knockback) {
+								AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setCritArrow(true);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, 5, 1);
+						_entityToSpawn.setPos((x + 70), (y + 100), (z + -77));
+						_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
+						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
-				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 73), (y + 100), (z + -74));
-				_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
-				projectileLevel.addFreshEntity(_entityToSpawn);
-			}
-			HelldiversMod.queueServerWork(10, () -> {
+				});
+				HelldiversMod.queueServerWork(5, () -> {
+					if (world instanceof ServerLevel projectileLevel) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, float damage, int knockback) {
+								AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setCritArrow(true);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, 5, 1);
+						_entityToSpawn.setPos((x + 68), (y + 100), (z + -72));
+						_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				});
+				HelldiversMod.queueServerWork(3, () -> {
+					if (world instanceof ServerLevel projectileLevel) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, float damage, int knockback) {
+								AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setCritArrow(true);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, 5, 1);
+						_entityToSpawn.setPos((x + 72), (y + 100), (z + -65));
+						_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				});
+				HelldiversMod.queueServerWork(7, () -> {
+					if (world instanceof ServerLevel projectileLevel) {
+						Projectile _entityToSpawn = new Object() {
+							public Projectile getArrow(Level level, float damage, int knockback) {
+								AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
+								entityToSpawn.setBaseDamage(damage);
+								entityToSpawn.setKnockback(knockback);
+								entityToSpawn.setSilent(true);
+								entityToSpawn.setCritArrow(true);
+								return entityToSpawn;
+							}
+						}.getArrow(projectileLevel, 5, 1);
+						_entityToSpawn.setPos((x + 70), (y + 100), (z + -60));
+						_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
+						projectileLevel.addFreshEntity(_entityToSpawn);
+					}
+				});
+			});
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Eagle500KG")) {
+			HelldiversMod.queueServerWork(70, () -> {
 				if (world instanceof ServerLevel projectileLevel) {
 					Projectile _entityToSpawn = new Object() {
 						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
+							AbstractArrow entityToSpawn = new Projectile500KGEntity(HelldiversModEntities.PROJECTILE_500_KG.get(), level);
 							entityToSpawn.setBaseDamage(damage);
 							entityToSpawn.setKnockback(knockback);
 							entityToSpawn.setSilent(true);
@@ -44,62 +120,12 @@ public class CallEagleAirStrikeProcedure {
 							return entityToSpawn;
 						}
 					}.getArrow(projectileLevel, 5, 1);
-					_entityToSpawn.setPos((x + 70), (y + 100), (z + -77));
+					_entityToSpawn.setPos((x + 70), (y + 100), (z + -70));
 					_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			});
-			HelldiversMod.queueServerWork(5, () -> {
-				if (world instanceof ServerLevel projectileLevel) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setKnockback(knockback);
-							entityToSpawn.setSilent(true);
-							entityToSpawn.setCritArrow(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, 5, 1);
-					_entityToSpawn.setPos((x + 68), (y + 100), (z + -72));
-					_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
-					projectileLevel.addFreshEntity(_entityToSpawn);
-				}
-			});
-			HelldiversMod.queueServerWork(3, () -> {
-				if (world instanceof ServerLevel projectileLevel) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setKnockback(knockback);
-							entityToSpawn.setSilent(true);
-							entityToSpawn.setCritArrow(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, 5, 1);
-					_entityToSpawn.setPos((x + 72), (y + 100), (z + -65));
-					_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
-					projectileLevel.addFreshEntity(_entityToSpawn);
-				}
-			});
-			HelldiversMod.queueServerWork(7, () -> {
-				if (world instanceof ServerLevel projectileLevel) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new AirStrikeBombEntity(HelldiversModEntities.AIR_STRIKE_BOMB.get(), level);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setKnockback(knockback);
-							entityToSpawn.setSilent(true);
-							entityToSpawn.setCritArrow(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, 5, 1);
-					_entityToSpawn.setPos((x + 70), (y + 100), (z + -60));
-					_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
-					projectileLevel.addFreshEntity(_entityToSpawn);
-				}
-			});
-		});
+		}
+		entity.getPersistentData().putString("ActiveStratagem", "None");
 	}
 }

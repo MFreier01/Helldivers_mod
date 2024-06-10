@@ -12,17 +12,11 @@ import software.bernie.geckolib.animatable.GeoItem;
 
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
-import net.hytech.helldivers.procedures.EmptyStratagemOrbRightclickedProcedure;
 import net.hytech.helldivers.item.renderer.EmptyStratagemOrbItemRenderer;
 
 import java.util.function.Consumer;
@@ -89,17 +83,5 @@ public class EmptyStratagemOrbItem extends Item implements GeoItem {
 	@Override
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		EmptyStratagemOrbRightclickedProcedure.execute(world, x, y, z, entity);
-		return ar;
 	}
 }

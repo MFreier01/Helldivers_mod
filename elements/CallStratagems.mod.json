@@ -4,9 +4,9 @@
   "definition": {
     "type": 1,
     "width": 177,
-    "height": 123,
-    "inventoryOffsetX": 304,
-    "inventoryOffsetY": 0,
+    "height": 187,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 12,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -21,114 +21,38 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "x": 131,
+          "y": 31
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_eagle_air_strike",
+          "text": "Eagle Air Strike",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AddEagleAirStrike"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 131,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_eagle_500kg_strike",
+          "text": "Eagle 500KG Strike",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Add500KG"
+          },
+          "width": 119,
+          "height": 20,
           "x": 130,
-          "y": 64
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 0,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": false,
-          "x": 132,
-          "y": 81
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 1,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 132,
-          "y": 104
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 2,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 132,
-          "y": 126
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
-          "id": 3,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 132,
-          "y": 148
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_up_arrow",
-          "image": "up_arrow.png",
-          "hoveredImage": "",
-          "x": 159,
-          "y": 82
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_right_arrow",
-          "image": "right_arrow.png",
-          "hoveredImage": "",
-          "x": 173,
-          "y": 81
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_down_arrow",
-          "image": "down_arrow.png",
-          "hoveredImage": "",
-          "x": 187,
-          "y": 82
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_right_arrow1",
-          "image": "right_arrow.png",
-          "hoveredImage": "",
-          "x": 201,
-          "y": 82
+          "y": 68
         }
       }
     ],

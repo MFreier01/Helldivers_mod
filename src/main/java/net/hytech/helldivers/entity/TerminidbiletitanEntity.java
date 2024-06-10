@@ -72,7 +72,7 @@ public class TerminidbiletitanEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "texture1");
+		this.entityData.define(TEXTURE, "bt_texture");
 	}
 
 	public void setTexture(String texture) {

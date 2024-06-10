@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.hytech.helldivers.procedures.CallEagleAirStrikeProcedure;
 import net.hytech.helldivers.procedures.Call500KGProcedure;
 import net.hytech.helldivers.init.HelldiversModItems;
 import net.hytech.helldivers.init.HelldiversModEntities;
@@ -76,7 +77,7 @@ public class ThrownAttackOrbEntity extends AbstractArrow implements ItemSupplier
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		Call500KGProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		CallEagleAirStrikeProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
 	}
 
 	@Override
