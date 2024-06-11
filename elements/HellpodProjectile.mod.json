@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:HellpodItem"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.wither.spawn"
+    },
+    "igniteFire": false,
+    "power": 3.0,
+    "damage": 20.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "hellpod.png",
+    "onHitsBlock": {
+      "name": "HellpodProjectileProjectileHitsBlock"
+    }
+  }
+}

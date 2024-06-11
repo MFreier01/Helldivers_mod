@@ -54,6 +54,21 @@
           "x": 130,
           "y": 68
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_eagle_500kg_strike1",
+          "text": "Call Reinforcements",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AddReinforcements"
+          },
+          "width": 119,
+          "height": 20,
+          "x": 130,
+          "y": 91
+        }
       }
     ],
     "gridSettings": {

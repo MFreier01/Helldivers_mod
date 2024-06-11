@@ -24,6 +24,7 @@ public class CallStratagemsScreen extends AbstractContainerScreen<CallStratagems
 	private final Player entity;
 	Button button_eagle_air_strike;
 	Button button_eagle_500kg_strike;
+	Button button_eagle_500kg_strike1;
 
 	public CallStratagemsScreen(CallStratagemsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -92,5 +93,13 @@ public class CallStratagemsScreen extends AbstractContainerScreen<CallStratagems
 		}).bounds(this.leftPos + 5, this.topPos + 41, 119, 20).build();
 		guistate.put("button:button_eagle_500kg_strike", button_eagle_500kg_strike);
 		this.addRenderableWidget(button_eagle_500kg_strike);
+		button_eagle_500kg_strike1 = Button.builder(Component.translatable("gui.helldivers.call_stratagems.button_eagle_500kg_strike1"), e -> {
+			if (true) {
+				HelldiversMod.PACKET_HANDLER.sendToServer(new CallStratagemsButtonMessage(2, x, y, z));
+				CallStratagemsButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}).bounds(this.leftPos + 5, this.topPos + 64, 119, 20).build();
+		guistate.put("button:button_eagle_500kg_strike1", button_eagle_500kg_strike1);
+		this.addRenderableWidget(button_eagle_500kg_strike1);
 	}
 }

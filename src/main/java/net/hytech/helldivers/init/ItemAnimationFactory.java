@@ -12,6 +12,7 @@ import net.minecraft.client.Minecraft;
 
 import net.hytech.helldivers.item.SG225BreakerItem;
 import net.hytech.helldivers.item.M105StalwartItem;
+import net.hytech.helldivers.item.HellpodItemItem;
 import net.hytech.helldivers.item.FragGrenadeItem;
 import net.hytech.helldivers.item.EmptyStratagemOrbItem;
 import net.hytech.helldivers.item.BulletItemItem;
@@ -231,6 +232,26 @@ public class ItemAnimationFactory {
 					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
 						((AirStrikeBombItemItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HellpodItemItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HellpodItemItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HellpodItemItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HellpodItemItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
 						disableUseAnim("left");
 					}
 				}

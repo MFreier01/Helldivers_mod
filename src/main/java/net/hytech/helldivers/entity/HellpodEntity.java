@@ -10,6 +10,7 @@ import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animatable.GeoEntity;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
@@ -32,6 +33,8 @@ import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -39,30 +42,30 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.hytech.helldivers.procedures.EagleStrikeBombEntityOnInitialEntitySpawnProcedure;
+import net.hytech.helldivers.procedures.HellpodOnInitialEntitySpawnProcedure;
 import net.hytech.helldivers.init.HelldiversModEntities;
 
 import javax.annotation.Nullable;
 
-public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(EagleStrikeBombEntityEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(EagleStrikeBombEntityEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(EagleStrikeBombEntityEntity.class, EntityDataSerializers.STRING);
+public class HellpodEntity extends Monster implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(HellpodEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(HellpodEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(HellpodEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public EagleStrikeBombEntityEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(HelldiversModEntities.EAGLE_STRIKE_BOMB_ENTITY.get(), world);
+	public HellpodEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(HelldiversModEntities.HELLPOD.get(), world);
 	}
 
-	public EagleStrikeBombEntityEntity(EntityType<EagleStrikeBombEntityEntity> type, Level world) {
+	public HellpodEntity(EntityType<HellpodEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(true);
-		setMaxUpStep(0.3f);
+		setMaxUpStep(0f);
 		setPersistenceRequired();
 	}
 
@@ -71,7 +74,7 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "air_strke_bomb");
+		this.entityData.define(TEXTURE, "hellpod");
 	}
 
 	public void setTexture(String texture) {
@@ -89,12 +92,17 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 
 	@Override
 	public MobType getMobType() {
-		return MobType.ARTHROPOD;
+		return MobType.UNDEFINED;
 	}
 
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
+	}
+
+	@Override
+	public SoundEvent getHurtSound(DamageSource ds) {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cat.purr"));
 	}
 
 	@Override
@@ -115,6 +123,8 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 			return false;
 		if (source.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
+		if (source.is(DamageTypes.EXPLOSION))
+			return false;
 		if (source.is(DamageTypes.TRIDENT))
 			return false;
 		if (source.is(DamageTypes.FALLING_ANVIL))
@@ -131,7 +141,7 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		EagleStrikeBombEntityOnInitialEntitySpawnProcedure.execute(world, this);
+		HellpodOnInitialEntitySpawnProcedure.execute(this);
 		return retval;
 	}
 
@@ -164,17 +174,17 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.01);
-		builder = builder.add(Attributes.MAX_HEALTH, 1);
-		builder = builder.add(Attributes.ARMOR, 2.5);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
+		builder = builder.add(Attributes.MAX_HEALTH, 500);
+		builder = builder.add(Attributes.ARMOR, 0);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
 	}
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.eagle_strike.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.hellpod.idle"));
 		}
 		return PlayState.STOP;
 	}
@@ -196,7 +206,7 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(EagleStrikeBombEntityEntity.RemovalReason.KILLED);
+			this.remove(HellpodEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}

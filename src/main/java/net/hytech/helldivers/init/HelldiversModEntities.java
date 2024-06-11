@@ -16,11 +16,14 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.hytech.helldivers.entity.ThrownSupportOrbEntity;
 import net.hytech.helldivers.entity.ThrownAttackOrbEntity;
 import net.hytech.helldivers.entity.TerminidbiletitanEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
 import net.hytech.helldivers.entity.Projectile500KGEntity;
+import net.hytech.helldivers.entity.HellpodProjectileEntity;
+import net.hytech.helldivers.entity.HellpodEntity;
 import net.hytech.helldivers.entity.FragGrenadeProjectileEntity;
 import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
 import net.hytech.helldivers.entity.BasicBulletEntity;
@@ -52,11 +55,14 @@ public class HelldiversModEntities {
 			EntityType.Builder.<AirStrikeBombEntity>of(AirStrikeBombEntity::new, MobCategory.MISC).setCustomClientFactory(AirStrikeBombEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<Projectile500KGEntity>> PROJECTILE_500_KG = register("projectile_500_kg", EntityType.Builder.<Projectile500KGEntity>of(Projectile500KGEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(Projectile500KGEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<EagleStrikeBombEntityEntity>> EAGLE_STRIKE_BOMB_ENTITY = register("eagle_strike_bomb_entity",
-			EntityType.Builder.<EagleStrikeBombEntityEntity>of(EagleStrikeBombEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(EagleStrikeBombEntityEntity::new)
-
-					.sized(1f, 0.5f));
+	public static final RegistryObject<EntityType<EagleStrikeBombEntityEntity>> EAGLE_STRIKE_BOMB_ENTITY = register("eagle_strike_bomb_entity", EntityType.Builder.<EagleStrikeBombEntityEntity>of(EagleStrikeBombEntityEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EagleStrikeBombEntityEntity::new).fireImmune().sized(1f, 0.5f));
+	public static final RegistryObject<EntityType<HellpodEntity>> HELLPOD = register("hellpod",
+			EntityType.Builder.<HellpodEntity>of(HellpodEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HellpodEntity::new).fireImmune().sized(1f, 0.2f));
+	public static final RegistryObject<EntityType<HellpodProjectileEntity>> HELLPOD_PROJECTILE = register("hellpod_projectile", EntityType.Builder.<HellpodProjectileEntity>of(HellpodProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(HellpodProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ThrownSupportOrbEntity>> THROWN_SUPPORT_ORB = register("thrown_support_orb", EntityType.Builder.<ThrownSupportOrbEntity>of(ThrownSupportOrbEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(ThrownSupportOrbEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -69,6 +75,7 @@ public class HelldiversModEntities {
 			StaticFragGrenadeEntity.init();
 			TerminidbiletitanEntity.init();
 			EagleStrikeBombEntityEntity.init();
+			HellpodEntity.init();
 		});
 	}
 
@@ -78,5 +85,6 @@ public class HelldiversModEntities {
 		event.put(STATIC_FRAG_GRENADE.get(), StaticFragGrenadeEntity.createAttributes().build());
 		event.put(TERMINIDBILETITAN.get(), TerminidbiletitanEntity.createAttributes().build());
 		event.put(EAGLE_STRIKE_BOMB_ENTITY.get(), EagleStrikeBombEntityEntity.createAttributes().build());
+		event.put(HELLPOD.get(), HellpodEntity.createAttributes().build());
 	}
 }

@@ -2,9 +2,9 @@
   "_fv": 60,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Eagle Strike Bomb",
+    "mobName": "Hellpod",
     "mobLabel": "",
-    "mobModelTexture": "air_strke_bomb.png",
+    "mobModelTexture": "hellpod.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -14,17 +14,17 @@
     },
     "entityDataEntries": [],
     "modelWidth": 1.0,
-    "modelHeight": 0.5,
+    "modelHeight": 0.2,
     "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
-    "stepHeight": 0.30000000000000004,
+    "stepHeight": 0.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
-      "value": -26368,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16777216,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -52,15 +52,15 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "ARTHROPOD",
-    "attackStrength": 3,
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 0,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.01,
-    "armorBaseValue": 2.5,
+    "movementSpeed": 0.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 1,
+    "health": 500,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -81,7 +81,7 @@
     "immuneToLightning": true,
     "immuneToPotions": true,
     "immuneToPlayer": true,
-    "immuneToExplosion": false,
+    "immuneToExplosion": true,
     "immuneToTrident": true,
     "immuneToAnvil": true,
     "immuneToWither": true,
@@ -93,7 +93,7 @@
       "value": ""
     },
     "hurtSound": {
-      "value": ""
+      "value": "entity.cat.purr"
     },
     "deathSound": {
       "value": ""
@@ -102,23 +102,23 @@
       "value": ""
     },
     "onInitialSpawn": {
-      "name": "EagleStrikeBombEntityOnInitialEntitySpawn"
+      "name": "HellpodOnInitialEntitySpawn"
     },
     "hasAI": false,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></xml>",
-    "model": "air_strike_bomb.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
+    "model": "hellpod.geo.json",
     "groupName": "",
-    "animation1": "animation.eagle_strike.idle",
-    "animation2": "animation.scavenger.walk",
+    "animation1": "animation.hellpod.idle",
+    "animation2": "",
     "animation3": "",
     "animation4": "",
-    "animation5": "animation.scavenger.walk",
+    "animation5": "",
     "animation6": "",
-    "animation7": "animation.scavenger.walk",
+    "animation7": "",
     "animation8": "",
     "animation9": "",
-    "animation10": "animation.scavenger.walk",
+    "animation10": "",
     "enable2": false,
     "enable3": false,
     "enable4": false,
@@ -130,7 +130,7 @@
     "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": false,
+    "disableDeathRotation": true,
     "headMovement": false,
     "eyeHeight": false,
     "breedTriggerItems": [],
@@ -144,10 +144,10 @@
     "height": 1.0,
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
-    "spawningProbability": 100,
+    "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 7,
+    "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

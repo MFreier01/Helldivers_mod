@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/hellpod.item",
+  "textures": {
+    "layer0": "helldivers:item/hellpod"
+  }
+}

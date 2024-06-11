@@ -12,27 +12,21 @@ import software.bernie.geckolib.animatable.GeoItem;
 
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
-import net.hytech.helldivers.procedures.ArmedSupportStratagemOrbRightclickedProcedure;
-import net.hytech.helldivers.item.renderer.ArmedSupportStratagemOrbItemRenderer;
+import net.hytech.helldivers.item.renderer.HellpodItemItemRenderer;
 
 import java.util.function.Consumer;
 
-public class ArmedSupportStratagemOrbItem extends Item implements GeoItem {
+public class HellpodItemItem extends Item implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String animationprocedure = "empty";
 	public static ItemDisplayContext transformType;
 
-	public ArmedSupportStratagemOrbItem() {
+	public HellpodItemItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 
@@ -40,7 +34,7 @@ public class ArmedSupportStratagemOrbItem extends Item implements GeoItem {
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
 		super.initializeClient(consumer);
 		consumer.accept(new IClientItemExtensions() {
-			private final BlockEntityWithoutLevelRenderer renderer = new ArmedSupportStratagemOrbItemRenderer();
+			private final BlockEntityWithoutLevelRenderer renderer = new HellpodItemItemRenderer();
 
 			@Override
 			public BlockEntityWithoutLevelRenderer getCustomRenderer() {
@@ -56,7 +50,7 @@ public class ArmedSupportStratagemOrbItem extends Item implements GeoItem {
 	private PlayState idlePredicate(AnimationState event) {
 		if (this.transformType != null ? true : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.empty_stratagem_orb.idle"));
+				event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.hellpod.idle"));
 				return PlayState.CONTINUE;
 			}
 		}
@@ -89,17 +83,5 @@ public class ArmedSupportStratagemOrbItem extends Item implements GeoItem {
 	@Override
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		ArmedSupportStratagemOrbRightclickedProcedure.execute(entity);
-		return ar;
 	}
 }

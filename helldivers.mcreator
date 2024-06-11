@@ -9,13 +9,13 @@
       "registry_name": "basicarmor",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/client/renderer/BasicarmorArmorRenderer.java",
-          "src/main/resources/assets/helldivers/models/item/basicarmor_chestplate.json",
-          "src/main/resources/assets/helldivers/models/item/basicarmor_leggings.json",
-          "src/main/resources/assets/helldivers/models/item/basicarmor_helmet.json",
+          "src/main/java/net/hytech/helldivers/item/model/BasicarmorModel.java",
           "src/main/resources/assets/helldivers/models/item/basicarmor_boots.json",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_chestplate.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/BasicarmorArmorRenderer.java",
           "src/main/java/net/hytech/helldivers/item/BasicarmorItem.java",
-          "src/main/java/net/hytech/helldivers/item/model/BasicarmorModel.java"
+          "src/main/resources/assets/helldivers/models/item/basicarmor_helmet.json",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_leggings.json"
         ]
       },
       "path": "~/Armor"
@@ -47,9 +47,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/helldivers/models/item/sg_225_breaker.json",
+          "src/main/java/net/hytech/helldivers/item/model/SG225BreakerItemModel.java",
           "src/main/java/net/hytech/helldivers/item/renderer/SG225BreakerItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/SG225BreakerItem.java",
-          "src/main/java/net/hytech/helldivers/item/model/SG225BreakerItemModel.java"
+          "src/main/java/net/hytech/helldivers/item/SG225BreakerItem.java"
         ]
       },
       "path": "~/Guns"
@@ -64,8 +64,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/helldivers/models/item/m_105_stalwart.json",
-          "src/main/java/net/hytech/helldivers/item/renderer/M105StalwartItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/model/M105StalwartItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/M105StalwartItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/M105StalwartItem.java"
         ]
       },
@@ -94,9 +94,9 @@
       "registry_name": "bullet_item",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/bullet_item.json",
           "src/main/java/net/hytech/helldivers/item/renderer/BulletItemItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/BulletItemItem.java",
+          "src/main/resources/assets/helldivers/models/item/bullet_item.json",
           "src/main/java/net/hytech/helldivers/item/model/BulletItemItemModel.java"
         ]
       },
@@ -301,10 +301,10 @@
       "registry_name": "apw_1_anti_material_rifle",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/renderer/APW1AntiMaterialRifleItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/model/APW1AntiMaterialRifleItemModel.java",
           "src/main/resources/assets/helldivers/models/item/apw_1_anti_material_rifle.json",
-          "src/main/java/net/hytech/helldivers/item/APW1AntiMaterialRifleItem.java"
+          "src/main/java/net/hytech/helldivers/item/model/APW1AntiMaterialRifleItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/APW1AntiMaterialRifleItem.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/APW1AntiMaterialRifleItemRenderer.java"
         ]
       },
       "path": "~/Guns"
@@ -459,11 +459,11 @@
       "registry_name": "terminidhive",
       "metadata": {
         "files": [
-          "src/main/resources/data/helldivers/loot_tables/blocks/terminidhive.json",
-          "src/main/resources/assets/helldivers/models/block/terminidhive.json",
           "src/main/resources/assets/helldivers/models/item/terminidhive.json",
-          "src/main/resources/assets/helldivers/blockstates/terminidhive.json",
-          "src/main/java/net/hytech/helldivers/block/TerminidhiveBlock.java"
+          "src/main/java/net/hytech/helldivers/block/TerminidhiveBlock.java",
+          "src/main/resources/assets/helldivers/models/block/terminidhive.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminidhive.json",
+          "src/main/resources/assets/helldivers/blockstates/terminidhive.json"
         ]
       },
       "path": "~/Blocks"
@@ -477,11 +477,11 @@
       "registry_name": "terminidwall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/blockstates/terminidwall.json",
-          "src/main/java/net/hytech/helldivers/block/TerminidwallBlock.java",
-          "src/main/resources/assets/helldivers/models/block/terminidwall.json",
           "src/main/resources/data/helldivers/loot_tables/blocks/terminidwall.json",
-          "src/main/resources/assets/helldivers/models/item/terminidwall.json"
+          "src/main/java/net/hytech/helldivers/block/TerminidwallBlock.java",
+          "src/main/resources/assets/helldivers/models/item/terminidwall.json",
+          "src/main/resources/assets/helldivers/blockstates/terminidwall.json",
+          "src/main/resources/assets/helldivers/models/block/terminidwall.json"
         ]
       },
       "path": "~/Blocks"
@@ -495,11 +495,11 @@
       "registry_name": "terminidstone",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/block/TerminidstoneBlock.java",
-          "src/main/resources/assets/helldivers/models/block/terminidstone.json",
+          "src/main/resources/assets/helldivers/models/item/terminidstone.json",
           "src/main/resources/data/helldivers/loot_tables/blocks/terminidstone.json",
+          "src/main/resources/assets/helldivers/models/block/terminidstone.json",
           "src/main/resources/assets/helldivers/blockstates/terminidstone.json",
-          "src/main/resources/assets/helldivers/models/item/terminidstone.json"
+          "src/main/java/net/hytech/helldivers/block/TerminidstoneBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -513,10 +513,10 @@
       "registry_name": "terminidreinforcedwall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/terminidreinforcedwall.json",
-          "src/main/resources/data/helldivers/loot_tables/blocks/terminidreinforcedwall.json",
-          "src/main/java/net/hytech/helldivers/block/TerminidreinforcedwallBlock.java",
           "src/main/resources/assets/helldivers/blockstates/terminidreinforcedwall.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminidreinforcedwall.json",
+          "src/main/resources/assets/helldivers/models/item/terminidreinforcedwall.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidreinforcedwallBlock.java",
           "src/main/resources/assets/helldivers/models/block/terminidreinforcedwall.json"
         ]
       },
@@ -680,10 +680,10 @@
       "registry_name": "static_frag_grenade",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/entity/model/StaticFragGrenadeModel.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/static_frag_grenade_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/StaticFragGrenadeRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/StaticFragGrenadeEntity.java",
-          "src/main/java/net/hytech/helldivers/client/renderer/StaticFragGrenadeRenderer.java"
+          "src/main/java/net/hytech/helldivers/entity/model/StaticFragGrenadeModel.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/static_frag_grenade_biome_modifier.json"
         ]
       },
       "path": "~/Other_Items"
@@ -830,7 +830,7 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "call_eagle_air_strike",
+      "registry_name": "call_down_stratagem",
       "metadata": {
         "files": [
           "src/main/java/net/hytech/helldivers/procedures/CallEagleAirStrikeProcedure.java"
@@ -1023,38 +1023,6 @@
       "path": "~/Stratagems/Stratagem_Remote"
     },
     {
-      "name": "Call500KG",
-      "type": "procedure",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "call_500_kg",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/procedures/Call500KGProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Stratagems/Stratagems/500KG"
-    },
-    {
       "name": "Projectile500KGProjectileHitsBlock",
       "type": "procedure",
       "sortid": 54,
@@ -1111,7 +1079,6 @@
         "files": [
           "src/main/java/net/hytech/helldivers/entity/EagleStrikeBombEntityEntity.java",
           "src/main/java/net/hytech/helldivers/entity/model/EagleStrikeBombEntityModel.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/eagle_strike_bomb_entity_biome_modifier.json",
           "src/main/java/net/hytech/helldivers/client/renderer/EagleStrikeBombEntityRenderer.java"
         ]
       },
@@ -1180,6 +1147,210 @@
         ]
       },
       "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "Hellpod",
+      "type": "animatedentity",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellpod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/model/HellpodModel.java",
+          "src/main/java/net/hytech/helldivers/entity/HellpodEntity.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/HellpodRenderer.java"
+        ]
+      },
+      "path": "~/Hellpod"
+    },
+    {
+      "name": "HellpodItem",
+      "type": "animateditem",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellpod_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/renderer/HellpodItemItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/model/HellpodItemItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/HellpodItemItem.java",
+          "src/main/resources/assets/helldivers/models/item/hellpod_item.json"
+        ]
+      },
+      "path": "~/Hellpod"
+    },
+    {
+      "name": "HellpodProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellpod_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/HellpodProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Hellpod"
+    },
+    {
+      "name": "HellpodProjectile",
+      "type": "projectile",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellpod_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/HellpodProjectileEntity.java"
+        ]
+      },
+      "path": "~/Hellpod"
+    },
+    {
+      "name": "HellpodOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellpod_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/HellpodOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Hellpod"
+    },
+    {
+      "name": "BlueBeam",
+      "type": "particle",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/particle/BlueBeamParticle.java",
+          "src/main/resources/assets/helldivers/particles/blue_beam.json"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "ThrownSupportOrb",
+      "type": "projectile",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thrown_support_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/ThrownSupportOrbEntity.java"
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "ArmedSupportStratagemOrbRightclicked",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armed_support_stratagem_orb_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/ArmedSupportStratagemOrbRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems"
+    },
+    {
+      "name": "AddReinforcements",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_reinforcements",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddReinforcementsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "CalldownSUPPORTStratagem",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calldown_support_stratagem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CalldownSUPPORTStratagemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems"
     }
   ],
   "variable_elements": [],
@@ -1312,9 +1483,12 @@
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.stratagem_remote": "Stratagem Remote",
       "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
+      "gui.helldivers.call_stratagems.button_eagle_500kg_strike1": "Call Reinforcements",
+      "entity.helldivers.hellpod": "Hellpod",
       "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
       "subtitles.ar23_shoot": "Gun shoots",
+      "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
       "key.helldivers.open_stratagem_menu": "Open Stratagem Menu",
       "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
       "key.helldivers.reload_key": "Reload Key",
@@ -1326,6 +1500,7 @@
       "subtitles.sg225_shoot": "Gun shoots",
       "gui.helldivers.call_stratagems.Eagle_500KG_Bomb": "Eagle 500 KG Bomb",
       "gui.helldivers.call_stratagems.button_eagle_air_strike": "Eagle Air Strike",
+      "item.helldivers.hellpod_item": "Hellpod Item",
       "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.e_710": "Raw E-710",
       "item.helldivers.bullet_item": "Bullet Item",
@@ -1411,6 +1586,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Hellpod",
+        "children": []
       }
     ]
   },

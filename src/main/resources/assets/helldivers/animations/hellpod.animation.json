@@ -1,0 +1,48 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hellpod.deploywings": {
+			"animation_length": 0.5,
+			"bones": {
+				"wings": {
+					"scale": {
+						"0.0": [0, 1, -0.2],
+						"0.3333": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.hellpod.atfloor": {
+			"loop": true,
+			"bones": {
+				"back": {
+					"scale": [1, 0.001, 1]
+				}
+			}
+		},
+		"animation.hellpod.hits floor": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"hellpod": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.1667": [2.5, 0, 0],
+						"0.2083": [0, 0, 0]
+					},
+					"position": [0, -24, 0]
+				},
+				"back": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.1667": [1, 0, 1]
+					}
+				}
+			}
+		},
+		"animation.hellpod.idle": {
+			"loop": true
+		}
+	}
+}

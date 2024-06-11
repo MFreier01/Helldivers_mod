@@ -21,27 +21,27 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.hytech.helldivers.procedures.CallEagleAirStrikeProcedure;
+import net.hytech.helldivers.procedures.CalldownSUPPORTStratagemProcedure;
 import net.hytech.helldivers.init.HelldiversModItems;
 import net.hytech.helldivers.init.HelldiversModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class ThrownAttackOrbEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(HelldiversModItems.ARMED_ATTACK_STRATAGEM_ORB.get());
+public class ThrownSupportOrbEntity extends AbstractArrow implements ItemSupplier {
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(HelldiversModItems.ARMED_SUPPORT_STRATAGEM_ORB.get());
 
-	public ThrownAttackOrbEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(HelldiversModEntities.THROWN_ATTACK_ORB.get(), world);
+	public ThrownSupportOrbEntity(PlayMessages.SpawnEntity packet, Level world) {
+		super(HelldiversModEntities.THROWN_SUPPORT_ORB.get(), world);
 	}
 
-	public ThrownAttackOrbEntity(EntityType<? extends ThrownAttackOrbEntity> type, Level world) {
+	public ThrownSupportOrbEntity(EntityType<? extends ThrownSupportOrbEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public ThrownAttackOrbEntity(EntityType<? extends ThrownAttackOrbEntity> type, double x, double y, double z, Level world) {
+	public ThrownSupportOrbEntity(EntityType<? extends ThrownSupportOrbEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public ThrownAttackOrbEntity(EntityType<? extends ThrownAttackOrbEntity> type, LivingEntity entity, Level world) {
+	public ThrownSupportOrbEntity(EntityType<? extends ThrownSupportOrbEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -70,13 +70,13 @@ public class ThrownAttackOrbEntity extends AbstractArrow implements ItemSupplier
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		CallEagleAirStrikeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
+		CalldownSUPPORTStratagemProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		CallEagleAirStrikeProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
+		CalldownSUPPORTStratagemProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
 	}
 
 	@Override
@@ -86,12 +86,12 @@ public class ThrownAttackOrbEntity extends AbstractArrow implements ItemSupplier
 			this.discard();
 	}
 
-	public static ThrownAttackOrbEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 0.5f, 1, 5);
+	public static ThrownSupportOrbEntity shoot(Level world, LivingEntity entity, RandomSource source) {
+		return shoot(world, entity, source, 1f, 1, 5);
 	}
 
-	public static ThrownAttackOrbEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		ThrownAttackOrbEntity entityarrow = new ThrownAttackOrbEntity(HelldiversModEntities.THROWN_ATTACK_ORB.get(), entity, world);
+	public static ThrownSupportOrbEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
+		ThrownSupportOrbEntity entityarrow = new ThrownSupportOrbEntity(HelldiversModEntities.THROWN_SUPPORT_ORB.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
@@ -102,12 +102,12 @@ public class ThrownAttackOrbEntity extends AbstractArrow implements ItemSupplier
 		return entityarrow;
 	}
 
-	public static ThrownAttackOrbEntity shoot(LivingEntity entity, LivingEntity target) {
-		ThrownAttackOrbEntity entityarrow = new ThrownAttackOrbEntity(HelldiversModEntities.THROWN_ATTACK_ORB.get(), entity, entity.level());
+	public static ThrownSupportOrbEntity shoot(LivingEntity entity, LivingEntity target) {
+		ThrownSupportOrbEntity entityarrow = new ThrownSupportOrbEntity(HelldiversModEntities.THROWN_SUPPORT_ORB.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.5f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(1);
 		entityarrow.setKnockback(5);

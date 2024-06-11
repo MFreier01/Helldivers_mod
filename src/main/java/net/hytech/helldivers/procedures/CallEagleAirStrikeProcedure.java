@@ -19,7 +19,7 @@ public class CallEagleAirStrikeProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (HelldiversModParticleTypes.RED_BEAM.get()), x, y, z, 3000, 0.1, 200, 0.1, 0);
+			_level.sendParticles((SimpleParticleType) (HelldiversModParticleTypes.RED_BEAM.get()), x, y, z, 6000, 0.1, 200, 0.1, 0);
 		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleAirStrike")) {
 			HelldiversMod.queueServerWork(70, () -> {
 				if (world instanceof ServerLevel projectileLevel) {

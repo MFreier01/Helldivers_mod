@@ -10,11 +10,13 @@ import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.hytech.helldivers.client.particle.RedBeamParticle;
+import net.hytech.helldivers.client.particle.BlueBeamParticle;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HelldiversModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(HelldiversModParticleTypes.RED_BEAM.get(), RedBeamParticle::provider);
+		event.registerSpriteSet(HelldiversModParticleTypes.BLUE_BEAM.get(), BlueBeamParticle::provider);
 	}
 }

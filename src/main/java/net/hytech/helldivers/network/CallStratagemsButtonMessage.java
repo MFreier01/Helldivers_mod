@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.hytech.helldivers.world.inventory.CallStratagemsMenu;
+import net.hytech.helldivers.procedures.AddReinforcementsProcedure;
 import net.hytech.helldivers.procedures.AddEagleAirStrikeProcedure;
 import net.hytech.helldivers.procedures.Add500KGProcedure;
 import net.hytech.helldivers.HelldiversMod;
@@ -70,6 +71,10 @@ public class CallStratagemsButtonMessage {
 		if (buttonID == 1) {
 
 			Add500KGProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			AddReinforcementsProcedure.execute(entity);
 		}
 	}
 

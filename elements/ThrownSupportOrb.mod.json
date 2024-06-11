@@ -3,23 +3,23 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:ArmedAttackStratagemOrb"
+      "value": "CUSTOM:ArmedSupportStratagemOrb"
     },
     "showParticles": false,
     "actionSound": {
       "value": "entity.arrow.shoot"
     },
     "igniteFire": false,
-    "power": 0.5,
+    "power": 1.0,
     "damage": 1.0,
     "knockback": 5,
     "entityModel": "Default",
     "customModelTexture": "",
     "onHitsBlock": {
-      "name": "CallEagleAirStrike"
+      "name": "CalldownSUPPORTStratagem"
     },
     "onHitsEntity": {
-      "name": "CallEagleAirStrike"
+      "name": "CalldownSUPPORTStratagem"
     }
   }
 }

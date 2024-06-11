@@ -17,6 +17,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.hytech.helldivers.item.StratagemRemoteItem;
 import net.hytech.helldivers.item.SG225BreakerItem;
 import net.hytech.helldivers.item.M105StalwartItem;
+import net.hytech.helldivers.item.HellpodItemItem;
 import net.hytech.helldivers.item.HeavyFS23Item;
 import net.hytech.helldivers.item.FragGrenadeItem;
 import net.hytech.helldivers.item.EmptyStratagemOrbItem;
@@ -63,6 +64,7 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> ARMED_ATTACK_STRATAGEM_ORB = REGISTRY.register("armed_attack_stratagem_orb", () -> new ArmedAttackStratagemOrbItem());
 	public static final RegistryObject<Item> ARMED_SUPPORT_STRATAGEM_ORB = REGISTRY.register("armed_support_stratagem_orb", () -> new ArmedSupportStratagemOrbItem());
 	public static final RegistryObject<Item> AIR_STRIKE_BOMB_ITEM = REGISTRY.register("air_strike_bomb_item", () -> new AirStrikeBombItemItem());
+	public static final RegistryObject<Item> HELLPOD_ITEM = REGISTRY.register("hellpod_item", () -> new HellpodItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
