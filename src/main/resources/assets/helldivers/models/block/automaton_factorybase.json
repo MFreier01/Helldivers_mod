@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "helldivers:block/image2",
+    "up": "helldivers:block/image",
+    "north": "helldivers:block/automoton_factory_base_block",
+    "east": "helldivers:block/automoton_factory_base_block",
+    "south": "helldivers:block/automoton_factory_base_block",
+    "west": "helldivers:block/automoton_factory_base_block",
+    "particle": "helldivers:block/image2"
+  },
+  "render_type": "solid"
+}

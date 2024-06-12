@@ -48,6 +48,8 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.EMPTY_STRATAGEM_ORB.get());
 				tabData.accept(HelldiversModItems.ARMED_ATTACK_STRATAGEM_ORB.get());
 				tabData.accept(HelldiversModItems.ARMED_SUPPORT_STRATAGEM_ORB.get());
+				tabData.accept(HelldiversModItems.STIM.get());
+				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORYBASE.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

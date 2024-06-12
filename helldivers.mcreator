@@ -1351,6 +1351,59 @@
         ]
       },
       "path": "~/Stratagems/Stratagems"
+    },
+    {
+      "name": "Stim",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stim",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/StimItem.java",
+          "src/main/resources/assets/helldivers/models/item/stim.json"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "Stim_Heal",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stim_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Stim_HealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "AutomatonFactorybase",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automaton_factorybase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/blockstates/automaton_factorybase.json",
+          "src/main/resources/assets/helldivers/models/item/automaton_factorybase.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonFactorybaseBlock.java",
+          "src/main/resources/assets/helldivers/models/block/automaton_factorybase.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factorybase.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -1442,11 +1495,13 @@
       "~CUSTOM:Terminidhive"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:AutomatonFactorybase",
       "~CUSTOM:Automatoncontactmine",
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:AutomatonFactorybase",
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
     ]
@@ -1478,6 +1533,7 @@
       "item.helldivers.frag_grenade": "Frag Grenade",
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
       "entity.helldivers.eagle_strike_bomb_entity": "Eagle Strike Bomb",
+      "item.helldivers.stim": "Stim",
       "item_group.helldivers.helldivers": "Helldivers",
       "block.helldivers.terminidhive": "Terminid Hive",
       "block.helldivers.terminidstone": "Terminid Stone",
@@ -1486,6 +1542,7 @@
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike1": "Call Reinforcements",
       "entity.helldivers.hellpod": "Hellpod",
       "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
+      "block.helldivers.automaton_factorybase": "Factory Block",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
       "subtitles.ar23_shoot": "Gun shoots",
       "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",

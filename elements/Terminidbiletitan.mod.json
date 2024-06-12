@@ -56,10 +56,10 @@
     "attackStrength": 20,
     "attackKnockback": 0.0,
     "knockbackResistance": 2.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.4,
     "armorBaseValue": 4.0,
     "trackingRange": 64,
-    "followRange": 16,
+    "followRange": 30,
     "health": 200,
     "xpAmount": 0,
     "waterMob": false,
@@ -103,32 +103,32 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityVillager</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityIronGolem</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "bile_titan.geo.json",
-    "groupName": "",
+    "groupName": "head",
     "animation1": "animation.bile_titan.idle",
-    "animation2": "",
+    "animation2": "animation.bile_titan.walk",
     "animation3": "",
-    "animation4": "",
-    "animation5": "",
+    "animation4": "animation.bile_titan.stomp",
+    "animation5": "animation.bile_titan.walk",
     "animation6": "",
-    "animation7": "",
+    "animation7": "animation.bile_titan.walk",
     "animation8": "",
-    "animation9": "",
-    "animation10": "",
-    "enable2": false,
+    "animation9": "animation.bile_titan.walk",
+    "animation10": "animation.bile_titan.walk",
+    "enable2": true,
     "enable3": false,
-    "enable4": false,
+    "enable4": true,
     "enable5": false,
     "enable6": false,
     "enable7": false,
     "enable8": false,
-    "enable9": false,
+    "enable9": true,
     "enable10": false,
     "breedable": false,
     "tameable": false,
     "disableDeathRotation": false,
-    "headMovement": false,
+    "headMovement": true,
     "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,
@@ -140,12 +140,28 @@
     "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 10,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
+    "restrictionBiomes": [
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "crimson_forest"
+      },
+      {
+        "value": "badlands"
+      },
+      {
+        "value": "mutated_mesa"
+      },
+      {
+        "value": "wooded_badlands_plateau"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

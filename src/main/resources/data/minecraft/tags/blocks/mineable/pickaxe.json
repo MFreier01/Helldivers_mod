@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "helldivers:automaton_factorybase",
     "helldivers:automatoncontactmine",
     "helldivers:terminidstone",
     "helldivers:terminidwall"

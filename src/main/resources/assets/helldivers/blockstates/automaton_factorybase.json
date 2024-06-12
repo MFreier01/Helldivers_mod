@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "helldivers:block/automaton_factorybase"
+    },
+    "facing=east": {
+      "model": "helldivers:block/automaton_factorybase",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "helldivers:block/automaton_factorybase",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "helldivers:block/automaton_factorybase",
+      "y": 270
+    }
+  }
+}
