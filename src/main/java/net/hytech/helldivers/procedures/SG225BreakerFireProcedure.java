@@ -38,7 +38,7 @@ public class SG225BreakerFireProcedure {
 								entityToSpawn.setSilent(true);
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 5, 1);
+						}.getArrow(projectileLevel, entity, 2, 1);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 10, 5);
 						projectileLevel.addFreshEntity(_entityToSpawn);
@@ -57,7 +57,7 @@ public class SG225BreakerFireProcedure {
 								entityToSpawn.setSilent(true);
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 5, 1);
+						}.getArrow(projectileLevel, entity, 2, 1);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 10, 5);
 						projectileLevel.addFreshEntity(_entityToSpawn);
@@ -76,7 +76,7 @@ public class SG225BreakerFireProcedure {
 								entityToSpawn.setSilent(true);
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 5, 1);
+						}.getArrow(projectileLevel, entity, 2, 1);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 10, 5);
 						projectileLevel.addFreshEntity(_entityToSpawn);
@@ -95,7 +95,7 @@ public class SG225BreakerFireProcedure {
 								entityToSpawn.setSilent(true);
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 5, 1);
+						}.getArrow(projectileLevel, entity, 2, 1);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 10, 5);
 						projectileLevel.addFreshEntity(_entityToSpawn);
@@ -114,7 +114,7 @@ public class SG225BreakerFireProcedure {
 								entityToSpawn.setSilent(true);
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, 5, 1);
+						}.getArrow(projectileLevel, entity, 2, 1);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 10, 5);
 						projectileLevel.addFreshEntity(_entityToSpawn);

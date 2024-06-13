@@ -68,6 +68,7 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> HELLPOD_ITEM = REGISTRY.register("hellpod_item", () -> new HellpodItemItem());
 	public static final RegistryObject<Item> STIM = REGISTRY.register("stim", () -> new StimItem());
 	public static final RegistryObject<Item> AUTOMATON_FACTORYBASE = block(HelldiversModBlocks.AUTOMATON_FACTORYBASE);
+	public static final RegistryObject<Item> TERMINID_SHRIEKER_SPAWN_EGG = REGISTRY.register("terminid_shrieker_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.TERMINID_SHRIEKER, -3368704, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -14,7 +14,7 @@
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 20,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -40,14 +40,14 @@
     "projectile": {
       "value": "CUSTOM:BasicBullet"
     },
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 10,
+    "saturation": 10.0,
     "eatResultItem": {
-      "value": ""
+      "value": "CUSTOM:Stim"
     },
-    "isMeat": false,
-    "isAlwaysEdible": false,
+    "isMeat": true,
+    "isAlwaysEdible": true,
     "animation": "none"
   }
 }

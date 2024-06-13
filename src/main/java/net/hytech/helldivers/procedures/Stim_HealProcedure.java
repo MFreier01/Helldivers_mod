@@ -16,7 +16,7 @@ public class Stim_HealProcedure {
 		if (entity instanceof Player _player)
 			_player.getFoodData().setSaturation(20);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 40, 4, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 50, 5, false, false));
 		if (entity instanceof Player _player) {
 			ItemStack _stktoremove = new ItemStack(HelldiversModItems.STIM.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

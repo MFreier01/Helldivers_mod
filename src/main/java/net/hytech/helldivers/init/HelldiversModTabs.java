@@ -50,6 +50,7 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.ARMED_SUPPORT_STRATAGEM_ORB.get());
 				tabData.accept(HelldiversModItems.STIM.get());
 				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORYBASE.get().asItem());
+				tabData.accept(HelldiversModItems.TERMINID_SHRIEKER_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

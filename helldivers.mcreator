@@ -1404,6 +1404,24 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "TerminidShrieker",
+      "type": "animatedentity",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminid_shrieker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/terminid_shrieker_spawn_egg.json",
+          "src/main/java/net/hytech/helldivers/entity/TerminidShriekerEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidShriekerModel.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidShriekerRenderer.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_shrieker_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entity/Terminid"
     }
   ],
   "variable_elements": [],
@@ -1510,10 +1528,11 @@
     "en_us": {
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "subtitles.shotgun_shot": "Gun shot",
-      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "subtitles.amr_shot": "Gun shot",
-      "subtitles.basic_shot": "Gun shot",
+      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
+      "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
       "block.helldivers.terminidwall": "Terminid Wall",
+      "subtitles.basic_shot": "Gun shot",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
@@ -1523,6 +1542,7 @@
       "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
       "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
       "block.helldivers.terminiddustspore": "Dust Spore",
+      "entity.helldivers.terminid_shrieker": "Shrieker",
       "subtitles.sg225_reload": "Gun reload",
       "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_dry_fire": "Gun clicks",

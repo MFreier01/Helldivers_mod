@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.hytech.helldivers.client.renderer.TerminidbiletitanRenderer;
+import net.hytech.helldivers.client.renderer.TerminidShriekerRenderer;
 import net.hytech.helldivers.client.renderer.TerminidScavengerRenderer;
 import net.hytech.helldivers.client.renderer.StaticFragGrenadeRenderer;
 import net.hytech.helldivers.client.renderer.HellpodRenderer;
@@ -33,5 +34,6 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.HELLPOD.get(), HellpodRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.HELLPOD_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.THROWN_SUPPORT_ORB.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.TERMINID_SHRIEKER.get(), TerminidShriekerRenderer::new);
 	}
 }
