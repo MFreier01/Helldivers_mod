@@ -17,4 +17,5 @@ public class HelldiversModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, HelldiversMod.MODID);
 	public static final RegistryObject<SimpleParticleType> RED_BEAM = REGISTRY.register("red_beam", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BLUE_BEAM = REGISTRY.register("blue_beam", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> BILE_SPEW = REGISTRY.register("bile_spew", () -> new SimpleParticleType(true));
 }

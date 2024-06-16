@@ -17,6 +17,8 @@ import net.hytech.helldivers.block.TerminidhiveBlock;
 import net.hytech.helldivers.block.TerminiddustsporeBlock;
 import net.hytech.helldivers.block.AutomatoncontactmineBlock;
 import net.hytech.helldivers.block.AutomatonFactorybaseBlock;
+import net.hytech.helldivers.block.AutomatonFactoryTrapdoorBlock;
+import net.hytech.helldivers.block.AutomatonFactoryDoorBlock;
 import net.hytech.helldivers.HelldiversMod;
 
 public class HelldiversModBlocks {
@@ -28,6 +30,8 @@ public class HelldiversModBlocks {
 	public static final RegistryObject<Block> TERMINIDDUSTSPORE = REGISTRY.register("terminiddustspore", () -> new TerminiddustsporeBlock());
 	public static final RegistryObject<Block> AUTOMATONCONTACTMINE = REGISTRY.register("automatoncontactmine", () -> new AutomatoncontactmineBlock());
 	public static final RegistryObject<Block> AUTOMATON_FACTORYBASE = REGISTRY.register("automaton_factorybase", () -> new AutomatonFactorybaseBlock());
+	public static final RegistryObject<Block> AUTOMATON_FACTORY_DOOR = REGISTRY.register("automaton_factory_door", () -> new AutomatonFactoryDoorBlock());
+	public static final RegistryObject<Block> AUTOMATON_FACTORY_TRAPDOOR = REGISTRY.register("automaton_factory_trapdoor", () -> new AutomatonFactoryTrapdoorBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

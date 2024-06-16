@@ -33,6 +33,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.HumanoidModel;
 
+import net.hytech.helldivers.procedures.HeavyFS23HelmetTickEventProcedure;
 import net.hytech.helldivers.client.renderer.HeavyFS23ArmorRenderer;
 
 import java.util.function.Consumer;
@@ -76,7 +77,7 @@ public class HeavyFS23Item extends ArmorItem implements GeoItem {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 3f;
 			}
 
 			@Override
@@ -108,6 +109,8 @@ public class HeavyFS23Item extends ArmorItem implements GeoItem {
 
 	@Override
 	public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
+		if (itemstack.getItem() instanceof HeavyFS23Item armor && armor.getType() == ArmorItem.Type.HELMET)
+			HeavyFS23HelmetTickEventProcedure.execute(entity);
 	}
 
 	private PlayState predicate(AnimationState event) {

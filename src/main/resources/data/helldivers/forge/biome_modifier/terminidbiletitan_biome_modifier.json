@@ -1,15 +1,11 @@
 {
   "type": "forge:add_spawns",
-  "biomes": [
-    "bamboo_jungle",
-    "crimson_forest",
-    "badlands",
-    "eroded_badlands",
-    "wooded_badlands"
-  ],
+  "biomes": {
+    "type": "forge:any"
+  },
   "spawners": {
     "type": "helldivers:terminidbiletitan",
-    "weight": 10,
+    "weight": 100,
     "minCount": 1,
     "maxCount": 2
   }

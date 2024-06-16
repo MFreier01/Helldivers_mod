@@ -27,6 +27,7 @@ import net.hytech.helldivers.entity.HellpodProjectileEntity;
 import net.hytech.helldivers.entity.HellpodEntity;
 import net.hytech.helldivers.entity.FragGrenadeProjectileEntity;
 import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
+import net.hytech.helldivers.entity.BileSpewProjectileEntity;
 import net.hytech.helldivers.entity.BasicBulletEntity;
 import net.hytech.helldivers.entity.AirStrikeBombEntity;
 import net.hytech.helldivers.HelldiversMod;
@@ -37,7 +38,7 @@ public class HelldiversModEntities {
 	public static final RegistryObject<EntityType<BasicBulletEntity>> BASIC_BULLET = register("basic_bullet",
 			EntityType.Builder.<BasicBulletEntity>of(BasicBulletEntity::new, MobCategory.MISC).setCustomClientFactory(BasicBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<TerminidScavengerEntity>> TERMINID_SCAVENGER = register("terminid_scavenger",
-			EntityType.Builder.<TerminidScavengerEntity>of(TerminidScavengerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidScavengerEntity::new)
+			EntityType.Builder.<TerminidScavengerEntity>of(TerminidScavengerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidScavengerEntity::new)
 
 					.sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FragGrenadeProjectileEntity>> FRAG_GRENADE_PROJECTILE = register("frag_grenade_projectile", EntityType.Builder.<FragGrenadeProjectileEntity>of(FragGrenadeProjectileEntity::new, MobCategory.MISC)
@@ -47,7 +48,7 @@ public class HelldiversModEntities {
 
 					.sized(0.3f, 0.4f));
 	public static final RegistryObject<EntityType<TerminidbiletitanEntity>> TERMINIDBILETITAN = register("terminidbiletitan",
-			EntityType.Builder.<TerminidbiletitanEntity>of(TerminidbiletitanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidbiletitanEntity::new)
+			EntityType.Builder.<TerminidbiletitanEntity>of(TerminidbiletitanEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidbiletitanEntity::new)
 
 					.sized(10f, 10f));
 	public static final RegistryObject<EntityType<ThrownAttackOrbEntity>> THROWN_ATTACK_ORB = register("thrown_attack_orb", EntityType.Builder.<ThrownAttackOrbEntity>of(ThrownAttackOrbEntity::new, MobCategory.MISC)
@@ -65,9 +66,11 @@ public class HelldiversModEntities {
 	public static final RegistryObject<EntityType<ThrownSupportOrbEntity>> THROWN_SUPPORT_ORB = register("thrown_support_orb", EntityType.Builder.<ThrownSupportOrbEntity>of(ThrownSupportOrbEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(ThrownSupportOrbEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<TerminidShriekerEntity>> TERMINID_SHRIEKER = register("terminid_shrieker",
-			EntityType.Builder.<TerminidShriekerEntity>of(TerminidShriekerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidShriekerEntity::new)
+			EntityType.Builder.<TerminidShriekerEntity>of(TerminidShriekerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidShriekerEntity::new)
 
 					.sized(2f, 1.7f));
+	public static final RegistryObject<EntityType<BileSpewProjectileEntity>> BILE_SPEW_PROJECTILE = register("bile_spew_projectile", EntityType.Builder.<BileSpewProjectileEntity>of(BileSpewProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BileSpewProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_dye"
+    },
+    "b": {
+      "item": "minecraft:black_dye"
+    },
+    "c": {
+      "item": "minecraft:diamond_chestplate"
+    },
+    "d": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "helldivers:basicarmor_chestplate",
+    "count": 1
+  }
+}

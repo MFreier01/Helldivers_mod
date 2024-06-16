@@ -2,6 +2,7 @@
 package net.hytech.helldivers.item;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -14,6 +15,11 @@ import net.hytech.helldivers.procedures.Stim_HealProcedure;
 public class StimItem extends Item {
 	public StimItem() {
 		super(new Item.Properties().stacksTo(4).rarity(Rarity.RARE));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.SPEAR;
 	}
 
 	@Override

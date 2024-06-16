@@ -1,0 +1,19 @@
+{
+	"parent": "helldivers:item/handheld",
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "helldivers:item/frag_grenade_item_3d"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "helldivers:item/frag_grenade_item_2d"
+		},
+		"ground": {
+			"parent": "helldivers:item/frag_grenade_item_2d"
+		},
+		"fixed": {
+			"parent": "helldivers:item/frag_grenade_item_2d"
+		}
+		
+	}	
+}

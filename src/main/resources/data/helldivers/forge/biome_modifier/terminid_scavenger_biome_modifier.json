@@ -1,15 +1,11 @@
 {
   "type": "forge:add_spawns",
-  "biomes": [
-    "badlands",
-    "basalt_deltas",
-    "crimson_forest",
-    "eroded_badlands",
-    "wooded_badlands"
-  ],
+  "biomes": {
+    "type": "forge:any"
+  },
   "spawners": {
     "type": "helldivers:terminid_scavenger",
-    "weight": 100,
+    "weight": 300,
     "minCount": 4,
     "maxCount": 7
   }

@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:BileSpewItem"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.shulker.shoot"
+    },
+    "igniteFire": false,
+    "power": 0.5,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "BileSpewProjectileProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "BileSpewProjectileProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "BileSpewProjectileProjectileHitsBlock"
+    }
+  }
+}

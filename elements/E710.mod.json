@@ -40,7 +40,7 @@
     "projectile": {
       "value": "CUSTOM:BasicBullet"
     },
-    "isFood": true,
+    "isFood": false,
     "nutritionalValue": 10,
     "saturation": 10.0,
     "eatResultItem": {

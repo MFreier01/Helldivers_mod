@@ -3,13 +3,16 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "helldivers_helmet.item",
+    "textureHelmet": "fs_23_helmet_item",
     "enableBody": true,
-    "textureBody": "helldivers_chestplate.item",
+    "textureBody": "fs_23_chestplate_item",
     "enableLeggings": true,
-    "textureLeggings": "helldivers_leggings.item",
+    "textureLeggings": "fs_23_leggings_item",
     "enableBoots": true,
-    "textureBoots": "helldivers_boots.item",
+    "textureBoots": "fs_23_boots_item",
+    "onHelmetTick": {
+      "name": "HeavyFS23HelmetTickEvent"
+    },
     "creativeTab": {
       "value": "CUSTOM:Helldivers"
     },
@@ -51,7 +54,7 @@
     "damageValueLeggings": 7,
     "damageValueBoots": 4,
     "enchantability": 9,
-    "toughness": 0.0,
+    "toughness": 3.0,
     "knockbackResistance": 0.2,
     "equipSound": {
       "value": "item.armor.equip_diamond"

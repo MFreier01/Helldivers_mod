@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    "eee"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_dye"
+    },
+    "b": {
+      "item": "minecraft:ink_sac"
+    },
+    "c": {
+      "item": "minecraft:black_dye"
+    },
+    "d": {
+      "item": "minecraft:diamond_boots"
+    },
+    "e": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "helldivers:basicarmor_boots",
+    "count": 1
+  }
+}

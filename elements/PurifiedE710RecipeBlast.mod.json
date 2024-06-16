@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.5,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:E710"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Purifiede710"
+    },
+    "name": "purified_e_710_recipe_blast",
+    "namespace": "mod"
+  }
+}

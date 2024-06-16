@@ -74,7 +74,7 @@
     {
       "name": "BasicBullet",
       "type": "projectile",
-      "sortid": 17,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basic_bullet",
@@ -88,7 +88,7 @@
     {
       "name": "BulletItem",
       "type": "animateditem",
-      "sortid": 15,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet_item",
@@ -105,7 +105,7 @@
     {
       "name": "AR23LiberatorFire",
       "type": "procedure",
-      "sortid": 18,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ar_23_liberator_fire",
@@ -145,7 +145,7 @@
     {
       "name": "ReloadKeyOnKeyPressed",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reload_key_on_key_pressed",
@@ -181,7 +181,7 @@
     {
       "name": "ReloadKey",
       "type": "keybind",
-      "sortid": 20,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reload_key",
@@ -195,7 +195,7 @@
     {
       "name": "SG225BreakerFire",
       "type": "procedure",
-      "sortid": 21,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sg_225_breaker_fire",
@@ -235,7 +235,7 @@
     {
       "name": "M105StalwartFire",
       "type": "procedure",
-      "sortid": 22,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "m_105_stalwart_fire",
@@ -275,7 +275,7 @@
     {
       "name": "Ammooverlay",
       "type": "procedure",
-      "sortid": 23,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ammooverlay",
@@ -312,7 +312,7 @@
     {
       "name": "APW1AntiMaterialRifleFire",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apw_1_anti_material_rifle_fire",
@@ -352,7 +352,7 @@
     {
       "name": "TerminidScavenger",
       "type": "animatedentity",
-      "sortid": 14,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_scavenger",
@@ -370,7 +370,7 @@
     {
       "name": "FragGrenade",
       "type": "animateditem",
-      "sortid": 7,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade",
@@ -387,7 +387,7 @@
     {
       "name": "FragGrenadeProjectile",
       "type": "projectile",
-      "sortid": 25,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_projectile",
@@ -401,7 +401,7 @@
     {
       "name": "FragGrenadeProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_projectile_projectile_hits_block",
@@ -433,7 +433,7 @@
     {
       "name": "FragGrenadeRightclicked",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_rightclicked",
@@ -453,7 +453,7 @@
     {
       "name": "Terminidhive",
       "type": "block",
-      "sortid": 8,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidhive",
@@ -471,7 +471,7 @@
     {
       "name": "Terminidwall",
       "type": "block",
-      "sortid": 9,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidwall",
@@ -489,7 +489,7 @@
     {
       "name": "Terminidstone",
       "type": "block",
-      "sortid": 10,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidstone",
@@ -507,7 +507,7 @@
     {
       "name": "Terminidreinforcedwall",
       "type": "block",
-      "sortid": 11,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidreinforcedwall",
@@ -525,7 +525,7 @@
     {
       "name": "TerminiddustsporeEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminiddustspore_entity_walks_on_the_block",
@@ -561,7 +561,7 @@
     {
       "name": "Terminiddustspore",
       "type": "animatedblock",
-      "sortid": 12,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminiddustspore",
@@ -584,7 +584,7 @@
     {
       "name": "AutomatoncontactmineEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatoncontactmine_entity_walks_on_the_block",
@@ -616,7 +616,7 @@
     {
       "name": "Automatoncontactmine",
       "type": "animatedblock",
-      "sortid": 13,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatoncontactmine",
@@ -639,7 +639,7 @@
     {
       "name": "Helldivers",
       "type": "tab",
-      "sortid": 30,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "helldivers",
@@ -650,7 +650,7 @@
     {
       "name": "StaticFragGrenadeOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 31,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "static_frag_grenade_on_initial_entity_spawn",
@@ -674,7 +674,7 @@
     {
       "name": "StaticFragGrenade",
       "type": "animatedentity",
-      "sortid": 32,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "static_frag_grenade",
@@ -711,7 +711,7 @@
     {
       "name": "Terminidbiletitan",
       "type": "animatedentity",
-      "sortid": 16,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidbiletitan",
@@ -729,7 +729,7 @@
     {
       "name": "StratagemRemote",
       "type": "item",
-      "sortid": 36,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stratagem_remote",
@@ -745,7 +745,7 @@
     {
       "name": "CallStratagems",
       "type": "gui",
-      "sortid": 37,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_stratagems",
@@ -761,7 +761,7 @@
     {
       "name": "E710",
       "type": "item",
-      "sortid": 39,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "e_710",
@@ -776,7 +776,7 @@
     {
       "name": "EmptyStratagemOrb",
       "type": "animateditem",
-      "sortid": 40,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "empty_stratagem_orb",
@@ -793,7 +793,7 @@
     {
       "name": "ArmedAttackStratagemOrb",
       "type": "animateditem",
-      "sortid": 42,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_attack_stratagem_orb",
@@ -810,7 +810,7 @@
     {
       "name": "ArmedSupportStratagemOrb",
       "type": "animateditem",
-      "sortid": 43,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_support_stratagem_orb",
@@ -827,7 +827,7 @@
     {
       "name": "CallEagleAirStrike",
       "type": "procedure",
-      "sortid": 44,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_down_stratagem",
@@ -863,7 +863,7 @@
     {
       "name": "RedBeam",
       "type": "particle",
-      "sortid": 45,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_beam",
@@ -878,7 +878,7 @@
     {
       "name": "ThrownAttackOrb",
       "type": "projectile",
-      "sortid": 46,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thrown_attack_orb",
@@ -892,7 +892,7 @@
     {
       "name": "ArmedAttackStratagemOrbRightclicked",
       "type": "procedure",
-      "sortid": 47,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_attack_stratagem_orb_rightclicked",
@@ -912,7 +912,7 @@
     {
       "name": "AirStrikeBombProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 48,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "air_strike_bomb_projectile_hits_block",
@@ -944,7 +944,7 @@
     {
       "name": "AirStrikeBomb",
       "type": "projectile",
-      "sortid": 49,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "air_strike_bomb",
@@ -958,7 +958,7 @@
     {
       "name": "AirStrikeBombItem",
       "type": "animateditem",
-      "sortid": 50,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "air_strike_bomb_item",
@@ -975,7 +975,7 @@
     {
       "name": "OpenStratagemMenuOnKeyPressed",
       "type": "procedure",
-      "sortid": 51,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_stratagem_menu_on_key_pressed",
@@ -1011,7 +1011,7 @@
     {
       "name": "OpenStratagemMenu",
       "type": "keybind",
-      "sortid": 52,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_stratagem_menu",
@@ -1250,7 +1250,7 @@
     {
       "name": "BlueBeam",
       "type": "particle",
-      "sortid": 66,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_beam",
@@ -1265,7 +1265,7 @@
     {
       "name": "ThrownSupportOrb",
       "type": "projectile",
-      "sortid": 67,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thrown_support_orb",
@@ -1279,7 +1279,7 @@
     {
       "name": "ArmedSupportStratagemOrbRightclicked",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_support_stratagem_orb_rightclicked",
@@ -1299,7 +1299,7 @@
     {
       "name": "AddReinforcements",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_reinforcements",
@@ -1319,7 +1319,7 @@
     {
       "name": "CalldownSUPPORTStratagem",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "calldown_support_stratagem",
@@ -1355,7 +1355,7 @@
     {
       "name": "Stim",
       "type": "item",
-      "sortid": 71,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stim",
@@ -1370,7 +1370,7 @@
     {
       "name": "Stim_Heal",
       "type": "procedure",
-      "sortid": 72,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stim_heal",
@@ -1390,7 +1390,7 @@
     {
       "name": "AutomatonFactorybase",
       "type": "block",
-      "sortid": 73,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automaton_factorybase",
@@ -1408,7 +1408,7 @@
     {
       "name": "TerminidShrieker",
       "type": "animatedentity",
-      "sortid": 74,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_shrieker",
@@ -1422,6 +1422,316 @@
         ]
       },
       "path": "~/Entity/Terminid"
+    },
+    {
+      "name": "AutomatonFactoryDoor",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automaton_factory_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right_open.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right_open.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_door.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left.json",
+          "src/main/resources/assets/helldivers/models/item/automaton_factory_door.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonFactoryDoorBlock.java",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left_open.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left_open.json",
+          "src/main/resources/assets/helldivers/blockstates/automaton_factory_door.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Basichelldiverchestplate",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basichelldiverchestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/basichelldiverchestplate.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Basichelldivershelmet",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basichelldivershelmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/basichelldivershelmet.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Basichelldiversleggings",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basichelldiversleggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/basichelldiversleggings.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Basichelldiversboots",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basichelldiversboots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/basichelldiversboots.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HeavyFS23HelmetTickEvent",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_fs_23_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/HeavyFS23HelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "FS23HeavyHelmet",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fs_23_heavy_helmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/fs_23_heavy_helmet.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FS23HeavyChestplate",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fs_23_heavy_chestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/fs_23_heavy_chestplate.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FS23HeavyLeggings",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fs_23_heavy_leggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/fs_23_heavy_leggings.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FS23HeavyBoots",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fs_23_heavy_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/fs_23_heavy_boots.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Purifiede710",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purifiede_710",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/purifiede_710.json",
+          "src/main/java/net/hytech/helldivers/item/Purifiede710Item.java"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "PurifiedE710Recipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_e_710_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/purified_e_710.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurifiedE710RecipeBlast",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_e_710_recipe_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/purified_e_710_recipe_blast.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BileSpew",
+      "type": "particle",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bile_spew",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/particles/bile_spew.json",
+          "src/main/java/net/hytech/helldivers/client/particle/BileSpewParticle.java"
+        ]
+      },
+      "path": "~/Entity"
+    },
+    {
+      "name": "BileSpewItem",
+      "type": "item",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bile_spew_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/BileSpewItemItem.java",
+          "src/main/resources/assets/helldivers/models/item/bile_spew_item.json"
+        ]
+      },
+      "path": "~/Entity"
+    },
+    {
+      "name": "BileSpewProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bile_spew_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/BileSpewProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entity"
+    },
+    {
+      "name": "BileSpewProjectile",
+      "type": "projectile",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bile_spew_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/BileSpewProjectileEntity.java"
+        ]
+      },
+      "path": "~/Entity"
+    },
+    {
+      "name": "AutomatonFactoryTrapdoor",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automaton_factory_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor_open.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor_top.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_trapdoor.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonFactoryTrapdoorBlock.java",
+          "src/main/resources/assets/helldivers/blockstates/automaton_factory_trapdoor.json",
+          "src/main/resources/assets/helldivers/models/item/automaton_factory_trapdoor.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TerminidLoot",
+      "type": "loottable",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminid_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/entities/terminid_loot.json"
+        ]
+      },
+      "path": "~/Other_Items"
     }
   ],
   "variable_elements": [],
@@ -1513,12 +1823,16 @@
       "~CUSTOM:Terminidhive"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:AutomatonFactoryTrapdoor",
+      "~CUSTOM:AutomatonFactoryDoor",
       "~CUSTOM:AutomatonFactorybase",
       "~CUSTOM:Automatoncontactmine",
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:AutomatonFactoryTrapdoor",
+      "~CUSTOM:AutomatonFactoryDoor",
       "~CUSTOM:AutomatonFactorybase",
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
@@ -1528,11 +1842,11 @@
     "en_us": {
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "subtitles.shotgun_shot": "Gun shot",
-      "subtitles.amr_shot": "Gun shot",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
+      "subtitles.amr_shot": "Gun shot",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
-      "block.helldivers.terminidwall": "Terminid Wall",
       "subtitles.basic_shot": "Gun shot",
+      "block.helldivers.terminidwall": "Terminid Wall",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
@@ -1547,12 +1861,16 @@
       "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
+      "block.helldivers.automaton_factory_door": "Automaton Factory Door",
       "entity.helldivers.terminidbiletitan": "Bile Titan",
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
       "subtitles.awp1_dry_fire": "Gun clicks",
+      "item.helldivers.bile_spew_item": "Bile Spew Item",
       "item.helldivers.frag_grenade": "Frag Grenade",
+      "block.helldivers.automaton_factory_trapdoor": "Automaton Factory Trapdoor",
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
       "entity.helldivers.eagle_strike_bomb_entity": "Eagle Strike Bomb",
+      "item.helldivers.purifiede_710": "Purified E-710",
       "item.helldivers.stim": "Stim",
       "item_group.helldivers.helldivers": "Helldivers",
       "block.helldivers.terminidhive": "Terminid Hive",
@@ -1666,6 +1984,10 @@
       },
       {
         "name": "Hellpod",
+        "children": []
+      },
+      {
+        "name": "Recipes",
         "children": []
       }
     ]

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:yellow_dye"
+    },
+    "b": {
+      "item": "minecraft:light_gray_dye"
+    },
+    "c": {
+      "item": "minecraft:diamond_boots"
+    },
+    "d": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "e": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "helldivers:heavy_fs_23_boots",
+    "count": 1
+  }
+}

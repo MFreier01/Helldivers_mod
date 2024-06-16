@@ -35,29 +35,32 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.SG_225_BREAKER.get());
 				tabData.accept(HelldiversModItems.M_105_STALWART.get());
 				tabData.accept(HelldiversModItems.APW_1_ANTI_MATERIAL_RIFLE.get());
+				tabData.accept(HelldiversModItems.TERMINID_SCAVENGER_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.TERMINIDBILETITAN_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.TERMINID_SHRIEKER_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.FRAG_GRENADE.get());
+				tabData.accept(HelldiversModItems.STRATAGEM_REMOTE.get());
+				tabData.accept(HelldiversModItems.STIM.get());
+				tabData.accept(HelldiversModItems.EMPTY_STRATAGEM_ORB.get());
+				tabData.accept(HelldiversModItems.ARMED_ATTACK_STRATAGEM_ORB.get());
+				tabData.accept(HelldiversModItems.ARMED_SUPPORT_STRATAGEM_ORB.get());
+				tabData.accept(HelldiversModBlocks.AUTOMATONCONTACTMINE.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORYBASE.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORY_DOOR.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORY_TRAPDOOR.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDHIVE.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDWALL.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDSTONE.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDREINFORCEDWALL.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDDUSTSPORE.get().asItem());
-				tabData.accept(HelldiversModBlocks.AUTOMATONCONTACTMINE.get().asItem());
-				tabData.accept(HelldiversModItems.TERMINID_SCAVENGER_SPAWN_EGG.get());
-				tabData.accept(HelldiversModItems.STRATAGEM_REMOTE.get());
 				tabData.accept(HelldiversModItems.E_710.get());
-				tabData.accept(HelldiversModItems.EMPTY_STRATAGEM_ORB.get());
-				tabData.accept(HelldiversModItems.ARMED_ATTACK_STRATAGEM_ORB.get());
-				tabData.accept(HelldiversModItems.ARMED_SUPPORT_STRATAGEM_ORB.get());
-				tabData.accept(HelldiversModItems.STIM.get());
-				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORYBASE.get().asItem());
-				tabData.accept(HelldiversModItems.TERMINID_SHRIEKER_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.PURIFIEDE_710.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(HelldiversModItems.BULLET_ITEM.get());
-			tabData.accept(HelldiversModItems.TERMINIDBILETITAN_SPAWN_EGG.get());
 		}
 	}
 }

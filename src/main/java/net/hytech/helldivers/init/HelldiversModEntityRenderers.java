@@ -35,5 +35,6 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.HELLPOD_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.THROWN_SUPPORT_ORB.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.TERMINID_SHRIEKER.get(), TerminidShriekerRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.BILE_SPEW_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }
