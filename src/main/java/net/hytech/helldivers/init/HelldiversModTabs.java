@@ -39,7 +39,6 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.TERMINIDBILETITAN_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.TERMINID_SHRIEKER_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.FRAG_GRENADE.get());
-				tabData.accept(HelldiversModItems.STRATAGEM_REMOTE.get());
 				tabData.accept(HelldiversModItems.STIM.get());
 				tabData.accept(HelldiversModItems.EMPTY_STRATAGEM_ORB.get());
 				tabData.accept(HelldiversModItems.ARMED_ATTACK_STRATAGEM_ORB.get());

@@ -1009,20 +1009,6 @@
       "path": "~/Stratagems/Stratagem_Remote"
     },
     {
-      "name": "OpenStratagemMenu",
-      "type": "keybind",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_stratagem_menu",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/network/OpenStratagemMenuMessage.java"
-        ]
-      },
-      "path": "~/Stratagems/Stratagem_Remote"
-    },
-    {
       "name": "Projectile500KGProjectileHitsBlock",
       "type": "procedure",
       "sortid": 54,
@@ -1732,6 +1718,20 @@
         ]
       },
       "path": "~/Other_Items"
+    },
+    {
+      "name": "TerminidBiome",
+      "type": "biome",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminid_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/worldgen/biome/terminid_biome.json"
+        ]
+      },
+      "path": "~/BiomesandStructures"
     }
   ],
   "variable_elements": [],
@@ -1818,6 +1818,9 @@
     }
   ],
   "tag_elements": {
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:TerminidBiome"
+    ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:Terminiddustspore",
       "~CUSTOM:Terminidhive"
@@ -1830,23 +1833,38 @@
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
     ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:TerminidBiome"
+    ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:AutomatonFactoryTrapdoor",
       "~CUSTOM:AutomatonFactoryDoor",
       "~CUSTOM:AutomatonFactorybase",
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
+    ],
+    "BIOMES:minecraft:has_structure/bastion_remnant": [
+      "~CUSTOM:TerminidBiome"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:TerminidBiome"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_nether": [
+      "~CUSTOM:TerminidBiome"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:TerminidBiome"
     ]
   },
   "language_map": {
     "en_us": {
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "subtitles.shotgun_shot": "Gun shot",
-      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "subtitles.amr_shot": "Gun shot",
+      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
-      "subtitles.basic_shot": "Gun shot",
       "block.helldivers.terminidwall": "Terminid Wall",
+      "subtitles.basic_shot": "Gun shot",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
@@ -1873,6 +1891,7 @@
       "item.helldivers.purifiede_710": "Purified E-710",
       "item.helldivers.stim": "Stim",
       "item_group.helldivers.helldivers": "Helldivers",
+      "biome.helldivers.terminid_biome": "Terminid Biome",
       "block.helldivers.terminidhive": "Terminid Hive",
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.stratagem_remote": "Stratagem Remote",
@@ -1884,7 +1903,6 @@
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
       "subtitles.ar23_shoot": "Gun shoots",
       "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
-      "key.helldivers.open_stratagem_menu": "Open Stratagem Menu",
       "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
       "key.helldivers.reload_key": "Reload Key",
       "subtitles.ar23_reload": "Gun reloads",
@@ -1988,6 +2006,10 @@
       },
       {
         "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "BiomesandStructures",
         "children": []
       }
     ]

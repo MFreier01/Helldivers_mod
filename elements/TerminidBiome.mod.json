@@ -1,0 +1,142 @@
+{
+  "_fv": 60,
+  "_type": "biome",
+  "definition": {
+    "name": "Terminid Biome",
+    "groundBlock": {
+      "value": "CUSTOM:Terminidstone"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:Terminidstone"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.GRAVEL"
+    },
+    "grassColor": {
+      "value": -11712740,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16034472,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16034472,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "ambient.basalt_deltas.loop"
+    },
+    "additionsSound": {
+      "value": "ambient.basalt_deltas.additions"
+    },
+    "music": {
+      "value": "music.nether.basalt_deltas"
+    },
+    "moodSound": {
+      "value": "ambient.basalt_deltas.mood"
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:RedBeam"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 1.0,
+    "temperature": 1.5,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genHumidity": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genContinentalness": {
+      "min": 0.3,
+      "max": 1.0
+    },
+    "genErosion": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "Dripstone",
+      "MonsterRooms"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": true,
+    "spawnBastionRemnant": true,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NETHER",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:TerminidScavenger"
+        },
+        "minGroup": 4,
+        "maxGroup": 7,
+        "weight": 300,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:TerminidShrieker"
+        },
+        "minGroup": 4,
+        "maxGroup": 12,
+        "weight": 300,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Terminidbiletitan"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 100,
+        "spawnType": "ambient"
+      }
+    ]
+  }
+}
