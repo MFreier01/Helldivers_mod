@@ -23,12 +23,15 @@ import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
 import net.hytech.helldivers.entity.Projectile500KGEntity;
+import net.hytech.helldivers.entity.HulkEntity;
 import net.hytech.helldivers.entity.HellpodProjectileEntity;
 import net.hytech.helldivers.entity.HellpodEntity;
 import net.hytech.helldivers.entity.FragGrenadeProjectileEntity;
 import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
+import net.hytech.helldivers.entity.CommisarEntity;
 import net.hytech.helldivers.entity.BileSpewProjectileEntity;
 import net.hytech.helldivers.entity.BasicBulletEntity;
+import net.hytech.helldivers.entity.AutomatonbulletprojectileEntity;
 import net.hytech.helldivers.entity.AirStrikeBombEntity;
 import net.hytech.helldivers.HelldiversMod;
 
@@ -71,6 +74,17 @@ public class HelldiversModEntities {
 					.sized(2f, 1.7f));
 	public static final RegistryObject<EntityType<BileSpewProjectileEntity>> BILE_SPEW_PROJECTILE = register("bile_spew_projectile", EntityType.Builder.<BileSpewProjectileEntity>of(BileSpewProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(BileSpewProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AutomatonbulletprojectileEntity>> AUTOMATONBULLETPROJECTILE = register("automatonbulletprojectile",
+			EntityType.Builder.<AutomatonbulletprojectileEntity>of(AutomatonbulletprojectileEntity::new, MobCategory.MISC).setCustomClientFactory(AutomatonbulletprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CommisarEntity>> COMMISAR = register("commisar",
+			EntityType.Builder.<CommisarEntity>of(CommisarEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CommisarEntity::new)
+
+					.sized(0.6f, 1.5f));
+	public static final RegistryObject<EntityType<HulkEntity>> HULK = register("hulk",
+			EntityType.Builder.<HulkEntity>of(HulkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HulkEntity::new)
+
+					.sized(2.5f, 3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -85,6 +99,8 @@ public class HelldiversModEntities {
 			EagleStrikeBombEntityEntity.init();
 			HellpodEntity.init();
 			TerminidShriekerEntity.init();
+			CommisarEntity.init();
+			HulkEntity.init();
 		});
 	}
 
@@ -96,5 +112,7 @@ public class HelldiversModEntities {
 		event.put(EAGLE_STRIKE_BOMB_ENTITY.get(), EagleStrikeBombEntityEntity.createAttributes().build());
 		event.put(HELLPOD.get(), HellpodEntity.createAttributes().build());
 		event.put(TERMINID_SHRIEKER.get(), TerminidShriekerEntity.createAttributes().build());
+		event.put(COMMISAR.get(), CommisarEntity.createAttributes().build());
+		event.put(HULK.get(), HulkEntity.createAttributes().build());
 	}
 }

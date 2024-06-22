@@ -15,8 +15,10 @@ import net.hytech.helldivers.client.renderer.TerminidbiletitanRenderer;
 import net.hytech.helldivers.client.renderer.TerminidShriekerRenderer;
 import net.hytech.helldivers.client.renderer.TerminidScavengerRenderer;
 import net.hytech.helldivers.client.renderer.StaticFragGrenadeRenderer;
+import net.hytech.helldivers.client.renderer.HulkRenderer;
 import net.hytech.helldivers.client.renderer.HellpodRenderer;
 import net.hytech.helldivers.client.renderer.EagleStrikeBombEntityRenderer;
+import net.hytech.helldivers.client.renderer.CommisarRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HelldiversModEntityRenderers {
@@ -36,5 +38,8 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.THROWN_SUPPORT_ORB.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.TERMINID_SHRIEKER.get(), TerminidShriekerRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.BILE_SPEW_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.AUTOMATONBULLETPROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.COMMISAR.get(), CommisarRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.HULK.get(), HulkRenderer::new);
 	}
 }

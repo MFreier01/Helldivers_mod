@@ -54,12 +54,20 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModBlocks.TERMINIDDUSTSPORE.get().asItem());
 				tabData.accept(HelldiversModItems.E_710.get());
 				tabData.accept(HelldiversModItems.PURIFIEDE_710.get());
+				tabData.accept(HelldiversModBlocks.AMMO_BOX.get().asItem());
+				tabData.accept(HelldiversModItems.AR_23.get());
+				tabData.accept(HelldiversModItems.EAGLE_AIR_STRIKE.get());
+				tabData.accept(HelldiversModItems.EAGLE_500_KG.get());
+				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.TESTFLAME.get());
+				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(HelldiversModItems.BULLET_ITEM.get());
+			tabData.accept(HelldiversModItems.AUTOMATONBULLET.get());
 		}
 	}
 }

@@ -16,10 +16,10 @@
     "entityModel": "Default",
     "customModelTexture": "",
     "onHitsBlock": {
-      "name": "CalldownSUPPORTStratagem"
+      "name": "CallReinforcements"
     },
     "onHitsEntity": {
-      "name": "CalldownSUPPORTStratagem"
+      "name": "CallReinforcements"
     }
   }
 }

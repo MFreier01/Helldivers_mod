@@ -114,7 +114,7 @@ public class TerminidbiletitanEntity extends PathfinderMob implements RangedAtta
 		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Villager.class, false, true));
 		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, IronGolem.class, false, true));
 		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Player.class, false, true));
-		this.goalSelector.addGoal(1, new TerminidbiletitanEntity.RangedAttackGoal(this, 1.25, 1000, 16f) {
+		this.goalSelector.addGoal(1, new TerminidbiletitanEntity.RangedAttackGoal(this, 1.25, 500, 16f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();

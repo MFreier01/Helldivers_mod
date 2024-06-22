@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ammo_box",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 0, -4], "size": [12, 7, 8], "uv": [0, 0]},
+						{"origin": [6, 5, -4], "size": [1, 2, 8], "uv": [10, 17]},
+						{"origin": [-7, 5, -4], "size": [1, 2, 8], "uv": [0, 15]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -33,8 +33,11 @@
       "fixedValue": false
     },
     "guiBoundTo": "CallStratagems",
-    "inventorySize": 9,
+    "inventorySize": 4,
     "inventoryStackSize": 1,
+    "onRightClickedInAir": {
+      "name": "OpenStratagemMenuOnKeyPressed"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

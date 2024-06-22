@@ -46,7 +46,7 @@ public class APW1AntiMaterialRifleFireProcedure {
 				}
 				itemstack.getOrCreateTag().putDouble("APW1 Bullet", (itemstack.getOrCreateTag().getDouble("APW1 Bullet") - 1));
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
 				if (!world.isClientSide()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {

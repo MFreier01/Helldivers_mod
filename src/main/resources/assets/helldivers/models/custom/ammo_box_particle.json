@@ -1,0 +1,7 @@
+
+{
+  "parent": "helldivers:displaysettings/ammo_box.item",
+  "textures": {
+    "particle": "helldivers:block/ammo_box"
+  }
+}

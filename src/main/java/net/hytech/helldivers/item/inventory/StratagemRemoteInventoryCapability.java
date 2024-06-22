@@ -53,7 +53,7 @@ public class StratagemRemoteInventoryCapability implements ICapabilitySerializab
 	}
 
 	private ItemStackHandler createItemHandler() {
-		return new ItemStackHandler(9) {
+		return new ItemStackHandler(4) {
 			@Override
 			public int getSlotLimit(int slot) {
 				return 1;

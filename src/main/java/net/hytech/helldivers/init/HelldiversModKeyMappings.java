@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.hytech.helldivers.network.ReloadKeyMessage;
+import net.hytech.helldivers.network.OpenMenuKeybindMessage;
 import net.hytech.helldivers.HelldiversMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -33,10 +34,24 @@ public class HelldiversModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping OPEN_MENU_KEYBIND = new KeyMapping("key.helldivers.open_menu_keybind", GLFW.GLFW_KEY_C, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				HelldiversMod.PACKET_HANDLER.sendToServer(new OpenMenuKeybindMessage(0, 0));
+				OpenMenuKeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(RELOAD_KEY);
+		event.register(OPEN_MENU_KEYBIND);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -45,6 +60,7 @@ public class HelldiversModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				RELOAD_KEY.consumeClick();
+				OPEN_MENU_KEYBIND.consumeClick();
 			}
 		}
 	}

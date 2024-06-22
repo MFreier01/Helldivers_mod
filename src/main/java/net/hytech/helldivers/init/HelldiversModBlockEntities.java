@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.hytech.helldivers.block.entity.TerminiddustsporeTileEntity;
 import net.hytech.helldivers.block.entity.AutomatoncontactmineTileEntity;
+import net.hytech.helldivers.block.entity.AmmoBoxTileEntity;
 import net.hytech.helldivers.HelldiversMod;
 
 public class HelldiversModBlockEntities {
@@ -21,6 +22,7 @@ public class HelldiversModBlockEntities {
 			() -> BlockEntityType.Builder.of(TerminiddustsporeTileEntity::new, HelldiversModBlocks.TERMINIDDUSTSPORE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<AutomatoncontactmineTileEntity>> AUTOMATONCONTACTMINE = REGISTRY.register("automatoncontactmine",
 			() -> BlockEntityType.Builder.of(AutomatoncontactmineTileEntity::new, HelldiversModBlocks.AUTOMATONCONTACTMINE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<AmmoBoxTileEntity>> AMMO_BOX = REGISTRY.register("ammo_box", () -> BlockEntityType.Builder.of(AmmoBoxTileEntity::new, HelldiversModBlocks.AMMO_BOX.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

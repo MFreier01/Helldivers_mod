@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.hytech.helldivers.client.gui.CallStratagemsScreen;
+import net.hytech.helldivers.client.gui.AmmoboxguiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HelldiversModScreens {
@@ -19,6 +20,7 @@ public class HelldiversModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(HelldiversModMenus.CALL_STRATAGEMS.get(), CallStratagemsScreen::new);
+			MenuScreens.register(HelldiversModMenus.AMMOBOXGUI.get(), AmmoboxguiScreen::new);
 		});
 	}
 }

@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ArmorItem;
 
+import net.hytech.helldivers.item.TestflameItem;
 import net.hytech.helldivers.item.StratagemRemoteItem;
 import net.hytech.helldivers.item.StimItem;
 import net.hytech.helldivers.item.SG225BreakerItem;
@@ -24,17 +25,22 @@ import net.hytech.helldivers.item.HellpodItemItem;
 import net.hytech.helldivers.item.HeavyFS23Item;
 import net.hytech.helldivers.item.FragGrenadeItem;
 import net.hytech.helldivers.item.EmptyStratagemOrbItem;
+import net.hytech.helldivers.item.EagleAirStrikeItem;
+import net.hytech.helldivers.item.Eagle500KGItem;
 import net.hytech.helldivers.item.E710Item;
 import net.hytech.helldivers.item.BulletItemItem;
 import net.hytech.helldivers.item.BileSpewItemItem;
 import net.hytech.helldivers.item.BasicarmorItem;
+import net.hytech.helldivers.item.AutomatonbulletItem;
 import net.hytech.helldivers.item.ArmedSupportStratagemOrbItem;
 import net.hytech.helldivers.item.ArmedAttackStratagemOrbItem;
 import net.hytech.helldivers.item.AirStrikeBombItemItem;
 import net.hytech.helldivers.item.AR23LiberatorItem;
+import net.hytech.helldivers.item.AR23Item;
 import net.hytech.helldivers.item.APW1AntiMaterialRifleItem;
 import net.hytech.helldivers.block.display.TerminiddustsporeDisplayItem;
 import net.hytech.helldivers.block.display.AutomatoncontactmineDisplayItem;
+import net.hytech.helldivers.block.display.AmmoBoxDisplayItem;
 import net.hytech.helldivers.HelldiversMod;
 
 public class HelldiversModItems {
@@ -76,6 +82,14 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> PURIFIEDE_710 = REGISTRY.register("purifiede_710", () -> new Purifiede710Item());
 	public static final RegistryObject<Item> BILE_SPEW_ITEM = REGISTRY.register("bile_spew_item", () -> new BileSpewItemItem());
 	public static final RegistryObject<Item> AUTOMATON_FACTORY_TRAPDOOR = block(HelldiversModBlocks.AUTOMATON_FACTORY_TRAPDOOR);
+	public static final RegistryObject<Item> AMMO_BOX = REGISTRY.register(HelldiversModBlocks.AMMO_BOX.getId().getPath(), () -> new AmmoBoxDisplayItem(HelldiversModBlocks.AMMO_BOX.get(), new Item.Properties()));
+	public static final RegistryObject<Item> AR_23 = REGISTRY.register("ar_23", () -> new AR23Item());
+	public static final RegistryObject<Item> EAGLE_AIR_STRIKE = REGISTRY.register("eagle_air_strike", () -> new EagleAirStrikeItem());
+	public static final RegistryObject<Item> EAGLE_500_KG = REGISTRY.register("eagle_500_kg", () -> new Eagle500KGItem());
+	public static final RegistryObject<Item> AUTOMATONBULLET = REGISTRY.register("automatonbullet", () -> new AutomatonbulletItem());
+	public static final RegistryObject<Item> COMMISAR_SPAWN_EGG = REGISTRY.register("commisar_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.COMMISAR, -16777216, -65536, new Item.Properties()));
+	public static final RegistryObject<Item> TESTFLAME = REGISTRY.register("testflame", () -> new TestflameItem());
+	public static final RegistryObject<Item> HULK_SPAWN_EGG = REGISTRY.register("hulk_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.HULK, -3407872, -16777216, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

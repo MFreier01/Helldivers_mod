@@ -22,6 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 
 import net.hytech.helldivers.world.inventory.CallStratagemsMenu;
+import net.hytech.helldivers.procedures.OpenStratagemMenuOnKeyPressedProcedure;
 import net.hytech.helldivers.item.inventory.StratagemRemoteInventoryCapability;
 
 import javax.annotation.Nullable;
@@ -55,6 +56,7 @@ public class StratagemRemoteItem extends Item {
 				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 			});
 		}
+		OpenStratagemMenuOnKeyPressedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
 

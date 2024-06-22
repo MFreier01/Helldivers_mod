@@ -26,51 +26,139 @@
         }
       },
       {
-        "type": "button",
+        "type": "inputslot",
         "data": {
-          "name": "button_eagle_air_strike",
-          "text": "Eagle Air Strike",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "AddEagleAirStrike"
+          "inputLimit": {
+            "value": ""
           },
-          "width": 108,
-          "height": 20,
-          "x": 131,
-          "y": 44
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 147,
+          "y": 48
         }
       },
       {
-        "type": "button",
+        "type": "inputslot",
         "data": {
-          "name": "button_eagle_500kg_strike",
-          "text": "Eagle 500KG Strike",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "Add500KG"
+          "inputLimit": {
+            "value": ""
           },
-          "width": 119,
-          "height": 20,
-          "x": 130,
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 147,
           "y": 68
         }
       },
       {
-        "type": "button",
+        "type": "inputslot",
         "data": {
-          "name": "button_eagle_500kg_strike1",
-          "text": "Call Reinforcements",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "AddReinforcements"
+          "inputLimit": {
+            "value": ""
           },
-          "width": 119,
-          "height": 20,
-          "x": 130,
-          "y": 91
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 147,
+          "y": 88
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 147,
+          "y": 108
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_up_arrow",
+          "image": "up_arrow.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "CheckStratagem"
+          },
+          "x": 170,
+          "y": 48
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_right_arrow",
+          "image": "right_arrow.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "CheckStratagem2"
+          },
+          "x": 170,
+          "y": 68
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_left_arrow",
+          "image": "left_arrow.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "CheckStratagem"
+          },
+          "x": 170,
+          "y": 88
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_down_arrow",
+          "image": "down_arrow.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "CheckStratagem"
+          },
+          "x": 170,
+          "y": 108
         }
       }
     ],
+    "onOpen": {
+      "name": "ReadStrat"
+    },
+    "onTick": {
+      "name": "WriteStrat"
+    },
+    "onClosed": {
+      "name": "SaveStrat"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

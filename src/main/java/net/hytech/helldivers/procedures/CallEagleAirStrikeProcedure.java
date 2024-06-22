@@ -10,7 +10,6 @@ import net.minecraft.core.particles.SimpleParticleType;
 
 import net.hytech.helldivers.init.HelldiversModParticleTypes;
 import net.hytech.helldivers.init.HelldiversModEntities;
-import net.hytech.helldivers.entity.Projectile500KGEntity;
 import net.hytech.helldivers.entity.AirStrikeBombEntity;
 import net.hytech.helldivers.HelldiversMod;
 
@@ -105,25 +104,6 @@ public class CallEagleAirStrikeProcedure {
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				});
-			});
-		}
-		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Eagle500KG")) {
-			HelldiversMod.queueServerWork(70, () -> {
-				if (world instanceof ServerLevel projectileLevel) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new Projectile500KGEntity(HelldiversModEntities.PROJECTILE_500_KG.get(), level);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setKnockback(knockback);
-							entityToSpawn.setSilent(true);
-							entityToSpawn.setCritArrow(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, 5, 1);
-					_entityToSpawn.setPos((x + 70), (y + 100), (z + -70));
-					_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
-					projectileLevel.addFreshEntity(_entityToSpawn);
-				}
 			});
 		}
 		entity.getPersistentData().putString("ActiveStratagem", "None");

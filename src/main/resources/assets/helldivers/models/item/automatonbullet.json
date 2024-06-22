@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/automaton_bullet.item",
+  "textures": {
+    "layer0": "helldivers:item/automaton_bullet"
+  }
+}

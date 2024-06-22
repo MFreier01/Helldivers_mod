@@ -136,7 +136,7 @@
       "value": ""
     },
     "rangedItemType": "BileSpewProjectile",
-    "rangedAttackInterval": 1000,
+    "rangedAttackInterval": 500,
     "rangedAttackRadius": 16.0,
     "height": 1.0,
     "spawnThisMob": true,
