@@ -8,6 +8,7 @@ import net.hytech.helldivers.entity.TerminidbiletitanEntity;
 import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
+import net.hytech.helldivers.entity.RailbeamEntity;
 import net.hytech.helldivers.entity.HulkEntity;
 import net.hytech.helldivers.entity.HellpodEntity;
 import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
@@ -68,6 +69,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof HulkEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RailbeamEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="helldivers"
-version="0.0.2"
+version="0.0.3"
 displayName="Helldivers"
 displayURL="https://www.youtube.com/c/HyTechInc"
 credits="Gun models by GGlecoucougnette, all else by HyTech01"

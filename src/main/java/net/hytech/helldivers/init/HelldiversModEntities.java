@@ -22,6 +22,8 @@ import net.hytech.helldivers.entity.TerminidbiletitanEntity;
 import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
+import net.hytech.helldivers.entity.RailcannonstrikeprojectileEntity;
+import net.hytech.helldivers.entity.RailbeamEntity;
 import net.hytech.helldivers.entity.Projectile500KGEntity;
 import net.hytech.helldivers.entity.HulkEntity;
 import net.hytech.helldivers.entity.HellpodProjectileEntity;
@@ -85,6 +87,11 @@ public class HelldiversModEntities {
 			EntityType.Builder.<HulkEntity>of(HulkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HulkEntity::new)
 
 					.sized(2.5f, 3f));
+	public static final RegistryObject<EntityType<RailbeamEntity>> RAILBEAM = register("railbeam",
+			EntityType.Builder.<RailbeamEntity>of(RailbeamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RailbeamEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RailcannonstrikeprojectileEntity>> RAILCANNONSTRIKEPROJECTILE = register("railcannonstrikeprojectile",
+			EntityType.Builder.<RailcannonstrikeprojectileEntity>of(RailcannonstrikeprojectileEntity::new, MobCategory.MISC).setCustomClientFactory(RailcannonstrikeprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -101,6 +108,7 @@ public class HelldiversModEntities {
 			TerminidShriekerEntity.init();
 			CommisarEntity.init();
 			HulkEntity.init();
+			RailbeamEntity.init();
 		});
 	}
 
@@ -114,5 +122,6 @@ public class HelldiversModEntities {
 		event.put(TERMINID_SHRIEKER.get(), TerminidShriekerEntity.createAttributes().build());
 		event.put(COMMISAR.get(), CommisarEntity.createAttributes().build());
 		event.put(HULK.get(), HulkEntity.createAttributes().build());
+		event.put(RAILBEAM.get(), RailbeamEntity.createAttributes().build());
 	}
 }

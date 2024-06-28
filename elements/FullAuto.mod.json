@@ -1,0 +1,15 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SCROLL",
+    "keyBindingName": "Full Auto Fire",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "ON_FullAuto"
+    },
+    "onKeyReleased": {
+      "name": "OFF_FullAuto"
+    }
+  }
+}

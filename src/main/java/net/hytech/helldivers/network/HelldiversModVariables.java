@@ -74,8 +74,8 @@ public class HelldiversModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.Save = original.Save;
-			clone.is_full_auto = original.is_full_auto;
 			if (!event.isWasDeath()) {
+				clone.is_full_auto = original.is_full_auto;
 			}
 		}
 

@@ -119,10 +119,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -207,10 +203,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -320,10 +312,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -2168,6 +2156,275 @@
         ]
       },
       "path": "~/Entity/Automaton"
+    },
+    {
+      "name": "ON_FullAuto",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_full_auto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/ON_FullAutoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures/Full Auto"
+    },
+    {
+      "name": "OFF_FullAuto",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "off_full_auto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OFF_FullAutoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures/Full Auto"
+    },
+    {
+      "name": "FullAuto",
+      "type": "keybind",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_auto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/network/FullAutoMessage.java"
+        ]
+      },
+      "path": "~/Shooting_Procedures/Full Auto"
+    },
+    {
+      "name": "GunFire",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/GunFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures"
+    },
+    {
+      "name": "FullAutoFire",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_auto_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/FullAutoFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Shooting_Procedures/Full Auto"
+    },
+    {
+      "name": "Railbeam",
+      "type": "animatedentity",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "railbeam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/renderer/RailbeamRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/layer/RailbeamLayer.java",
+          "src/main/java/net/hytech/helldivers/entity/RailbeamEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/RailbeamModel.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
+    },
+    {
+      "name": "CallRailCannonStrike",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_rail_cannon_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallRailCannonStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
+    },
+    {
+      "name": "AddRailCannonStrike",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_rail_cannon_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddRailCannonStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "DespawnRailCannon",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "despawn_rail_cannon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/DespawnRailCannonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
+    },
+    {
+      "name": "RailCannonExplode",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rail_cannon_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/RailCannonExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
+    },
+    {
+      "name": "Railcannonstrikeprojectile",
+      "type": "projectile",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "railcannonstrikeprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/RailcannonstrikeprojectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
     }
   ],
   "variable_elements": [
@@ -2204,7 +2461,7 @@
     {
       "name": "is_full_auto",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -2292,9 +2549,26 @@
   ],
   "tag_elements": {
     "BIOMES:minecraft:has_structure/stronghold": [],
+    "ITEMS:helldivers:stratagem_item": [
+      "CUSTOM:EagleAirStrike",
+      "CUSTOM:Eagle500KG",
+      "CUSTOM:E710"
+    ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:Terminiddustspore",
       "~CUSTOM:Terminidhive"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:TerminidBiome"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_nether": [
+      "~CUSTOM:TerminidBiome"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:TerminidBiome"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:TerminidBiome"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:AutomatonFactoryTrapdoor",
@@ -2303,13 +2577,6 @@
       "~CUSTOM:Automatoncontactmine",
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
-    ],
-    "BIOMES:minecraft:has_structure/nether_fossil": [
-      "~CUSTOM:TerminidBiome"
-    ],
-    "ITEMS:helldivers:stratagem_item": [
-      "CUSTOM:EagleAirStrike",
-      "CUSTOM:Eagle500KG"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:AutomatonFactoryTrapdoor",
@@ -2321,20 +2588,16 @@
     "BIOMES:minecraft:has_structure/bastion_remnant": [
       "~CUSTOM:TerminidBiome"
     ],
-    "BIOMES:minecraft:has_structure/mineshaft": [
-      "~CUSTOM:TerminidBiome"
-    ],
-    "BIOMES:minecraft:has_structure/ruined_portal_nether": [
-      "~CUSTOM:TerminidBiome"
-    ],
     "ITEMS:helldivers:gun": [
       "CUSTOM:AR23Liberator",
       "CUSTOM:SG225Breaker",
       "CUSTOM:M105Stalwart",
       "CUSTOM:APW1AntiMaterialRifle"
     ],
-    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
-      "~CUSTOM:TerminidBiome"
+    "ITEMS:helldivers:full_auto_gun": [
+      "CUSTOM:M105Stalwart",
+      "CUSTOM:SG225Breaker",
+      "CUSTOM:AR23Liberator"
     ]
   },
   "language_map": {
@@ -2344,8 +2607,8 @@
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "item.helldivers.testflame": "Testflame",
       "subtitles.shotgun_shot": "Gun shot",
-      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "subtitles.amr_shot": "Gun shot",
+      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
       "subtitles.basic_shot": "Gun shot",
       "block.helldivers.terminidwall": "Terminid Wall",
@@ -2368,6 +2631,7 @@
       "block.helldivers.automaton_factory_door": "Automaton Factory Door",
       "entity.helldivers.terminidbiletitan": "Bile Titan",
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
+      "item.helldivers.railbeam_spawn_egg": "Rail Beam Spawn Egg",
       "subtitles.awp1_dry_fire": "Gun clicks",
       "item.helldivers.bile_spew_item": "Bile Spew Item",
       "item.helldivers.frag_grenade": "Frag Grenade",
@@ -2391,6 +2655,7 @@
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
       "subtitles.ar23_shoot": "Gun shoots",
       "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
+      "key.helldivers.full_auto": "Full Auto Fire",
       "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
       "key.helldivers.reload_key": "Reload Key",
       "subtitles.ar23_reload": "Gun reloads",
@@ -2400,6 +2665,7 @@
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
       "subtitles.sg225_shoot": "Gun shoots",
       "item.helldivers.eagle_500_kg": "Eagle 500KG",
+      "entity.helldivers.railbeam": "Rail Beam",
       "gui.helldivers.call_stratagems.Eagle_500KG_Bomb": "Eagle 500 KG Bomb",
       "gui.helldivers.call_stratagems.button_eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.hellpod_item": "Hellpod Item",
@@ -2453,6 +2719,10 @@
           },
           {
             "name": "Flamethrower",
+            "children": []
+          },
+          {
+            "name": "Full Auto",
             "children": []
           }
         ]
@@ -2509,6 +2779,10 @@
               {
                 "name": "Reinforcements",
                 "children": []
+              },
+              {
+                "name": "Rail_Cannon_Strike",
+                "children": []
               }
             ]
           }
@@ -2540,7 +2814,7 @@
   "workspaceSettings": {
     "modid": "helldivers",
     "modName": "Helldivers",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Distribute Managed Democracy across the world!",
     "author": "HyTech01",
     "websiteURL": "https://www.youtube.com/c/HyTechInc",

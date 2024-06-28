@@ -8,6 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
@@ -18,13 +19,13 @@ import net.hytech.helldivers.init.HelldiversModEntities;
 import net.hytech.helldivers.entity.BasicBulletEntity;
 
 public class AR23LiberatorFireProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (itemstack.getOrCreateTag().getDouble("AR23 Bullet") > 0) {
-			if (!(entity instanceof Player _plrCldCheck3 && _plrCldCheck3.getCooldowns().isOnCooldown(itemstack.getItem()))) {
-				if (itemstack.getItem() instanceof AR23LiberatorItem)
-					itemstack.getOrCreateTag().putString("geckoAnim", "animation.ar23.fire");
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("AR23 Bullet") > 0) {
+			if (!(entity instanceof Player _plrCldCheck3 && _plrCldCheck3.getCooldowns().isOnCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AR23LiberatorItem)
+					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("geckoAnim", "animation.ar23.fire");
 				{
 					Entity _shootFrom = entity;
 					Level projectileLevel = _shootFrom.level();
@@ -44,7 +45,8 @@ public class AR23LiberatorFireProcedure {
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}
-				itemstack.getOrCreateTag().putDouble("AR23 Bullet", (itemstack.getOrCreateTag().getDouble("AR23 Bullet") - 1));
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("AR23 Bullet",
+						((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("AR23 Bullet") - 1));
 				if (!world.isClientSide()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
@@ -55,7 +57,7 @@ public class AR23LiberatorFireProcedure {
 					}
 				}
 			}
-		} else if (itemstack.getOrCreateTag().getDouble("AR23 Bullet") == 0) {
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("AR23 Bullet") == 0) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:ar23_dry_fire")), SoundSource.NEUTRAL, 1, 1);
