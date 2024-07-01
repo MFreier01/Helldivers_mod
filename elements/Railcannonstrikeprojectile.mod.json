@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "Blocks.STONE#1"
+      "value": "CUSTOM:BulletItem"
     },
     "showParticles": false,
     "actionSound": {

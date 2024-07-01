@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -23,11 +22,12 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.hytech.helldivers.procedures.RailCannonExplodeProcedure;
+import net.hytech.helldivers.init.HelldiversModItems;
 import net.hytech.helldivers.init.HelldiversModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class RailcannonstrikeprojectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Blocks.GRANITE);
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(HelldiversModItems.BULLET_ITEM.get());
 
 	public RailcannonstrikeprojectileEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(HelldiversModEntities.RAILCANNONSTRIKEPROJECTILE.get(), world);

@@ -61,6 +61,10 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.TESTFLAME.get());
 				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.ORBITAL_RAIL_CANNON_STRIKE.get());
+				tabData.accept(HelldiversModItems.ORBITAL_PRECISION_STRIKE.get());
+				tabData.accept(HelldiversModItems.EAGLE_STRAFING_RUN.get());
+				tabData.accept(HelldiversModBlocks.STRATAGEM_MAKER.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

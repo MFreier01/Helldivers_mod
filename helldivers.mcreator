@@ -2357,30 +2357,6 @@
       "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
     },
     {
-      "name": "DespawnRailCannon",
-      "type": "procedure",
-      "sortid": 119,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "despawn_rail_cannon",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/procedures/DespawnRailCannonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
-    },
-    {
       "name": "RailCannonExplode",
       "type": "procedure",
       "sortid": 120,
@@ -2422,6 +2398,334 @@
       "metadata": {
         "files": [
           "src/main/java/net/hytech/helldivers/entity/RailcannonstrikeprojectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
+    },
+    {
+      "name": "CallPrecisionStrike",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_precision_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallPrecisionStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Precision_Strike"
+    },
+    {
+      "name": "PrecisionStrike",
+      "type": "projectile",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "precision_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/PrecisionStrikeEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Precision_Strike"
+    },
+    {
+      "name": "AddPrecisionStrike",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_precision_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddPrecisionStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "PrecisionExplode",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "precision_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/PrecisionExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Precision_Strike"
+    },
+    {
+      "name": "OrbitalRailCannonStrike",
+      "type": "item",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_rail_cannon_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/orbital_rail_cannon_strike.json",
+          "src/main/java/net/hytech/helldivers/item/OrbitalRailCannonStrikeItem.java"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "OrbitalPrecisionStrike",
+      "type": "item",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_precision_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/OrbitalPrecisionStrikeItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_precision_strike.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "CallStrafingRun",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_strafing_run",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallStrafingRunProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Strafing_Run"
+    },
+    {
+      "name": "StrafingRunExplode",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strafing_run_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/StrafingRunExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Strafing_Run"
+    },
+    {
+      "name": "StrafingRunProjectile",
+      "type": "projectile",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strafing_run_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/StrafingRunProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Strafing_Run"
+    },
+    {
+      "name": "AddStrafingRun",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_strafing_run",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddStrafingRunProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "EagleStrafingRun",
+      "type": "item",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_strafing_run",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/EagleStrafingRunItem.java",
+          "src/main/resources/assets/helldivers/models/item/eagle_strafing_run.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "StratagemMaker",
+      "type": "animatedblock",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagem_maker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/block/StratagemMakerBlock.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerTileRenderer.java",
+          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerBlockModel.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerDisplayItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/stratagem_maker.json",
+          "src/main/resources/assets/helldivers/models/custom/stratagem_maker_particle.json",
+          "src/main/java/net/hytech/helldivers/block/display/StratagemMakerDisplayItem.java",
+          "src/main/java/net/hytech/helldivers/block/entity/StratagemMakerTileEntity.java",
+          "src/main/resources/assets/helldivers/blockstates/stratagem_maker.json",
+          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "StratagemMakerAnimation",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagem_maker_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/StratagemMakerAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FireRailCannon",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_rail_cannon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/FireRailCannonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
       "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
@@ -2548,15 +2852,19 @@
     }
   ],
   "tag_elements": {
-    "BIOMES:minecraft:has_structure/stronghold": [],
-    "ITEMS:helldivers:stratagem_item": [
-      "CUSTOM:EagleAirStrike",
-      "CUSTOM:Eagle500KG",
-      "CUSTOM:E710"
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:TerminidBiome"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:Terminiddustspore",
       "~CUSTOM:Terminidhive"
+    ],
+    "ITEMS:helldivers:stratagem_item": [
+      "CUSTOM:EagleAirStrike",
+      "CUSTOM:Eagle500KG",
+      "CUSTOM:OrbitalPrecisionStrike",
+      "CUSTOM:OrbitalRailCannonStrike",
+      "CUSTOM:EagleStrafingRun"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:TerminidBiome"
@@ -2567,16 +2875,17 @@
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
       "~CUSTOM:TerminidBiome"
     ],
-    "BIOMES:minecraft:has_structure/nether_fossil": [
-      "~CUSTOM:TerminidBiome"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:StratagemMaker",
       "~CUSTOM:AutomatonFactoryTrapdoor",
       "~CUSTOM:AutomatonFactoryDoor",
       "~CUSTOM:AutomatonFactorybase",
       "~CUSTOM:Automatoncontactmine",
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:TerminidBiome"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:AutomatonFactoryTrapdoor",
@@ -2607,12 +2916,14 @@
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "item.helldivers.testflame": "Testflame",
       "subtitles.shotgun_shot": "Gun shot",
-      "subtitles.amr_shot": "Gun shot",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
+      "subtitles.amr_shot": "Gun shot",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
+      "block.helldivers.stratagem_maker": "Stratagem Maker",
       "subtitles.basic_shot": "Gun shot",
       "block.helldivers.terminidwall": "Terminid Wall",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
+      "item.helldivers.orbital_rail_cannon_strike": "Orbital Rail Cannon Strike",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
       "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
@@ -2621,9 +2932,11 @@
       "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
       "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
       "item.helldivers.hulk_spawn_egg": "Hulk Spawn Egg",
+      "item.helldivers.orbital_precision_strike": "Orbital Precision Strike",
       "block.helldivers.terminiddustspore": "Dust Spore",
       "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.ar_23": "AR Magazine",
+      "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
       "subtitles.sg225_reload": "Gun reload",
       "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_dry_fire": "Gun clicks",
@@ -2782,6 +3095,14 @@
               },
               {
                 "name": "Rail_Cannon_Strike",
+                "children": []
+              },
+              {
+                "name": "Precision_Strike",
+                "children": []
+              },
+              {
+                "name": "Eagle_Strafing_Run",
                 "children": []
               }
             ]

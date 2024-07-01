@@ -19,5 +19,11 @@ public class CallStratagemProcedure {
 		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("RailCannonStrike")) {
 			CallRailCannonStrikeProcedure.execute(world, x, y, z, entity);
 		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("PrecisionStrike")) {
+			CallPrecisionStrikeProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleStrafingRun")) {
+			CallStrafingRunProcedure.execute(world, x, y, z, entity);
+		}
 	}
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "helldivers:item/eagle_500kg_bomb"
+    "layer0": "helldivers:item/eagle_500kg_strike"
   }
 }

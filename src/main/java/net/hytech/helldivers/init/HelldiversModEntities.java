@@ -21,10 +21,12 @@ import net.hytech.helldivers.entity.ThrownAttackOrbEntity;
 import net.hytech.helldivers.entity.TerminidbiletitanEntity;
 import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
+import net.hytech.helldivers.entity.StrafingRunProjectileEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
 import net.hytech.helldivers.entity.RailcannonstrikeprojectileEntity;
 import net.hytech.helldivers.entity.RailbeamEntity;
 import net.hytech.helldivers.entity.Projectile500KGEntity;
+import net.hytech.helldivers.entity.PrecisionStrikeEntity;
 import net.hytech.helldivers.entity.HulkEntity;
 import net.hytech.helldivers.entity.HellpodProjectileEntity;
 import net.hytech.helldivers.entity.HellpodEntity;
@@ -88,10 +90,14 @@ public class HelldiversModEntities {
 
 					.sized(2.5f, 3f));
 	public static final RegistryObject<EntityType<RailbeamEntity>> RAILBEAM = register("railbeam",
-			EntityType.Builder.<RailbeamEntity>of(RailbeamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RailbeamEntity::new).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<RailbeamEntity>of(RailbeamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RailbeamEntity::new).fireImmune().sized(0.3f, 0.1f));
 	public static final RegistryObject<EntityType<RailcannonstrikeprojectileEntity>> RAILCANNONSTRIKEPROJECTILE = register("railcannonstrikeprojectile",
 			EntityType.Builder.<RailcannonstrikeprojectileEntity>of(RailcannonstrikeprojectileEntity::new, MobCategory.MISC).setCustomClientFactory(RailcannonstrikeprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PrecisionStrikeEntity>> PRECISION_STRIKE = register("precision_strike", EntityType.Builder.<PrecisionStrikeEntity>of(PrecisionStrikeEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(PrecisionStrikeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<StrafingRunProjectileEntity>> STRAFING_RUN_PROJECTILE = register("strafing_run_projectile", EntityType.Builder.<StrafingRunProjectileEntity>of(StrafingRunProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(StrafingRunProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

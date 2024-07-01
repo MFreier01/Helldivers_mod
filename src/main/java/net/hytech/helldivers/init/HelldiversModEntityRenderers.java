@@ -44,5 +44,7 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.HULK.get(), HulkRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.RAILBEAM.get(), RailbeamRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.RAILCANNONSTRIKEPROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.PRECISION_STRIKE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.STRAFING_RUN_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

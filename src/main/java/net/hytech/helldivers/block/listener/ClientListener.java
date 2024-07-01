@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.hytech.helldivers.init.HelldiversModBlockEntities;
 import net.hytech.helldivers.block.renderer.TerminiddustsporeTileRenderer;
+import net.hytech.helldivers.block.renderer.StratagemMakerTileRenderer;
 import net.hytech.helldivers.block.renderer.AutomatoncontactmineTileRenderer;
 import net.hytech.helldivers.block.renderer.AmmoBoxTileRenderer;
 import net.hytech.helldivers.HelldiversMod;
@@ -20,5 +21,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(HelldiversModBlockEntities.TERMINIDDUSTSPORE.get(), context -> new TerminiddustsporeTileRenderer());
 		event.registerBlockEntityRenderer(HelldiversModBlockEntities.AUTOMATONCONTACTMINE.get(), context -> new AutomatoncontactmineTileRenderer());
 		event.registerBlockEntityRenderer(HelldiversModBlockEntities.AMMO_BOX.get(), context -> new AmmoBoxTileRenderer());
+		event.registerBlockEntityRenderer(HelldiversModBlockEntities.STRATAGEM_MAKER.get(), context -> new StratagemMakerTileRenderer());
 	}
 }

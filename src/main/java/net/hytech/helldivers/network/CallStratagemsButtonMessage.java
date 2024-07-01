@@ -13,6 +13,8 @@ import net.minecraft.core.BlockPos;
 
 import net.hytech.helldivers.world.inventory.CallStratagemsMenu;
 import net.hytech.helldivers.procedures.CheckStratagemProcedure;
+import net.hytech.helldivers.procedures.CheckStratagem4Procedure;
+import net.hytech.helldivers.procedures.CheckStratagem3Procedure;
 import net.hytech.helldivers.procedures.CheckStratagem2Procedure;
 import net.hytech.helldivers.HelldiversMod;
 
@@ -73,11 +75,11 @@ public class CallStratagemsButtonMessage {
 		}
 		if (buttonID == 2) {
 
-			CheckStratagemProcedure.execute(entity);
+			CheckStratagem3Procedure.execute(entity);
 		}
 		if (buttonID == 3) {
 
-			CheckStratagemProcedure.execute(entity);
+			CheckStratagem4Procedure.execute(entity);
 		}
 	}
 

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "eagle_500kg_bomb",
+    "texture": "eagle_500kg_strike",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

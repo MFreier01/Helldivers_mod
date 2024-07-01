@@ -1,0 +1,6 @@
+{
+  "parent": "helldivers:displaysettings/stratagem_maker.item",
+  "textures": {
+    "particle": "helldivers:block/stratagem_maker"
+  }
+}

@@ -21,8 +21,17 @@ public class CheckStratagemProcedure {
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_500_KG.get()) {
 			Add500KGProcedure.execute(entity);
 		}
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.E_710.get()) {
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
+				.getItem() == HelldiversModItems.ORBITAL_RAIL_CANNON_STRIKE.get()) {
 			AddRailCannonStrikeProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_PRECISION_STRIKE
+				.get()) {
+			AddPrecisionStrikeProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_STRAFING_RUN
+				.get()) {
+			AddStrafingRunProcedure.execute(entity);
 		}
 	}
 }

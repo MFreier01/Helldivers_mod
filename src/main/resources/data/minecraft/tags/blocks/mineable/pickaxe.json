@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "helldivers:stratagem_maker",
     "helldivers:automaton_factory_trapdoor",
     "helldivers:automaton_factory_door",
     "helldivers:automaton_factorybase",

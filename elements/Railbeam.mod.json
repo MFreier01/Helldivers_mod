@@ -13,10 +13,10 @@
       "fixedValue": 1.0
     },
     "entityDataEntries": [],
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
-    "mountedYOffset": 0.0,
+    "modelWidth": 0.30000000000000004,
+    "modelHeight": 0.1,
+    "modelShadowSize": 0.30000000000000004,
+    "mountedYOffset": 2.0,
     "stepHeight": 0.6,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
@@ -51,10 +51,10 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 1,
-    "attackKnockback": 5.0,
+    "attackStrength": 0,
+    "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 1.0,
     "armorBaseValue": 0.0,
@@ -102,11 +102,11 @@
       "value": ""
     },
     "onInitialSpawn": {
-      "name": "DespawnRailCannon"
+      "name": "FireRailCannon"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:Terminidbiletitan</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:Hulk</field><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityCreature</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityAmbientCreature</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityMob</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "rail_cannon_strike.geo.json",
     "groupName": "",
     "animation1": "animation.rail_cannon_strike.idle",
