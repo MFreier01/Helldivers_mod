@@ -33,5 +33,17 @@ public class CheckStratagem4Procedure {
 				.get()) {
 			AddStrafingRunProcedure.execute(entity);
 		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_LASER_ITEM
+				.get()) {
+			AddOrbitalLaserProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_AIRBURST
+				.get()) {
+			AddOrbitalEMSProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_EMS_STRIKE
+				.get()) {
+			AddOrbitalAirburstProcedure.execute(entity);
+		}
 	}
 }

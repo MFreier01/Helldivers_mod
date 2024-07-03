@@ -21,6 +21,17 @@ import net.hytech.helldivers.HelldiversMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class HelldiversModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, HelldiversMod.MODID);
+	public static final RegistryObject<CreativeModeTab> STRATAGEMS = REGISTRY.register("stratagems",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.helldivers.stratagems")).icon(() -> new ItemStack(HelldiversModItems.EAGLE_AIR_STRIKE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(HelldiversModItems.EAGLE_AIR_STRIKE.get());
+				tabData.accept(HelldiversModItems.EAGLE_500_KG.get());
+				tabData.accept(HelldiversModItems.ORBITAL_RAIL_CANNON_STRIKE.get());
+				tabData.accept(HelldiversModItems.ORBITAL_PRECISION_STRIKE.get());
+				tabData.accept(HelldiversModItems.EAGLE_STRAFING_RUN.get());
+				tabData.accept(HelldiversModItems.ORBITAL_LASER_ITEM.get());
+				tabData.accept(HelldiversModItems.ORBITAL_AIRBURST.get());
+				tabData.accept(HelldiversModItems.ORBITAL_EMS_STRIKE.get());
+			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> HELLDIVERS = REGISTRY.register("helldivers",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.helldivers.helldivers")).icon(() -> new ItemStack(HelldiversModItems.BASICARMOR_HELMET.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(HelldiversModItems.BASICARMOR_HELMET.get());
@@ -56,14 +67,8 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.PURIFIEDE_710.get());
 				tabData.accept(HelldiversModBlocks.AMMO_BOX.get().asItem());
 				tabData.accept(HelldiversModItems.AR_23.get());
-				tabData.accept(HelldiversModItems.EAGLE_AIR_STRIKE.get());
-				tabData.accept(HelldiversModItems.EAGLE_500_KG.get());
 				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
-				tabData.accept(HelldiversModItems.TESTFLAME.get());
 				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
-				tabData.accept(HelldiversModItems.ORBITAL_RAIL_CANNON_STRIKE.get());
-				tabData.accept(HelldiversModItems.ORBITAL_PRECISION_STRIKE.get());
-				tabData.accept(HelldiversModItems.EAGLE_STRAFING_RUN.get());
 				tabData.accept(HelldiversModBlocks.STRATAGEM_MAKER.get().asItem());
 			}).withSearchBar().build());
 

@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "eagle_strike_test",
+    "texture": "orbital_airburst",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Testflame",
-    "rarity": "COMMON",
+    "name": "Orbital Airburst",
+    "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "CUSTOM:Helldivers"
+      "value": "CUSTOM:Stratagems"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

@@ -18,4 +18,5 @@ public class HelldiversModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> RED_BEAM = REGISTRY.register("red_beam", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BLUE_BEAM = REGISTRY.register("blue_beam", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> BILE_SPEW = REGISTRY.register("bile_spew", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> EMS = REGISTRY.register("ems", () -> new SimpleParticleType(true));
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "helldivers:item/eagle_strike_test"
+    "layer0": "helldivers:item/orbital_ems_strike"
   }
 }

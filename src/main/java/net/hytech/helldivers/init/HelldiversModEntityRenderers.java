@@ -16,6 +16,7 @@ import net.hytech.helldivers.client.renderer.TerminidShriekerRenderer;
 import net.hytech.helldivers.client.renderer.TerminidScavengerRenderer;
 import net.hytech.helldivers.client.renderer.StaticFragGrenadeRenderer;
 import net.hytech.helldivers.client.renderer.RailbeamRenderer;
+import net.hytech.helldivers.client.renderer.OrbitallaserRenderer;
 import net.hytech.helldivers.client.renderer.HulkRenderer;
 import net.hytech.helldivers.client.renderer.HellpodRenderer;
 import net.hytech.helldivers.client.renderer.EagleStrikeBombEntityRenderer;
@@ -46,5 +47,7 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.RAILCANNONSTRIKEPROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.PRECISION_STRIKE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.STRAFING_RUN_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.ORBITALLASER.get(), OrbitallaserRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.AIRBURST_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

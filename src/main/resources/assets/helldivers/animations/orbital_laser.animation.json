@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.orbital_laser.spin": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"main": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -180, 0]
+						},
+						"1.5": {
+							"vector": [0, -360, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

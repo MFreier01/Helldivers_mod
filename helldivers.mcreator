@@ -2124,21 +2124,6 @@
       "path": "~/Shooting_Procedures/Flamethrower"
     },
     {
-      "name": "Testflame",
-      "type": "item",
-      "sortid": 109,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testflame",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/item/TestflameItem.java",
-          "src/main/resources/assets/helldivers/models/item/testflame.json"
-        ]
-      },
-      "path": "~/Shooting_Procedures/Flamethrower"
-    },
-    {
       "name": "Hulk",
       "type": "animatedentity",
       "sortid": 110,
@@ -2729,6 +2714,365 @@
         ]
       },
       "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
+    },
+    {
+      "name": "Orbital_laser_damage",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_laser_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Orbital_laser_damageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Laser"
+    },
+    {
+      "name": "Orbital_laser_despawn",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_laser_despawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Orbital_laser_despawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Laser"
+    },
+    {
+      "name": "Orbitallaser",
+      "type": "animatedentity",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitallaser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/renderer/OrbitallaserRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/layer/OrbitallaserLayer.java",
+          "src/main/java/net/hytech/helldivers/entity/OrbitallaserEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/OrbitallaserModel.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/orbitallaser_biome_modifier.json"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Laser"
+    },
+    {
+      "name": "CallOrbitalLaser",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_orbital_laser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallOrbitalLaserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Laser"
+    },
+    {
+      "name": "AddOrbitalLaser",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_laser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbitalLaserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "OrbitalLaserItem",
+      "type": "item",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_laser_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/OrbitalLaserItemItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_laser_item.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "Stratagems",
+      "type": "tab",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagems",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CallOrbitalAirburst",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_orbital_airburst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallOrbitalAirburstProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Airburst"
+    },
+    {
+      "name": "Airburst_explode",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airburst_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Airburst_explodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Airburst"
+    },
+    {
+      "name": "AirburstProjectile",
+      "type": "projectile",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airburst_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/AirburstProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Airburst"
+    },
+    {
+      "name": "AddOrbitalAirburst",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_airburst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbitalAirburstProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "OrbitalAirburst",
+      "type": "item",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_airburst",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/orbital_airburst.json",
+          "src/main/java/net/hytech/helldivers/item/OrbitalAirburstItem.java"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "CallOrbitalEMSStrike",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_orbital_ems_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallOrbitalEMSStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_EMS_Strike"
+    },
+    {
+      "name": "AddOrbitalEMS",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_ems",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbitalEMSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "OrbitalEMSStrike",
+      "type": "item",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_ems_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/orbital_ems_strike.json",
+          "src/main/java/net/hytech/helldivers/item/OrbitalEMSStrikeItem.java"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "EMS",
+      "type": "particle",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ems",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/particles/ems.json",
+          "src/main/java/net/hytech/helldivers/client/particle/EMSParticle.java"
+        ]
+      },
+      "path": "~/Stratagems"
     }
   ],
   "variable_elements": [
@@ -2855,16 +3199,19 @@
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CUSTOM:TerminidBiome"
     ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
-    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
       "CUSTOM:OrbitalPrecisionStrike",
       "CUSTOM:OrbitalRailCannonStrike",
-      "CUSTOM:EagleStrafingRun"
+      "CUSTOM:EagleStrafingRun",
+      "CUSTOM:OrbitalLaserItem",
+      "CUSTOM:OrbitalAirburst",
+      "CUSTOM:OrbitalEMSStrike"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:TerminidBiome"
@@ -2914,15 +3261,15 @@
       "entity.helldivers.hulk": "Hulk",
       "item.helldivers.eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
-      "item.helldivers.testflame": "Testflame",
       "subtitles.shotgun_shot": "Gun shot",
-      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "subtitles.amr_shot": "Gun shot",
+      "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
       "block.helldivers.stratagem_maker": "Stratagem Maker",
       "subtitles.basic_shot": "Gun shot",
       "block.helldivers.terminidwall": "Terminid Wall",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
+      "item_group.helldivers.stratagems": "Stratagems",
       "item.helldivers.orbital_rail_cannon_strike": "Orbital Rail Cannon Strike",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
@@ -2941,6 +3288,8 @@
       "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
+      "entity.helldivers.orbitallaser": "Orbital Laser",
+      "item.helldivers.orbital_airburst": "Orbital Airburst",
       "block.helldivers.automaton_factory_door": "Automaton Factory Door",
       "entity.helldivers.terminidbiletitan": "Bile Titan",
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
@@ -2970,6 +3319,7 @@
       "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
       "key.helldivers.full_auto": "Full Auto Fire",
       "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
+      "item.helldivers.orbital_ems_strike": "Orbital EMS Strike",
       "key.helldivers.reload_key": "Reload Key",
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
@@ -2984,6 +3334,7 @@
       "item.helldivers.hellpod_item": "Hellpod Item",
       "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.e_710": "Raw E-710",
+      "item.helldivers.orbital_laser_item": "Orbital Laser",
       "item.helldivers.bullet_item": "Bullet Item",
       "item.helldivers.terminidbiletitan_spawn_egg": "Bile Titan Spawn Egg",
       "item.helldivers.empty_stratagem_orb": "Empty Stratagem Orb",
@@ -2995,6 +3346,7 @@
       "item.helldivers.commisar_spawn_egg": "Commisar Spawn Egg",
       "entity.helldivers.commisar": "Commisar",
       "item.helldivers.air_strike_bomb_item": "Air Strike Bomb Item",
+      "item.helldivers.orbitallaser_spawn_egg": "Orbital Laser Spawn Egg",
       "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate",
       "item.helldivers.automatonbullet": "Automatonbullet"
     }
@@ -3103,6 +3455,18 @@
               },
               {
                 "name": "Eagle_Strafing_Run",
+                "children": []
+              },
+              {
+                "name": "Orbital_Laser",
+                "children": []
+              },
+              {
+                "name": "Orbital_Airburst",
+                "children": []
+              },
+              {
+                "name": "Orbital_EMS_Strike",
                 "children": []
               }
             ]

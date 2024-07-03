@@ -15,13 +15,15 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ArmorItem;
 
-import net.hytech.helldivers.item.TestflameItem;
 import net.hytech.helldivers.item.StratagemRemoteItem;
 import net.hytech.helldivers.item.StimItem;
 import net.hytech.helldivers.item.SG225BreakerItem;
 import net.hytech.helldivers.item.Purifiede710Item;
 import net.hytech.helldivers.item.OrbitalRailCannonStrikeItem;
 import net.hytech.helldivers.item.OrbitalPrecisionStrikeItem;
+import net.hytech.helldivers.item.OrbitalLaserItemItem;
+import net.hytech.helldivers.item.OrbitalEMSStrikeItem;
+import net.hytech.helldivers.item.OrbitalAirburstItem;
 import net.hytech.helldivers.item.M105StalwartItem;
 import net.hytech.helldivers.item.HellpodItemItem;
 import net.hytech.helldivers.item.HeavyFS23Item;
@@ -92,12 +94,14 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> EAGLE_500_KG = REGISTRY.register("eagle_500_kg", () -> new Eagle500KGItem());
 	public static final RegistryObject<Item> AUTOMATONBULLET = REGISTRY.register("automatonbullet", () -> new AutomatonbulletItem());
 	public static final RegistryObject<Item> COMMISAR_SPAWN_EGG = REGISTRY.register("commisar_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.COMMISAR, -16777216, -65536, new Item.Properties()));
-	public static final RegistryObject<Item> TESTFLAME = REGISTRY.register("testflame", () -> new TestflameItem());
 	public static final RegistryObject<Item> HULK_SPAWN_EGG = REGISTRY.register("hulk_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.HULK, -3407872, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> ORBITAL_RAIL_CANNON_STRIKE = REGISTRY.register("orbital_rail_cannon_strike", () -> new OrbitalRailCannonStrikeItem());
 	public static final RegistryObject<Item> ORBITAL_PRECISION_STRIKE = REGISTRY.register("orbital_precision_strike", () -> new OrbitalPrecisionStrikeItem());
 	public static final RegistryObject<Item> EAGLE_STRAFING_RUN = REGISTRY.register("eagle_strafing_run", () -> new EagleStrafingRunItem());
 	public static final RegistryObject<Item> STRATAGEM_MAKER = REGISTRY.register(HelldiversModBlocks.STRATAGEM_MAKER.getId().getPath(), () -> new StratagemMakerDisplayItem(HelldiversModBlocks.STRATAGEM_MAKER.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ORBITAL_LASER_ITEM = REGISTRY.register("orbital_laser_item", () -> new OrbitalLaserItemItem());
+	public static final RegistryObject<Item> ORBITAL_AIRBURST = REGISTRY.register("orbital_airburst", () -> new OrbitalAirburstItem());
+	public static final RegistryObject<Item> ORBITAL_EMS_STRIKE = REGISTRY.register("orbital_ems_strike", () -> new OrbitalEMSStrikeItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
