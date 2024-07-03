@@ -8,6 +8,9 @@
     "helldivers:eagle_strafing_run",
     "helldivers:orbital_laser_item",
     "helldivers:orbital_airburst",
-    "helldivers:orbital_ems_strike"
+    "helldivers:orbital_ems_strike",
+    "helldivers:eagle_cluster_bomb",
+    "helldivers:orbital_smoke_strike",
+    "helldivers:eagle_smoke_strike"
   ]
 }

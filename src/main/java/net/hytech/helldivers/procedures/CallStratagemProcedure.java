@@ -34,5 +34,14 @@ public class CallStratagemProcedure {
 		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("OrbitalEMS")) {
 			CallOrbitalEMSStrikeProcedure.execute(world, x, y, z, entity);
 		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleClusterBomb")) {
+			CallEagleClusterBombProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("OrbitalSmokeStrike")) {
+			CallOrbitalSmokeStrikeProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleSmokeStrike")) {
+			CallEagleSmokeStrikeProcedure.execute(world, x, y, z, entity);
+		}
 	}
 }

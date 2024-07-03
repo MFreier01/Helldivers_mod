@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.POLISHED_BLACKSTONE"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "Orbital_Smoke"
+    },
+    "onHitsPlayer": {
+      "name": "Orbital_Smoke"
+    },
+    "onHitsEntity": {
+      "name": "Orbital_Smoke"
+    }
+  }
+}

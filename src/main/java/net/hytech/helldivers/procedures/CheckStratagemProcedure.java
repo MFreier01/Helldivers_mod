@@ -45,5 +45,17 @@ public class CheckStratagemProcedure {
 				.get()) {
 			AddOrbitalEMSProcedure.execute(entity);
 		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_CLUSTER_BOMB
+				.get()) {
+			AddEagleClusterBombProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_SMOKE_STRIKE
+				.get()) {
+			AddOrbitalSmokeStriikeProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_SMOKE_STRIKE
+				.get()) {
+			AddEagleSmokeStrikeProcedure.execute(entity);
+		}
 	}
 }

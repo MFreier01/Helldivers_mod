@@ -31,6 +31,9 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.ORBITAL_LASER_ITEM.get());
 				tabData.accept(HelldiversModItems.ORBITAL_AIRBURST.get());
 				tabData.accept(HelldiversModItems.ORBITAL_EMS_STRIKE.get());
+				tabData.accept(HelldiversModItems.EAGLE_CLUSTER_BOMB.get());
+				tabData.accept(HelldiversModItems.ORBITAL_SMOKE_STRIKE.get());
+				tabData.accept(HelldiversModItems.EAGLE_SMOKE_STRIKE.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> HELLDIVERS = REGISTRY.register("helldivers",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.helldivers.helldivers")).icon(() -> new ItemStack(HelldiversModItems.BASICARMOR_HELMET.get())).displayItems((parameters, tabData) -> {
@@ -70,6 +73,8 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
 				tabData.accept(HelldiversModBlocks.STRATAGEM_MAKER.get().asItem());
+				tabData.accept(HelldiversModItems.BASIC_ARMOR_REMOTE_CHESTPLATE.get());
+				tabData.accept(HelldiversModItems.HEAVY_FS_23_REMOTE_CHESTPLATE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

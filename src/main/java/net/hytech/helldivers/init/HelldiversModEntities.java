@@ -27,6 +27,7 @@ import net.hytech.helldivers.entity.RailcannonstrikeprojectileEntity;
 import net.hytech.helldivers.entity.RailbeamEntity;
 import net.hytech.helldivers.entity.Projectile500KGEntity;
 import net.hytech.helldivers.entity.PrecisionStrikeEntity;
+import net.hytech.helldivers.entity.OrbitalsmokeprojectileEntity;
 import net.hytech.helldivers.entity.OrbitallaserEntity;
 import net.hytech.helldivers.entity.HulkEntity;
 import net.hytech.helldivers.entity.HellpodProjectileEntity;
@@ -104,6 +105,8 @@ public class HelldiversModEntities {
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OrbitallaserEntity::new).fireImmune().sized(0.6f, 0.2f));
 	public static final RegistryObject<EntityType<AirburstProjectileEntity>> AIRBURST_PROJECTILE = register("airburst_projectile", EntityType.Builder.<AirburstProjectileEntity>of(AirburstProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(AirburstProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<OrbitalsmokeprojectileEntity>> ORBITALSMOKEPROJECTILE = register("orbitalsmokeprojectile", EntityType.Builder.<OrbitalsmokeprojectileEntity>of(OrbitalsmokeprojectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(OrbitalsmokeprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

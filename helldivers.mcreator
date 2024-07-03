@@ -9,13 +9,13 @@
       "registry_name": "basicarmor",
       "metadata": {
         "files": [
+          "src/main/java/net/hytech/helldivers/client/renderer/BasicarmorArmorRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_chestplate.json",
           "src/main/java/net/hytech/helldivers/item/model/BasicarmorModel.java",
           "src/main/resources/assets/helldivers/models/item/basicarmor_boots.json",
-          "src/main/resources/assets/helldivers/models/item/basicarmor_chestplate.json",
-          "src/main/java/net/hytech/helldivers/client/renderer/BasicarmorArmorRenderer.java",
           "src/main/java/net/hytech/helldivers/item/BasicarmorItem.java",
-          "src/main/resources/assets/helldivers/models/item/basicarmor_helmet.json",
-          "src/main/resources/assets/helldivers/models/item/basicarmor_leggings.json"
+          "src/main/resources/assets/helldivers/models/item/basicarmor_leggings.json",
+          "src/main/resources/assets/helldivers/models/item/basicarmor_helmet.json"
         ]
       },
       "path": "~/Armor"
@@ -29,10 +29,10 @@
       "registry_name": "ar_23_liberator",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/renderer/AR23LiberatorItemRenderer.java",
-          "src/main/resources/assets/helldivers/models/item/ar_23_liberator.json",
           "src/main/java/net/hytech/helldivers/item/AR23LiberatorItem.java",
-          "src/main/java/net/hytech/helldivers/item/model/AR23LiberatorItemModel.java"
+          "src/main/java/net/hytech/helldivers/item/model/AR23LiberatorItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/AR23LiberatorItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/ar_23_liberator.json"
         ]
       },
       "path": "~/Guns"
@@ -46,10 +46,10 @@
       "registry_name": "sg_225_breaker",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/sg_225_breaker.json",
-          "src/main/java/net/hytech/helldivers/item/model/SG225BreakerItemModel.java",
           "src/main/java/net/hytech/helldivers/item/renderer/SG225BreakerItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/SG225BreakerItem.java"
+          "src/main/java/net/hytech/helldivers/item/SG225BreakerItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/SG225BreakerItemModel.java",
+          "src/main/resources/assets/helldivers/models/item/sg_225_breaker.json"
         ]
       },
       "path": "~/Guns"
@@ -63,10 +63,10 @@
       "registry_name": "m_105_stalwart",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/m_105_stalwart.json",
-          "src/main/java/net/hytech/helldivers/item/model/M105StalwartItemModel.java",
           "src/main/java/net/hytech/helldivers/item/renderer/M105StalwartItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/M105StalwartItem.java"
+          "src/main/java/net/hytech/helldivers/item/M105StalwartItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/M105StalwartItemModel.java",
+          "src/main/resources/assets/helldivers/models/item/m_105_stalwart.json"
         ]
       },
       "path": "~/Guns"
@@ -94,9 +94,9 @@
       "registry_name": "bullet_item",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/renderer/BulletItemItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/BulletItemItem.java",
           "src/main/resources/assets/helldivers/models/item/bullet_item.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/BulletItemItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/model/BulletItemItemModel.java"
         ]
       },
@@ -289,10 +289,10 @@
       "registry_name": "apw_1_anti_material_rifle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/apw_1_anti_material_rifle.json",
-          "src/main/java/net/hytech/helldivers/item/model/APW1AntiMaterialRifleItemModel.java",
           "src/main/java/net/hytech/helldivers/item/APW1AntiMaterialRifleItem.java",
-          "src/main/java/net/hytech/helldivers/item/renderer/APW1AntiMaterialRifleItemRenderer.java"
+          "src/main/java/net/hytech/helldivers/item/renderer/APW1AntiMaterialRifleItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/apw_1_anti_material_rifle.json",
+          "src/main/java/net/hytech/helldivers/item/model/APW1AntiMaterialRifleItemModel.java"
         ]
       },
       "path": "~/Guns"
@@ -342,9 +342,9 @@
       "registry_name": "terminid_scavenger",
       "metadata": {
         "files": [
-          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_scavenger_biome_modifier.json",
           "src/main/resources/assets/helldivers/models/item/terminid_scavenger_spawn_egg.json",
           "src/main/java/net/hytech/helldivers/entity/TerminidScavengerEntity.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_scavenger_biome_modifier.json",
           "src/main/java/net/hytech/helldivers/client/renderer/TerminidScavengerRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/model/TerminidScavengerModel.java"
         ]
@@ -360,10 +360,10 @@
       "registry_name": "frag_grenade",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/FragGrenadeItem.java",
-          "src/main/resources/assets/helldivers/models/item/frag_grenade.json",
+          "src/main/java/net/hytech/helldivers/item/model/FragGrenadeItemModel.java",
           "src/main/java/net/hytech/helldivers/item/renderer/FragGrenadeItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/model/FragGrenadeItemModel.java"
+          "src/main/java/net/hytech/helldivers/item/FragGrenadeItem.java",
+          "src/main/resources/assets/helldivers/models/item/frag_grenade.json"
         ]
       },
       "path": "~/Other_Items"
@@ -443,11 +443,11 @@
       "registry_name": "terminidhive",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/terminidhive.json",
-          "src/main/java/net/hytech/helldivers/block/TerminidhiveBlock.java",
-          "src/main/resources/assets/helldivers/models/block/terminidhive.json",
           "src/main/resources/data/helldivers/loot_tables/blocks/terminidhive.json",
-          "src/main/resources/assets/helldivers/blockstates/terminidhive.json"
+          "src/main/resources/assets/helldivers/models/item/terminidhive.json",
+          "src/main/resources/assets/helldivers/blockstates/terminidhive.json",
+          "src/main/resources/assets/helldivers/models/block/terminidhive.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidhiveBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -461,11 +461,11 @@
       "registry_name": "terminidwall",
       "metadata": {
         "files": [
+          "src/main/resources/assets/helldivers/models/block/terminidwall.json",
           "src/main/resources/data/helldivers/loot_tables/blocks/terminidwall.json",
-          "src/main/java/net/hytech/helldivers/block/TerminidwallBlock.java",
-          "src/main/resources/assets/helldivers/models/item/terminidwall.json",
           "src/main/resources/assets/helldivers/blockstates/terminidwall.json",
-          "src/main/resources/assets/helldivers/models/block/terminidwall.json"
+          "src/main/resources/assets/helldivers/models/item/terminidwall.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidwallBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -479,11 +479,11 @@
       "registry_name": "terminidstone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/helldivers/models/block/terminidstone.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidstoneBlock.java",
           "src/main/resources/assets/helldivers/models/item/terminidstone.json",
           "src/main/resources/data/helldivers/loot_tables/blocks/terminidstone.json",
-          "src/main/resources/assets/helldivers/models/block/terminidstone.json",
-          "src/main/resources/assets/helldivers/blockstates/terminidstone.json",
-          "src/main/java/net/hytech/helldivers/block/TerminidstoneBlock.java"
+          "src/main/resources/assets/helldivers/blockstates/terminidstone.json"
         ]
       },
       "path": "~/Blocks"
@@ -497,11 +497,11 @@
       "registry_name": "terminidreinforcedwall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/blockstates/terminidreinforcedwall.json",
-          "src/main/resources/data/helldivers/loot_tables/blocks/terminidreinforcedwall.json",
-          "src/main/resources/assets/helldivers/models/item/terminidreinforcedwall.json",
           "src/main/java/net/hytech/helldivers/block/TerminidreinforcedwallBlock.java",
-          "src/main/resources/assets/helldivers/models/block/terminidreinforcedwall.json"
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminidreinforcedwall.json",
+          "src/main/resources/assets/helldivers/models/block/terminidreinforcedwall.json",
+          "src/main/resources/assets/helldivers/blockstates/terminidreinforcedwall.json",
+          "src/main/resources/assets/helldivers/models/item/terminidreinforcedwall.json"
         ]
       },
       "path": "~/Blocks"
@@ -551,16 +551,16 @@
       "registry_name": "terminiddustspore",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/block/model/TerminiddustsporeBlockModel.java",
-          "src/main/java/net/hytech/helldivers/block/entity/TerminiddustsporeTileEntity.java",
-          "src/main/resources/assets/helldivers/models/custom/terminiddustspore_particle.json",
-          "src/main/resources/assets/helldivers/blockstates/terminiddustspore.json",
-          "src/main/java/net/hytech/helldivers/block/TerminiddustsporeBlock.java",
           "src/main/java/net/hytech/helldivers/block/renderer/TerminiddustsporeDisplayItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/block/renderer/TerminiddustsporeTileRenderer.java",
-          "src/main/java/net/hytech/helldivers/block/model/TerminiddustsporeDisplayModel.java",
+          "src/main/java/net/hytech/helldivers/block/model/TerminiddustsporeBlockModel.java",
+          "src/main/resources/assets/helldivers/blockstates/terminiddustspore.json",
           "src/main/resources/assets/helldivers/models/item/terminiddustspore.json",
-          "src/main/java/net/hytech/helldivers/block/display/TerminiddustsporeDisplayItem.java"
+          "src/main/java/net/hytech/helldivers/block/TerminiddustsporeBlock.java",
+          "src/main/java/net/hytech/helldivers/block/model/TerminiddustsporeDisplayModel.java",
+          "src/main/java/net/hytech/helldivers/block/entity/TerminiddustsporeTileEntity.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/TerminiddustsporeTileRenderer.java",
+          "src/main/java/net/hytech/helldivers/block/display/TerminiddustsporeDisplayItem.java",
+          "src/main/resources/assets/helldivers/models/custom/terminiddustspore_particle.json"
         ]
       },
       "path": "~/Blocks"
@@ -606,16 +606,16 @@
       "registry_name": "automatoncontactmine",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/block/model/AutomatoncontactmineBlockModel.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/AutomatoncontactmineTileRenderer.java",
           "src/main/java/net/hytech/helldivers/block/display/AutomatoncontactmineDisplayItem.java",
-          "src/main/resources/assets/helldivers/blockstates/automatoncontactmine.json",
-          "src/main/java/net/hytech/helldivers/block/model/AutomatoncontactmineDisplayModel.java",
-          "src/main/java/net/hytech/helldivers/block/entity/AutomatoncontactmineTileEntity.java",
-          "src/main/resources/assets/helldivers/models/item/automatoncontactmine.json",
-          "src/main/java/net/hytech/helldivers/block/renderer/AutomatoncontactmineDisplayItemRenderer.java",
           "src/main/resources/assets/helldivers/models/custom/automatoncontactmine_particle.json",
+          "src/main/java/net/hytech/helldivers/block/model/AutomatoncontactmineBlockModel.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/AutomatoncontactmineDisplayItemRenderer.java",
+          "src/main/resources/assets/helldivers/blockstates/automatoncontactmine.json",
+          "src/main/resources/assets/helldivers/models/item/automatoncontactmine.json",
           "src/main/java/net/hytech/helldivers/block/AutomatoncontactmineBlock.java",
-          "src/main/java/net/hytech/helldivers/block/renderer/AutomatoncontactmineTileRenderer.java"
+          "src/main/java/net/hytech/helldivers/block/entity/AutomatoncontactmineTileEntity.java",
+          "src/main/java/net/hytech/helldivers/block/model/AutomatoncontactmineDisplayModel.java"
         ]
       },
       "path": "~/Blocks"
@@ -664,10 +664,10 @@
       "registry_name": "static_frag_grenade",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/client/renderer/StaticFragGrenadeRenderer.java",
-          "src/main/java/net/hytech/helldivers/entity/StaticFragGrenadeEntity.java",
           "src/main/java/net/hytech/helldivers/entity/model/StaticFragGrenadeModel.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/static_frag_grenade_biome_modifier.json"
+          "src/main/resources/data/helldivers/forge/biome_modifier/static_frag_grenade_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/entity/StaticFragGrenadeEntity.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/StaticFragGrenadeRenderer.java"
         ]
       },
       "path": "~/Other_Items"
@@ -681,13 +681,13 @@
       "registry_name": "heavy_fs_23",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/client/renderer/HeavyFS23ArmorRenderer.java",
-          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_leggings.json",
-          "src/main/java/net/hytech/helldivers/item/HeavyFS23Item.java",
           "src/main/resources/assets/helldivers/models/item/heavy_fs_23_chestplate.json",
           "src/main/resources/assets/helldivers/models/item/heavy_fs_23_boots.json",
           "src/main/java/net/hytech/helldivers/item/model/HeavyFS23Model.java",
-          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_helmet.json"
+          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_leggings.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/HeavyFS23ArmorRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_helmet.json",
+          "src/main/java/net/hytech/helldivers/item/HeavyFS23Item.java"
         ]
       },
       "path": "~/Armor"
@@ -701,11 +701,11 @@
       "registry_name": "terminidbiletitan",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/entity/model/TerminidbiletitanModel.java",
           "src/main/resources/data/helldivers/forge/biome_modifier/terminidbiletitan_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidbiletitanRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidbiletitanModel.java",
           "src/main/resources/assets/helldivers/models/item/terminidbiletitan_spawn_egg.json",
-          "src/main/java/net/hytech/helldivers/entity/TerminidbiletitanEntity.java",
-          "src/main/java/net/hytech/helldivers/client/renderer/TerminidbiletitanRenderer.java"
+          "src/main/java/net/hytech/helldivers/entity/TerminidbiletitanEntity.java"
         ]
       },
       "path": "~/Entity/Terminid"
@@ -719,9 +719,9 @@
       "registry_name": "stratagem_remote",
       "metadata": {
         "files": [
+          "src/main/java/net/hytech/helldivers/item/inventory/StratagemRemoteInventoryCapability.java",
           "src/main/resources/assets/helldivers/models/item/stratagem_remote.json",
-          "src/main/java/net/hytech/helldivers/item/StratagemRemoteItem.java",
-          "src/main/java/net/hytech/helldivers/item/inventory/StratagemRemoteInventoryCapability.java"
+          "src/main/java/net/hytech/helldivers/item/StratagemRemoteItem.java"
         ]
       },
       "path": "~/Stratagems/Stratagem_Remote"
@@ -736,8 +736,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/hytech/helldivers/world/inventory/CallStratagemsMenu.java",
-          "src/main/java/net/hytech/helldivers/network/CallStratagemsButtonMessage.java",
-          "src/main/java/net/hytech/helldivers/client/gui/CallStratagemsScreen.java"
+          "src/main/java/net/hytech/helldivers/client/gui/CallStratagemsScreen.java",
+          "src/main/java/net/hytech/helldivers/network/CallStratagemsButtonMessage.java"
         ]
       },
       "path": "~/Stratagems/Stratagem_Remote"
@@ -751,8 +751,8 @@
       "registry_name": "e_710",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/e_710.json",
-          "src/main/java/net/hytech/helldivers/item/E710Item.java"
+          "src/main/java/net/hytech/helldivers/item/E710Item.java",
+          "src/main/resources/assets/helldivers/models/item/e_710.json"
         ]
       },
       "path": "~/Other_Items"
@@ -767,9 +767,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/hytech/helldivers/item/EmptyStratagemOrbItem.java",
-          "src/main/java/net/hytech/helldivers/item/model/EmptyStratagemOrbItemModel.java",
           "src/main/resources/assets/helldivers/models/item/empty_stratagem_orb.json",
-          "src/main/java/net/hytech/helldivers/item/renderer/EmptyStratagemOrbItemRenderer.java"
+          "src/main/java/net/hytech/helldivers/item/renderer/EmptyStratagemOrbItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/model/EmptyStratagemOrbItemModel.java"
         ]
       },
       "path": "~/Stratagems"
@@ -783,10 +783,10 @@
       "registry_name": "armed_attack_stratagem_orb",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/model/ArmedAttackStratagemOrbItemModel.java",
-          "src/main/java/net/hytech/helldivers/item/renderer/ArmedAttackStratagemOrbItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/ArmedAttackStratagemOrbItem.java",
-          "src/main/resources/assets/helldivers/models/item/armed_attack_stratagem_orb.json"
+          "src/main/java/net/hytech/helldivers/item/renderer/ArmedAttackStratagemOrbItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/armed_attack_stratagem_orb.json",
+          "src/main/java/net/hytech/helldivers/item/model/ArmedAttackStratagemOrbItemModel.java"
         ]
       },
       "path": "~/Stratagems"
@@ -800,10 +800,10 @@
       "registry_name": "armed_support_stratagem_orb",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/ArmedSupportStratagemOrbItem.java",
-          "src/main/java/net/hytech/helldivers/item/model/ArmedSupportStratagemOrbItemModel.java",
           "src/main/java/net/hytech/helldivers/item/renderer/ArmedSupportStratagemOrbItemRenderer.java",
-          "src/main/resources/assets/helldivers/models/item/armed_support_stratagem_orb.json"
+          "src/main/resources/assets/helldivers/models/item/armed_support_stratagem_orb.json",
+          "src/main/java/net/hytech/helldivers/item/model/ArmedSupportStratagemOrbItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/ArmedSupportStratagemOrbItem.java"
         ]
       },
       "path": "~/Stratagems"
@@ -853,8 +853,8 @@
       "registry_name": "red_beam",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/client/particle/RedBeamParticle.java",
-          "src/main/resources/assets/helldivers/particles/red_beam.json"
+          "src/main/resources/assets/helldivers/particles/red_beam.json",
+          "src/main/java/net/hytech/helldivers/client/particle/RedBeamParticle.java"
         ]
       },
       "path": "~/Stratagems"
@@ -948,10 +948,10 @@
       "registry_name": "air_strike_bomb_item",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/renderer/AirStrikeBombItemItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/model/AirStrikeBombItemItemModel.java",
           "src/main/resources/assets/helldivers/models/item/air_strike_bomb_item.json",
-          "src/main/java/net/hytech/helldivers/item/AirStrikeBombItemItem.java"
+          "src/main/java/net/hytech/helldivers/item/AirStrikeBombItemItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/AirStrikeBombItemItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/AirStrikeBombItemItemRenderer.java"
         ]
       },
       "path": "~/Stratagems/Stratagems/Eagle_Air_Strike"
@@ -1047,9 +1047,9 @@
       "registry_name": "eagle_strike_bomb_entity",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/entity/EagleStrikeBombEntityEntity.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/EagleStrikeBombEntityRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/model/EagleStrikeBombEntityModel.java",
-          "src/main/java/net/hytech/helldivers/client/renderer/EagleStrikeBombEntityRenderer.java"
+          "src/main/java/net/hytech/helldivers/entity/EagleStrikeBombEntityEntity.java"
         ]
       },
       "path": "~/Entity"
@@ -1143,10 +1143,10 @@
       "registry_name": "hellpod_item",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/renderer/HellpodItemItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/model/HellpodItemItemModel.java",
-          "src/main/java/net/hytech/helldivers/item/HellpodItemItem.java",
-          "src/main/resources/assets/helldivers/models/item/hellpod_item.json"
+          "src/main/resources/assets/helldivers/models/item/hellpod_item.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/HellpodItemItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/HellpodItemItem.java"
         ]
       },
       "path": "~/Hellpod"
@@ -1295,8 +1295,8 @@
       "registry_name": "stim",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/StimItem.java",
-          "src/main/resources/assets/helldivers/models/item/stim.json"
+          "src/main/resources/assets/helldivers/models/item/stim.json",
+          "src/main/java/net/hytech/helldivers/item/StimItem.java"
         ]
       },
       "path": "~/Other_Items"
@@ -1330,11 +1330,11 @@
       "registry_name": "automaton_factorybase",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/blockstates/automaton_factorybase.json",
-          "src/main/resources/assets/helldivers/models/item/automaton_factorybase.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factorybase.json",
           "src/main/java/net/hytech/helldivers/block/AutomatonFactorybaseBlock.java",
           "src/main/resources/assets/helldivers/models/block/automaton_factorybase.json",
-          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factorybase.json"
+          "src/main/resources/assets/helldivers/blockstates/automaton_factorybase.json",
+          "src/main/resources/assets/helldivers/models/item/automaton_factorybase.json"
         ]
       },
       "path": "~/Blocks"
@@ -1348,11 +1348,11 @@
       "registry_name": "terminid_shrieker",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/terminid_shrieker_spawn_egg.json",
-          "src/main/java/net/hytech/helldivers/entity/TerminidShriekerEntity.java",
-          "src/main/java/net/hytech/helldivers/entity/model/TerminidShriekerModel.java",
           "src/main/java/net/hytech/helldivers/client/renderer/TerminidShriekerRenderer.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_shrieker_biome_modifier.json"
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_shrieker_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/entity/TerminidShriekerEntity.java",
+          "src/main/resources/assets/helldivers/models/item/terminid_shrieker_spawn_egg.json",
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidShriekerModel.java"
         ]
       },
       "path": "~/Entity/Terminid"
@@ -1366,18 +1366,18 @@
       "registry_name": "automaton_factory_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right_open.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right_open.json",
-          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_door.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left.json",
           "src/main/resources/assets/helldivers/models/item/automaton_factory_door.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right.json",
           "src/main/java/net/hytech/helldivers/block/AutomatonFactoryDoorBlock.java",
           "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left_open.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_door.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right_open.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right_open.json",
           "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left_open.json",
-          "src/main/resources/assets/helldivers/blockstates/automaton_factory_door.json"
+          "src/main/resources/assets/helldivers/blockstates/automaton_factory_door.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right.json"
         ]
       },
       "path": "~/Blocks"
@@ -1566,8 +1566,8 @@
       "registry_name": "bile_spew",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/particles/bile_spew.json",
-          "src/main/java/net/hytech/helldivers/client/particle/BileSpewParticle.java"
+          "src/main/java/net/hytech/helldivers/client/particle/BileSpewParticle.java",
+          "src/main/resources/assets/helldivers/particles/bile_spew.json"
         ]
       },
       "path": "~/Entity"
@@ -1581,8 +1581,8 @@
       "registry_name": "bile_spew_item",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/BileSpewItemItem.java",
-          "src/main/resources/assets/helldivers/models/item/bile_spew_item.json"
+          "src/main/resources/assets/helldivers/models/item/bile_spew_item.json",
+          "src/main/java/net/hytech/helldivers/item/BileSpewItemItem.java"
         ]
       },
       "path": "~/Entity"
@@ -1643,12 +1643,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor_open.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor_top.json",
-          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_trapdoor.json",
           "src/main/java/net/hytech/helldivers/block/AutomatonFactoryTrapdoorBlock.java",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_trapdoor.json",
           "src/main/resources/assets/helldivers/blockstates/automaton_factory_trapdoor.json",
-          "src/main/resources/assets/helldivers/models/item/automaton_factory_trapdoor.json"
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor_top.json",
+          "src/main/resources/assets/helldivers/models/item/automaton_factory_trapdoor.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_trapdoor.json"
         ]
       },
       "path": "~/Blocks"
@@ -1690,16 +1690,16 @@
       "registry_name": "ammo_box",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/block/renderer/AmmoBoxTileRenderer.java",
-          "src/main/java/net/hytech/helldivers/block/renderer/AmmoBoxDisplayItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/block/entity/AmmoBoxTileEntity.java",
-          "src/main/java/net/hytech/helldivers/block/model/AmmoBoxBlockModel.java",
-          "src/main/resources/assets/helldivers/blockstates/ammo_box.json",
-          "src/main/resources/assets/helldivers/models/custom/ammo_box_particle.json",
-          "src/main/java/net/hytech/helldivers/block/AmmoBoxBlock.java",
           "src/main/java/net/hytech/helldivers/block/model/AmmoBoxDisplayModel.java",
+          "src/main/resources/assets/helldivers/models/item/ammo_box.json",
+          "src/main/resources/assets/helldivers/models/custom/ammo_box_particle.json",
+          "src/main/java/net/hytech/helldivers/block/model/AmmoBoxBlockModel.java",
           "src/main/java/net/hytech/helldivers/block/display/AmmoBoxDisplayItem.java",
-          "src/main/resources/assets/helldivers/models/item/ammo_box.json"
+          "src/main/java/net/hytech/helldivers/block/entity/AmmoBoxTileEntity.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/AmmoBoxTileRenderer.java",
+          "src/main/java/net/hytech/helldivers/block/AmmoBoxBlock.java",
+          "src/main/resources/assets/helldivers/blockstates/ammo_box.json",
+          "src/main/java/net/hytech/helldivers/block/renderer/AmmoBoxDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks"
@@ -1713,8 +1713,8 @@
       "registry_name": "ammoboxgui",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/world/inventory/AmmoboxguiMenu.java",
-          "src/main/java/net/hytech/helldivers/client/gui/AmmoboxguiScreen.java"
+          "src/main/java/net/hytech/helldivers/client/gui/AmmoboxguiScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/AmmoboxguiMenu.java"
         ]
       },
       "path": "~/GUI/Ammo_Box"
@@ -1801,8 +1801,8 @@
       "registry_name": "eagle_air_strike",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/EagleAirStrikeItem.java",
-          "src/main/resources/assets/helldivers/models/item/eagle_air_strike.json"
+          "src/main/resources/assets/helldivers/models/item/eagle_air_strike.json",
+          "src/main/java/net/hytech/helldivers/item/EagleAirStrikeItem.java"
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
@@ -2032,8 +2032,8 @@
       "registry_name": "eagle_500_kg",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/eagle_500_kg.json",
-          "src/main/java/net/hytech/helldivers/item/Eagle500KGItem.java"
+          "src/main/java/net/hytech/helldivers/item/Eagle500KGItem.java",
+          "src/main/resources/assets/helldivers/models/item/eagle_500_kg.json"
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
@@ -2048,8 +2048,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/hytech/helldivers/item/renderer/AutomatonbulletItemRenderer.java",
-          "src/main/resources/assets/helldivers/models/item/automatonbullet.json",
           "src/main/java/net/hytech/helldivers/item/AutomatonbulletItem.java",
+          "src/main/resources/assets/helldivers/models/item/automatonbullet.json",
           "src/main/java/net/hytech/helldivers/item/model/AutomatonbulletItemModel.java"
         ]
       },
@@ -2080,8 +2080,8 @@
         "files": [
           "src/main/java/net/hytech/helldivers/entity/model/CommisarModel.java",
           "src/main/java/net/hytech/helldivers/entity/CommisarEntity.java",
-          "src/main/java/net/hytech/helldivers/client/renderer/CommisarRenderer.java",
           "src/main/resources/data/helldivers/forge/biome_modifier/commisar_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/CommisarRenderer.java",
           "src/main/resources/assets/helldivers/models/item/commisar_spawn_egg.json"
         ]
       },
@@ -2132,12 +2132,12 @@
       "registry_name": "hulk",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/entity/HulkEntity.java",
           "src/main/java/net/hytech/helldivers/entity/model/HulkModel.java",
+          "src/main/java/net/hytech/helldivers/entity/HulkEntity.java",
           "src/main/resources/data/helldivers/forge/biome_modifier/hulk_biome_modifier.json",
-          "src/main/resources/assets/helldivers/models/item/hulk_spawn_egg.json",
+          "src/main/java/net/hytech/helldivers/entity/layer/HulkLayer.java",
           "src/main/java/net/hytech/helldivers/client/renderer/HulkRenderer.java",
-          "src/main/java/net/hytech/helldivers/entity/layer/HulkLayer.java"
+          "src/main/resources/assets/helldivers/models/item/hulk_spawn_egg.json"
         ]
       },
       "path": "~/Entity/Automaton"
@@ -2277,10 +2277,10 @@
       "registry_name": "railbeam",
       "metadata": {
         "files": [
+          "src/main/java/net/hytech/helldivers/entity/model/RailbeamModel.java",
           "src/main/java/net/hytech/helldivers/client/renderer/RailbeamRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/layer/RailbeamLayer.java",
-          "src/main/java/net/hytech/helldivers/entity/RailbeamEntity.java",
-          "src/main/java/net/hytech/helldivers/entity/model/RailbeamModel.java"
+          "src/main/java/net/hytech/helldivers/entity/RailbeamEntity.java"
         ]
       },
       "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
@@ -2513,8 +2513,8 @@
       "registry_name": "orbital_precision_strike",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/OrbitalPrecisionStrikeItem.java",
-          "src/main/resources/assets/helldivers/models/item/orbital_precision_strike.json"
+          "src/main/resources/assets/helldivers/models/item/orbital_precision_strike.json",
+          "src/main/java/net/hytech/helldivers/item/OrbitalPrecisionStrikeItem.java"
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
@@ -2630,8 +2630,8 @@
       "registry_name": "eagle_strafing_run",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/EagleStrafingRunItem.java",
-          "src/main/resources/assets/helldivers/models/item/eagle_strafing_run.json"
+          "src/main/resources/assets/helldivers/models/item/eagle_strafing_run.json",
+          "src/main/java/net/hytech/helldivers/item/EagleStrafingRunItem.java"
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
@@ -2645,16 +2645,16 @@
       "registry_name": "stratagem_maker",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/block/StratagemMakerBlock.java",
+          "src/main/java/net/hytech/helldivers/block/entity/StratagemMakerTileEntity.java",
           "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerTileRenderer.java",
-          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerBlockModel.java",
-          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerDisplayItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/block/StratagemMakerBlock.java",
           "src/main/resources/assets/helldivers/models/item/stratagem_maker.json",
+          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerBlockModel.java",
           "src/main/resources/assets/helldivers/models/custom/stratagem_maker_particle.json",
           "src/main/java/net/hytech/helldivers/block/display/StratagemMakerDisplayItem.java",
-          "src/main/java/net/hytech/helldivers/block/entity/StratagemMakerTileEntity.java",
           "src/main/resources/assets/helldivers/blockstates/stratagem_maker.json",
-          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerDisplayModel.java"
+          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerDisplayModel.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks"
@@ -2780,11 +2780,11 @@
       "registry_name": "orbitallaser",
       "metadata": {
         "files": [
+          "src/main/resources/data/helldivers/forge/biome_modifier/orbitallaser_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/entity/OrbitallaserEntity.java",
           "src/main/java/net/hytech/helldivers/client/renderer/OrbitallaserRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/layer/OrbitallaserLayer.java",
-          "src/main/java/net/hytech/helldivers/entity/OrbitallaserEntity.java",
-          "src/main/java/net/hytech/helldivers/entity/model/OrbitallaserModel.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/orbitallaser_biome_modifier.json"
+          "src/main/java/net/hytech/helldivers/entity/model/OrbitallaserModel.java"
         ]
       },
       "path": "~/Stratagems/Stratagems/Orbital_Laser"
@@ -2982,8 +2982,8 @@
       "registry_name": "orbital_airburst",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/orbital_airburst.json",
-          "src/main/java/net/hytech/helldivers/item/OrbitalAirburstItem.java"
+          "src/main/java/net/hytech/helldivers/item/OrbitalAirburstItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_airburst.json"
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
@@ -3053,8 +3053,8 @@
       "registry_name": "orbital_ems_strike",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/orbital_ems_strike.json",
-          "src/main/java/net/hytech/helldivers/item/OrbitalEMSStrikeItem.java"
+          "src/main/java/net/hytech/helldivers/item/OrbitalEMSStrikeItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_ems_strike.json"
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
@@ -3073,6 +3073,319 @@
         ]
       },
       "path": "~/Stratagems"
+    },
+    {
+      "name": "CallEagleClusterBomb",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_eagle_cluster_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallEagleClusterBombProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Cluster_Bomb"
+    },
+    {
+      "name": "AddEagleClusterBomb",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_eagle_cluster_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddEagleClusterBombProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "EagleClusterBomb",
+      "type": "item",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_cluster_bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/eagle_cluster_bomb.json",
+          "src/main/java/net/hytech/helldivers/item/EagleClusterBombItem.java"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "CallOrbitalSmokeStrike",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_orbital_smoke_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallOrbitalSmokeStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Smoke_Strike"
+    },
+    {
+      "name": "Orbital_Smoke",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_smoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Orbital_SmokeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Smoke_Strike"
+    },
+    {
+      "name": "AddOrbitalSmokeStriike",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_smoke_striike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbitalSmokeStriikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "Orbitalsmokeprojectile",
+      "type": "projectile",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbitalsmokeprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/OrbitalsmokeprojectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Smoke_Strike"
+    },
+    {
+      "name": "OrbitalSmokeStrike",
+      "type": "item",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_smoke_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/orbital_smoke_strike.json",
+          "src/main/java/net/hytech/helldivers/item/OrbitalSmokeStrikeItem.java"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "CallEagleSmokeStrike",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_eagle_smoke_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallEagleSmokeStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Smoke_Strike"
+    },
+    {
+      "name": "AddEagleSmokeStrike",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_eagle_smoke_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddEagleSmokeStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "EagleSmokeStrike",
+      "type": "item",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_smoke_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/EagleSmokeStrikeItem.java",
+          "src/main/resources/assets/helldivers/models/item/eagle_smoke_strike.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "BasicArmorRemote",
+      "type": "animatedarmor",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_armor_remote",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/model/BasicArmorRemoteModel.java",
+          "src/main/java/net/hytech/helldivers/item/BasicArmorRemoteItem.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/BasicArmorRemoteArmorRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/basic_armor_remote_chestplate.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "HeavyFS23Remote",
+      "type": "animatedarmor",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_fs_23_remote",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_remote_chestplate.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/HeavyFS23RemoteArmorRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/HeavyFS23RemoteItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/HeavyFS23RemoteModel.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "BasicArmorRemoteTooltip",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_armor_remote_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/BasicArmorRemoteTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Armor"
     }
   ],
   "variable_elements": [
@@ -3199,6 +3512,10 @@
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CUSTOM:TerminidBiome"
     ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
+    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -3207,11 +3524,10 @@
       "CUSTOM:EagleStrafingRun",
       "CUSTOM:OrbitalLaserItem",
       "CUSTOM:OrbitalAirburst",
-      "CUSTOM:OrbitalEMSStrike"
-    ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
+      "CUSTOM:OrbitalEMSStrike",
+      "CUSTOM:EagleClusterBomb",
+      "CUSTOM:OrbitalSmokeStrike",
+      "CUSTOM:EagleSmokeStrike"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:TerminidBiome"
@@ -3258,97 +3574,108 @@
   },
   "language_map": {
     "en_us": {
-      "entity.helldivers.hulk": "Hulk",
       "item.helldivers.eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
-      "subtitles.shotgun_shot": "Gun shot",
-      "subtitles.amr_shot": "Gun shot",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
-      "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
-      "block.helldivers.stratagem_maker": "Stratagem Maker",
+      "item.helldivers.heavy_fs_23_remote_chestplate": "FS-23 Chestplate",
       "subtitles.basic_shot": "Gun shot",
-      "block.helldivers.terminidwall": "Terminid Wall",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
-      "item_group.helldivers.stratagems": "Stratagems",
       "item.helldivers.orbital_rail_cannon_strike": "Orbital Rail Cannon Strike",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
-      "item.helldivers.ar_23_liberator": "AR-23 Liberator",
-      "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
       "entity.helldivers.terminid_scavenger": "Scavenger",
       "subtitles.m105_reload": "Gun reload",
-      "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
-      "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
-      "item.helldivers.hulk_spawn_egg": "Hulk Spawn Egg",
       "item.helldivers.orbital_precision_strike": "Orbital Precision Strike",
-      "block.helldivers.terminiddustspore": "Dust Spore",
-      "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.ar_23": "AR Magazine",
+      "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
       "subtitles.sg225_reload": "Gun reload",
       "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_dry_fire": "Gun clicks",
-      "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
       "entity.helldivers.orbitallaser": "Orbital Laser",
+      "item.helldivers.heavy_fs_23_remote_helmet": "FS-23 Helmet",
+      "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
+      "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
+      "block.helldivers.terminidstone": "Terminid Stone",
+      "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
+      "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
+      "block.helldivers.automaton_factorybase": "Factory Block",
+      "key.helldivers.open_menu_keybind": "Open Menu Keybind",
+      "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
+      "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
+      "key.helldivers.full_auto": "Full Auto Fire",
+      "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
+      "key.helldivers.reload_key": "Reload Key",
+      "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
+      "item.helldivers.hellpod_item": "Hellpod Item",
+      "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
+      "item.helldivers.e_710": "Raw E-710",
+      "item.helldivers.orbital_laser_item": "Orbital Laser",
+      "item.helldivers.basic_armor_remote_leggings": "Helldiver\u0027s Leggings",
+      "item.helldivers.basic_armor_remote_boots": "Helldiver\u0027s Boots",
+      "item.helldivers.bullet_item": "Bullet Item",
+      "item.helldivers.empty_stratagem_orb": "Empty Stratagem Orb",
+      "item.helldivers.basicarmor_chestplate": "Helldiver\u0027s Chestplate",
+      "item.helldivers.basicarmor_leggings": "Helldiver\u0027s Leggings",
+      "subtitles.apw1_reload": "Gun reload",
+      "item.helldivers.air_strike_bomb_item": "Air Strike Bomb Item",
+      "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate",
+      "entity.helldivers.hulk": "Hulk",
+      "subtitles.shotgun_shot": "Gun shot",
+      "subtitles.amr_shot": "Gun shot",
+      "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
+      "block.helldivers.stratagem_maker": "Stratagem Maker",
+      "block.helldivers.terminidwall": "Terminid Wall",
+      "item.helldivers.heavy_fs_23_remote_boots": "FS-23 Boots",
+      "item_group.helldivers.stratagems": "Stratagems",
+      "item.helldivers.ar_23_liberator": "AR-23 Liberator",
+      "item.helldivers.eagle_smoke_strike": "Eagle Smoke Strike",
+      "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
+      "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
+      "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
+      "item.helldivers.hulk_spawn_egg": "Hulk Spawn Egg",
+      "block.helldivers.terminiddustspore": "Dust Spore",
+      "item.helldivers.eagle_cluster_bomb": "Eagle Cluster Bomb",
+      "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
       "item.helldivers.orbital_airburst": "Orbital Airburst",
       "block.helldivers.automaton_factory_door": "Automaton Factory Door",
       "entity.helldivers.terminidbiletitan": "Bile Titan",
-      "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
+      "item.helldivers.orbital_smoke_strike": "Orbital Smoke Strike",
       "item.helldivers.railbeam_spawn_egg": "Rail Beam Spawn Egg",
       "subtitles.awp1_dry_fire": "Gun clicks",
       "item.helldivers.bile_spew_item": "Bile Spew Item",
       "item.helldivers.frag_grenade": "Frag Grenade",
       "block.helldivers.automaton_factory_trapdoor": "Automaton Factory Trapdoor",
       "gui.helldivers.ammoboxgui.label_ammo_box": "Ammo Box",
-      "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
       "entity.helldivers.eagle_strike_bomb_entity": "Eagle Strike Bomb",
       "item.helldivers.purifiede_710": "Purified E-710",
       "item.helldivers.stim": "Stim",
       "item_group.helldivers.helldivers": "Helldivers",
       "biome.helldivers.terminid_biome": "Terminid Biome",
       "block.helldivers.terminidhive": "Terminid Hive",
-      "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.stratagem_remote": "Stratagem Remote",
-      "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike1": "Call Reinforcements",
       "entity.helldivers.hellpod": "Hellpod",
-      "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
-      "block.helldivers.automaton_factorybase": "Factory Block",
-      "key.helldivers.open_menu_keybind": "Open Menu Keybind",
-      "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
       "subtitles.ar23_shoot": "Gun shoots",
-      "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
-      "key.helldivers.full_auto": "Full Auto Fire",
-      "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
       "item.helldivers.orbital_ems_strike": "Orbital EMS Strike",
-      "key.helldivers.reload_key": "Reload Key",
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
       "item.helldivers.heavy_fs_23_leggings": "FS-23 Leggings",
       "block.helldivers.automatoncontactmine": "Contact Mine",
-      "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
       "subtitles.sg225_shoot": "Gun shoots",
       "item.helldivers.eagle_500_kg": "Eagle 500KG",
       "entity.helldivers.railbeam": "Rail Beam",
-      "gui.helldivers.call_stratagems.Eagle_500KG_Bomb": "Eagle 500 KG Bomb",
       "gui.helldivers.call_stratagems.button_eagle_air_strike": "Eagle Air Strike",
-      "item.helldivers.hellpod_item": "Hellpod Item",
-      "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
-      "item.helldivers.e_710": "Raw E-710",
-      "item.helldivers.orbital_laser_item": "Orbital Laser",
-      "item.helldivers.bullet_item": "Bullet Item",
+      "gui.helldivers.call_stratagems.Eagle_500KG_Bomb": "Eagle 500 KG Bomb",
+      "item.helldivers.heavy_fs_23_remote_leggings": "FS-23 Leggings",
       "item.helldivers.terminidbiletitan_spawn_egg": "Bile Titan Spawn Egg",
-      "item.helldivers.empty_stratagem_orb": "Empty Stratagem Orb",
-      "item.helldivers.basicarmor_chestplate": "Helldiver\u0027s Chestplate",
       "item.helldivers.heavy_fs_23_helmet": "FS-23 Helmet",
-      "item.helldivers.basicarmor_leggings": "Helldiver\u0027s Leggings",
       "block.helldivers.ammo_box": "Ammo Box",
-      "subtitles.apw1_reload": "Gun reload",
+      "item.helldivers.basic_armor_remote_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.commisar_spawn_egg": "Commisar Spawn Egg",
       "entity.helldivers.commisar": "Commisar",
-      "item.helldivers.air_strike_bomb_item": "Air Strike Bomb Item",
       "item.helldivers.orbitallaser_spawn_egg": "Orbital Laser Spawn Egg",
-      "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate",
-      "item.helldivers.automatonbullet": "Automatonbullet"
+      "item.helldivers.automatonbullet": "Automatonbullet",
+      "item.helldivers.basic_armor_remote_chestplate": "Helldiver\u0027s Chestplate"
     }
   },
   "foldersRoot": {
@@ -3467,6 +3794,18 @@
               },
               {
                 "name": "Orbital_EMS_Strike",
+                "children": []
+              },
+              {
+                "name": "Eagle_Cluster_Bomb",
+                "children": []
+              },
+              {
+                "name": "Orbital_Smoke_Strike",
+                "children": []
+              },
+              {
+                "name": "Eagle_Smoke_Strike",
                 "children": []
               }
             ]
