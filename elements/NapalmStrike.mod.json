@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:NapalmProjectile"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "air_strke_bomb.png",
+    "onHitsBlock": {
+      "name": "NapalmFire"
+    },
+    "onHitsPlayer": {
+      "name": "NapalmFire"
+    },
+    "onHitsEntity": {
+      "name": "NapalmFire"
+    }
+  }
+}

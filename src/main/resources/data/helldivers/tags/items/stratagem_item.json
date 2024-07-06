@@ -11,6 +11,13 @@
     "helldivers:orbital_ems_strike",
     "helldivers:eagle_cluster_bomb",
     "helldivers:orbital_smoke_strike",
-    "helldivers:eagle_smoke_strike"
+    "helldivers:eagle_smoke_strike",
+    "helldivers:eagle_110_mm_rocket_pod",
+    "helldivers:orbital_120_mmhe_barrage",
+    "helldivers:orbital_380_mmhe_barrage",
+    "helldivers:orbital_walking_barrage",
+    "helldivers:orbital_gas_strike",
+    "helldivers:orbital_gattling_barrage",
+    "helldivers:eagle_napalm_strike"
   ]
 }

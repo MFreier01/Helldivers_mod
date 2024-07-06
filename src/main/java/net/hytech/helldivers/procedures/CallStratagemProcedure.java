@@ -7,14 +7,14 @@ public class CallStratagemProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Reinforcements")) {
+			CallReinforcementsProcedure.execute(world, x, y, z);
+		}
 		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleAirStrike")) {
 			CallEagleAirStrikeProcedure.execute(world, x, y, z, entity);
 		}
 		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Eagle500KG")) {
 			Call500KGProcedure.execute(world, x, y, z, entity);
-		}
-		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Reinforcements")) {
-			CallReinforcementsProcedure.execute(world, x, y, z, entity);
 		}
 		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("RailCannonStrike")) {
 			CallRailCannonStrikeProcedure.execute(world, x, y, z, entity);
@@ -42,6 +42,27 @@ public class CallStratagemProcedure {
 		}
 		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleSmokeStrike")) {
 			CallEagleSmokeStrikeProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Eagle110mm")) {
+			CallEagle110mmProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Orbital120MM")) {
+			Call120MMBarrageProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("Orbital380MM")) {
+			Call380MMProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("OrbitalWalkingBarrage")) {
+			CallWalkingBarrageProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("OrbitalGasStrike")) {
+			CallOrbitalGasStrikeProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("EagleNapalmStrike")) {
+			CallEagleNapalmProcedure.execute(world, x, y, z, entity);
+		}
+		if ((entity.getPersistentData().getString("ActiveStratagem")).equals("OrbitalGattlingBarrage")) {
+			CallGattlingBarrageProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

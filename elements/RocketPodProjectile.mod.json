@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Rocketpod"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "Eagle110mm_explode"
+    },
+    "onHitsPlayer": {
+      "name": "Eagle110mm_explode"
+    },
+    "onHitsEntity": {
+      "name": "Eagle110mm_explode"
+    }
+  }
+}

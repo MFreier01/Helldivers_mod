@@ -11,6 +11,8 @@ import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.hytech.helldivers.item.SG225BreakerItem;
+import net.hytech.helldivers.item.RocketpodItem;
+import net.hytech.helldivers.item.NapalmProjectileItem;
 import net.hytech.helldivers.item.M105StalwartItem;
 import net.hytech.helldivers.item.HellpodItemItem;
 import net.hytech.helldivers.item.FragGrenadeItem;
@@ -273,6 +275,46 @@ public class ItemAnimationFactory {
 					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
 						((AutomatonbulletItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof RocketpodItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((RocketpodItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof RocketpodItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((RocketpodItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof NapalmProjectileItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((NapalmProjectileItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof NapalmProjectileItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((NapalmProjectileItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
 						disableUseAnim("left");
 					}
 				}

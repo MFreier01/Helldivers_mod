@@ -37,13 +37,13 @@ public class CheckStratagem3Procedure {
 				.get()) {
 			AddOrbitalLaserProcedure.execute(entity);
 		}
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_EMS_STRIKE
-				.get()) {
-			AddOrbitalEMSProcedure.execute(entity);
-		}
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_AIRBURST
 				.get()) {
 			AddOrbitalAirburstProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_EMS_STRIKE
+				.get()) {
+			AddOrbitalEMSProcedure.execute(entity);
 		}
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_CLUSTER_BOMB
 				.get()) {
@@ -56,6 +56,34 @@ public class CheckStratagem3Procedure {
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_SMOKE_STRIKE
 				.get()) {
 			AddEagleSmokeStrikeProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_110_MM_ROCKET_POD
+				.get()) {
+			AddEagle110mmProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_120_MMHE_BARRAGE
+				.get()) {
+			AddOrbital120MMProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_380_MMHE_BARRAGE
+				.get()) {
+			AddOrbital380MMProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_WALKING_BARRAGE
+				.get()) {
+			AddOrbitalWalkingBarrageProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_GAS_STRIKE
+				.get()) {
+			AddOrbitalGasStrikewProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.EAGLE_NAPALM_STRIKE
+				.get()) {
+			AddEagleNapalmStrikeProcedure.execute(entity);
+		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == HelldiversModItems.ORBITAL_GATTLING_BARRAGE
+				.get()) {
+			AddOrbitalGattlingBarrageProcedure.execute(entity);
 		}
 	}
 }

@@ -68,5 +68,6 @@ public class CallOrbitalSmokeStrikeProcedure {
 				}
 			});
 		}
+		entity.getPersistentData().putString("ActiveStratagem", "None");
 	}
 }

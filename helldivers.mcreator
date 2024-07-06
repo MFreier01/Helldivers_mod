@@ -74,7 +74,7 @@
     {
       "name": "BasicBullet",
       "type": "projectile",
-      "sortid": 28,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basic_bullet",
@@ -88,7 +88,7 @@
     {
       "name": "BulletItem",
       "type": "animateditem",
-      "sortid": 27,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet_item",
@@ -105,7 +105,7 @@
     {
       "name": "AR23LiberatorFire",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ar_23_liberator_fire",
@@ -141,7 +141,7 @@
     {
       "name": "ReloadKeyOnKeyPressed",
       "type": "procedure",
-      "sortid": 30,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reload_key_on_key_pressed",
@@ -177,7 +177,7 @@
     {
       "name": "ReloadKey",
       "type": "keybind",
-      "sortid": 31,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reload_key",
@@ -191,7 +191,7 @@
     {
       "name": "SG225BreakerFire",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sg_225_breaker_fire",
@@ -227,7 +227,7 @@
     {
       "name": "M105StalwartFire",
       "type": "procedure",
-      "sortid": 33,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "m_105_stalwart_fire",
@@ -263,7 +263,7 @@
     {
       "name": "Ammooverlay",
       "type": "procedure",
-      "sortid": 34,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ammooverlay",
@@ -300,7 +300,7 @@
     {
       "name": "APW1AntiMaterialRifleFire",
       "type": "procedure",
-      "sortid": 35,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apw_1_anti_material_rifle_fire",
@@ -371,7 +371,7 @@
     {
       "name": "FragGrenadeProjectile",
       "type": "projectile",
-      "sortid": 36,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_projectile",
@@ -385,7 +385,7 @@
     {
       "name": "FragGrenadeProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 37,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_projectile_projectile_hits_block",
@@ -417,7 +417,7 @@
     {
       "name": "FragGrenadeRightclicked",
       "type": "procedure",
-      "sortid": 38,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade_rightclicked",
@@ -437,7 +437,7 @@
     {
       "name": "Terminidhive",
       "type": "block",
-      "sortid": 20,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidhive",
@@ -455,7 +455,7 @@
     {
       "name": "Terminidwall",
       "type": "block",
-      "sortid": 21,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidwall",
@@ -473,7 +473,7 @@
     {
       "name": "Terminidstone",
       "type": "block",
-      "sortid": 22,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidstone",
@@ -491,7 +491,7 @@
     {
       "name": "Terminidreinforcedwall",
       "type": "block",
-      "sortid": 23,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidreinforcedwall",
@@ -509,7 +509,7 @@
     {
       "name": "TerminiddustsporeEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 39,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminiddustspore_entity_walks_on_the_block",
@@ -545,7 +545,7 @@
     {
       "name": "Terminiddustspore",
       "type": "animatedblock",
-      "sortid": 24,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminiddustspore",
@@ -568,7 +568,7 @@
     {
       "name": "AutomatoncontactmineEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 40,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatoncontactmine_entity_walks_on_the_block",
@@ -600,7 +600,7 @@
     {
       "name": "Automatoncontactmine",
       "type": "animatedblock",
-      "sortid": 16,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatoncontactmine",
@@ -623,7 +623,7 @@
     {
       "name": "Helldivers",
       "type": "tab",
-      "sortid": 41,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "helldivers",
@@ -634,7 +634,7 @@
     {
       "name": "StaticFragGrenadeOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "static_frag_grenade_on_initial_entity_spawn",
@@ -658,7 +658,7 @@
     {
       "name": "StaticFragGrenade",
       "type": "animatedentity",
-      "sortid": 43,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "static_frag_grenade",
@@ -713,15 +713,15 @@
     {
       "name": "StratagemRemote",
       "type": "item",
-      "sortid": 11,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stratagem_remote",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/inventory/StratagemRemoteInventoryCapability.java",
           "src/main/resources/assets/helldivers/models/item/stratagem_remote.json",
-          "src/main/java/net/hytech/helldivers/item/StratagemRemoteItem.java"
+          "src/main/java/net/hytech/helldivers/item/StratagemRemoteItem.java",
+          "src/main/java/net/hytech/helldivers/item/inventory/StratagemRemoteInventoryCapability.java"
         ]
       },
       "path": "~/Stratagems/Stratagem_Remote"
@@ -729,7 +729,7 @@
     {
       "name": "CallStratagems",
       "type": "gui",
-      "sortid": 44,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_stratagems",
@@ -745,7 +745,7 @@
     {
       "name": "E710",
       "type": "item",
-      "sortid": 25,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "e_710",
@@ -760,7 +760,7 @@
     {
       "name": "EmptyStratagemOrb",
       "type": "animateditem",
-      "sortid": 13,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "empty_stratagem_orb",
@@ -777,7 +777,7 @@
     {
       "name": "ArmedAttackStratagemOrb",
       "type": "animateditem",
-      "sortid": 14,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_attack_stratagem_orb",
@@ -794,7 +794,7 @@
     {
       "name": "ArmedSupportStratagemOrb",
       "type": "animateditem",
-      "sortid": 15,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_support_stratagem_orb",
@@ -811,7 +811,7 @@
     {
       "name": "CallEagleAirStrike",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_down_stratagem",
@@ -847,7 +847,7 @@
     {
       "name": "RedBeam",
       "type": "particle",
-      "sortid": 46,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_beam",
@@ -862,7 +862,7 @@
     {
       "name": "ThrownAttackOrb",
       "type": "projectile",
-      "sortid": 47,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thrown_attack_orb",
@@ -876,7 +876,7 @@
     {
       "name": "ArmedAttackStratagemOrbRightclicked",
       "type": "procedure",
-      "sortid": 48,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_attack_stratagem_orb_rightclicked",
@@ -896,7 +896,7 @@
     {
       "name": "AirStrikeBombProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 49,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "air_strike_bomb_projectile_hits_block",
@@ -928,7 +928,7 @@
     {
       "name": "AirStrikeBomb",
       "type": "projectile",
-      "sortid": 50,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "air_strike_bomb",
@@ -942,7 +942,7 @@
     {
       "name": "AirStrikeBombItem",
       "type": "animateditem",
-      "sortid": 51,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "air_strike_bomb_item",
@@ -959,7 +959,7 @@
     {
       "name": "OpenStratagemMenuOnKeyPressed",
       "type": "procedure",
-      "sortid": 52,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_stratagem_menu_on_key_pressed",
@@ -995,7 +995,7 @@
     {
       "name": "Projectile500KGProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 54,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "projectile_500_kg_projectile_hits_block",
@@ -1027,7 +1027,7 @@
     {
       "name": "Projectile500KG",
       "type": "projectile",
-      "sortid": 55,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "projectile_500_kg",
@@ -1041,7 +1041,7 @@
     {
       "name": "EagleStrikeBombEntity",
       "type": "animatedentity",
-      "sortid": 56,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eagle_strike_bomb_entity",
@@ -1057,7 +1057,7 @@
     {
       "name": "EagleStrikeBombEntityOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eagle_strike_bomb_entity_on_initial_entity_spawn",
@@ -1081,7 +1081,7 @@
     {
       "name": "AddEagleAirStrike",
       "type": "procedure",
-      "sortid": 58,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_eagle_air_strike",
@@ -1101,7 +1101,7 @@
     {
       "name": "Add500KG",
       "type": "procedure",
-      "sortid": 59,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_500_kg",
@@ -1121,7 +1121,7 @@
     {
       "name": "Hellpod",
       "type": "animatedentity",
-      "sortid": 60,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellpod",
@@ -1137,7 +1137,7 @@
     {
       "name": "HellpodItem",
       "type": "animateditem",
-      "sortid": 61,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellpod_item",
@@ -1154,7 +1154,7 @@
     {
       "name": "HellpodProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 62,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellpod_projectile_projectile_hits_block",
@@ -1186,7 +1186,7 @@
     {
       "name": "HellpodProjectile",
       "type": "projectile",
-      "sortid": 63,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellpod_projectile",
@@ -1200,7 +1200,7 @@
     {
       "name": "HellpodOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hellpod_on_initial_entity_spawn",
@@ -1212,6 +1212,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1220,7 +1224,7 @@
     {
       "name": "BlueBeam",
       "type": "particle",
-      "sortid": 65,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_beam",
@@ -1235,7 +1239,7 @@
     {
       "name": "ThrownSupportOrb",
       "type": "projectile",
-      "sortid": 66,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thrown_support_orb",
@@ -1249,7 +1253,7 @@
     {
       "name": "ArmedSupportStratagemOrbRightclicked",
       "type": "procedure",
-      "sortid": 67,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_support_stratagem_orb_rightclicked",
@@ -1269,7 +1273,7 @@
     {
       "name": "AddReinforcements",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_reinforcements",
@@ -1289,7 +1293,7 @@
     {
       "name": "Stim",
       "type": "item",
-      "sortid": 12,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stim",
@@ -1304,7 +1308,7 @@
     {
       "name": "Stim_Heal",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stim_heal",
@@ -1324,7 +1328,7 @@
     {
       "name": "AutomatonFactorybase",
       "type": "block",
-      "sortid": 17,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automaton_factorybase",
@@ -1360,7 +1364,7 @@
     {
       "name": "AutomatonFactoryDoor",
       "type": "block",
-      "sortid": 18,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automaton_factory_door",
@@ -1385,7 +1389,7 @@
     {
       "name": "Basichelldiverchestplate",
       "type": "recipe",
-      "sortid": 71,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basichelldiverchestplate",
@@ -1399,7 +1403,7 @@
     {
       "name": "Basichelldivershelmet",
       "type": "recipe",
-      "sortid": 72,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basichelldivershelmet",
@@ -1413,7 +1417,7 @@
     {
       "name": "Basichelldiversleggings",
       "type": "recipe",
-      "sortid": 73,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basichelldiversleggings",
@@ -1427,7 +1431,7 @@
     {
       "name": "Basichelldiversboots",
       "type": "recipe",
-      "sortid": 74,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basichelldiversboots",
@@ -1441,7 +1445,7 @@
     {
       "name": "HeavyFS23HelmetTickEvent",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heavy_fs_23_helmet_tick_event",
@@ -1461,7 +1465,7 @@
     {
       "name": "FS23HeavyHelmet",
       "type": "recipe",
-      "sortid": 76,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fs_23_heavy_helmet",
@@ -1475,7 +1479,7 @@
     {
       "name": "FS23HeavyChestplate",
       "type": "recipe",
-      "sortid": 77,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fs_23_heavy_chestplate",
@@ -1489,7 +1493,7 @@
     {
       "name": "FS23HeavyLeggings",
       "type": "recipe",
-      "sortid": 78,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fs_23_heavy_leggings",
@@ -1503,7 +1507,7 @@
     {
       "name": "FS23HeavyBoots",
       "type": "recipe",
-      "sortid": 79,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fs_23_heavy_boots",
@@ -1517,7 +1521,7 @@
     {
       "name": "Purifiede710",
       "type": "item",
-      "sortid": 26,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purifiede_710",
@@ -1532,7 +1536,7 @@
     {
       "name": "PurifiedE710Recipe",
       "type": "recipe",
-      "sortid": 80,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purified_e_710_recipe",
@@ -1546,7 +1550,7 @@
     {
       "name": "PurifiedE710RecipeBlast",
       "type": "recipe",
-      "sortid": 81,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purified_e_710_recipe_blast",
@@ -1560,7 +1564,7 @@
     {
       "name": "BileSpew",
       "type": "particle",
-      "sortid": 82,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bile_spew",
@@ -1575,7 +1579,7 @@
     {
       "name": "BileSpewItem",
       "type": "item",
-      "sortid": 83,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bile_spew_item",
@@ -1590,7 +1594,7 @@
     {
       "name": "BileSpewProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 84,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bile_spew_projectile_projectile_hits_block",
@@ -1622,7 +1626,7 @@
     {
       "name": "BileSpewProjectile",
       "type": "projectile",
-      "sortid": 85,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bile_spew_projectile",
@@ -1636,7 +1640,7 @@
     {
       "name": "AutomatonFactoryTrapdoor",
       "type": "block",
-      "sortid": 19,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automaton_factory_trapdoor",
@@ -1656,7 +1660,7 @@
     {
       "name": "TerminidLoot",
       "type": "loottable",
-      "sortid": 87,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_loot",
@@ -1670,7 +1674,7 @@
     {
       "name": "TerminidBiome",
       "type": "biome",
-      "sortid": 88,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_biome",
@@ -1684,7 +1688,7 @@
     {
       "name": "AmmoBox",
       "type": "animatedblock",
-      "sortid": 89,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ammo_box",
@@ -1707,7 +1711,7 @@
     {
       "name": "Ammoboxgui",
       "type": "gui",
-      "sortid": 90,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ammoboxgui",
@@ -1722,7 +1726,7 @@
     {
       "name": "AR23",
       "type": "item",
-      "sortid": 91,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ar_23",
@@ -1737,7 +1741,7 @@
     {
       "name": "CheckStratagem",
       "type": "procedure",
-      "sortid": 92,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "check_stratagem",
@@ -1757,7 +1761,7 @@
     {
       "name": "OpenMenuKeybind",
       "type": "keybind",
-      "sortid": 93,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_menu_keybind",
@@ -1771,7 +1775,7 @@
     {
       "name": "SaveStrat",
       "type": "procedure",
-      "sortid": 94,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "save_strat",
@@ -1795,14 +1799,14 @@
     {
       "name": "EagleAirStrike",
       "type": "item",
-      "sortid": 95,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eagle_air_strike",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/eagle_air_strike.json",
-          "src/main/java/net/hytech/helldivers/item/EagleAirStrikeItem.java"
+          "src/main/java/net/hytech/helldivers/item/EagleAirStrikeItem.java",
+          "src/main/resources/assets/helldivers/models/item/eagle_air_strike.json"
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
@@ -1810,7 +1814,7 @@
     {
       "name": "WriteStrat",
       "type": "procedure",
-      "sortid": 96,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "write_strat",
@@ -1834,7 +1838,7 @@
     {
       "name": "ReadStrat",
       "type": "procedure",
-      "sortid": 97,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "read_strat",
@@ -1858,7 +1862,7 @@
     {
       "name": "Call500KG",
       "type": "procedure",
-      "sortid": 98,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_500_kg",
@@ -1894,7 +1898,7 @@
     {
       "name": "CallReinforcements",
       "type": "procedure",
-      "sortid": 99,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_reinforcements",
@@ -1903,10 +1907,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallReinforcementsProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -1930,7 +1930,7 @@
     {
       "name": "CallStratagem",
       "type": "procedure",
-      "sortid": 100,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_stratagem",
@@ -1966,7 +1966,7 @@
     {
       "name": "CheckStratagem2",
       "type": "procedure",
-      "sortid": 101,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "check_stratagem_2",
@@ -1986,7 +1986,7 @@
     {
       "name": "CheckStratagem3",
       "type": "procedure",
-      "sortid": 102,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "check_stratagem_3",
@@ -2006,7 +2006,7 @@
     {
       "name": "CheckStratagem4",
       "type": "procedure",
-      "sortid": 103,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "check_stratagem_4",
@@ -2026,7 +2026,7 @@
     {
       "name": "Eagle500KG",
       "type": "item",
-      "sortid": 104,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eagle_500_kg",
@@ -2041,15 +2041,15 @@
     {
       "name": "Automatonbullet",
       "type": "animateditem",
-      "sortid": 105,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatonbullet",
       "metadata": {
         "files": [
           "src/main/java/net/hytech/helldivers/item/renderer/AutomatonbulletItemRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/AutomatonbulletItem.java",
           "src/main/resources/assets/helldivers/models/item/automatonbullet.json",
+          "src/main/java/net/hytech/helldivers/item/AutomatonbulletItem.java",
           "src/main/java/net/hytech/helldivers/item/model/AutomatonbulletItemModel.java"
         ]
       },
@@ -2058,7 +2058,7 @@
     {
       "name": "Automatonbulletprojectile",
       "type": "projectile",
-      "sortid": 106,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatonbulletprojectile",
@@ -2072,7 +2072,7 @@
     {
       "name": "Commisar",
       "type": "animatedentity",
-      "sortid": 107,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "commisar",
@@ -2090,7 +2090,7 @@
     {
       "name": "ActivateFlamethrower",
       "type": "procedure",
-      "sortid": 108,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "activate_flamethrower",
@@ -2126,7 +2126,7 @@
     {
       "name": "Hulk",
       "type": "animatedentity",
-      "sortid": 110,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hulk",
@@ -2145,7 +2145,7 @@
     {
       "name": "ON_FullAuto",
       "type": "procedure",
-      "sortid": 111,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "on_full_auto",
@@ -2165,7 +2165,7 @@
     {
       "name": "OFF_FullAuto",
       "type": "procedure",
-      "sortid": 112,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "off_full_auto",
@@ -2185,7 +2185,7 @@
     {
       "name": "FullAuto",
       "type": "keybind",
-      "sortid": 113,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "full_auto",
@@ -2199,7 +2199,7 @@
     {
       "name": "GunFire",
       "type": "procedure",
-      "sortid": 114,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gun_fire",
@@ -2235,7 +2235,7 @@
     {
       "name": "FullAutoFire",
       "type": "procedure",
-      "sortid": 115,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "full_auto_fire",
@@ -2271,7 +2271,7 @@
     {
       "name": "Railbeam",
       "type": "animatedentity",
-      "sortid": 116,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "railbeam",
@@ -2288,7 +2288,7 @@
     {
       "name": "CallRailCannonStrike",
       "type": "procedure",
-      "sortid": 117,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_rail_cannon_strike",
@@ -2324,7 +2324,7 @@
     {
       "name": "AddRailCannonStrike",
       "type": "procedure",
-      "sortid": 118,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_rail_cannon_strike",
@@ -2344,7 +2344,7 @@
     {
       "name": "RailCannonExplode",
       "type": "procedure",
-      "sortid": 120,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rail_cannon_explode",
@@ -2376,7 +2376,7 @@
     {
       "name": "Railcannonstrikeprojectile",
       "type": "projectile",
-      "sortid": 121,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "railcannonstrikeprojectile",
@@ -2390,7 +2390,7 @@
     {
       "name": "CallPrecisionStrike",
       "type": "procedure",
-      "sortid": 123,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_precision_strike",
@@ -2426,7 +2426,7 @@
     {
       "name": "PrecisionStrike",
       "type": "projectile",
-      "sortid": 124,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "precision_strike",
@@ -2440,7 +2440,7 @@
     {
       "name": "AddPrecisionStrike",
       "type": "procedure",
-      "sortid": 125,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_precision_strike",
@@ -2460,7 +2460,7 @@
     {
       "name": "PrecisionExplode",
       "type": "procedure",
-      "sortid": 127,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "precision_explode",
@@ -2492,7 +2492,7 @@
     {
       "name": "OrbitalRailCannonStrike",
       "type": "item",
-      "sortid": 128,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_rail_cannon_strike",
@@ -2507,7 +2507,7 @@
     {
       "name": "OrbitalPrecisionStrike",
       "type": "item",
-      "sortid": 129,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_precision_strike",
@@ -2522,7 +2522,7 @@
     {
       "name": "CallStrafingRun",
       "type": "procedure",
-      "sortid": 130,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_strafing_run",
@@ -2558,7 +2558,7 @@
     {
       "name": "StrafingRunExplode",
       "type": "procedure",
-      "sortid": 131,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "strafing_run_explode",
@@ -2590,7 +2590,7 @@
     {
       "name": "StrafingRunProjectile",
       "type": "projectile",
-      "sortid": 132,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "strafing_run_projectile",
@@ -2604,7 +2604,7 @@
     {
       "name": "AddStrafingRun",
       "type": "procedure",
-      "sortid": 133,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_strafing_run",
@@ -2624,7 +2624,7 @@
     {
       "name": "EagleStrafingRun",
       "type": "item",
-      "sortid": 134,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eagle_strafing_run",
@@ -2639,7 +2639,7 @@
     {
       "name": "StratagemMaker",
       "type": "animatedblock",
-      "sortid": 135,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stratagem_maker",
@@ -2662,7 +2662,7 @@
     {
       "name": "StratagemMakerAnimation",
       "type": "procedure",
-      "sortid": 136,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stratagem_maker_animation",
@@ -2694,7 +2694,7 @@
     {
       "name": "FireRailCannon",
       "type": "procedure",
-      "sortid": 137,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fire_rail_cannon",
@@ -2718,7 +2718,7 @@
     {
       "name": "Orbital_laser_damage",
       "type": "procedure",
-      "sortid": 138,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_laser_damage",
@@ -2750,7 +2750,7 @@
     {
       "name": "Orbital_laser_despawn",
       "type": "procedure",
-      "sortid": 139,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_laser_despawn",
@@ -2774,7 +2774,7 @@
     {
       "name": "Orbitallaser",
       "type": "animatedentity",
-      "sortid": 140,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbitallaser",
@@ -2792,7 +2792,7 @@
     {
       "name": "CallOrbitalLaser",
       "type": "procedure",
-      "sortid": 141,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_orbital_laser",
@@ -2828,7 +2828,7 @@
     {
       "name": "AddOrbitalLaser",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_orbital_laser",
@@ -2848,7 +2848,7 @@
     {
       "name": "OrbitalLaserItem",
       "type": "item",
-      "sortid": 143,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_laser_item",
@@ -2863,7 +2863,7 @@
     {
       "name": "Stratagems",
       "type": "tab",
-      "sortid": 144,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stratagems",
@@ -2874,7 +2874,7 @@
     {
       "name": "CallOrbitalAirburst",
       "type": "procedure",
-      "sortid": 145,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_orbital_airburst",
@@ -2910,7 +2910,7 @@
     {
       "name": "Airburst_explode",
       "type": "procedure",
-      "sortid": 146,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airburst_explode",
@@ -2942,7 +2942,7 @@
     {
       "name": "AirburstProjectile",
       "type": "projectile",
-      "sortid": 147,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airburst_projectile",
@@ -2956,7 +2956,7 @@
     {
       "name": "AddOrbitalAirburst",
       "type": "procedure",
-      "sortid": 148,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_orbital_airburst",
@@ -2976,7 +2976,7 @@
     {
       "name": "OrbitalAirburst",
       "type": "item",
-      "sortid": 149,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_airburst",
@@ -2991,7 +2991,7 @@
     {
       "name": "CallOrbitalEMSStrike",
       "type": "procedure",
-      "sortid": 150,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_orbital_ems_strike",
@@ -3027,7 +3027,7 @@
     {
       "name": "AddOrbitalEMS",
       "type": "procedure",
-      "sortid": 151,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_orbital_ems",
@@ -3047,7 +3047,7 @@
     {
       "name": "OrbitalEMSStrike",
       "type": "item",
-      "sortid": 152,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_ems_strike",
@@ -3062,7 +3062,7 @@
     {
       "name": "EMS",
       "type": "particle",
-      "sortid": 153,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ems",
@@ -3077,7 +3077,7 @@
     {
       "name": "CallEagleClusterBomb",
       "type": "procedure",
-      "sortid": 154,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_eagle_cluster_bomb",
@@ -3113,7 +3113,7 @@
     {
       "name": "AddEagleClusterBomb",
       "type": "procedure",
-      "sortid": 155,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_eagle_cluster_bomb",
@@ -3133,7 +3133,7 @@
     {
       "name": "EagleClusterBomb",
       "type": "item",
-      "sortid": 156,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eagle_cluster_bomb",
@@ -3148,7 +3148,7 @@
     {
       "name": "CallOrbitalSmokeStrike",
       "type": "procedure",
-      "sortid": 157,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_orbital_smoke_strike",
@@ -3184,7 +3184,7 @@
     {
       "name": "Orbital_Smoke",
       "type": "procedure",
-      "sortid": 159,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_smoke",
@@ -3216,7 +3216,7 @@
     {
       "name": "AddOrbitalSmokeStriike",
       "type": "procedure",
-      "sortid": 160,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_orbital_smoke_striike",
@@ -3236,7 +3236,7 @@
     {
       "name": "Orbitalsmokeprojectile",
       "type": "projectile",
-      "sortid": 161,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbitalsmokeprojectile",
@@ -3250,7 +3250,7 @@
     {
       "name": "OrbitalSmokeStrike",
       "type": "item",
-      "sortid": 162,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orbital_smoke_strike",
@@ -3265,7 +3265,7 @@
     {
       "name": "CallEagleSmokeStrike",
       "type": "procedure",
-      "sortid": 163,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "call_eagle_smoke_strike",
@@ -3301,7 +3301,7 @@
     {
       "name": "AddEagleSmokeStrike",
       "type": "procedure",
-      "sortid": 164,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "add_eagle_smoke_strike",
@@ -3321,7 +3321,7 @@
     {
       "name": "EagleSmokeStrike",
       "type": "item",
-      "sortid": 165,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eagle_smoke_strike",
@@ -3336,7 +3336,7 @@
     {
       "name": "BasicArmorRemote",
       "type": "animatedarmor",
-      "sortid": 166,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basic_armor_remote",
@@ -3353,7 +3353,7 @@
     {
       "name": "HeavyFS23Remote",
       "type": "animatedarmor",
-      "sortid": 167,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heavy_fs_23_remote",
@@ -3370,7 +3370,7 @@
     {
       "name": "BasicArmorRemoteTooltip",
       "type": "procedure",
-      "sortid": 168,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "basic_armor_remote_tooltip",
@@ -3386,6 +3386,782 @@
         ]
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "AddEagle110mm",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_eagle_110mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddEagle110mmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "CallEagle110mm",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_eagle_110mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallEagle110mmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_110MM_Rocket_Pod"
+    },
+    {
+      "name": "Rocketpod",
+      "type": "animateditem",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocketpod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/model/RocketpodItemModel.java",
+          "src/main/java/net/hytech/helldivers/item/RocketpodItem.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/RocketpodItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/rocketpod.json"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_110MM_Rocket_Pod"
+    },
+    {
+      "name": "Eagle110mm_explode",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_110mm_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Eagle110mm_explodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_110MM_Rocket_Pod"
+    },
+    {
+      "name": "RocketPodProjectile",
+      "type": "projectile",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_pod_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/RocketPodProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_110MM_Rocket_Pod"
+    },
+    {
+      "name": "Eagle110MMRocketPod",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_110_mm_rocket_pod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/Eagle110MMRocketPodItem.java",
+          "src/main/resources/assets/helldivers/models/item/eagle_110_mm_rocket_pod.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "Call120MMBarrage",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_120_mm_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Call120MMBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_120MM_Barrage"
+    },
+    {
+      "name": "AddOrbital120MM",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_120_mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbital120MMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "Orbital120MMHEBarrage",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_120_mmhe_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/Orbital120MMHEBarrageItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_120_mmhe_barrage.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "Call380MM",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_380_mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Call380MMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_380MM_barrage"
+    },
+    {
+      "name": "Orbital380mm_explode",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_380mm_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Orbital380mm_explodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_380MM_barrage"
+    },
+    {
+      "name": "Orbital380mmprojectile",
+      "type": "projectile",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_380mmprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/Orbital380mmprojectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_380MM_barrage"
+    },
+    {
+      "name": "AddOrbital380MM",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_380_mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbital380MMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "Orbital380MMHEBarrage",
+      "type": "item",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_380_mmhe_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/Orbital380MMHEBarrageItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_380_mmhe_barrage.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "CallWalkingBarrage",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_walking_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallWalkingBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Walking_Barrage"
+    },
+    {
+      "name": "AddOrbitalWalkingBarrage",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_walking_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbitalWalkingBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "OrbitalWalkingBarrage",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_walking_barrage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/orbital_walking_barrage.json",
+          "src/main/java/net/hytech/helldivers/item/OrbitalWalkingBarrageItem.java"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "OrbitalGasStrike",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_gas_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/OrbitalGasStrikeItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_gas_strike.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "OrbitalGattlingBarrage",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_gattling_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/OrbitalGattlingBarrageItem.java",
+          "src/main/resources/assets/helldivers/models/item/orbital_gattling_barrage.json"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "CallOrbitalGasStrike",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_orbital_gas_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallOrbitalGasStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Gas_Strike"
+    },
+    {
+      "name": "GasStrikeProjectile",
+      "type": "projectile",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_strike_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/GasStrikeProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Gas_Strike"
+    },
+    {
+      "name": "Gas",
+      "type": "particle",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/particles/gas.json",
+          "src/main/java/net/hytech/helldivers/client/particle/GasParticle.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Gas_Strike"
+    },
+    {
+      "name": "SpawnGas",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_gas",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/SpawnGasProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Gas_Strike"
+    },
+    {
+      "name": "AddOrbitalGasStrikew",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_gas_strikew",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbitalGasStrikewProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "EagleNapalmStrike",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_napalm_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/eagle_napalm_strike.json",
+          "src/main/java/net/hytech/helldivers/item/EagleNapalmStrikeItem.java"
+        ]
+      },
+      "path": "~/Other_Items/Stratagem_items"
+    },
+    {
+      "name": "CallEagleNapalm",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_eagle_napalm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallEagleNapalmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Napalm_Strike"
+    },
+    {
+      "name": "NapalmProjectile",
+      "type": "animateditem",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/renderer/NapalmProjectileItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/NapalmProjectileItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/NapalmProjectileItemModel.java",
+          "src/main/resources/assets/helldivers/models/item/napalm_projectile.json"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Napalm_Strike"
+    },
+    {
+      "name": "NapalmFire",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/NapalmFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Napalm_Strike"
+    },
+    {
+      "name": "NapalmStrike",
+      "type": "projectile",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/NapalmStrikeEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Napalm_Strike"
+    },
+    {
+      "name": "AddEagleNapalmStrike",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_eagle_napalm_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddEagleNapalmStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "CallGattlingBarrage",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_gattling_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallGattlingBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Gattling_Barrage"
+    },
+    {
+      "name": "AddOrbitalGattlingBarrage",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_orbital_gattling_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AddOrbitalGattlingBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote/Add Stratgem Tags"
+    },
+    {
+      "name": "GattlingExplosion",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gattling_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/GattlingExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Gattling_Barrage"
+    },
+    {
+      "name": "GattlingProjectile",
+      "type": "projectile",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gattling_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/GattlingProjectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Orbital_Gattling_Barrage"
     }
   ],
   "variable_elements": [
@@ -3523,7 +4299,14 @@
       "CUSTOM:OrbitalEMSStrike",
       "CUSTOM:EagleClusterBomb",
       "CUSTOM:OrbitalSmokeStrike",
-      "CUSTOM:EagleSmokeStrike"
+      "CUSTOM:EagleSmokeStrike",
+      "CUSTOM:Eagle110MMRocketPod",
+      "CUSTOM:Orbital120MMHEBarrage",
+      "CUSTOM:Orbital380MMHEBarrage",
+      "CUSTOM:OrbitalWalkingBarrage",
+      "CUSTOM:OrbitalGasStrike",
+      "CUSTOM:OrbitalGattlingBarrage",
+      "CUSTOM:EagleNapalmStrike"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:Terminiddustspore",
@@ -3590,10 +4373,12 @@
       "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
       "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_reload": "Gun reload",
+      "item.helldivers.orbital_gattling_barrage": "Orbital Gattling Barrage",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "entity.helldivers.orbitallaser": "Orbital Laser",
       "item.helldivers.heavy_fs_23_remote_helmet": "FS-23 Helmet",
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
+      "item.helldivers.eagle_napalm_strike": "Eagle Napalm Strike",
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
@@ -3608,6 +4393,7 @@
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
       "item.helldivers.hellpod_item": "Hellpod Item",
       "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
+      "item.helldivers.orbital_gas_strike": "Orbital Gas Strike",
       "item.helldivers.e_710": "Raw E-710",
       "item.helldivers.orbital_laser_item": "Orbital Laser",
       "item.helldivers.basic_armor_remote_leggings": "Helldiver\u0027s Leggings",
@@ -3617,14 +4403,19 @@
       "item.helldivers.basicarmor_chestplate": "Helldiver\u0027s Chestplate",
       "item.helldivers.basicarmor_leggings": "Helldiver\u0027s Leggings",
       "subtitles.apw1_reload": "Gun reload",
+      "item.helldivers.orbital_380_mmhe_barrage": "Orbital 380MM HE Barrage",
       "item.helldivers.air_strike_bomb_item": "Air Strike Bomb Item",
+      "item.helldivers.orbital_walking_barrage": "Orbital Walking Barrage",
       "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate",
       "entity.helldivers.hulk": "Hulk",
+      "item.helldivers.orbital_120_mmhe_barrage": "Orbital 120MM HE Barrage",
       "subtitles.shotgun_shot": "Gun shot",
       "subtitles.amr_shot": "Gun shot",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
       "block.helldivers.stratagem_maker": "Stratagem Maker",
+      "item.helldivers.rocketpod": "Rocket Pod",
       "block.helldivers.terminidwall": "Terminid Wall",
+      "item.helldivers.eagle_110_mm_rocket_pod": "Eagle 110MM Rocket Pod",
       "item.helldivers.heavy_fs_23_remote_boots": "FS-23 Boots",
       "item_group.helldivers.stratagems": "Stratagems",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
@@ -3635,6 +4426,7 @@
       "item.helldivers.hulk_spawn_egg": "Hulk Spawn Egg",
       "block.helldivers.terminiddustspore": "Dust Spore",
       "item.helldivers.eagle_cluster_bomb": "Eagle Cluster Bomb",
+      "item.helldivers.napalm_projectile": "Napalm Projectile",
       "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
       "item.helldivers.orbital_airburst": "Orbital Airburst",
       "block.helldivers.automaton_factory_door": "Automaton Factory Door",
@@ -3806,6 +4598,34 @@
               },
               {
                 "name": "Eagle_Smoke_Strike",
+                "children": []
+              },
+              {
+                "name": "Eagle_110MM_Rocket_Pod",
+                "children": []
+              },
+              {
+                "name": "Orbital_120MM_Barrage",
+                "children": []
+              },
+              {
+                "name": "Orbital_380MM_barrage",
+                "children": []
+              },
+              {
+                "name": "Orbital_Walking_Barrage",
+                "children": []
+              },
+              {
+                "name": "Orbital_Gas_Strike",
+                "children": []
+              },
+              {
+                "name": "Eagle_Napalm_Strike",
+                "children": []
+              },
+              {
+                "name": "Orbital_Gattling_Barrage",
                 "children": []
               }
             ]

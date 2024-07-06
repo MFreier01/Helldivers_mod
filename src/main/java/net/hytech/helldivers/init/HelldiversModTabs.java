@@ -25,15 +25,22 @@ public class HelldiversModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.helldivers.stratagems")).icon(() -> new ItemStack(HelldiversModItems.EAGLE_AIR_STRIKE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(HelldiversModItems.EAGLE_AIR_STRIKE.get());
 				tabData.accept(HelldiversModItems.EAGLE_500_KG.get());
+				tabData.accept(HelldiversModItems.EAGLE_110_MM_ROCKET_POD.get());
+				tabData.accept(HelldiversModItems.EAGLE_STRAFING_RUN.get());
+				tabData.accept(HelldiversModItems.EAGLE_CLUSTER_BOMB.get());
+				tabData.accept(HelldiversModItems.EAGLE_NAPALM_STRIKE.get());
+				tabData.accept(HelldiversModItems.EAGLE_SMOKE_STRIKE.get());
 				tabData.accept(HelldiversModItems.ORBITAL_RAIL_CANNON_STRIKE.get());
 				tabData.accept(HelldiversModItems.ORBITAL_PRECISION_STRIKE.get());
-				tabData.accept(HelldiversModItems.EAGLE_STRAFING_RUN.get());
 				tabData.accept(HelldiversModItems.ORBITAL_LASER_ITEM.get());
 				tabData.accept(HelldiversModItems.ORBITAL_AIRBURST.get());
 				tabData.accept(HelldiversModItems.ORBITAL_EMS_STRIKE.get());
-				tabData.accept(HelldiversModItems.EAGLE_CLUSTER_BOMB.get());
+				tabData.accept(HelldiversModItems.ORBITAL_GATTLING_BARRAGE.get());
+				tabData.accept(HelldiversModItems.ORBITAL_WALKING_BARRAGE.get());
+				tabData.accept(HelldiversModItems.ORBITAL_120_MMHE_BARRAGE.get());
+				tabData.accept(HelldiversModItems.ORBITAL_380_MMHE_BARRAGE.get());
 				tabData.accept(HelldiversModItems.ORBITAL_SMOKE_STRIKE.get());
-				tabData.accept(HelldiversModItems.EAGLE_SMOKE_STRIKE.get());
+				tabData.accept(HelldiversModItems.ORBITAL_GAS_STRIKE.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> HELLDIVERS = REGISTRY.register("helldivers",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.helldivers.helldivers")).icon(() -> new ItemStack(HelldiversModItems.BASICARMOR_HELMET.get())).displayItems((parameters, tabData) -> {
@@ -81,7 +88,6 @@ public class HelldiversModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(HelldiversModItems.BULLET_ITEM.get());
-			tabData.accept(HelldiversModItems.AUTOMATONBULLET.get());
 		}
 	}
 }

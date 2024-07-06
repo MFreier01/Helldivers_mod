@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.POLISHED_BLACKSTONE"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "GattlingExplosion"
+    },
+    "onHitsPlayer": {
+      "name": "GattlingExplosion"
+    },
+    "onHitsEntity": {
+      "name": "GattlingExplosion"
+    }
+  }
+}

@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.hytech.helldivers.client.particle.RedBeamParticle;
+import net.hytech.helldivers.client.particle.GasParticle;
 import net.hytech.helldivers.client.particle.EMSParticle;
 import net.hytech.helldivers.client.particle.BlueBeamParticle;
 import net.hytech.helldivers.client.particle.BileSpewParticle;
@@ -22,5 +23,6 @@ public class HelldiversModParticles {
 		event.registerSpriteSet(HelldiversModParticleTypes.BLUE_BEAM.get(), BlueBeamParticle::provider);
 		event.registerSpriteSet(HelldiversModParticleTypes.BILE_SPEW.get(), BileSpewParticle::provider);
 		event.registerSpriteSet(HelldiversModParticleTypes.EMS.get(), EMSParticle::provider);
+		event.registerSpriteSet(HelldiversModParticleTypes.GAS.get(), GasParticle::provider);
 	}
 }

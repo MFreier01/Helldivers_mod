@@ -23,15 +23,20 @@ import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StrafingRunProjectileEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
+import net.hytech.helldivers.entity.RocketPodProjectileEntity;
 import net.hytech.helldivers.entity.RailcannonstrikeprojectileEntity;
 import net.hytech.helldivers.entity.RailbeamEntity;
 import net.hytech.helldivers.entity.Projectile500KGEntity;
 import net.hytech.helldivers.entity.PrecisionStrikeEntity;
 import net.hytech.helldivers.entity.OrbitalsmokeprojectileEntity;
 import net.hytech.helldivers.entity.OrbitallaserEntity;
+import net.hytech.helldivers.entity.Orbital380mmprojectileEntity;
+import net.hytech.helldivers.entity.NapalmStrikeEntity;
 import net.hytech.helldivers.entity.HulkEntity;
 import net.hytech.helldivers.entity.HellpodProjectileEntity;
 import net.hytech.helldivers.entity.HellpodEntity;
+import net.hytech.helldivers.entity.GattlingProjectileEntity;
+import net.hytech.helldivers.entity.GasStrikeProjectileEntity;
 import net.hytech.helldivers.entity.FragGrenadeProjectileEntity;
 import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
 import net.hytech.helldivers.entity.CommisarEntity;
@@ -107,6 +112,16 @@ public class HelldiversModEntities {
 			.setCustomClientFactory(AirburstProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<OrbitalsmokeprojectileEntity>> ORBITALSMOKEPROJECTILE = register("orbitalsmokeprojectile", EntityType.Builder.<OrbitalsmokeprojectileEntity>of(OrbitalsmokeprojectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(OrbitalsmokeprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RocketPodProjectileEntity>> ROCKET_POD_PROJECTILE = register("rocket_pod_projectile", EntityType.Builder.<RocketPodProjectileEntity>of(RocketPodProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(RocketPodProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<Orbital380mmprojectileEntity>> ORBITAL_380MMPROJECTILE = register("orbital_380mmprojectile", EntityType.Builder.<Orbital380mmprojectileEntity>of(Orbital380mmprojectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(Orbital380mmprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GasStrikeProjectileEntity>> GAS_STRIKE_PROJECTILE = register("gas_strike_projectile", EntityType.Builder.<GasStrikeProjectileEntity>of(GasStrikeProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(GasStrikeProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<NapalmStrikeEntity>> NAPALM_STRIKE = register("napalm_strike",
+			EntityType.Builder.<NapalmStrikeEntity>of(NapalmStrikeEntity::new, MobCategory.MISC).setCustomClientFactory(NapalmStrikeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GattlingProjectileEntity>> GATTLING_PROJECTILE = register("gattling_projectile", EntityType.Builder.<GattlingProjectileEntity>of(GattlingProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(GattlingProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

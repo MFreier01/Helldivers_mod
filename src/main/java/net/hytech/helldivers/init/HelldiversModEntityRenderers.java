@@ -50,5 +50,10 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.ORBITALLASER.get(), OrbitallaserRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.AIRBURST_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.ROCKET_POD_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.ORBITAL_380MMPROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.GAS_STRIKE_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.NAPALM_STRIKE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.GATTLING_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

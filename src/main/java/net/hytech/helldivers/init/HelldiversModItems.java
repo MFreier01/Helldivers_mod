@@ -18,13 +18,20 @@ import net.minecraft.world.item.ArmorItem;
 import net.hytech.helldivers.item.StratagemRemoteItem;
 import net.hytech.helldivers.item.StimItem;
 import net.hytech.helldivers.item.SG225BreakerItem;
+import net.hytech.helldivers.item.RocketpodItem;
 import net.hytech.helldivers.item.Purifiede710Item;
+import net.hytech.helldivers.item.OrbitalWalkingBarrageItem;
 import net.hytech.helldivers.item.OrbitalSmokeStrikeItem;
 import net.hytech.helldivers.item.OrbitalRailCannonStrikeItem;
 import net.hytech.helldivers.item.OrbitalPrecisionStrikeItem;
 import net.hytech.helldivers.item.OrbitalLaserItemItem;
+import net.hytech.helldivers.item.OrbitalGattlingBarrageItem;
+import net.hytech.helldivers.item.OrbitalGasStrikeItem;
 import net.hytech.helldivers.item.OrbitalEMSStrikeItem;
 import net.hytech.helldivers.item.OrbitalAirburstItem;
+import net.hytech.helldivers.item.Orbital380MMHEBarrageItem;
+import net.hytech.helldivers.item.Orbital120MMHEBarrageItem;
+import net.hytech.helldivers.item.NapalmProjectileItem;
 import net.hytech.helldivers.item.M105StalwartItem;
 import net.hytech.helldivers.item.HellpodItemItem;
 import net.hytech.helldivers.item.HeavyFS23RemoteItem;
@@ -33,9 +40,11 @@ import net.hytech.helldivers.item.FragGrenadeItem;
 import net.hytech.helldivers.item.EmptyStratagemOrbItem;
 import net.hytech.helldivers.item.EagleStrafingRunItem;
 import net.hytech.helldivers.item.EagleSmokeStrikeItem;
+import net.hytech.helldivers.item.EagleNapalmStrikeItem;
 import net.hytech.helldivers.item.EagleClusterBombItem;
 import net.hytech.helldivers.item.EagleAirStrikeItem;
 import net.hytech.helldivers.item.Eagle500KGItem;
+import net.hytech.helldivers.item.Eagle110MMRocketPodItem;
 import net.hytech.helldivers.item.E710Item;
 import net.hytech.helldivers.item.BulletItemItem;
 import net.hytech.helldivers.item.BileSpewItemItem;
@@ -112,6 +121,15 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> EAGLE_SMOKE_STRIKE = REGISTRY.register("eagle_smoke_strike", () -> new EagleSmokeStrikeItem());
 	public static final RegistryObject<BasicArmorRemoteItem> BASIC_ARMOR_REMOTE_CHESTPLATE = REGISTRY.register("basic_armor_remote_chestplate", () -> new BasicArmorRemoteItem(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
 	public static final RegistryObject<HeavyFS23RemoteItem> HEAVY_FS_23_REMOTE_CHESTPLATE = REGISTRY.register("heavy_fs_23_remote_chestplate", () -> new HeavyFS23RemoteItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<Item> ROCKETPOD = REGISTRY.register("rocketpod", () -> new RocketpodItem());
+	public static final RegistryObject<Item> EAGLE_110_MM_ROCKET_POD = REGISTRY.register("eagle_110_mm_rocket_pod", () -> new Eagle110MMRocketPodItem());
+	public static final RegistryObject<Item> ORBITAL_120_MMHE_BARRAGE = REGISTRY.register("orbital_120_mmhe_barrage", () -> new Orbital120MMHEBarrageItem());
+	public static final RegistryObject<Item> ORBITAL_380_MMHE_BARRAGE = REGISTRY.register("orbital_380_mmhe_barrage", () -> new Orbital380MMHEBarrageItem());
+	public static final RegistryObject<Item> ORBITAL_WALKING_BARRAGE = REGISTRY.register("orbital_walking_barrage", () -> new OrbitalWalkingBarrageItem());
+	public static final RegistryObject<Item> ORBITAL_GAS_STRIKE = REGISTRY.register("orbital_gas_strike", () -> new OrbitalGasStrikeItem());
+	public static final RegistryObject<Item> ORBITAL_GATTLING_BARRAGE = REGISTRY.register("orbital_gattling_barrage", () -> new OrbitalGattlingBarrageItem());
+	public static final RegistryObject<Item> EAGLE_NAPALM_STRIKE = REGISTRY.register("eagle_napalm_strike", () -> new EagleNapalmStrikeItem());
+	public static final RegistryObject<Item> NAPALM_PROJECTILE = REGISTRY.register("napalm_projectile", () -> new NapalmProjectileItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
