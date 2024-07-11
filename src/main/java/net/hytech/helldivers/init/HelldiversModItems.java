@@ -34,7 +34,6 @@ import net.hytech.helldivers.item.Orbital120MMHEBarrageItem;
 import net.hytech.helldivers.item.NapalmProjectileItem;
 import net.hytech.helldivers.item.M105StalwartItem;
 import net.hytech.helldivers.item.HellpodItemItem;
-import net.hytech.helldivers.item.HeavyFS23RemoteItem;
 import net.hytech.helldivers.item.HeavyFS23Item;
 import net.hytech.helldivers.item.FragGrenadeItem;
 import net.hytech.helldivers.item.EmptyStratagemOrbItem;
@@ -46,10 +45,10 @@ import net.hytech.helldivers.item.EagleAirStrikeItem;
 import net.hytech.helldivers.item.Eagle500KGItem;
 import net.hytech.helldivers.item.Eagle110MMRocketPodItem;
 import net.hytech.helldivers.item.E710Item;
+import net.hytech.helldivers.item.DemocraciteingotItem;
 import net.hytech.helldivers.item.BulletItemItem;
 import net.hytech.helldivers.item.BileSpewItemItem;
 import net.hytech.helldivers.item.BasicarmorItem;
-import net.hytech.helldivers.item.BasicArmorRemoteItem;
 import net.hytech.helldivers.item.AutomatonbulletItem;
 import net.hytech.helldivers.item.ArmedSupportStratagemOrbItem;
 import net.hytech.helldivers.item.ArmedAttackStratagemOrbItem;
@@ -119,8 +118,6 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> EAGLE_CLUSTER_BOMB = REGISTRY.register("eagle_cluster_bomb", () -> new EagleClusterBombItem());
 	public static final RegistryObject<Item> ORBITAL_SMOKE_STRIKE = REGISTRY.register("orbital_smoke_strike", () -> new OrbitalSmokeStrikeItem());
 	public static final RegistryObject<Item> EAGLE_SMOKE_STRIKE = REGISTRY.register("eagle_smoke_strike", () -> new EagleSmokeStrikeItem());
-	public static final RegistryObject<BasicArmorRemoteItem> BASIC_ARMOR_REMOTE_CHESTPLATE = REGISTRY.register("basic_armor_remote_chestplate", () -> new BasicArmorRemoteItem(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
-	public static final RegistryObject<HeavyFS23RemoteItem> HEAVY_FS_23_REMOTE_CHESTPLATE = REGISTRY.register("heavy_fs_23_remote_chestplate", () -> new HeavyFS23RemoteItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<Item> ROCKETPOD = REGISTRY.register("rocketpod", () -> new RocketpodItem());
 	public static final RegistryObject<Item> EAGLE_110_MM_ROCKET_POD = REGISTRY.register("eagle_110_mm_rocket_pod", () -> new Eagle110MMRocketPodItem());
 	public static final RegistryObject<Item> ORBITAL_120_MMHE_BARRAGE = REGISTRY.register("orbital_120_mmhe_barrage", () -> new Orbital120MMHEBarrageItem());
@@ -130,6 +127,11 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> ORBITAL_GATTLING_BARRAGE = REGISTRY.register("orbital_gattling_barrage", () -> new OrbitalGattlingBarrageItem());
 	public static final RegistryObject<Item> EAGLE_NAPALM_STRIKE = REGISTRY.register("eagle_napalm_strike", () -> new EagleNapalmStrikeItem());
 	public static final RegistryObject<Item> NAPALM_PROJECTILE = REGISTRY.register("napalm_projectile", () -> new NapalmProjectileItem());
+	public static final RegistryObject<Item> TROOPER_SPAWN_EGG = REGISTRY.register("trooper_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.TROOPER, -16777216, -52429, new Item.Properties()));
+	public static final RegistryObject<Item> TERMINID_STALKER_SPAWN_EGG = REGISTRY.register("terminid_stalker_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.TERMINID_STALKER, -1, -26368, new Item.Properties()));
+	public static final RegistryObject<Item> DEMOCRACITEORE = block(HelldiversModBlocks.DEMOCRACITEORE);
+	public static final RegistryObject<Item> DEMOCRACITEINGOT = REGISTRY.register("democraciteingot", () -> new DemocraciteingotItem());
+	public static final RegistryObject<Item> DEMOCRACITEBLOCK = block(HelldiversModBlocks.DEMOCRACITEBLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -443,11 +443,10 @@
       "registry_name": "terminidhive",
       "metadata": {
         "files": [
-          "src/main/resources/data/helldivers/loot_tables/blocks/terminidhive.json",
           "src/main/resources/assets/helldivers/models/item/terminidhive.json",
-          "src/main/resources/assets/helldivers/blockstates/terminidhive.json",
+          "src/main/java/net/hytech/helldivers/block/TerminidhiveBlock.java",
           "src/main/resources/assets/helldivers/models/block/terminidhive.json",
-          "src/main/java/net/hytech/helldivers/block/TerminidhiveBlock.java"
+          "src/main/resources/assets/helldivers/blockstates/terminidhive.json"
         ]
       },
       "path": "~/Blocks"
@@ -736,8 +735,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/hytech/helldivers/world/inventory/CallStratagemsMenu.java",
-          "src/main/java/net/hytech/helldivers/client/gui/CallStratagemsScreen.java",
-          "src/main/java/net/hytech/helldivers/network/CallStratagemsButtonMessage.java"
+          "src/main/java/net/hytech/helldivers/network/CallStratagemsButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/CallStratagemsScreen.java"
         ]
       },
       "path": "~/Stratagems/Stratagem_Remote"
@@ -2645,16 +2644,16 @@
       "registry_name": "stratagem_maker",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/block/entity/StratagemMakerTileEntity.java",
-          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerTileRenderer.java",
           "src/main/java/net/hytech/helldivers/block/StratagemMakerBlock.java",
-          "src/main/resources/assets/helldivers/models/item/stratagem_maker.json",
+          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerTileRenderer.java",
           "src/main/java/net/hytech/helldivers/block/model/StratagemMakerBlockModel.java",
+          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerDisplayItemRenderer.java",
+          "src/main/resources/assets/helldivers/models/item/stratagem_maker.json",
           "src/main/resources/assets/helldivers/models/custom/stratagem_maker_particle.json",
           "src/main/java/net/hytech/helldivers/block/display/StratagemMakerDisplayItem.java",
+          "src/main/java/net/hytech/helldivers/block/entity/StratagemMakerTileEntity.java",
           "src/main/resources/assets/helldivers/blockstates/stratagem_maker.json",
-          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerDisplayModel.java",
-          "src/main/java/net/hytech/helldivers/block/renderer/StratagemMakerDisplayItemRenderer.java"
+          "src/main/java/net/hytech/helldivers/block/model/StratagemMakerDisplayModel.java"
         ]
       },
       "path": "~/Blocks"
@@ -3332,60 +3331,6 @@
         ]
       },
       "path": "~/Other_Items/Stratagem_items"
-    },
-    {
-      "name": "BasicArmorRemote",
-      "type": "animatedarmor",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_armor_remote",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/item/model/BasicArmorRemoteModel.java",
-          "src/main/java/net/hytech/helldivers/item/BasicArmorRemoteItem.java",
-          "src/main/java/net/hytech/helldivers/client/renderer/BasicArmorRemoteArmorRenderer.java",
-          "src/main/resources/assets/helldivers/models/item/basic_armor_remote_chestplate.json"
-        ]
-      },
-      "path": "~/Armor"
-    },
-    {
-      "name": "HeavyFS23Remote",
-      "type": "animatedarmor",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heavy_fs_23_remote",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/helldivers/models/item/heavy_fs_23_remote_chestplate.json",
-          "src/main/java/net/hytech/helldivers/client/renderer/HeavyFS23RemoteArmorRenderer.java",
-          "src/main/java/net/hytech/helldivers/item/HeavyFS23RemoteItem.java",
-          "src/main/java/net/hytech/helldivers/item/model/HeavyFS23RemoteModel.java"
-        ]
-      },
-      "path": "~/Armor"
-    },
-    {
-      "name": "BasicArmorRemoteTooltip",
-      "type": "procedure",
-      "sortid": 167,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_armor_remote_tooltip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/procedures/BasicArmorRemoteTooltipProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Armor"
     },
     {
       "name": "AddEagle110mm",
@@ -4162,6 +4107,232 @@
         ]
       },
       "path": "~/Stratagems/Stratagems/Orbital_Gattling_Barrage"
+    },
+    {
+      "name": "Trooper",
+      "type": "animatedentity",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trooper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/renderer/TrooperRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/model/TrooperModel.java",
+          "src/main/resources/assets/helldivers/models/item/trooper_spawn_egg.json",
+          "src/main/resources/data/helldivers/forge/biome_modifier/trooper_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/entity/TrooperEntity.java"
+        ]
+      },
+      "path": "~/Entity/Automaton"
+    },
+    {
+      "name": "OnShipBiome",
+      "type": "biome",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_ship_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/worldgen/biome/on_ship_biome.json",
+          "src/main/resources/data/helldivers/worldgen/configured_feature/on_ship_biome_tree.json",
+          "src/main/resources/data/helldivers/worldgen/placed_feature/on_ship_biome_tree.json"
+        ]
+      },
+      "path": "~/Super_Destroyer"
+    },
+    {
+      "name": "OnShip",
+      "type": "dimension",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_ship",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/dimension/OnShipDimension.java",
+          "src/main/resources/data/helldivers/dimension/on_ship.json",
+          "src/main/resources/data/helldivers/dimension_type/on_ship.json"
+        ]
+      },
+      "path": "~/Super_Destroyer"
+    },
+    {
+      "name": "TerminidStalker",
+      "type": "animatedentity",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminid_stalker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_stalker_biome_modifier.json",
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidStalkerModel.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidStalkerRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/TerminidStalkerEntity.java",
+          "src/main/resources/assets/helldivers/models/item/terminid_stalker_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entity/Terminid"
+    },
+    {
+      "name": "TerminidHiveLoot",
+      "type": "loottable",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminid_hive_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminid_hive_loot.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Democraciteore",
+      "type": "block",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "democraciteore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/blockstates/democraciteore.json",
+          "src/main/resources/data/helldivers/worldgen/placed_feature/democraciteore.json",
+          "src/main/java/net/hytech/helldivers/block/DemocraciteoreBlock.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/democraciteore_biome_modifier.json",
+          "src/main/resources/assets/helldivers/models/item/democraciteore.json",
+          "src/main/resources/assets/helldivers/models/block/democraciteore.json",
+          "src/main/resources/data/helldivers/worldgen/configured_feature/democraciteore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Democraciteingot",
+      "type": "item",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "democraciteingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/DemocraciteingotItem.java",
+          "src/main/resources/assets/helldivers/models/item/democraciteingot.json"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "DemocraciteOreLoot",
+      "type": "loottable",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "democracite_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/blocks/democracite_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Democraciteingotrecipe",
+      "type": "recipe",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "democraciteingotrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/democracite_ingot.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Democraciteingotrecipeblasting",
+      "type": "recipe",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "democraciteingotrecipeblasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/democraciteingotrecipeblasting.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StratagemMakerRecipe",
+      "type": "recipe",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagem_maker_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/stratagem_maker_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Democraciteblock",
+      "type": "block",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "democraciteblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/blockstates/democraciteblock.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/democraciteblock.json",
+          "src/main/java/net/hytech/helldivers/block/DemocraciteblockBlock.java",
+          "src/main/resources/assets/helldivers/models/item/democraciteblock.json",
+          "src/main/resources/assets/helldivers/models/block/democraciteblock.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "StratagemmakerGUI",
+      "type": "gui",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagemmaker_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/StratagemmakerGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/StratagemmakerGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker"
+    },
+    {
+      "name": "StratagemCrafting",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagem_crafting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/StratagemCraftingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker"
     }
   ],
   "variable_elements": [
@@ -4288,6 +4459,10 @@
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CUSTOM:TerminidBiome"
     ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Democraciteblock",
+      "~CUSTOM:Democraciteore"
+    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -4318,10 +4493,15 @@
     "BIOMES:minecraft:has_structure/ruined_portal_nether": [
       "~CUSTOM:TerminidBiome"
     ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.VOID_AIR"
+    ],
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
       "~CUSTOM:TerminidBiome"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Democraciteblock",
+      "~CUSTOM:Democraciteore",
       "~CUSTOM:StratagemMaker",
       "~CUSTOM:AutomatonFactoryTrapdoor",
       "~CUSTOM:AutomatonFactoryDoor",
@@ -4359,12 +4539,14 @@
     "en_us": {
       "item.helldivers.eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
+      "block.helldivers.democraciteore": "Democracite Ore",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
-      "item.helldivers.heavy_fs_23_remote_chestplate": "FS-23 Chestplate",
+      "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
       "subtitles.basic_shot": "Gun shot",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "item.helldivers.orbital_rail_cannon_strike": "Orbital Rail Cannon Strike",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
+      "item.helldivers.terminid_stalker_spawn_egg": "Stalker Spawn Egg",
       "entity.helldivers.terminid_scavenger": "Scavenger",
       "subtitles.m105_reload": "Gun reload",
       "item.helldivers.orbital_precision_strike": "Orbital Precision Strike",
@@ -4376,15 +4558,17 @@
       "item.helldivers.orbital_gattling_barrage": "Orbital Gattling Barrage",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "entity.helldivers.orbitallaser": "Orbital Laser",
-      "item.helldivers.heavy_fs_23_remote_helmet": "FS-23 Helmet",
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
       "item.helldivers.eagle_napalm_strike": "Eagle Napalm Strike",
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
+      "entity.helldivers.trooper": "Trooper",
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
+      "item.helldivers.democraciteingot": "Democracite Ingot",
       "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
       "block.helldivers.automaton_factorybase": "Factory Block",
       "key.helldivers.open_menu_keybind": "Open Menu Keybind",
+      "block.helldivers.democraciteblock": "Democracite Block",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
       "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
       "key.helldivers.full_auto": "Full Auto Fire",
@@ -4392,12 +4576,11 @@
       "key.helldivers.reload_key": "Reload Key",
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
       "item.helldivers.hellpod_item": "Hellpod Item",
+      "biome.helldivers.on_ship_biome": "On Ship",
       "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.orbital_gas_strike": "Orbital Gas Strike",
       "item.helldivers.e_710": "Raw E-710",
       "item.helldivers.orbital_laser_item": "Orbital Laser",
-      "item.helldivers.basic_armor_remote_leggings": "Helldiver\u0027s Leggings",
-      "item.helldivers.basic_armor_remote_boots": "Helldiver\u0027s Boots",
       "item.helldivers.empty_stratagem_orb": "Empty Stratagem Orb",
       "item.helldivers.bullet_item": "Bullet Item",
       "item.helldivers.basicarmor_chestplate": "Helldiver\u0027s Chestplate",
@@ -4416,7 +4599,6 @@
       "item.helldivers.rocketpod": "Rocket Pod",
       "block.helldivers.terminidwall": "Terminid Wall",
       "item.helldivers.eagle_110_mm_rocket_pod": "Eagle 110MM Rocket Pod",
-      "item.helldivers.heavy_fs_23_remote_boots": "FS-23 Boots",
       "item_group.helldivers.stratagems": "Stratagems",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
       "item.helldivers.eagle_smoke_strike": "Eagle Smoke Strike",
@@ -4458,16 +4640,14 @@
       "entity.helldivers.railbeam": "Rail Beam",
       "gui.helldivers.call_stratagems.button_eagle_air_strike": "Eagle Air Strike",
       "gui.helldivers.call_stratagems.Eagle_500KG_Bomb": "Eagle 500 KG Bomb",
-      "item.helldivers.heavy_fs_23_remote_leggings": "FS-23 Leggings",
+      "entity.helldivers.terminid_stalker": "Stalker",
       "item.helldivers.terminidbiletitan_spawn_egg": "Bile Titan Spawn Egg",
       "item.helldivers.heavy_fs_23_helmet": "FS-23 Helmet",
       "block.helldivers.ammo_box": "Ammo Box",
-      "item.helldivers.basic_armor_remote_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.commisar_spawn_egg": "Commisar Spawn Egg",
       "entity.helldivers.commisar": "Commisar",
       "item.helldivers.orbitallaser_spawn_egg": "Orbital Laser Spawn Egg",
-      "item.helldivers.automatonbullet": "Automatonbullet",
-      "item.helldivers.basic_armor_remote_chestplate": "Helldiver\u0027s Chestplate"
+      "item.helldivers.automatonbullet": "Automatonbullet"
     }
   },
   "foldersRoot": {
@@ -4650,8 +4830,16 @@
           {
             "name": "Ammo_Box",
             "children": []
+          },
+          {
+            "name": "Stratagem_Maker",
+            "children": []
           }
         ]
+      },
+      {
+        "name": "Super_Destroyer",
+        "children": []
       }
     ]
   },

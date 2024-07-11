@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "b": {
+      "item": "minecraft:cobblestone"
+    },
+    "c": {
+      "item": "helldivers:purifiede_710"
+    },
+    "d": {
+      "item": "helldivers:democraciteblock"
+    }
+  },
+  "result": {
+    "item": "helldivers:stratagem_maker",
+    "count": 1
+  }
+}

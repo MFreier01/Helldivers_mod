@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.hytech.helldivers.client.gui.StratagemmakerGUIScreen;
 import net.hytech.helldivers.client.gui.CallStratagemsScreen;
 import net.hytech.helldivers.client.gui.AmmoboxguiScreen;
 
@@ -21,6 +22,7 @@ public class HelldiversModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(HelldiversModMenus.CALL_STRATAGEMS.get(), CallStratagemsScreen::new);
 			MenuScreens.register(HelldiversModMenus.AMMOBOXGUI.get(), AmmoboxguiScreen::new);
+			MenuScreens.register(HelldiversModMenus.STRATAGEMMAKER_GUI.get(), StratagemmakerGUIScreen::new);
 		});
 	}
 }

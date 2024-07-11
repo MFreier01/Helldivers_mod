@@ -80,8 +80,11 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
 				tabData.accept(HelldiversModBlocks.STRATAGEM_MAKER.get().asItem());
-				tabData.accept(HelldiversModItems.BASIC_ARMOR_REMOTE_CHESTPLATE.get());
-				tabData.accept(HelldiversModItems.HEAVY_FS_23_REMOTE_CHESTPLATE.get());
+				tabData.accept(HelldiversModItems.TROOPER_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.TERMINID_STALKER_SPAWN_EGG.get());
+				tabData.accept(HelldiversModBlocks.DEMOCRACITEORE.get().asItem());
+				tabData.accept(HelldiversModItems.DEMOCRACITEINGOT.get());
+				tabData.accept(HelldiversModBlocks.DEMOCRACITEBLOCK.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

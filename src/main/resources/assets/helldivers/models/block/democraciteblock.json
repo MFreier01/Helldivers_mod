@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "helldivers:block/democracite_block",
+    "up": "helldivers:block/democracite_block",
+    "north": "helldivers:block/democracite_block",
+    "east": "helldivers:block/democracite_block",
+    "south": "helldivers:block/democracite_block",
+    "west": "helldivers:block/democracite_block",
+    "particle": "helldivers:block/democracite_block"
+  },
+  "render_type": "solid"
+}

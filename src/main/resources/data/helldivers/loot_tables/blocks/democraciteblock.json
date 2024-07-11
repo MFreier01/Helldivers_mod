@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "helldivers:blocks/terminidhive",
+  "random_sequence": "helldivers:blocks/democraciteblock",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "helldivers:terminidhive"
+          "name": "helldivers:democraciteblock"
         }
       ]
     }

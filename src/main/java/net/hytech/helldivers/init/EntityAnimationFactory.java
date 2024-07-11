@@ -4,7 +4,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.hytech.helldivers.entity.TrooperEntity;
 import net.hytech.helldivers.entity.TerminidbiletitanEntity;
+import net.hytech.helldivers.entity.TerminidStalkerEntity;
 import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
@@ -84,6 +86,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof OrbitallaserEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TrooperEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TerminidStalkerEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

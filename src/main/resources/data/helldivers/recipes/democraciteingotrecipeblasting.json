@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "experience": 1.2,
+  "cookingtime": 140,
+  "ingredient": {
+    "item": "helldivers:democraciteore"
+  },
+  "result": "helldivers:democraciteingot"
+}

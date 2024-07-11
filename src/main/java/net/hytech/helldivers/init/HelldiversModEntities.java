@@ -16,9 +16,11 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.hytech.helldivers.entity.TrooperEntity;
 import net.hytech.helldivers.entity.ThrownSupportOrbEntity;
 import net.hytech.helldivers.entity.ThrownAttackOrbEntity;
 import net.hytech.helldivers.entity.TerminidbiletitanEntity;
+import net.hytech.helldivers.entity.TerminidStalkerEntity;
 import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StrafingRunProjectileEntity;
@@ -122,6 +124,14 @@ public class HelldiversModEntities {
 			EntityType.Builder.<NapalmStrikeEntity>of(NapalmStrikeEntity::new, MobCategory.MISC).setCustomClientFactory(NapalmStrikeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<GattlingProjectileEntity>> GATTLING_PROJECTILE = register("gattling_projectile", EntityType.Builder.<GattlingProjectileEntity>of(GattlingProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(GattlingProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TrooperEntity>> TROOPER = register("trooper",
+			EntityType.Builder.<TrooperEntity>of(TrooperEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TrooperEntity::new)
+
+					.sized(0.6f, 1.5f));
+	public static final RegistryObject<EntityType<TerminidStalkerEntity>> TERMINID_STALKER = register("terminid_stalker",
+			EntityType.Builder.<TerminidStalkerEntity>of(TerminidStalkerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidStalkerEntity::new)
+
+					.sized(3f, 3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -140,6 +150,8 @@ public class HelldiversModEntities {
 			HulkEntity.init();
 			RailbeamEntity.init();
 			OrbitallaserEntity.init();
+			TrooperEntity.init();
+			TerminidStalkerEntity.init();
 		});
 	}
 
@@ -155,5 +167,7 @@ public class HelldiversModEntities {
 		event.put(HULK.get(), HulkEntity.createAttributes().build());
 		event.put(RAILBEAM.get(), RailbeamEntity.createAttributes().build());
 		event.put(ORBITALLASER.get(), OrbitallaserEntity.createAttributes().build());
+		event.put(TROOPER.get(), TrooperEntity.createAttributes().build());
+		event.put(TERMINID_STALKER.get(), TerminidStalkerEntity.createAttributes().build());
 	}
 }

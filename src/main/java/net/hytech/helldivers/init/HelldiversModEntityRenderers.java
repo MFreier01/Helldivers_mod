@@ -11,7 +11,9 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.hytech.helldivers.client.renderer.TrooperRenderer;
 import net.hytech.helldivers.client.renderer.TerminidbiletitanRenderer;
+import net.hytech.helldivers.client.renderer.TerminidStalkerRenderer;
 import net.hytech.helldivers.client.renderer.TerminidShriekerRenderer;
 import net.hytech.helldivers.client.renderer.TerminidScavengerRenderer;
 import net.hytech.helldivers.client.renderer.StaticFragGrenadeRenderer;
@@ -55,5 +57,7 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.GAS_STRIKE_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.NAPALM_STRIKE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.GATTLING_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.TROOPER.get(), TrooperRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.TERMINID_STALKER.get(), TerminidStalkerRenderer::new);
 	}
 }

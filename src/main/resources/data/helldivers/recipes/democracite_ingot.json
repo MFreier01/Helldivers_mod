@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 1.2,
+  "cookingtime": 180,
+  "ingredient": {
+    "item": "helldivers:democraciteore"
+  },
+  "result": "helldivers:democraciteingot"
+}
