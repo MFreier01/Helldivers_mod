@@ -4301,27 +4301,6 @@
       "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
     },
     {
-      "name": "Eagle110MMRocketPodRecipe",
-      "type": "procedure",
-      "sortid": 214,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "eagle_110_mm_rocket_pod_recipe",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/hytech/helldivers/procedures/Eagle110MMRocketPodRecipeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
-    },
-    {
       "name": "TerminidHiveLoot",
       "type": "loottable",
       "sortid": 215,
@@ -4360,9 +4339,9 @@
       "registry_name": "program_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/client/gui/ProgramGUIScreen.java",
           "src/main/java/net/hytech/helldivers/world/inventory/ProgramGUIMenu.java",
-          "src/main/java/net/hytech/helldivers/network/ProgramGUIButtonMessage.java"
+          "src/main/java/net/hytech/helldivers/network/ProgramGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/ProgramGUIScreen.java"
         ]
       },
       "path": "~/GUI/Stratagem_Maker"
@@ -4450,6 +4429,47 @@
         ]
       },
       "path": "~/Entity/Terminid"
+    },
+    {
+      "name": "Tag110MMRocketPod",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_110_mm_rocket_pod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Tag110MMRocketPodProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "Eagle110MMRocketRecipe",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_110_mm_rocket_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Eagle110MMRocketRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
     }
   ],
   "variable_elements": [
@@ -4765,6 +4785,7 @@
       "biome.helldivers.terminid_biome": "Terminid Biome",
       "block.helldivers.terminidhive": "Terminid Hive",
       "item.helldivers.stratagem_remote": "Stratagem Remote",
+      "gui.helldivers.program_gui.button_eagle_110mm": "Eagle 110MM",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike1": "Call Reinforcements",
       "entity.helldivers.hellpod": "Hellpod",
       "subtitles.ar23_shoot": "Gun shoots",

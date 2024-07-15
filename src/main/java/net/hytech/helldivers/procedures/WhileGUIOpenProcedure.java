@@ -1,6 +1,5 @@
 package net.hytech.helldivers.procedures;
 
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -26,9 +25,9 @@ public class WhileGUIOpenProcedure {
 				((Slot) _slots.get((int) outputSlot)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
-		} else if (Eagle110MMRocketPodRecipeProcedure.execute(entity)) {
+		} else if (Eagle110MMRocketRecipeProcedure.execute(entity)) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.BONE).copy();
+				ItemStack _setstack = new ItemStack(HelldiversModItems.EAGLE_110_MM_ROCKET_POD.get()).copy();
 				_setstack.setCount(3);
 				((Slot) _slots.get((int) outputSlot)).set(_setstack);
 				_player.containerMenu.broadcastChanges();

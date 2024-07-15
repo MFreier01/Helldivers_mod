@@ -23,6 +23,7 @@ public class ProgramGUIScreen extends AbstractContainerScreen<ProgramGUIMenu> {
 	private final int x, y, z;
 	private final Player entity;
 	Button button_eagle_air;
+	Button button_eagle_110mm;
 
 	public ProgramGUIScreen(ProgramGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -83,5 +84,13 @@ public class ProgramGUIScreen extends AbstractContainerScreen<ProgramGUIMenu> {
 		}).bounds(this.leftPos + 37, this.topPos + 25, 72, 20).build();
 		guistate.put("button:button_eagle_air", button_eagle_air);
 		this.addRenderableWidget(button_eagle_air);
+		button_eagle_110mm = Button.builder(Component.translatable("gui.helldivers.program_gui.button_eagle_110mm"), e -> {
+			if (true) {
+				HelldiversMod.PACKET_HANDLER.sendToServer(new ProgramGUIButtonMessage(1, x, y, z));
+				ProgramGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}).bounds(this.leftPos + 37, this.topPos + 52, 82, 20).build();
+		guistate.put("button:button_eagle_110mm", button_eagle_110mm);
+		this.addRenderableWidget(button_eagle_110mm);
 	}
 }

@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.hytech.helldivers.world.inventory.ProgramGUIMenu;
 import net.hytech.helldivers.procedures.TageagleairstrikeProcedure;
+import net.hytech.helldivers.procedures.Tag110MMRocketPodProcedure;
 import net.hytech.helldivers.HelldiversMod;
 
 import java.util.function.Supplier;
@@ -65,6 +66,10 @@ public class ProgramGUIButtonMessage {
 		if (buttonID == 0) {
 
 			TageagleairstrikeProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			Tag110MMRocketPodProcedure.execute(entity);
 		}
 	}
 

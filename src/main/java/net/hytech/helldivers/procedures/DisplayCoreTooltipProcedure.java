@@ -35,6 +35,9 @@ public class DisplayCoreTooltipProcedure {
 			if (("EagleAirStrike").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
 				tooltip.add(Component.literal("Eagle Air Strike Core"));
 			}
+			if (("Eagle110MMRocket").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Eagle 110MM Rocket Pod Core"));
+			}
 		}
 	}
 }

@@ -39,6 +39,21 @@
           "x": 141,
           "y": 62
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_eagle_110mm",
+          "text": "Eagle 110MM",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Tag110MMRocketPod"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 141,
+          "y": 89
+        }
       }
     ],
     "gridSettings": {
