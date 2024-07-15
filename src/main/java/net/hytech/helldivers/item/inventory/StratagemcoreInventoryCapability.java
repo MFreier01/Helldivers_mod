@@ -18,7 +18,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
 import net.hytech.helldivers.init.HelldiversModItems;
-import net.hytech.helldivers.client.gui.ProgramGUIScreen;
+import net.hytech.helldivers.client.gui.EagleAirStrikeGUIScreen;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
@@ -29,7 +29,7 @@ public class StratagemcoreInventoryCapability implements ICapabilitySerializable
 	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
 		if (event.getEntity().getItem().getItem() == HelldiversModItems.STRATAGEMCORE.get()) {
-			if (Minecraft.getInstance().screen instanceof ProgramGUIScreen) {
+			if (Minecraft.getInstance().screen instanceof EagleAirStrikeGUIScreen) {
 				Minecraft.getInstance().player.closeContainer();
 			}
 		}
@@ -53,7 +53,7 @@ public class StratagemcoreInventoryCapability implements ICapabilitySerializable
 	}
 
 	private ItemStackHandler createItemHandler() {
-		return new ItemStackHandler(1) {
+		return new ItemStackHandler(0) {
 			@Override
 			public int getSlotLimit(int slot) {
 				return 64;

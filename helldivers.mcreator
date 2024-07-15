@@ -4316,22 +4316,6 @@
       "path": "~/Other_Items"
     },
     {
-      "name": "ProgramGUI",
-      "type": "gui",
-      "sortid": 219,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "program_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/world/inventory/ProgramGUIMenu.java",
-          "src/main/java/net/hytech/helldivers/network/ProgramGUIButtonMessage.java",
-          "src/main/java/net/hytech/helldivers/client/gui/ProgramGUIScreen.java"
-        ]
-      },
-      "path": "~/GUI/Stratagem_Maker"
-    },
-    {
       "name": "Tageagleairstrike",
       "type": "procedure",
       "sortid": 220,
@@ -4469,6 +4453,342 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "EagleAirStrikeGUI",
+      "type": "gui",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_air_strike_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/EagleAirStrikeGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/EagleAirStrikeGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/EagleAirStrikeGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "Eagle110MMRocketPodGUI",
+      "type": "gui",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_110_mm_rocket_pod_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/Eagle110MMRocketPodGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/Eagle110MMRocketPodGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/Eagle110MMRocketPodGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "SwitchProgramGUI",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_program_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/SwitchProgramGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items/Switch_Program_GUI"
+    },
+    {
+      "name": "IncrementGUI",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increment_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/IncrementGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items/Switch_Program_GUI"
+    },
+    {
+      "name": "DeIncrementGUI",
+      "type": "procedure",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "de_increment_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/DeIncrementGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items/Switch_Program_GUI"
+    },
+    {
+      "name": "EagleNapalmGUI",
+      "type": "gui",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_napalm_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/EagleNapalmGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/network/EagleNapalmGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/EagleNapalmGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "TagNapalmStrike",
+      "type": "procedure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_napalm_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagNapalmStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "EagleNapalmStrikeRecipe",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_napalm_strike_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EagleNapalmStrikeRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "EagleClusterBombGUI",
+      "type": "gui",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_cluster_bomb_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/EagleClusterBombGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/client/gui/EagleClusterBombGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/network/EagleClusterBombGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "TagClusterBomb",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_cluster_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagClusterBombProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "EagleClusterBombRecipe",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_cluster_bomb_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EagleClusterBombRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "Eagle500KGGUI",
+      "type": "gui",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_500_kggui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/Eagle500KGGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/Eagle500KGGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/Eagle500KGGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "Tag500KG",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_500_kg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Tag500KGProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "Eagle500KGRecipe",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_500_kg_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Eagle500KGRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "TagEagleSmokeStrike",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_eagle_smoke_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagEagleSmokeStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "EagleSmokeStrikeRecipe",
+      "type": "procedure",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_smoke_strike_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EagleSmokeStrikeRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "EagleSmokeGUI",
+      "type": "gui",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_smoke_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/EagleSmokeGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/EagleSmokeGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/EagleSmokeGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
     }
   ],
   "variable_elements": [
@@ -4507,6 +4827,12 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "PROGRAM_GUI",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -4691,32 +5017,43 @@
   },
   "language_map": {
     "en_us": {
+      "gui.helldivers.eagle_air_strike_gui.label_eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.eagle_air_strike": "Eagle Air Strike",
+      "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "block.helldivers.democraciteore": "Democracite Ore",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
       "subtitles.basic_shot": "Gun shot",
+      "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
+      "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_program_core": "Program Core",
+      "gui.helldivers.eagle_air_strike_gui.label_program_core": "Program Core",
       "item.helldivers.orbital_rail_cannon_strike": "Orbital Rail Cannon Strike",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
+      "gui.helldivers.eagle_air_strike_gui.button_eagle_110mm": "Eagle 110MM",
       "item.helldivers.terminid_stalker_spawn_egg": "Stalker Spawn Egg",
+      "gui.helldivers.eagle_110_mm_rocket_pod_gui.button_eagle_110mm_rocket_pod": "Eagle 110MM Rocket Pod",
       "entity.helldivers.terminid_scavenger": "Scavenger",
       "subtitles.m105_reload": "Gun reload",
       "item.helldivers.orbital_precision_strike": "Orbital Precision Strike",
       "item.helldivers.ar_23": "AR Magazine",
       "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
+      "gui.helldivers.eagle_cluster_bomb_gui.button_eagle_cluster_bomb": "Eagle Cluster Bomb",
       "subtitles.sg225_reload": "Gun reload",
       "subtitles.apw1_shoot": "Gun shoots",
       "item.helldivers.orbital_gattling_barrage": "Orbital Gattling Barrage",
       "subtitles.sg225_dry_fire": "Gun clicks",
+      "gui.helldivers.eagle_air_strike_gui.button_eagle_air_strike": "Eagle Air Strike",
       "entity.helldivers.orbitallaser": "Orbital Laser",
+      "gui.helldivers.eagle_cluster_bomb_gui.label_program_core": "Program Core",
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
       "item.helldivers.eagle_napalm_strike": "Eagle Napalm Strike",
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
       "item.helldivers.stratagemcore": "Stratagem Core",
       "entity.helldivers.trooper": "Trooper",
+      "gui.helldivers.eagle_napalm_gui.button_eagle_napalm_strike": "Eagle Napalm Strike",
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.democraciteingot": "Democracite Ingot",
@@ -4730,6 +5067,8 @@
       "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
       "key.helldivers.reload_key": "Reload Key",
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
+      "gui.helldivers.eagle_air_strike_gui.button_eagle_air": "Eagle Air",
+      "gui.helldivers.eagle_500_kggui.label_program_core": "Program Core",
       "item.helldivers.hellpod_item": "Hellpod Item",
       "biome.helldivers.on_ship_biome": "On Ship",
       "gui.helldivers.stratagem_maker_choose_gui.button_build_stratagem": "Build Stratagem    ",
@@ -4752,20 +5091,25 @@
       "subtitles.amr_shot": "Gun shot",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
       "block.helldivers.stratagem_maker": "Stratagem Maker",
+      "gui.helldivers.eagle_napalm_gui.label_eagle_napalm_strike": "Eagle Napalm Strike",
       "item.helldivers.rocketpod": "Rocket Pod",
+      "gui.helldivers.eagle_napalm_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
       "block.helldivers.terminidwall": "Terminid Wall",
+      "gui.helldivers.eagle_napalm_gui.label_program_core": "Program Core",
       "item.helldivers.eagle_110_mm_rocket_pod": "Eagle 110MM Rocket Pod",
+      "gui.helldivers.eagle_smoke_gui.button_eagle_smoke_strike": "Eagle Smoke Strike",
       "item_group.helldivers.stratagems": "Stratagems",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
       "item.helldivers.eagle_smoke_strike": "Eagle Smoke Strike",
       "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
-      "gui.helldivers.program_gui.label_program_core": "Program Core",
+      "gui.helldivers.eagle_500_kggui.button_eagle_cluster_bomb": "Eagle 500KG Strike",
       "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
       "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
       "item.helldivers.hulk_spawn_egg": "Hulk Spawn Egg",
       "block.helldivers.terminiddustspore": "Dust Spore",
       "item.helldivers.eagle_cluster_bomb": "Eagle Cluster Bomb",
       "item.helldivers.napalm_projectile": "Napalm Projectile",
+      "gui.helldivers.eagle_smoke_gui.button_eagle_smoke_strike1": "Eagle Smoke Strike",
       "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
       "item.helldivers.orbital_airburst": "Orbital Airburst",
       "block.helldivers.automaton_factory_door": "Automaton Factory Door",
@@ -4774,6 +5118,7 @@
       "item.helldivers.railbeam_spawn_egg": "Rail Beam Spawn Egg",
       "subtitles.awp1_dry_fire": "Gun clicks",
       "item.helldivers.bile_spew_item": "Bile Spew Item",
+      "gui.helldivers.eagle_cluster_bomb_gui.button_eagle_napalm_strike": "Eagle Napalm Strike",
       "item.helldivers.frag_grenade": "Frag Grenade",
       "block.helldivers.automaton_factory_trapdoor": "Automaton Factory Trapdoor",
       "gui.helldivers.ammoboxgui.label_ammo_box": "Ammo Box",
@@ -4784,16 +5129,15 @@
       "biome.helldivers.terminid_biome": "Terminid Biome",
       "block.helldivers.terminidhive": "Terminid Hive",
       "item.helldivers.stratagem_remote": "Stratagem Remote",
-      "gui.helldivers.program_gui.button_eagle_110mm": "Eagle 110MM",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike1": "Call Reinforcements",
       "entity.helldivers.hellpod": "Hellpod",
       "subtitles.ar23_shoot": "Gun shoots",
-      "gui.helldivers.program_gui.button_eagle_air": "Eagle Air",
       "item.helldivers.orbital_ems_strike": "Orbital EMS Strike",
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
       "item.helldivers.heavy_fs_23_leggings": "FS-23 Leggings",
       "block.helldivers.automatoncontactmine": "Contact Mine",
+      "gui.helldivers.eagle_smoke_recipe.button_eagle_cluster_bomb": "Eagle 500KG Strike",
       "subtitles.sg225_shoot": "Gun shoots",
       "item.helldivers.eagle_500_kg": "Eagle 500KG",
       "entity.helldivers.railbeam": "Rail Beam",
@@ -5000,6 +5344,15 @@
               {
                 "name": "Tag_Core",
                 "children": []
+              },
+              {
+                "name": "Program_GUI_Items",
+                "children": [
+                  {
+                    "name": "Switch_Program_GUI",
+                    "children": []
+                  }
+                ]
               }
             ]
           }

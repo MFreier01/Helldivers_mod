@@ -32,8 +32,8 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "ProgramGUI",
-    "inventorySize": 1,
+    "guiBoundTo": "EagleAirStrikeGUI",
+    "inventorySize": 0,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,

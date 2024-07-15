@@ -141,6 +141,7 @@ public class HelldiversModVariables {
 		public ItemStack stratagem_slot_0 = ItemStack.EMPTY;
 		public ItemStack stratagem_slot_2 = ItemStack.EMPTY;
 		public ItemStack stratagem_slot_3 = ItemStack.EMPTY;
+		public double PROGRAM_GUI = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -153,6 +154,7 @@ public class HelldiversModVariables {
 			stratagem_slot_0 = ItemStack.of(nbt.getCompound("stratagem_slot_0"));
 			stratagem_slot_2 = ItemStack.of(nbt.getCompound("stratagem_slot_2"));
 			stratagem_slot_3 = ItemStack.of(nbt.getCompound("stratagem_slot_3"));
+			PROGRAM_GUI = nbt.getDouble("PROGRAM_GUI");
 		}
 
 		@Override
@@ -161,6 +163,7 @@ public class HelldiversModVariables {
 			nbt.put("stratagem_slot_0", stratagem_slot_0.save(new CompoundTag()));
 			nbt.put("stratagem_slot_2", stratagem_slot_2.save(new CompoundTag()));
 			nbt.put("stratagem_slot_3", stratagem_slot_3.save(new CompoundTag()));
+			nbt.putDouble("PROGRAM_GUI", PROGRAM_GUI);
 			return nbt;
 		}
 

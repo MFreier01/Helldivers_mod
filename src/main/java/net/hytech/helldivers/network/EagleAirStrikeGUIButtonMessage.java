@@ -11,40 +11,41 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.hytech.helldivers.world.inventory.ProgramGUIMenu;
+import net.hytech.helldivers.world.inventory.EagleAirStrikeGUIMenu;
 import net.hytech.helldivers.procedures.TageagleairstrikeProcedure;
-import net.hytech.helldivers.procedures.Tag110MMRocketPodProcedure;
+import net.hytech.helldivers.procedures.IncrementGUIProcedure;
+import net.hytech.helldivers.procedures.DeIncrementGUIProcedure;
 import net.hytech.helldivers.HelldiversMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ProgramGUIButtonMessage {
+public class EagleAirStrikeGUIButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public ProgramGUIButtonMessage(FriendlyByteBuf buffer) {
+	public EagleAirStrikeGUIButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public ProgramGUIButtonMessage(int buttonID, int x, int y, int z) {
+	public EagleAirStrikeGUIButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(ProgramGUIButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(EagleAirStrikeGUIButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(ProgramGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(EagleAirStrikeGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -59,7 +60,7 @@ public class ProgramGUIButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = ProgramGUIMenu.guistate;
+		HashMap guistate = EagleAirStrikeGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -69,12 +70,16 @@ public class ProgramGUIButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			Tag110MMRocketPodProcedure.execute(entity);
+			IncrementGUIProcedure.execute(world);
+		}
+		if (buttonID == 2) {
+
+			DeIncrementGUIProcedure.execute(world);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		HelldiversMod.addNetworkMessage(ProgramGUIButtonMessage.class, ProgramGUIButtonMessage::buffer, ProgramGUIButtonMessage::new, ProgramGUIButtonMessage::handler);
+		HelldiversMod.addNetworkMessage(EagleAirStrikeGUIButtonMessage.class, EagleAirStrikeGUIButtonMessage::buffer, EagleAirStrikeGUIButtonMessage::new, EagleAirStrikeGUIButtonMessage::handler);
 	}
 }

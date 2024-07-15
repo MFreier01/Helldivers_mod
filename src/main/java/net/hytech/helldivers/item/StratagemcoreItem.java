@@ -21,7 +21,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 
-import net.hytech.helldivers.world.inventory.ProgramGUIMenu;
+import net.hytech.helldivers.world.inventory.EagleAirStrikeGUIMenu;
 import net.hytech.helldivers.item.inventory.StratagemcoreInventoryCapability;
 
 import javax.annotation.Nullable;
@@ -48,7 +48,7 @@ public class StratagemcoreItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new ProgramGUIMenu(id, inventory, packetBuffer);
+					return new EagleAirStrikeGUIMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());
