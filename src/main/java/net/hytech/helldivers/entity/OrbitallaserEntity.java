@@ -13,13 +13,11 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ambient.AmbientCreature;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -27,7 +25,6 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.PathfinderMob;
@@ -42,7 +39,6 @@ import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.Difficulty;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -204,8 +200,6 @@ public class OrbitallaserEntity extends PathfinderMob implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(HelldiversModEntities.ORBITALLASER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

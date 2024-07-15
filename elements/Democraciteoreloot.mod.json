@@ -41,9 +41,9 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 4,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 5,
+            "maxEnchantmentLevel": 0,
             "affectedByFortune": true,
             "explosionDecay": false,
             "silkTouchMode": 2
@@ -51,7 +51,7 @@
         ]
       }
     ],
-    "name": "blocks/democracite_ore",
+    "name": "blocks/democraciteore",
     "namespace": "mod"
   }
 }

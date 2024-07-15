@@ -65,15 +65,7 @@
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 4
-              }
-            },
-            {
-              "function": "enchant_with_levels",
-              "treasure": true,
-              "levels": {
-                "min": 0,
-                "max": 5
+                "max": 2
               }
             },
             {
@@ -86,5 +78,5 @@
       ]
     }
   ],
-  "random_sequence": "helldivers:blocks/democracite_ore"
+  "random_sequence": "helldivers:blocks/democraciteore"
 }

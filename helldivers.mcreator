@@ -2733,7 +2733,6 @@
       "registry_name": "orbitallaser",
       "metadata": {
         "files": [
-          "src/main/resources/data/helldivers/forge/biome_modifier/orbitallaser_biome_modifier.json",
           "src/main/java/net/hytech/helldivers/entity/OrbitallaserEntity.java",
           "src/main/java/net/hytech/helldivers/client/renderer/OrbitallaserRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/layer/OrbitallaserLayer.java",
@@ -4143,13 +4142,13 @@
       "registry_name": "democraciteore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/blockstates/democraciteore.json",
-          "src/main/resources/data/helldivers/worldgen/placed_feature/democraciteore.json",
           "src/main/java/net/hytech/helldivers/block/DemocraciteoreBlock.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/democraciteore_biome_modifier.json",
-          "src/main/resources/assets/helldivers/models/item/democraciteore.json",
+          "src/main/resources/data/helldivers/worldgen/placed_feature/democraciteore.json",
           "src/main/resources/assets/helldivers/models/block/democraciteore.json",
-          "src/main/resources/data/helldivers/worldgen/configured_feature/democraciteore.json"
+          "src/main/resources/assets/helldivers/blockstates/democraciteore.json",
+          "src/main/resources/data/helldivers/worldgen/configured_feature/democraciteore.json",
+          "src/main/resources/assets/helldivers/models/item/democraciteore.json",
+          "src/main/resources/data/helldivers/forge/biome_modifier/democraciteore_biome_modifier.json"
         ]
       },
       "path": "~/Blocks"
@@ -4168,20 +4167,6 @@
         ]
       },
       "path": "~/Other_Items"
-    },
-    {
-      "name": "DemocraciteOreLoot",
-      "type": "loottable",
-      "sortid": 202,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "democracite_ore_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/helldivers/loot_tables/blocks/democracite_ore.json"
-        ]
-      },
-      "path": "~/Blocks"
     },
     {
       "name": "Democraciteingotrecipe",
@@ -4470,6 +4455,20 @@
         ]
       },
       "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "Democraciteoreloot",
+      "type": "loottable",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "democraciteoreloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/blocks/democraciteore.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
