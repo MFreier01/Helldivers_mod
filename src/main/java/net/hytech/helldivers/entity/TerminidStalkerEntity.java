@@ -46,6 +46,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.hytech.helldivers.procedures.Stalker_InvisibleProcedure;
 import net.hytech.helldivers.init.HelldiversModEntities;
 
 public class TerminidStalkerEntity extends PathfinderMob implements GeoEntity {
@@ -122,6 +123,12 @@ public class TerminidStalkerEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		Stalker_InvisibleProcedure.execute(this);
+		return super.hurt(source, amount);
 	}
 
 	@Override

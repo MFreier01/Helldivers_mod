@@ -71,19 +71,19 @@ public class OrbitalsmokeprojectileEntity extends AbstractArrow implements ItemS
 	@Override
 	public void playerTouch(Player entity) {
 		super.playerTouch(entity);
-		Orbital_SmokeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		Orbital_SmokeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entity);
 	}
 
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		Orbital_SmokeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		Orbital_SmokeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		Orbital_SmokeProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		Orbital_SmokeProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
 	}
 
 	@Override

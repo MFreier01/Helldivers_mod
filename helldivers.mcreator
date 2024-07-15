@@ -3147,6 +3147,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -4122,10 +4126,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/helldivers/forge/biome_modifier/terminid_stalker_biome_modifier.json",
+          "src/main/resources/assets/helldivers/models/item/terminid_stalker_spawn_egg.json",
           "src/main/java/net/hytech/helldivers/entity/model/TerminidStalkerModel.java",
-          "src/main/java/net/hytech/helldivers/client/renderer/TerminidStalkerRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/TerminidStalkerEntity.java",
-          "src/main/resources/assets/helldivers/models/item/terminid_stalker_spawn_egg.json"
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidStalkerRenderer.java"
         ]
       },
       "path": "~/Entity/Terminid"
@@ -4248,8 +4252,9 @@
       "registry_name": "stratagemmaker_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/StratagemmakerGUIMenu.java",
           "src/main/java/net/hytech/helldivers/client/gui/StratagemmakerGUIScreen.java",
-          "src/main/java/net/hytech/helldivers/world/inventory/StratagemmakerGUIMenu.java"
+          "src/main/java/net/hytech/helldivers/network/StratagemmakerGUISlotMessage.java"
         ]
       },
       "path": "~/GUI/Stratagem_Maker"
@@ -4405,6 +4410,46 @@
         ]
       },
       "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "ItemTakenFromOutput",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_taken_from_output",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/ItemTakenFromOutputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker"
+    },
+    {
+      "name": "Stalker_Invisible",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalker_invisible",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Stalker_InvisibleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entity/Terminid"
     }
   ],
   "variable_elements": [
@@ -4535,6 +4580,10 @@
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore"
     ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
+    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -4554,10 +4603,6 @@
       "CUSTOM:OrbitalGasStrike",
       "CUSTOM:OrbitalGattlingBarrage",
       "CUSTOM:EagleNapalmStrike"
-    ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:mod:stratagem_recipe_block": [
       "CUSTOM:Democraciteblock"
@@ -4640,11 +4685,11 @@
       "entity.helldivers.terminid_scavenger": "Scavenger",
       "subtitles.m105_reload": "Gun reload",
       "item.helldivers.orbital_precision_strike": "Orbital Precision Strike",
-      "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.ar_23": "AR Magazine",
+      "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
-      "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_reload": "Gun reload",
+      "subtitles.apw1_shoot": "Gun shoots",
       "item.helldivers.orbital_gattling_barrage": "Orbital Gattling Barrage",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "entity.helldivers.orbitallaser": "Orbital Laser",

@@ -23,7 +23,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.hytech.helldivers.procedures.WhileGUIOpenProcedure;
+import net.hytech.helldivers.network.StratagemmakerGUISlotMessage;
 import net.hytech.helldivers.init.HelldiversModMenus;
+import net.hytech.helldivers.HelldiversMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -159,6 +161,12 @@ public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supp
 		}));
 		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 161, 48) {
 			private final int slot = 25;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(25, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -306,6 +314,13 @@ public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supp
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			HelldiversMod.PACKET_HANDLER.sendToServer(new StratagemmakerGUISlotMessage(slotid, x, y, z, ctype, meta));
+			StratagemmakerGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

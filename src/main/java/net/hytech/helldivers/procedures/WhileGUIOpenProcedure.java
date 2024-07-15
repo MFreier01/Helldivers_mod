@@ -16,7 +16,9 @@ public class WhileGUIOpenProcedure {
 		if (entity == null)
 			return;
 		double outputSlot = 0;
+		double slot = 0;
 		outputSlot = 25;
+		slot = 0;
 		if (EagleAirStrikeRecipeProcedure.execute(entity)) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(HelldiversModItems.EAGLE_AIR_STRIKE.get()).copy();
