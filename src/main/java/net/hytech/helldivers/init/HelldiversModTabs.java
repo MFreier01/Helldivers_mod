@@ -85,6 +85,7 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModBlocks.DEMOCRACITEORE.get().asItem());
 				tabData.accept(HelldiversModItems.DEMOCRACITEINGOT.get());
 				tabData.accept(HelldiversModBlocks.DEMOCRACITEBLOCK.get().asItem());
+				tabData.accept(HelldiversModItems.STRATAGEMCORE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

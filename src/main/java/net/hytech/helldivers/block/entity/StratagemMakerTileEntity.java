@@ -43,7 +43,7 @@ import io.netty.buffer.Unpooled;
 
 public class StratagemMakerTileEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity, WorldlyContainer {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(25, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(26, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public StratagemMakerTileEntity(BlockPos pos, BlockState state) {
@@ -155,6 +155,8 @@ public class StratagemMakerTileEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
+		if (index == 25)
+			return false;
 		return true;
 	}
 

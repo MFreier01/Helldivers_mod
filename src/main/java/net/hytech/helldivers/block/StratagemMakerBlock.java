@@ -33,16 +33,13 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
-import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.hytech.helldivers.world.inventory.StratagemmakerGUIMenu;
-import net.hytech.helldivers.procedures.StratagemMakerAnimationProcedure;
 import net.hytech.helldivers.init.HelldiversModBlockEntities;
 import net.hytech.helldivers.block.entity.StratagemMakerTileEntity;
 
@@ -114,16 +111,6 @@ public class StratagemMakerBlock extends BaseEntityBlock implements EntityBlock 
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
-	}
-
-	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-
-		StratagemMakerAnimationProcedure.execute(world, x, y, z);
 	}
 
 	@Override

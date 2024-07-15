@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ArmorItem;
 
+import net.hytech.helldivers.item.StratagemcoreItem;
 import net.hytech.helldivers.item.StratagemRemoteItem;
 import net.hytech.helldivers.item.StimItem;
 import net.hytech.helldivers.item.SG225BreakerItem;
@@ -132,6 +133,7 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> DEMOCRACITEORE = block(HelldiversModBlocks.DEMOCRACITEORE);
 	public static final RegistryObject<Item> DEMOCRACITEINGOT = REGISTRY.register("democraciteingot", () -> new DemocraciteingotItem());
 	public static final RegistryObject<Item> DEMOCRACITEBLOCK = block(HelldiversModBlocks.DEMOCRACITEBLOCK);
+	public static final RegistryObject<Item> STRATAGEMCORE = REGISTRY.register("stratagemcore", () -> new StratagemcoreItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

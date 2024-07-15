@@ -1,12 +1,8 @@
 
 package net.hytech.helldivers.world.inventory;
 
-import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -22,15 +18,13 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.hytech.helldivers.procedures.WhileGUIOpenProcedure;
 import net.hytech.helldivers.init.HelldiversModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber
-public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class ProgramGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -43,11 +37,11 @@ public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supp
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public StratagemmakerGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(HelldiversModMenus.STRATAGEMMAKER_GUI.get(), id);
+	public ProgramGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(HelldiversModMenus.PROGRAM_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(26);
+		this.internal = new ItemStackHandler(0);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -82,94 +76,11 @@ public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supp
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 17, 12) {
-			private final int slot = 0;
-		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 35, 12) {
-			private final int slot = 1;
-		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 53, 12) {
-			private final int slot = 2;
-		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 71, 12) {
-			private final int slot = 3;
-		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 89, 12) {
-			private final int slot = 4;
-		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 17, 30) {
-			private final int slot = 5;
-		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 35, 30) {
-			private final int slot = 6;
-		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 53, 30) {
-			private final int slot = 7;
-		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 71, 30) {
-			private final int slot = 8;
-		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 89, 30) {
-			private final int slot = 9;
-		}));
-		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 17, 48) {
-			private final int slot = 10;
-		}));
-		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 35, 48) {
-			private final int slot = 11;
-		}));
-		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 53, 48) {
-			private final int slot = 12;
-		}));
-		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 71, 48) {
-			private final int slot = 13;
-		}));
-		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 89, 48) {
-			private final int slot = 14;
-		}));
-		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 17, 66) {
-			private final int slot = 15;
-		}));
-		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 35, 66) {
-			private final int slot = 16;
-		}));
-		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 53, 66) {
-			private final int slot = 17;
-		}));
-		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 71, 66) {
-			private final int slot = 18;
-		}));
-		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 89, 66) {
-			private final int slot = 19;
-		}));
-		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 17, 84) {
-			private final int slot = 20;
-		}));
-		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 35, 84) {
-			private final int slot = 21;
-		}));
-		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 53, 84) {
-			private final int slot = 22;
-		}));
-		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 71, 84) {
-			private final int slot = 23;
-		}));
-		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 89, 84) {
-			private final int slot = 24;
-		}));
-		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 161, 48) {
-			private final int slot = 25;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
-		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 10 + 8 + sj * 18, 28 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 22 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 10 + 8 + si * 18, 28 + 142));
+			this.addSlot(new Slot(inv, si, 22 + 8 + si * 18, 0 + 142));
 	}
 
 	@Override
@@ -192,16 +103,16 @@ public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supp
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 26) {
-				if (!this.moveItemStackTo(itemstack1, 26, this.slots.size(), true))
+			if (index < 0) {
+				if (!this.moveItemStackTo(itemstack1, 0, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 26, false)) {
-				if (index < 26 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 26 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 0, false)) {
+				if (index < 0 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 0 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 26, 26 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 0, 0 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -311,17 +222,5 @@ public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supp
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
-	}
-
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof StratagemmakerGUIMenu) {
-			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			WhileGUIOpenProcedure.execute(entity);
-		}
 	}
 }

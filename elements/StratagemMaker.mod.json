@@ -104,12 +104,14 @@
     "hasInventory": true,
     "guiBoundTo": "StratagemmakerGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 25,
+    "inventorySize": 26,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": false,
     "generateFeature": false,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      25
+    ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,
@@ -119,9 +121,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "StratagemMakerAnimation"
-    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

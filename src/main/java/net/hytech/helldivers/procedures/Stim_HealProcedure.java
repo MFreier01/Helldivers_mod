@@ -14,6 +14,8 @@ public class Stim_HealProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) != (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 			if (entity instanceof Player _player)
 				_player.getFoodData().setSaturation(20);
+			if (entity instanceof Player _player)
+				_player.getFoodData().setFoodLevel(20);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 50, 5, false, false));
 			if (entity instanceof Player _player) {

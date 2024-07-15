@@ -1657,20 +1657,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "TerminidLoot",
-      "type": "loottable",
-      "sortid": 109,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "terminid_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/helldivers/loot_tables/entities/terminid_loot.json"
-        ]
-      },
-      "path": "~/Other_Items"
-    },
-    {
       "name": "TerminidBiome",
       "type": "biome",
       "sortid": 110,
@@ -2654,38 +2640,6 @@
           "src/main/java/net/hytech/helldivers/block/entity/StratagemMakerTileEntity.java",
           "src/main/resources/assets/helldivers/blockstates/stratagem_maker.json",
           "src/main/java/net/hytech/helldivers/block/model/StratagemMakerDisplayModel.java"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "StratagemMakerAnimation",
-      "type": "procedure",
-      "sortid": 144,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stratagem_maker_animation",
-      "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/procedures/StratagemMakerAnimationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Blocks"
@@ -4177,20 +4131,6 @@
       "path": "~/Entity/Terminid"
     },
     {
-      "name": "TerminidHiveLoot",
-      "type": "loottable",
-      "sortid": 199,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "terminid_hive_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/helldivers/loot_tables/blocks/terminid_hive_loot.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "Democraciteore",
       "type": "block",
       "sortid": 200,
@@ -4315,15 +4255,15 @@
       "path": "~/GUI/Stratagem_Maker"
     },
     {
-      "name": "StratagemCrafting",
+      "name": "WhileGUIOpen",
       "type": "procedure",
-      "sortid": 208,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stratagem_crafting",
+      "registry_name": "while_gui_open",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/procedures/StratagemCraftingProcedure.java"
+          "src/main/java/net/hytech/helldivers/procedures/WhileGUIOpenProcedure.java"
         ],
         "dependencies": [
           {
@@ -4333,6 +4273,138 @@
         ]
       },
       "path": "~/GUI/Stratagem_Maker"
+    },
+    {
+      "name": "EagleAirStrikeRecipe",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_air_strike_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EagleAirStrikeRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "Eagle110MMRocketPodRecipe",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_110_mm_rocket_pod_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Eagle110MMRocketPodRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "TerminidHiveLoot",
+      "type": "loottable",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminid_hive_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/blocks/terminid_hive.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Stratagemcore",
+      "type": "item",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagemcore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/item/inventory/StratagemcoreInventoryCapability.java",
+          "src/main/resources/assets/helldivers/models/item/stratagemcore.json",
+          "src/main/java/net/hytech/helldivers/item/StratagemcoreItem.java"
+        ]
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "ProgramGUI",
+      "type": "gui",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "program_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/ProgramGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/ProgramGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/ProgramGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker"
+    },
+    {
+      "name": "Tageagleairstrike",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tageagleairstrike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TageagleairstrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "DisplayCoreTooltip",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_core_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/DisplayCoreTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
     }
   ],
   "variable_elements": [
@@ -4487,6 +4559,9 @@
       "~CUSTOM:Terminiddustspore",
       "~CUSTOM:Terminidhive"
     ],
+    "ITEMS:mod:stratagem_recipe_block": [
+      "CUSTOM:Democraciteblock"
+    ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:TerminidBiome"
     ],
@@ -4522,6 +4597,21 @@
     ],
     "BIOMES:minecraft:has_structure/bastion_remnant": [
       "~CUSTOM:TerminidBiome"
+    ],
+    "ITEMS:mod:stratagem_recipe_ingot": [
+      "CUSTOM:Democraciteingot"
+    ],
+    "ITEMS:mod:diamond_block": [
+      "Blocks.DIAMOND_BLOCK"
+    ],
+    "ITEMS:mod:red_dye": [
+      "Items.DYE#1"
+    ],
+    "ITEMS:mod:white_dye": [
+      "Items.DYE#19"
+    ],
+    "ITEMS:mod:stratagem_core": [
+      "CUSTOM:Stratagemcore"
     ],
     "ITEMS:helldivers:gun": [
       "CUSTOM:AR23Liberator",
@@ -4561,6 +4651,7 @@
       "entity.helldivers.static_frag_grenade": "Static Frag Grenade",
       "item.helldivers.eagle_napalm_strike": "Eagle Napalm Strike",
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
+      "item.helldivers.stratagemcore": "Stratagem Core",
       "entity.helldivers.trooper": "Trooper",
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
@@ -4577,6 +4668,7 @@
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
       "item.helldivers.hellpod_item": "Hellpod Item",
       "biome.helldivers.on_ship_biome": "On Ship",
+      "gui.helldivers.stratagem_maker_choose_gui.button_build_stratagem": "Build Stratagem    ",
       "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.orbital_gas_strike": "Orbital Gas Strike",
       "item.helldivers.e_710": "Raw E-710",
@@ -4603,6 +4695,7 @@
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
       "item.helldivers.eagle_smoke_strike": "Eagle Smoke Strike",
       "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
+      "gui.helldivers.program_gui.label_program_core": "Program Core",
       "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
       "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
       "item.helldivers.hulk_spawn_egg": "Hulk Spawn Egg",
@@ -4630,6 +4723,7 @@
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike1": "Call Reinforcements",
       "entity.helldivers.hellpod": "Hellpod",
       "subtitles.ar23_shoot": "Gun shoots",
+      "gui.helldivers.program_gui.button_eagle_air": "Eagle Air",
       "item.helldivers.orbital_ems_strike": "Orbital EMS Strike",
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
@@ -4833,7 +4927,16 @@
           },
           {
             "name": "Stratagem_Maker",
-            "children": []
+            "children": [
+              {
+                "name": "Stratagem_Recipes",
+                "children": []
+              },
+              {
+                "name": "Tag_Core",
+                "children": []
+              }
+            ]
           }
         ]
       },
