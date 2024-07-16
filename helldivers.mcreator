@@ -4788,6 +4788,690 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "TagEageStrafingRun",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_eage_strafing_run",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagEageStrafingRunProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "EagleStrafingRunRecipe",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_strafing_run_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EagleStrafingRunRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "EagleStrafingGUI",
+      "type": "gui",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eagle_strafing_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/network/EagleStrafingGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/EagleStrafingGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/EagleStrafingGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalRailCannonGUI",
+      "type": "gui",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_rail_cannon_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/network/OrbitalRailCannonGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalRailCannonGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalRailCannonGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalLaserGUI",
+      "type": "gui",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_laser_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalLaserGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalLaserGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/OrbitalLaserGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalAirburstGUI",
+      "type": "gui",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_airburst_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalAirburstGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalAirburstGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/network/OrbitalAirburstGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "Orbital120MMGUI",
+      "type": "gui",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_120_mmgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/Orbital120MMGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/network/Orbital120MMGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/Orbital120MMGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "TagOrbitalRailcannon",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_railcannon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbitalRailcannonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbitalLaser",
+      "type": "procedure",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_laser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbitalLaserProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbitalAirburst",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_airburst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbitalAirburstProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbital120MM",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_120_mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbital120MMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbital380MM",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_380_mm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbital380MMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagGattlingBarrage",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_gattling_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagGattlingBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbitalWalkingBarrage",
+      "type": "procedure",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_walking_barrage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbitalWalkingBarrageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagPrecisionStrike",
+      "type": "procedure",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_precision_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagPrecisionStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbitalEMSStrike",
+      "type": "procedure",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_ems_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbitalEMSStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbitalSmoke",
+      "type": "procedure",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_smoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbitalSmokeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "TagOrbitalGasStrike",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tag_orbital_gas_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/TagOrbitalGasStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Tag_Core"
+    },
+    {
+      "name": "OrbitalRailCannonRecipe",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_rail_cannon_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalRailCannonRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalLaserRecipe",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_laser_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalLaserRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalAirburstRecipe",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_airburst_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalAirburstRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "Orbital120MMRecipe",
+      "type": "procedure",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_120_mm_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Orbital120MMRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "Orbital380MMRecipe",
+      "type": "procedure",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_380_mm_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Orbital380MMRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "Orbital380MMGUI",
+      "type": "gui",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_380_mmgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/network/Orbital380MMGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/Orbital380MMGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/Orbital380MMGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalSmokeRecipe",
+      "type": "procedure",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_smoke_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalSmokeRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalPrecisionStrikeRecipe",
+      "type": "procedure",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_precision_strike_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalPrecisionStrikeRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalEMSStrikeRecipe",
+      "type": "procedure",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_ems_strike_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalEMSStrikeRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalGasStrikeRecipe",
+      "type": "procedure",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_gas_strike_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalGasStrikeRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalWalkingBarrageRecipe",
+      "type": "procedure",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_walking_barrage_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalWalkingBarrageRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalGattlingBarrageRecipe",
+      "type": "procedure",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_gattling_barrage_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/OrbitalGattlingBarrageRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Stratagem_Recipes"
+    },
+    {
+      "name": "OrbitalSmokeGUI",
+      "type": "gui",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_smoke_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalSmokeGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/network/OrbitalSmokeGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalSmokeGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalEMSGUI",
+      "type": "gui",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_emsgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalEMSGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalEMSGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/network/OrbitalEMSGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalPrecisionStrikeGUI",
+      "type": "gui",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_precision_strike_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalPrecisionStrikeGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/network/OrbitalPrecisionStrikeGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalPrecisionStrikeGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalWalkingBarrageGUI",
+      "type": "gui",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_walking_barrage_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/network/OrbitalWalkingBarrageGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalWalkingBarrageGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalWalkingBarrageGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalGattlingBarrageGUI",
+      "type": "gui",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_gattling_barrage_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalGattlingBarrageGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/OrbitalGattlingBarrageGUIButtonMessage.java",
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalGattlingBarrageGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "OrbitalGasGUI",
+      "type": "gui",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orbital_gas_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/gui/OrbitalGasGUIScreen.java",
+          "src/main/java/net/hytech/helldivers/world/inventory/OrbitalGasGUIMenu.java",
+          "src/main/java/net/hytech/helldivers/network/OrbitalGasGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
     }
   ],
   "variable_elements": [
@@ -4924,6 +5608,10 @@
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore"
     ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
+    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -4943,10 +5631,6 @@
       "CUSTOM:OrbitalGasStrike",
       "CUSTOM:OrbitalGattlingBarrage",
       "CUSTOM:EagleNapalmStrike"
-    ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:mod:stratagem_recipe_block": [
       "CUSTOM:Democraciteblock"
@@ -5016,11 +5700,16 @@
   },
   "language_map": {
     "en_us": {
+      "gui.helldivers.orbital_walking_barrage_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_air_strike_gui.label_eagle_air_strike": "Eagle Air Strike",
+      "gui.helldivers.orbital_precision_strike_gui.label_program_core": "Program Core",
+      "gui.helldivers.orbital_precision_strike_gui.button_orbital_railcannon": "Orbital EMS Strike",
       "item.helldivers.eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
       "block.helldivers.democraciteore": "Democracite Ore",
+      "gui.helldivers.orbital_380_mmgui.button_orbital_railcannon": "Orbital 380MM Barrage",
+      "gui.helldivers.orbital_rail_cannon_gui.label_program_core": "Program Core",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
       "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
@@ -5028,9 +5717,12 @@
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_air_strike_gui.label_program_core": "Program Core",
+      "gui.helldivers.orbital_emsgui.button_orbital_railcannon": "Orbital EMS Strike",
       "item.helldivers.orbital_rail_cannon_strike": "Orbital Rail Cannon Strike",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
+      "gui.helldivers.orbital_laser_gui.button_orbital_railcannon": "Orbital Laser",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_110mm": "Eagle 110MM",
+      "gui.helldivers.orbital_walking_barrage_gui.button_orbital_precision_strike": "Orbital Walking Barrage",
       "item.helldivers.terminid_stalker_spawn_egg": "Stalker Spawn Egg",
       "entity.helldivers.terminid_scavenger": "Scavenger",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.button_eagle_110mm_rocket_pod": "Eagle 110MM Rocket Pod",
@@ -5039,8 +5731,8 @@
       "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
       "gui.helldivers.eagle_cluster_bomb_gui.button_eagle_cluster_bomb": "Eagle Cluster Bomb",
-      "subtitles.apw1_shoot": "Gun shoots",
       "subtitles.sg225_reload": "Gun reload",
+      "subtitles.apw1_shoot": "Gun shoots",
       "item.helldivers.orbital_gattling_barrage": "Orbital Gattling Barrage",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_air_strike": "Eagle Air Strike",
@@ -5051,19 +5743,23 @@
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
       "item.helldivers.stratagemcore": "Stratagem Core",
       "entity.helldivers.trooper": "Trooper",
+      "gui.helldivers.eagle_strafing_gui.button_eagle_smoke_strike1": "Eagle Strafing Run",
       "gui.helldivers.eagle_napalm_gui.button_eagle_napalm_strike": "Eagle Napalm Strike",
       "block.helldivers.terminidstone": "Terminid Stone",
       "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.democraciteingot": "Democracite Ingot",
+      "gui.helldivers.orbital_rail_cannon_gui.button_orbital_railcannon": "Orbital Railcannon",
       "item.helldivers.static_frag_grenade_spawn_egg": "Static Frag Grenade Spawn Egg",
       "block.helldivers.automaton_factorybase": "Factory Block",
       "key.helldivers.open_menu_keybind": "Open Menu Keybind",
       "block.helldivers.democraciteblock": "Democracite Block",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
+      "gui.helldivers.orbital_380_mmgui.label_program_core": "Program Core",
       "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
       "key.helldivers.full_auto": "Full Auto Fire",
       "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
       "key.helldivers.reload_key": "Reload Key",
+      "gui.helldivers.orbital_rail_cannon_gui.button_eagle_smoke_strike1": "Eagle Strafing Run",
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_air": "Eagle Air",
       "gui.helldivers.eagle_500_kggui.label_program_core": "Program Core",
@@ -5072,17 +5768,21 @@
       "gui.helldivers.stratagem_maker_choose_gui.button_build_stratagem": "Build Stratagem    ",
       "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.orbital_gas_strike": "Orbital Gas Strike",
+      "gui.helldivers.orbital_airburst_gui.label_program_core": "Program Core",
       "item.helldivers.e_710": "Raw E-710",
       "item.helldivers.orbital_laser_item": "Orbital Laser",
       "item.helldivers.empty_stratagem_orb": "Empty Stratagem Orb",
       "item.helldivers.bullet_item": "Bullet Item",
       "item.helldivers.basicarmor_chestplate": "Helldiver\u0027s Chestplate",
+      "gui.helldivers.orbital_precision_strike_gui.button_orbital_precision_strike": "Orbital Precision Strike",
       "item.helldivers.basicarmor_leggings": "Helldiver\u0027s Leggings",
       "subtitles.apw1_reload": "Gun reload",
+      "gui.helldivers.orbital_smoke_gui.label_program_core": "Program Core",
       "item.helldivers.orbital_380_mmhe_barrage": "Orbital 380MM HE Barrage",
       "item.helldivers.air_strike_bomb_item": "Air Strike Bomb Item",
       "item.helldivers.orbital_walking_barrage": "Orbital Walking Barrage",
       "item.helldivers.heavy_fs_23_chestplate": "FS-23 Chestplate",
+      "gui.helldivers.orbital_laser_gui.label_program_core": "Program Core",
       "entity.helldivers.hulk": "Hulk",
       "item.helldivers.orbital_120_mmhe_barrage": "Orbital 120MM HE Barrage",
       "subtitles.shotgun_shot": "Gun shot",
@@ -5093,19 +5793,24 @@
       "item.helldivers.rocketpod": "Rocket Pod",
       "gui.helldivers.eagle_napalm_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
       "block.helldivers.terminidwall": "Terminid Wall",
+      "gui.helldivers.orbital_gas_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_napalm_gui.label_program_core": "Program Core",
       "item.helldivers.eagle_110_mm_rocket_pod": "Eagle 110MM Rocket Pod",
       "gui.helldivers.eagle_smoke_gui.button_eagle_smoke_strike": "Eagle Smoke Strike",
       "item_group.helldivers.stratagems": "Stratagems",
+      "gui.helldivers.orbital_emsgui.label_program_core": "Program Core",
       "item.helldivers.ar_23_liberator": "AR-23 Liberator",
       "item.helldivers.eagle_smoke_strike": "Eagle Smoke Strike",
       "item.helldivers.apw_1_anti_material_rifle": "APW-1 Anti-Material Rifle",
       "gui.helldivers.eagle_500_kggui.button_eagle_cluster_bomb": "Eagle 500KG Strike",
+      "gui.helldivers.orbital_120_mmgui.label_program_core": "Program Core",
       "item.helldivers.basicarmor_boots": "Helldiver\u0027s Boots",
       "gui.helldivers.call_stratagems.label_call_a_stratagem": "Call a STRATAGEM!",
       "item.helldivers.hulk_spawn_egg": "Hulk Spawn Egg",
+      "gui.helldivers.orbital_airburst_gui.button_orbital_railcannon": "Orbital Airburst",
       "block.helldivers.terminiddustspore": "Dust Spore",
       "item.helldivers.eagle_cluster_bomb": "Eagle Cluster Bomb",
+      "gui.helldivers.orbital_gattling_barrage_gui.button_orbital_precision_strike": "Orbital Gattling Barrage",
       "item.helldivers.napalm_projectile": "Napalm Projectile",
       "gui.helldivers.eagle_smoke_gui.button_eagle_smoke_strike1": "Eagle Smoke Strike",
       "block.helldivers.terminidreinforcedwall": "Reinforced Terminid Wall",
@@ -5123,19 +5828,25 @@
       "entity.helldivers.eagle_strike_bomb_entity": "Eagle Strike Bomb",
       "item.helldivers.purifiede_710": "Purified E-710",
       "item.helldivers.stim": "Stim",
+      "gui.helldivers.orbital_120_mmgui.button_orbital_railcannon": "Orbital 120MM Barrage",
       "item_group.helldivers.helldivers": "Helldivers",
+      "gui.helldivers.eagle_strafing_gui.label_program_core": "Program Core",
+      "gui.helldivers.orbital_gas_gui.button_orbital_gas_strike": "Orbital Gas Strike",
       "biome.helldivers.terminid_biome": "Terminid Biome",
       "block.helldivers.terminidhive": "Terminid Hive",
       "item.helldivers.stratagem_remote": "Stratagem Remote",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike1": "Call Reinforcements",
       "entity.helldivers.hellpod": "Hellpod",
       "subtitles.ar23_shoot": "Gun shoots",
+      "gui.helldivers.orbital_gattling_barrage_gui.label_program_core": "Program Core",
+      "gui.helldivers.orbital_smoke_gui.button_orbital_railcannon": "Orbital Smoke Strike",
       "item.helldivers.orbital_ems_strike": "Orbital EMS Strike",
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
       "item.helldivers.heavy_fs_23_leggings": "FS-23 Leggings",
       "block.helldivers.automatoncontactmine": "Contact Mine",
       "gui.helldivers.eagle_smoke_recipe.button_eagle_cluster_bomb": "Eagle 500KG Strike",
+      "gui.helldivers.orbital_gas_gui.button_orbital_precision_strike": "Orbital Gattling Barrage",
       "subtitles.sg225_shoot": "Gun shoots",
       "item.helldivers.eagle_500_kg": "Eagle 500KG",
       "entity.helldivers.railbeam": "Rail Beam",

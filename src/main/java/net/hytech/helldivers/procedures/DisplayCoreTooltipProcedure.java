@@ -50,6 +50,45 @@ public class DisplayCoreTooltipProcedure {
 			if (("EagleSmokeStrike").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
 				tooltip.add(Component.literal("Eagle Smoke Strike Core"));
 			}
+			if (("EagleStrafingRun").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Eagle Strafing Run Core"));
+			}
+			if (("OrbitalRailcannon").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Railcannon Core"));
+			}
+			if (("OrbitalLaser").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Laser Core"));
+			}
+			if (("OrbitalAirburst").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Airburst Core"));
+			}
+			if (("Orbital120MMBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital 120MM Barrage Core"));
+			}
+			if (("Orbital380MMBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital 380MM Barrage Core"));
+			}
+			if (("OrbitalGattlingBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Gattling Barrage Core"));
+			}
+			if (("OrbitalGattlingBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Gattling Barrage Core"));
+			}
+			if (("OrbitalWalkingBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Walking Barrage Core"));
+			}
+			if (("OrbitalPrecisionStrike").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Precision Strike Core"));
+			}
+			if (("OrbitalEMS").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital EMS Strike Core"));
+			}
+			if (("OrbitalSmoke").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Smoke Strike Core"));
+			}
+			if (("OrbitalGas").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
+				tooltip.add(Component.literal("Orbital Gas Strike Core"));
+			}
 		}
 	}
 }

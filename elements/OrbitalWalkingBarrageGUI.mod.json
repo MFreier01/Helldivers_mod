@@ -1,0 +1,87 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 160,
+    "height": 105,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_program_core",
+          "text": {
+            "fixedValue": "Program Core"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 138,
+          "y": 74
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_right_arrow",
+          "image": "right_arrow.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "IncrementGUI"
+          },
+          "x": 258,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_left_arrow",
+          "image": "left_arrow.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DeIncrementGUI"
+          },
+          "x": 147,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_orbital_precision_strike",
+          "text": "Orbital Walking Barrage",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TagOrbitalWalkingBarrage"
+          },
+          "width": 150,
+          "height": 20,
+          "x": 139,
+          "y": 149
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "orbital_walking_barrage.png",
+          "use1Xscale": true,
+          "x": 180,
+          "y": 86
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 16,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
