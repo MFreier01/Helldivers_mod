@@ -30,8 +30,8 @@
     "creativeTab": {
       "value": "CUSTOM:Helldivers"
     },
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "GREEN",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""

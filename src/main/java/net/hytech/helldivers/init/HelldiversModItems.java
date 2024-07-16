@@ -55,7 +55,6 @@ import net.hytech.helldivers.item.ArmedSupportStratagemOrbItem;
 import net.hytech.helldivers.item.ArmedAttackStratagemOrbItem;
 import net.hytech.helldivers.item.AirStrikeBombItemItem;
 import net.hytech.helldivers.item.AR23LiberatorItem;
-import net.hytech.helldivers.item.AR23Item;
 import net.hytech.helldivers.item.APW1AntiMaterialRifleItem;
 import net.hytech.helldivers.block.display.TerminiddustsporeDisplayItem;
 import net.hytech.helldivers.block.display.StratagemMakerDisplayItem;
@@ -103,7 +102,6 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> BILE_SPEW_ITEM = REGISTRY.register("bile_spew_item", () -> new BileSpewItemItem());
 	public static final RegistryObject<Item> AUTOMATON_FACTORY_TRAPDOOR = block(HelldiversModBlocks.AUTOMATON_FACTORY_TRAPDOOR);
 	public static final RegistryObject<Item> AMMO_BOX = REGISTRY.register(HelldiversModBlocks.AMMO_BOX.getId().getPath(), () -> new AmmoBoxDisplayItem(HelldiversModBlocks.AMMO_BOX.get(), new Item.Properties()));
-	public static final RegistryObject<Item> AR_23 = REGISTRY.register("ar_23", () -> new AR23Item());
 	public static final RegistryObject<Item> EAGLE_AIR_STRIKE = REGISTRY.register("eagle_air_strike", () -> new EagleAirStrikeItem());
 	public static final RegistryObject<Item> EAGLE_500_KG = REGISTRY.register("eagle_500_kg", () -> new Eagle500KGItem());
 	public static final RegistryObject<Item> AUTOMATONBULLET = REGISTRY.register("automatonbullet", () -> new AutomatonbulletItem());

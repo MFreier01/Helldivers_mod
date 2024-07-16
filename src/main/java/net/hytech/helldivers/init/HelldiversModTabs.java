@@ -76,7 +76,6 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.E_710.get());
 				tabData.accept(HelldiversModItems.PURIFIEDE_710.get());
 				tabData.accept(HelldiversModBlocks.AMMO_BOX.get().asItem());
-				tabData.accept(HelldiversModItems.AR_23.get());
 				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
 				tabData.accept(HelldiversModBlocks.STRATAGEM_MAKER.get().asItem());

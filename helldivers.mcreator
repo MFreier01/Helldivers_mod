@@ -342,9 +342,9 @@
       "registry_name": "terminid_scavenger",
       "metadata": {
         "files": [
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_scavenger_biome_modifier.json",
           "src/main/resources/assets/helldivers/models/item/terminid_scavenger_spawn_egg.json",
           "src/main/java/net/hytech/helldivers/entity/TerminidScavengerEntity.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_scavenger_biome_modifier.json",
           "src/main/java/net/hytech/helldivers/client/renderer/TerminidScavengerRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/model/TerminidScavengerModel.java"
         ]
@@ -700,11 +700,11 @@
       "registry_name": "terminidbiletitan",
       "metadata": {
         "files": [
-          "src/main/resources/data/helldivers/forge/biome_modifier/terminidbiletitan_biome_modifier.json",
-          "src/main/java/net/hytech/helldivers/client/renderer/TerminidbiletitanRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/model/TerminidbiletitanModel.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminidbiletitan_biome_modifier.json",
           "src/main/resources/assets/helldivers/models/item/terminidbiletitan_spawn_egg.json",
-          "src/main/java/net/hytech/helldivers/entity/TerminidbiletitanEntity.java"
+          "src/main/java/net/hytech/helldivers/entity/TerminidbiletitanEntity.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidbiletitanRenderer.java"
         ]
       },
       "path": "~/Entity/Terminid"
@@ -1351,11 +1351,11 @@
       "registry_name": "terminid_shrieker",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/client/renderer/TerminidShriekerRenderer.java",
-          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_shrieker_biome_modifier.json",
-          "src/main/java/net/hytech/helldivers/entity/TerminidShriekerEntity.java",
           "src/main/resources/assets/helldivers/models/item/terminid_shrieker_spawn_egg.json",
-          "src/main/java/net/hytech/helldivers/entity/model/TerminidShriekerModel.java"
+          "src/main/java/net/hytech/helldivers/entity/TerminidShriekerEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/TerminidShriekerModel.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidShriekerRenderer.java",
+          "src/main/resources/data/helldivers/forge/biome_modifier/terminid_shrieker_biome_modifier.json"
         ]
       },
       "path": "~/Entity/Terminid"
@@ -1707,21 +1707,6 @@
         ]
       },
       "path": "~/GUI/Ammo_Box"
-    },
-    {
-      "name": "AR23",
-      "type": "item",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ar_23",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/helldivers/models/item/ar_23.json",
-          "src/main/java/net/hytech/helldivers/item/AR23Item.java"
-        ]
-      },
-      "path": "~/Ammo/Magazines"
     },
     {
       "name": "CheckStratagem",
@@ -4125,10 +4110,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/helldivers/forge/biome_modifier/terminid_stalker_biome_modifier.json",
-          "src/main/resources/assets/helldivers/models/item/terminid_stalker_spawn_egg.json",
           "src/main/java/net/hytech/helldivers/entity/model/TerminidStalkerModel.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/TerminidStalkerRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/TerminidStalkerEntity.java",
-          "src/main/java/net/hytech/helldivers/client/renderer/TerminidStalkerRenderer.java"
+          "src/main/resources/assets/helldivers/models/item/terminid_stalker_spawn_egg.json"
         ]
       },
       "path": "~/Entity/Terminid"
@@ -4789,6 +4774,20 @@
         ]
       },
       "path": "~/GUI/Stratagem_Maker/Program_GUI_Items"
+    },
+    {
+      "name": "StratagemCoreRecipe",
+      "type": "recipe",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stratagem_core_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/stratagem_core_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -4925,10 +4924,6 @@
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore"
     ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
-    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -4948,6 +4943,10 @@
       "CUSTOM:OrbitalGasStrike",
       "CUSTOM:OrbitalGattlingBarrage",
       "CUSTOM:EagleNapalmStrike"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:mod:stratagem_recipe_block": [
       "CUSTOM:Democraciteblock"
@@ -5019,13 +5018,13 @@
     "en_us": {
       "gui.helldivers.eagle_air_strike_gui.label_eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.eagle_air_strike": "Eagle Air Strike",
-      "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
+      "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
       "block.helldivers.democraciteore": "Democracite Ore",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
-      "subtitles.basic_shot": "Gun shot",
       "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
+      "subtitles.basic_shot": "Gun shot",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_air_strike_gui.label_program_core": "Program Core",
@@ -5033,16 +5032,15 @@
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_110mm": "Eagle 110MM",
       "item.helldivers.terminid_stalker_spawn_egg": "Stalker Spawn Egg",
-      "gui.helldivers.eagle_110_mm_rocket_pod_gui.button_eagle_110mm_rocket_pod": "Eagle 110MM Rocket Pod",
       "entity.helldivers.terminid_scavenger": "Scavenger",
+      "gui.helldivers.eagle_110_mm_rocket_pod_gui.button_eagle_110mm_rocket_pod": "Eagle 110MM Rocket Pod",
       "subtitles.m105_reload": "Gun reload",
       "item.helldivers.orbital_precision_strike": "Orbital Precision Strike",
-      "item.helldivers.ar_23": "AR Magazine",
       "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
       "gui.helldivers.eagle_cluster_bomb_gui.button_eagle_cluster_bomb": "Eagle Cluster Bomb",
-      "subtitles.sg225_reload": "Gun reload",
       "subtitles.apw1_shoot": "Gun shoots",
+      "subtitles.sg225_reload": "Gun reload",
       "item.helldivers.orbital_gattling_barrage": "Orbital Gattling Barrage",
       "subtitles.sg225_dry_fire": "Gun clicks",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_air_strike": "Eagle Air Strike",
