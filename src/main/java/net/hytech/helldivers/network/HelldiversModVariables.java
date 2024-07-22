@@ -103,6 +103,7 @@ public class HelldiversModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "helldivers_worldvars";
+		public double terminid_spawn_timer = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -111,10 +112,12 @@ public class HelldiversModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			terminid_spawn_timer = nbt.getDouble("terminid_spawn_timer");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putDouble("terminid_spawn_timer", terminid_spawn_timer);
 			return nbt;
 		}
 

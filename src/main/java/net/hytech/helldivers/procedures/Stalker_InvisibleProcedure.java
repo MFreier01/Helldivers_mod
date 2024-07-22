@@ -9,7 +9,7 @@ public class Stalker_InvisibleProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 9) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 15) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 100, 6, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

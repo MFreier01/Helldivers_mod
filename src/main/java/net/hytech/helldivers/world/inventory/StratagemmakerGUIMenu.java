@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.hytech.helldivers.procedures.WhileGUIOpenProcedure;
+import net.hytech.helldivers.procedures.OnGuiCloseProcedure;
 import net.hytech.helldivers.network.StratagemmakerGUISlotMessage;
 import net.hytech.helldivers.init.HelldiversModMenus;
 import net.hytech.helldivers.HelldiversMod;
@@ -304,6 +305,7 @@ public class StratagemmakerGUIMenu extends AbstractContainerMenu implements Supp
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		OnGuiCloseProcedure.execute(world);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

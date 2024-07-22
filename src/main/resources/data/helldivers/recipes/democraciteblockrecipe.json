@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "helldivers:democraciteingot"
+    }
+  },
+  "result": {
+    "item": "helldivers:democraciteblock",
+    "count": 1
+  }
+}

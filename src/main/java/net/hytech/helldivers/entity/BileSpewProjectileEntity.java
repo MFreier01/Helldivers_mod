@@ -22,6 +22,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.hytech.helldivers.procedures.BileSpewProjectileWhileProjectileFlyingTickProcedure;
 import net.hytech.helldivers.procedures.BileSpewProjectileProjectileHitsBlockProcedure;
 import net.hytech.helldivers.init.HelldiversModItems;
 import net.hytech.helldivers.init.HelldiversModEntities;
@@ -89,6 +90,7 @@ public class BileSpewProjectileEntity extends AbstractArrow implements ItemSuppl
 	@Override
 	public void tick() {
 		super.tick();
+		BileSpewProjectileWhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}

@@ -13,6 +13,7 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
@@ -268,6 +269,7 @@ public class CommisarEntity extends PathfinderMob implements RangedAttackMob, Ge
 
 	public static void init() {
 		SpawnPlacements.register(HelldiversModEntities.COMMISAR.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+		DungeonHooks.addDungeonMob(HelldiversModEntities.COMMISAR.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

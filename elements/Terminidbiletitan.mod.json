@@ -145,7 +145,11 @@
     "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:TerminidBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

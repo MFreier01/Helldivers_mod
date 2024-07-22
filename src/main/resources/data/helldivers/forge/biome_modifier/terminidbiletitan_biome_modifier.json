@@ -1,8 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "helldivers:terminid_biome",
   "spawners": {
     "type": "helldivers:terminidbiletitan",
     "weight": 100,

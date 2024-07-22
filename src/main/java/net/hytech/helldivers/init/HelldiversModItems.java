@@ -132,6 +132,7 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> DEMOCRACITEINGOT = REGISTRY.register("democraciteingot", () -> new DemocraciteingotItem());
 	public static final RegistryObject<Item> DEMOCRACITEBLOCK = block(HelldiversModBlocks.DEMOCRACITEBLOCK);
 	public static final RegistryObject<Item> STRATAGEMCORE = REGISTRY.register("stratagemcore", () -> new StratagemcoreItem());
+	public static final RegistryObject<Item> BUG_BREACH_SPAWNER = block(HelldiversModBlocks.BUG_BREACH_SPAWNER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

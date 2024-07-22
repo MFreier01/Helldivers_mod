@@ -145,7 +145,32 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "badlands"
+      },
+      {
+        "value": "mutated_mesa"
+      },
+      {
+        "value": "wooded_badlands_plateau"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "dripstone_caves"
+      },
+      {
+        "value": "nether"
+      },
+      {
+        "value": "warped_forest"
+      },
+      {
+        "value": "crimson_forest"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

@@ -44,7 +44,7 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 1.0,
     "temperature": 1.5,
-    "spawnBiome": false,
+    "spawnBiome": true,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
@@ -105,8 +105,8 @@
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
-    "spawnNetherFossil": true,
-    "spawnBastionRemnant": true,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NETHER",
     "spawnEntries": [
@@ -135,6 +135,15 @@
         "minGroup": 1,
         "maxGroup": 2,
         "weight": 100,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:TerminidStalker"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 150,
         "spawnType": "ambient"
       }
     ]

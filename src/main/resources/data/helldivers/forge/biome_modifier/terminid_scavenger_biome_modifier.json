@@ -1,8 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "helldivers:terminid_biome",
+    "desert",
+    "badlands"
+  ],
   "spawners": {
     "type": "helldivers:terminid_scavenger",
     "weight": 300,

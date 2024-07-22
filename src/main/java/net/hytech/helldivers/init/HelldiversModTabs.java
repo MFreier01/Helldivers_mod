@@ -59,6 +59,10 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.TERMINID_SCAVENGER_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.TERMINIDBILETITAN_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.TERMINID_SHRIEKER_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.TERMINID_STALKER_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.TROOPER_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.FRAG_GRENADE.get());
 				tabData.accept(HelldiversModItems.STIM.get());
 				tabData.accept(HelldiversModItems.EMPTY_STRATAGEM_ORB.get());
@@ -72,19 +76,15 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModBlocks.TERMINIDWALL.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDSTONE.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDREINFORCEDWALL.get().asItem());
+				tabData.accept(HelldiversModBlocks.DEMOCRACITEBLOCK.get().asItem());
+				tabData.accept(HelldiversModBlocks.DEMOCRACITEORE.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDDUSTSPORE.get().asItem());
 				tabData.accept(HelldiversModItems.E_710.get());
 				tabData.accept(HelldiversModItems.PURIFIEDE_710.get());
-				tabData.accept(HelldiversModBlocks.AMMO_BOX.get().asItem());
-				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
-				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
-				tabData.accept(HelldiversModBlocks.STRATAGEM_MAKER.get().asItem());
-				tabData.accept(HelldiversModItems.TROOPER_SPAWN_EGG.get());
-				tabData.accept(HelldiversModItems.TERMINID_STALKER_SPAWN_EGG.get());
-				tabData.accept(HelldiversModBlocks.DEMOCRACITEORE.get().asItem());
-				tabData.accept(HelldiversModItems.DEMOCRACITEINGOT.get());
-				tabData.accept(HelldiversModBlocks.DEMOCRACITEBLOCK.get().asItem());
 				tabData.accept(HelldiversModItems.STRATAGEMCORE.get());
+				tabData.accept(HelldiversModBlocks.AMMO_BOX.get().asItem());
+				tabData.accept(HelldiversModBlocks.STRATAGEM_MAKER.get().asItem());
+				tabData.accept(HelldiversModItems.DEMOCRACITEINGOT.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

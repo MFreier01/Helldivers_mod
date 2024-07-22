@@ -1,8 +1,15 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "badlands",
+    "eroded_badlands",
+    "wooded_badlands",
+    "desert",
+    "nether_wastes",
+    "warped_forest",
+    "crimson_forest",
+    "dripstone_caves"
+  ],
   "spawners": {
     "type": "helldivers:trooper",
     "weight": 300,

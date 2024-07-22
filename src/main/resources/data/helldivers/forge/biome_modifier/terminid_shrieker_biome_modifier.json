@@ -1,8 +1,15 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "helldivers:terminid_biome",
+    "badlands",
+    "desert",
+    "nether_wastes",
+    "crimson_forest",
+    "warped_forest",
+    "eroded_badlands",
+    "wooded_badlands"
+  ],
   "spawners": {
     "type": "helldivers:terminid_shrieker",
     "weight": 300,

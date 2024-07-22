@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "helldivers:bug_breach_spawner",
     "helldivers:terminiddustspore",
     "helldivers:terminidhive"
   ]

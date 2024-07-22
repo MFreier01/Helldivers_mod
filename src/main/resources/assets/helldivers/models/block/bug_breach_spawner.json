@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "helldivers:block/bug_breach_spawner",
+    "up": "helldivers:block/bug_breach_spawner",
+    "north": "helldivers:block/bug_breach_spawner",
+    "east": "helldivers:block/bug_breach_spawner",
+    "south": "helldivers:block/bug_breach_spawner",
+    "west": "helldivers:block/bug_breach_spawner",
+    "particle": "helldivers:block/bug_breach_spawner"
+  },
+  "render_type": "solid"
+}

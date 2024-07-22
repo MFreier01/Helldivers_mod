@@ -1,8 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "helldivers:terminid_biome",
+    "desert"
+  ],
   "spawners": {
     "type": "helldivers:terminid_stalker",
     "weight": 200,

@@ -145,7 +145,32 @@
     "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 12,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:TerminidBiome"
+      },
+      {
+        "value": "badlands"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "nether"
+      },
+      {
+        "value": "crimson_forest"
+      },
+      {
+        "value": "warped_forest"
+      },
+      {
+        "value": "mutated_mesa"
+      },
+      {
+        "value": "wooded_badlands_plateau"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

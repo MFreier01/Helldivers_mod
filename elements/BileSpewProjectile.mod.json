@@ -23,6 +23,9 @@
     },
     "onHitsEntity": {
       "name": "BileSpewProjectileProjectileHitsBlock"
+    },
+    "onFlyingTick": {
+      "name": "BileSpewProjectileWhileProjectileFlyingTick"
     }
   }
 }

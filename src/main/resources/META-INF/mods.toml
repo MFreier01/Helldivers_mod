@@ -4,10 +4,10 @@ license="MIT License"
 
 [[mods]]
 modId="helldivers"
-version="0.0.3"
+version="0.0.42"
 displayName="Helldivers"
 displayURL="https://www.youtube.com/c/HyTechInc"
-credits="Gun models by GGlecoucougnette, all else by HyTech01"
+credits="HyTech01, GGlecco, Flameburnt"
 authors="HyTech01"
 description="Distribute Managed Democracy across the world!"
 

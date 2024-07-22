@@ -1,8 +1,14 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "badlands",
+    "eroded_badlands",
+    "wooded_badlands",
+    "desert",
+    "nether_wastes",
+    "crimson_forest",
+    "warped_forest"
+  ],
   "spawners": {
     "type": "helldivers:commisar",
     "weight": 300,

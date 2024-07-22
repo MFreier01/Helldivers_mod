@@ -44,7 +44,7 @@ public class FireRailCannonProcedure {
 				}
 			}
 		});
-		HelldiversMod.queueServerWork(65, () -> {
+		HelldiversMod.queueServerWork(80, () -> {
 			if (!entity.level().isClientSide())
 				entity.discard();
 		});

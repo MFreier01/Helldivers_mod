@@ -18,6 +18,7 @@ import net.hytech.helldivers.block.TerminiddustsporeBlock;
 import net.hytech.helldivers.block.StratagemMakerBlock;
 import net.hytech.helldivers.block.DemocraciteoreBlock;
 import net.hytech.helldivers.block.DemocraciteblockBlock;
+import net.hytech.helldivers.block.BugBreachSpawnerBlock;
 import net.hytech.helldivers.block.AutomatoncontactmineBlock;
 import net.hytech.helldivers.block.AutomatonFactorybaseBlock;
 import net.hytech.helldivers.block.AutomatonFactoryTrapdoorBlock;
@@ -40,6 +41,7 @@ public class HelldiversModBlocks {
 	public static final RegistryObject<Block> STRATAGEM_MAKER = REGISTRY.register("stratagem_maker", () -> new StratagemMakerBlock());
 	public static final RegistryObject<Block> DEMOCRACITEORE = REGISTRY.register("democraciteore", () -> new DemocraciteoreBlock());
 	public static final RegistryObject<Block> DEMOCRACITEBLOCK = REGISTRY.register("democraciteblock", () -> new DemocraciteblockBlock());
+	public static final RegistryObject<Block> BUG_BREACH_SPAWNER = REGISTRY.register("bug_breach_spawner", () -> new BugBreachSpawnerBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

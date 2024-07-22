@@ -71,9 +71,6 @@ public class DisplayCoreTooltipProcedure {
 			if (("OrbitalGattlingBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
 				tooltip.add(Component.literal("Orbital Gattling Barrage Core"));
 			}
-			if (("OrbitalGattlingBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
-				tooltip.add(Component.literal("Orbital Gattling Barrage Core"));
-			}
 			if (("OrbitalWalkingBarrage").equals(itemstack.getOrCreateTag().getString("CoreTag"))) {
 				tooltip.add(Component.literal("Orbital Walking Barrage Core"));
 			}
