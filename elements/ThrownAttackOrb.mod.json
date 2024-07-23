@@ -19,7 +19,7 @@
       "name": "CallStratagem"
     },
     "onHitsEntity": {
-      "name": "CallStratagem"
+      "name": "CallStratagemsHitEntity"
     }
   }
 }

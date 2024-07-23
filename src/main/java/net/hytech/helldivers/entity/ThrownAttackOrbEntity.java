@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.hytech.helldivers.procedures.CallStratagemsHitEntityProcedure;
 import net.hytech.helldivers.procedures.CallStratagemProcedure;
 import net.hytech.helldivers.init.HelldiversModItems;
 import net.hytech.helldivers.init.HelldiversModEntities;
@@ -70,7 +71,7 @@ public class ThrownAttackOrbEntity extends AbstractArrow implements ItemSupplier
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		CallStratagemProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
+		CallStratagemsHitEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this.getOwner());
 	}
 
 	@Override

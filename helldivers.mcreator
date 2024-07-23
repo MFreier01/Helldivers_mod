@@ -782,10 +782,10 @@
       "registry_name": "armed_attack_stratagem_orb",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/ArmedAttackStratagemOrbItem.java",
+          "src/main/java/net/hytech/helldivers/item/model/ArmedAttackStratagemOrbItemModel.java",
           "src/main/java/net/hytech/helldivers/item/renderer/ArmedAttackStratagemOrbItemRenderer.java",
-          "src/main/resources/assets/helldivers/models/item/armed_attack_stratagem_orb.json",
-          "src/main/java/net/hytech/helldivers/item/model/ArmedAttackStratagemOrbItemModel.java"
+          "src/main/java/net/hytech/helldivers/item/ArmedAttackStratagemOrbItem.java",
+          "src/main/resources/assets/helldivers/models/item/armed_attack_stratagem_orb.json"
         ]
       },
       "path": "~/Stratagems"
@@ -819,10 +819,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallEagleAirStrikeProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -1842,10 +1838,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -2268,10 +2260,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -2369,10 +2357,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallPrecisionStrikeProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -2501,10 +2485,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallStrafingRunProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -2739,10 +2719,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -2820,10 +2796,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallOrbitalAirburstProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -2938,10 +2910,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3024,10 +2992,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3094,10 +3058,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallOrbitalSmokeStrikeProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -3216,10 +3176,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3306,10 +3262,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallEagle110mmProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -3421,10 +3373,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3491,10 +3439,6 @@
           "src/main/java/net/hytech/helldivers/procedures/Call380MMProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -3609,10 +3553,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3709,10 +3649,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallOrbitalGasStrikeProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -3842,10 +3778,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3960,10 +3892,6 @@
           "src/main/java/net/hytech/helldivers/procedures/CallGattlingBarrageProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -5719,6 +5647,42 @@
         ]
       },
       "path": "~/Entity/Terminid"
+    },
+    {
+      "name": "CallStratagemsHitEntity",
+      "type": "procedure",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_stratagems_hit_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/CallStratagemsHitEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagem_Remote"
     }
   ],
   "variable_elements": [
@@ -5861,11 +5825,6 @@
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore"
     ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:BugBreachSpawner",
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
-    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -5885,6 +5844,11 @@
       "CUSTOM:OrbitalGasStrike",
       "CUSTOM:OrbitalGattlingBarrage",
       "CUSTOM:EagleNapalmStrike"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:BugBreachSpawner",
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:mod:stratagem_recipe_block": [
       "CUSTOM:Democraciteblock"
@@ -5961,8 +5925,8 @@
       "gui.helldivers.orbital_rail_cannon_gui.label_program_core": "Program Core",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
-      "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
       "subtitles.basic_shot": "Gun shot",
+      "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_air_strike_gui.label_program_core": "Program Core",
