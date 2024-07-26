@@ -40,6 +40,7 @@ import net.hytech.helldivers.entity.HellpodEntity;
 import net.hytech.helldivers.entity.GattlingProjectileEntity;
 import net.hytech.helldivers.entity.GasStrikeProjectileEntity;
 import net.hytech.helldivers.entity.FragGrenadeProjectileEntity;
+import net.hytech.helldivers.entity.EaglesmokestrikeprojectileEntity;
 import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
 import net.hytech.helldivers.entity.CommisarEntity;
 import net.hytech.helldivers.entity.BileSpewProjectileEntity;
@@ -132,6 +133,9 @@ public class HelldiversModEntities {
 			EntityType.Builder.<TerminidStalkerEntity>of(TerminidStalkerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TerminidStalkerEntity::new)
 
 					.sized(3f, 3f));
+	public static final RegistryObject<EntityType<EaglesmokestrikeprojectileEntity>> EAGLESMOKESTRIKEPROJECTILE = register("eaglesmokestrikeprojectile",
+			EntityType.Builder.<EaglesmokestrikeprojectileEntity>of(EaglesmokestrikeprojectileEntity::new, MobCategory.MISC).setCustomClientFactory(EaglesmokestrikeprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

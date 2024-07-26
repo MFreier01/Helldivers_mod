@@ -336,7 +336,7 @@
     {
       "name": "TerminidScavenger",
       "type": "animatedentity",
-      "sortid": 7,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_scavenger",
@@ -354,7 +354,7 @@
     {
       "name": "FragGrenade",
       "type": "animateditem",
-      "sortid": 14,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frag_grenade",
@@ -437,7 +437,7 @@
     {
       "name": "Terminidhive",
       "type": "block",
-      "sortid": 23,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidhive",
@@ -454,7 +454,7 @@
     {
       "name": "Terminidwall",
       "type": "block",
-      "sortid": 24,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidwall",
@@ -472,7 +472,7 @@
     {
       "name": "Terminidstone",
       "type": "block",
-      "sortid": 25,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidstone",
@@ -490,7 +490,7 @@
     {
       "name": "Terminidreinforcedwall",
       "type": "block",
-      "sortid": 26,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidreinforcedwall",
@@ -544,7 +544,7 @@
     {
       "name": "Terminiddustspore",
       "type": "animatedblock",
-      "sortid": 29,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminiddustspore",
@@ -599,7 +599,7 @@
     {
       "name": "Automatoncontactmine",
       "type": "animatedblock",
-      "sortid": 19,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatoncontactmine",
@@ -694,7 +694,7 @@
     {
       "name": "Terminidbiletitan",
       "type": "animatedentity",
-      "sortid": 8,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminidbiletitan",
@@ -744,7 +744,7 @@
     {
       "name": "E710",
       "type": "item",
-      "sortid": 30,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "e_710",
@@ -759,7 +759,7 @@
     {
       "name": "EmptyStratagemOrb",
       "type": "animateditem",
-      "sortid": 16,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "empty_stratagem_orb",
@@ -776,7 +776,7 @@
     {
       "name": "ArmedAttackStratagemOrb",
       "type": "animateditem",
-      "sortid": 17,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_attack_stratagem_orb",
@@ -793,7 +793,7 @@
     {
       "name": "ArmedSupportStratagemOrb",
       "type": "animateditem",
-      "sortid": 18,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "armed_support_stratagem_orb",
@@ -1288,7 +1288,7 @@
     {
       "name": "Stim",
       "type": "item",
-      "sortid": 15,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stim",
@@ -1323,7 +1323,7 @@
     {
       "name": "AutomatonFactorybase",
       "type": "block",
-      "sortid": 20,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automaton_factorybase",
@@ -1341,7 +1341,7 @@
     {
       "name": "TerminidShrieker",
       "type": "animatedentity",
-      "sortid": 9,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_shrieker",
@@ -1359,7 +1359,7 @@
     {
       "name": "AutomatonFactoryDoor",
       "type": "block",
-      "sortid": 21,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automaton_factory_door",
@@ -1516,7 +1516,7 @@
     {
       "name": "Purifiede710",
       "type": "item",
-      "sortid": 31,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purifiede_710",
@@ -1635,7 +1635,7 @@
     {
       "name": "AutomatonFactoryTrapdoor",
       "type": "block",
-      "sortid": 22,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automaton_factory_trapdoor",
@@ -1669,7 +1669,7 @@
     {
       "name": "AmmoBox",
       "type": "animatedblock",
-      "sortid": 33,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ammo_box",
@@ -2034,7 +2034,7 @@
     {
       "name": "Commisar",
       "type": "animatedentity",
-      "sortid": 12,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "commisar",
@@ -2088,7 +2088,7 @@
     {
       "name": "Hulk",
       "type": "animatedentity",
-      "sortid": 11,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hulk",
@@ -2589,7 +2589,7 @@
     {
       "name": "StratagemMaker",
       "type": "animatedblock",
-      "sortid": 34,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stratagem_maker",
@@ -3090,10 +3090,6 @@
           "src/main/java/net/hytech/helldivers/procedures/Orbital_SmokeProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -3981,7 +3977,7 @@
     {
       "name": "Trooper",
       "type": "animatedentity",
-      "sortid": 13,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trooper",
@@ -4031,7 +4027,7 @@
     {
       "name": "TerminidStalker",
       "type": "animatedentity",
-      "sortid": 10,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "terminid_stalker",
@@ -4049,7 +4045,7 @@
     {
       "name": "Democraciteore",
       "type": "block",
-      "sortid": 28,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "democraciteore",
@@ -4069,7 +4065,7 @@
     {
       "name": "Democraciteingot",
       "type": "item",
-      "sortid": 35,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "democraciteingot",
@@ -4126,7 +4122,7 @@
     {
       "name": "Democraciteblock",
       "type": "block",
-      "sortid": 27,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "democraciteblock",
@@ -4215,7 +4211,7 @@
     {
       "name": "Stratagemcore",
       "type": "item",
-      "sortid": 32,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stratagemcore",
@@ -5683,6 +5679,130 @@
         ]
       },
       "path": "~/Stratagems/Stratagem_Remote"
+    },
+    {
+      "name": "EmptyStratagemCore",
+      "type": "recipe",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_stratagem_core",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/empty_stratagem_core.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Terminiddesertnest1",
+      "type": "structure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminiddesertnest_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/worldgen/structure_set/terminiddesertnest_1.json",
+          "src/main/resources/data/helldivers/worldgen/structure/terminiddesertnest_1.json",
+          "src/main/resources/data/helldivers/worldgen/template_pool/terminiddesertnest_1.json"
+        ]
+      },
+      "path": "~/BiomesandStructures"
+    },
+    {
+      "name": "Terminidjunglenest1",
+      "type": "structure",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidjunglenest_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/worldgen/template_pool/terminidjunglenest_1.json",
+          "src/main/resources/data/helldivers/worldgen/structure_set/terminidjunglenest_1.json",
+          "src/main/resources/data/helldivers/worldgen/structure/terminidjunglenest_1.json"
+        ]
+      },
+      "path": "~/BiomesandStructures"
+    },
+    {
+      "name": "Terminidjunglerock1",
+      "type": "structure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidjunglerock_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/worldgen/structure_set/terminidjunglerock_1.json",
+          "src/main/resources/data/helldivers/worldgen/template_pool/terminidjunglerock_1.json",
+          "src/main/resources/data/helldivers/worldgen/structure/terminidjunglerock_1.json"
+        ]
+      },
+      "path": "~/BiomesandStructures"
+    },
+    {
+      "name": "Terminidspore1",
+      "type": "structure",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terminidspore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/worldgen/structure_set/terminidspore_1.json",
+          "src/main/resources/data/helldivers/worldgen/template_pool/terminidspore_1.json",
+          "src/main/resources/data/helldivers/worldgen/structure/terminidspore_1.json"
+        ]
+      },
+      "path": "~/BiomesandStructures"
+    },
+    {
+      "name": "Eaglesmoke",
+      "type": "procedure",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eaglesmoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/EaglesmokeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Smoke_Strike"
+    },
+    {
+      "name": "Eaglesmokestrikeprojectile",
+      "type": "projectile",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eaglesmokestrikeprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/EaglesmokestrikeprojectileEntity.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Smoke_Strike"
     }
   ],
   "variable_elements": [
@@ -5825,6 +5945,11 @@
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore"
     ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:BugBreachSpawner",
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
+    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -5844,11 +5969,6 @@
       "CUSTOM:OrbitalGasStrike",
       "CUSTOM:OrbitalGattlingBarrage",
       "CUSTOM:EagleNapalmStrike"
-    ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:BugBreachSpawner",
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:mod:stratagem_recipe_block": [
       "CUSTOM:Democraciteblock"
@@ -5925,8 +6045,8 @@
       "gui.helldivers.orbital_rail_cannon_gui.label_program_core": "Program Core",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
-      "subtitles.basic_shot": "Gun shot",
       "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
+      "subtitles.basic_shot": "Gun shot",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_air_strike_gui.label_program_core": "Program Core",

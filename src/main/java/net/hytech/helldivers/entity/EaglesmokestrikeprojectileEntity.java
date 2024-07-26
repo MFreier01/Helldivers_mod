@@ -14,7 +14,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.RandomSource;
@@ -23,26 +22,26 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.hytech.helldivers.procedures.Orbital_SmokeProcedure;
+import net.hytech.helldivers.procedures.EaglesmokeProcedure;
 import net.hytech.helldivers.init.HelldiversModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class OrbitalsmokeprojectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Blocks.POLISHED_BLACKSTONE);
+public class EaglesmokestrikeprojectileEntity extends AbstractArrow implements ItemSupplier {
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
 
-	public OrbitalsmokeprojectileEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), world);
+	public EaglesmokestrikeprojectileEntity(PlayMessages.SpawnEntity packet, Level world) {
+		super(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), world);
 	}
 
-	public OrbitalsmokeprojectileEntity(EntityType<? extends OrbitalsmokeprojectileEntity> type, Level world) {
+	public EaglesmokestrikeprojectileEntity(EntityType<? extends EaglesmokestrikeprojectileEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public OrbitalsmokeprojectileEntity(EntityType<? extends OrbitalsmokeprojectileEntity> type, double x, double y, double z, Level world) {
+	public EaglesmokestrikeprojectileEntity(EntityType<? extends EaglesmokestrikeprojectileEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public OrbitalsmokeprojectileEntity(EntityType<? extends OrbitalsmokeprojectileEntity> type, LivingEntity entity, Level world) {
+	public EaglesmokestrikeprojectileEntity(EntityType<? extends EaglesmokestrikeprojectileEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -69,21 +68,15 @@ public class OrbitalsmokeprojectileEntity extends AbstractArrow implements ItemS
 	}
 
 	@Override
-	public void playerTouch(Player entity) {
-		super.playerTouch(entity);
-		Orbital_SmokeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		Orbital_SmokeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		EaglesmokeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		Orbital_SmokeProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		EaglesmokeProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -93,12 +86,12 @@ public class OrbitalsmokeprojectileEntity extends AbstractArrow implements ItemS
 			this.discard();
 	}
 
-	public static OrbitalsmokeprojectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
+	public static EaglesmokestrikeprojectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
 		return shoot(world, entity, source, 1f, 5, 5);
 	}
 
-	public static OrbitalsmokeprojectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		OrbitalsmokeprojectileEntity entityarrow = new OrbitalsmokeprojectileEntity(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), entity, world);
+	public static EaglesmokestrikeprojectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
+		EaglesmokestrikeprojectileEntity entityarrow = new EaglesmokestrikeprojectileEntity(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
@@ -109,8 +102,8 @@ public class OrbitalsmokeprojectileEntity extends AbstractArrow implements ItemS
 		return entityarrow;
 	}
 
-	public static OrbitalsmokeprojectileEntity shoot(LivingEntity entity, LivingEntity target) {
-		OrbitalsmokeprojectileEntity entityarrow = new OrbitalsmokeprojectileEntity(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), entity, entity.level());
+	public static EaglesmokestrikeprojectileEntity shoot(LivingEntity entity, LivingEntity target) {
+		EaglesmokestrikeprojectileEntity entityarrow = new EaglesmokestrikeprojectileEntity(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();

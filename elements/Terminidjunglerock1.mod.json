@@ -1,0 +1,32 @@
+{
+  "_fv": 60,
+  "_type": "structure",
+  "definition": {
+    "structure": "jungle_spore_1",
+    "projection": "terrain_matching",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 20,
+    "separation": 4,
+    "restrictionBiomes": [
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "jungle_edge"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

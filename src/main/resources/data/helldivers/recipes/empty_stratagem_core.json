@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " b ",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "helldivers:democraciteingot"
+    },
+    "b": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "helldivers:empty_stratagem_orb",
+    "count": 4
+  }
+}

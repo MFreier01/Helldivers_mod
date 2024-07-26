@@ -59,5 +59,6 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.GATTLING_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.TROOPER.get(), TrooperRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.TERMINID_STALKER.get(), TerminidStalkerRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

@@ -1,0 +1,50 @@
+{
+  "_fv": 60,
+  "_type": "structure",
+  "definition": {
+    "structure": "spore_cluster",
+    "projection": "terrain_matching",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 5,
+    "separation": 2,
+    "restrictionBiomes": [
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "CUSTOM:TerminidBiome"
+      },
+      {
+        "value": "nether"
+      },
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "crimson_forest"
+      },
+      {
+        "value": "mutated_birch_forest"
+      },
+      {
+        "value": "forest"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

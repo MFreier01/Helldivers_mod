@@ -9,7 +9,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 
 import net.hytech.helldivers.init.HelldiversModParticleTypes;
 import net.hytech.helldivers.init.HelldiversModEntities;
-import net.hytech.helldivers.entity.OrbitalsmokeprojectileEntity;
+import net.hytech.helldivers.entity.EaglesmokestrikeprojectileEntity;
 import net.hytech.helldivers.HelldiversMod;
 
 public class CallEagleSmokeStrikeProcedure {
@@ -20,7 +20,7 @@ public class CallEagleSmokeStrikeProcedure {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
 					public Projectile getArrow(Level level, float damage, int knockback) {
-						AbstractArrow entityToSpawn = new OrbitalsmokeprojectileEntity(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), level);
+						AbstractArrow entityToSpawn = new EaglesmokestrikeprojectileEntity(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), level);
 						entityToSpawn.setBaseDamage(damage);
 						entityToSpawn.setKnockback(knockback);
 						entityToSpawn.setSilent(true);
@@ -36,7 +36,7 @@ public class CallEagleSmokeStrikeProcedure {
 				if (world instanceof ServerLevel projectileLevel) {
 					Projectile _entityToSpawn = new Object() {
 						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new OrbitalsmokeprojectileEntity(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), level);
+							AbstractArrow entityToSpawn = new EaglesmokestrikeprojectileEntity(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), level);
 							entityToSpawn.setBaseDamage(damage);
 							entityToSpawn.setKnockback(knockback);
 							entityToSpawn.setSilent(true);
@@ -53,7 +53,7 @@ public class CallEagleSmokeStrikeProcedure {
 				if (world instanceof ServerLevel projectileLevel) {
 					Projectile _entityToSpawn = new Object() {
 						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new OrbitalsmokeprojectileEntity(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), level);
+							AbstractArrow entityToSpawn = new EaglesmokestrikeprojectileEntity(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), level);
 							entityToSpawn.setBaseDamage(damage);
 							entityToSpawn.setKnockback(knockback);
 							entityToSpawn.setSilent(true);
@@ -61,7 +61,7 @@ public class CallEagleSmokeStrikeProcedure {
 							return entityToSpawn;
 						}
 					}.getArrow(projectileLevel, 5, 1);
-					_entityToSpawn.setPos((x + 68), (y + 100), (z + -72));
+					_entityToSpawn.setPos((x + 70), (y + 100), (z + -72));
 					_entityToSpawn.shoot((-1), (-1), 1, 4, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
@@ -70,7 +70,7 @@ public class CallEagleSmokeStrikeProcedure {
 				if (world instanceof ServerLevel projectileLevel) {
 					Projectile _entityToSpawn = new Object() {
 						public Projectile getArrow(Level level, float damage, int knockback) {
-							AbstractArrow entityToSpawn = new OrbitalsmokeprojectileEntity(HelldiversModEntities.ORBITALSMOKEPROJECTILE.get(), level);
+							AbstractArrow entityToSpawn = new EaglesmokestrikeprojectileEntity(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), level);
 							entityToSpawn.setBaseDamage(damage);
 							entityToSpawn.setKnockback(knockback);
 							entityToSpawn.setSilent(true);
