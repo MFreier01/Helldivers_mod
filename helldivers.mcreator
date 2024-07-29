@@ -360,10 +360,10 @@
       "registry_name": "frag_grenade",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/item/model/FragGrenadeItemModel.java",
-          "src/main/java/net/hytech/helldivers/item/renderer/FragGrenadeItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/FragGrenadeItem.java",
-          "src/main/resources/assets/helldivers/models/item/frag_grenade.json"
+          "src/main/resources/assets/helldivers/models/item/frag_grenade.json",
+          "src/main/java/net/hytech/helldivers/item/renderer/FragGrenadeItemRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/model/FragGrenadeItemModel.java"
         ]
       },
       "path": "~/Other_Items"
@@ -1294,8 +1294,8 @@
       "registry_name": "stim",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/stim.json",
-          "src/main/java/net/hytech/helldivers/item/StimItem.java"
+          "src/main/java/net/hytech/helldivers/item/StimItem.java",
+          "src/main/resources/assets/helldivers/models/item/stim.json"
         ]
       },
       "path": "~/Other_Items"
@@ -5803,6 +5803,72 @@
         ]
       },
       "path": "~/Stratagems/Stratagems/Eagle_Smoke_Strike"
+    },
+    {
+      "name": "Rawe710fuel",
+      "type": "itemextension",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rawe_710fuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Other_Items"
+    },
+    {
+      "name": "Fraggrenaderecipe",
+      "type": "recipe",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fraggrenaderecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/recipes/frag_grenade_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LightSC30",
+      "type": "animatedarmor",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sc_30",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/client/renderer/LightSC30ArmorRenderer.java",
+          "src/main/java/net/hytech/helldivers/item/LightSC30Item.java",
+          "src/main/resources/assets/helldivers/models/item/light_sc_30_leggings.json",
+          "src/main/resources/assets/helldivers/models/item/light_sc_30_helmet.json",
+          "src/main/resources/assets/helldivers/models/item/light_sc_30_boots.json",
+          "src/main/resources/assets/helldivers/models/item/light_sc_30_chestplate.json",
+          "src/main/java/net/hytech/helldivers/item/model/LightSC30Model.java"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "LightSC30Helmet",
+      "type": "procedure",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sc_30_helmet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/LightSC30HelmetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor"
     }
   ],
   "variable_elements": [
@@ -5945,11 +6011,6 @@
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore"
     ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:BugBreachSpawner",
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
-    ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
       "CUSTOM:Eagle500KG",
@@ -5969,6 +6030,11 @@
       "CUSTOM:OrbitalGasStrike",
       "CUSTOM:OrbitalGattlingBarrage",
       "CUSTOM:EagleNapalmStrike"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:BugBreachSpawner",
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:mod:stratagem_recipe_block": [
       "CUSTOM:Democraciteblock"
@@ -6045,8 +6111,8 @@
       "gui.helldivers.orbital_rail_cannon_gui.label_program_core": "Program Core",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
-      "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
       "subtitles.basic_shot": "Gun shot",
+      "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_air_strike_gui.label_program_core": "Program Core",
@@ -6055,6 +6121,7 @@
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "gui.helldivers.orbital_laser_gui.button_orbital_railcannon": "Orbital Laser",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_110mm": "Eagle 110MM",
+      "item.helldivers.light_sc_30_leggings": "SC-30 Leggings",
       "gui.helldivers.orbital_walking_barrage_gui.button_orbital_precision_strike": "Orbital Walking Barrage",
       "item.helldivers.terminid_stalker_spawn_egg": "Stalker Spawn Egg",
       "entity.helldivers.terminid_scavenger": "Scavenger",
@@ -6121,6 +6188,7 @@
       "item.helldivers.orbital_120_mmhe_barrage": "Orbital 120MM HE Barrage",
       "subtitles.shotgun_shot": "Gun shot",
       "subtitles.amr_shot": "Gun shot",
+      "item.helldivers.light_sc_30_helmet": "SC-30 Helmet",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
       "block.helldivers.stratagem_maker": "Stratagem Maker",
       "gui.helldivers.eagle_napalm_gui.label_eagle_napalm_strike": "Eagle Napalm Strike",
@@ -6156,6 +6224,7 @@
       "subtitles.awp1_dry_fire": "Gun clicks",
       "item.helldivers.bile_spew_item": "Bile Spew Item",
       "gui.helldivers.eagle_cluster_bomb_gui.button_eagle_napalm_strike": "Eagle Napalm Strike",
+      "item.helldivers.light_sc_30_boots": "SC-30 Boots",
       "item.helldivers.frag_grenade": "Frag Grenade",
       "block.helldivers.automaton_factory_trapdoor": "Automaton Factory Trapdoor",
       "gui.helldivers.ammoboxgui.label_ammo_box": "Ammo Box",
@@ -6190,6 +6259,7 @@
       "item.helldivers.terminidbiletitan_spawn_egg": "Bile Titan Spawn Egg",
       "item.helldivers.heavy_fs_23_helmet": "FS-23 Helmet",
       "block.helldivers.ammo_box": "Ammo Box",
+      "item.helldivers.light_sc_30_chestplate": "SC-30 Chestplate",
       "item.helldivers.commisar_spawn_egg": "Commisar Spawn Egg",
       "entity.helldivers.commisar": "Commisar",
       "item.helldivers.orbitallaser_spawn_egg": "Orbital Laser Spawn Egg",
@@ -6410,7 +6480,7 @@
   "workspaceSettings": {
     "modid": "helldivers",
     "modName": "Helldivers",
-    "version": "0.0.42",
+    "version": "0.0.5",
     "description": "Distribute Managed Democracy across the world!",
     "author": "HyTech01",
     "websiteURL": "https://www.youtube.com/c/HyTechInc",

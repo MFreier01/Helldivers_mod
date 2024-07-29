@@ -1,0 +1,68 @@
+{
+  "_fv": 60,
+  "_type": "animatedarmor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "fs_23_helmet_item",
+    "enableBody": true,
+    "textureBody": "fs_23_chestplate_item",
+    "enableLeggings": true,
+    "textureLeggings": "fs_23_leggings_item",
+    "enableBoots": true,
+    "textureBoots": "fs_23_boots_item",
+    "onHelmetTick": {
+      "name": "LightSC30Helmet"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Helldivers"
+    },
+    "armorTextureFile": "sc-30_texture.png",
+    "model": "sc-30.geo.json",
+    "idle": "animation.sc-30.idle",
+    "head": "armorHead",
+    "chest": "armorBody",
+    "rightArm": "armorRightArm",
+    "leftArm": "armorLeftArm",
+    "rightLeg": "armorRightLeg",
+    "leftLeg": "armorLeftLeg",
+    "rightBoot": "armorRightBoot",
+    "leftBoot": "armorLeftBoot",
+    "helmetName": "SC-30 Helmet",
+    "bodyName": "SC-30 Chestplate",
+    "leggingsName": "SC-30 Leggings",
+    "bootsName": "SC-30 Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "fullyEquipped": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 10,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_leather"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Democraciteingot"
+      }
+    ]
+  }
+}

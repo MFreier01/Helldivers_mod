@@ -14,7 +14,7 @@ import net.hytech.helldivers.procedures.Stim_HealProcedure;
 
 public class StimItem extends Item {
 	public StimItem() {
-		super(new Item.Properties().stacksTo(4).rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.RARE));
 	}
 
 	@Override

@@ -34,6 +34,7 @@ import net.hytech.helldivers.item.Orbital380MMHEBarrageItem;
 import net.hytech.helldivers.item.Orbital120MMHEBarrageItem;
 import net.hytech.helldivers.item.NapalmProjectileItem;
 import net.hytech.helldivers.item.M105StalwartItem;
+import net.hytech.helldivers.item.LightSC30Item;
 import net.hytech.helldivers.item.HellpodItemItem;
 import net.hytech.helldivers.item.HeavyFS23Item;
 import net.hytech.helldivers.item.FragGrenadeItem;
@@ -133,6 +134,10 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> DEMOCRACITEBLOCK = block(HelldiversModBlocks.DEMOCRACITEBLOCK);
 	public static final RegistryObject<Item> STRATAGEMCORE = REGISTRY.register("stratagemcore", () -> new StratagemcoreItem());
 	public static final RegistryObject<Item> BUG_BREACH_SPAWNER = block(HelldiversModBlocks.BUG_BREACH_SPAWNER);
+	public static final RegistryObject<LightSC30Item> LIGHT_SC_30_HELMET = REGISTRY.register("light_sc_30_helmet", () -> new LightSC30Item(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<LightSC30Item> LIGHT_SC_30_CHESTPLATE = REGISTRY.register("light_sc_30_chestplate", () -> new LightSC30Item(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<LightSC30Item> LIGHT_SC_30_LEGGINGS = REGISTRY.register("light_sc_30_leggings", () -> new LightSC30Item(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<LightSC30Item> LIGHT_SC_30_BOOTS = REGISTRY.register("light_sc_30_boots", () -> new LightSC30Item(ArmorItem.Type.BOOTS, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -33,7 +33,7 @@ public class FragGrenadeItem extends Item implements GeoItem {
 	public static ItemDisplayContext transformType;
 
 	public FragGrenadeItem() {
-		super(new Item.Properties().stacksTo(4).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override

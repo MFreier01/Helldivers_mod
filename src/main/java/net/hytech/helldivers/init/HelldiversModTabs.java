@@ -85,6 +85,10 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.HULK_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.COMMISAR_SPAWN_EGG.get());
 				tabData.accept(HelldiversModItems.TROOPER_SPAWN_EGG.get());
+				tabData.accept(HelldiversModItems.LIGHT_SC_30_HELMET.get());
+				tabData.accept(HelldiversModItems.LIGHT_SC_30_CHESTPLATE.get());
+				tabData.accept(HelldiversModItems.LIGHT_SC_30_LEGGINGS.get());
+				tabData.accept(HelldiversModItems.LIGHT_SC_30_BOOTS.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

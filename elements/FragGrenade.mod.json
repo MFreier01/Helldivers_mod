@@ -15,7 +15,7 @@
       "value": "CUSTOM:Helldivers"
     },
     "firstPersonArms": false,
-    "stackSize": 4,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

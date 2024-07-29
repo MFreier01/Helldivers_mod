@@ -42,13 +42,13 @@ public class BugBreachSpawnerTickProcedure {
 		double fy = 0;
 		double fz = 0;
 		double spawn_chance = 0;
-		sx = -7;
+		sx = -14;
 		found = false;
-		for (int index0 = 0; index0 < 14; index0++) {
-			sy = -7;
-			for (int index1 = 0; index1 < 14; index1++) {
-				sz = -7;
-				for (int index2 = 0; index2 < 14; index2++) {
+		for (int index0 = 0; index0 < 28; index0++) {
+			sy = -14;
+			for (int index1 = 0; index1 < 28; index1++) {
+				sz = -14;
+				for (int index2 = 0; index2 < 28; index2++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == HelldiversModBlocks.BUG_BREACH_SPAWNER.get()) {
 						found = true;
 						fx = x + sx;
@@ -64,79 +64,76 @@ public class BugBreachSpawnerTickProcedure {
 		if (found == true) {
 			HelldiversModVariables.WorldVariables.get(world).terminid_spawn_timer = Mth.nextDouble(RandomSource.create(), 0, 1);
 			HelldiversModVariables.WorldVariables.get(world).syncData(world);
-		}
-		if (0.99 < HelldiversModVariables.WorldVariables.get(world).terminid_spawn_timer) {
-			modtospawn = Mth.nextDouble(RandomSource.create(), 0, 1);
-			if (0.95 > spawn_chance) {
-				if (0.9 > spawn_chance) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
+			if (0.99 < HelldiversModVariables.WorldVariables.get(world).terminid_spawn_timer) {
+				spawn_chance = Mth.nextDouble(RandomSource.create(), 0, 1);
+				if (0.95 > spawn_chance) {
+					if (0.9 < spawn_chance) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+					} else if (0.3 > spawn_chance) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+					} else if (0.5 > spawn_chance) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setDeltaMovement(0, 0, 0);
+							}
 						}
 					}
+				} else if (0.95 < spawn_chance) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-				} else if (0.5 > spawn_chance) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-				} else if (0.3 > spawn_chance) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = HelldiversModEntities.TERMINID_SCAVENGER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
+						Entity entityToSpawn = HelldiversModEntities.TERMINID_STALKER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
 						if (entityToSpawn != null) {
 							entityToSpawn.setDeltaMovement(0, 0, 0);
 						}
 					}
 				}
 			}
-			if (0.95 < spawn_chance) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = HelldiversModEntities.TERMINID_STALKER.get().spawn(_level, BlockPos.containing(fx, fy + 1, fz), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setDeltaMovement(0, 0, 0);
-					}
-				}
-			}
-			HelldiversModVariables.WorldVariables.get(world).terminid_spawn_timer = 0;
-			HelldiversModVariables.WorldVariables.get(world).syncData(world);
 		}
 	}
 }

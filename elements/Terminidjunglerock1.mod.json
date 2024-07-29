@@ -9,7 +9,7 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 20,
+    "spacing": 15,
     "separation": 4,
     "restrictionBiomes": [
       {

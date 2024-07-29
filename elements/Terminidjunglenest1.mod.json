@@ -10,7 +10,7 @@
       }
     ],
     "spacing": 15,
-    "separation": 4,
+    "separation": 8,
     "restrictionBiomes": [
       {
         "value": "bamboo_jungle"
