@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "helldivers:block/automatonfactoryslab"
+    },
+    "type=top": {
+      "model": "helldivers:block/automatonfactoryslab_top"
+    },
+    "type=double": {
+      "model": "helldivers:block/automatonfactoryslab_full"
+    }
+  }
+}

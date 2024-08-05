@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "helldivers:block/powered_automaton_spawner"
+    }
+  }
+}

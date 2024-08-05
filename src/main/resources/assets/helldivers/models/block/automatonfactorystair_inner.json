@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "helldivers:block/automoton_factory_base_block",
+    "top": "helldivers:block/automoton_factory_base_block",
+    "side": "helldivers:block/automoton_factory_base_block"
+  },
+  "render_type": "solid"
+}

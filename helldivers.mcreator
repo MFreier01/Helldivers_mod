@@ -1329,11 +1329,11 @@
       "registry_name": "automaton_factorybase",
       "metadata": {
         "files": [
-          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factorybase.json",
+          "src/main/resources/assets/helldivers/blockstates/automaton_factorybase.json",
+          "src/main/resources/assets/helldivers/models/item/automaton_factorybase.json",
           "src/main/java/net/hytech/helldivers/block/AutomatonFactorybaseBlock.java",
           "src/main/resources/assets/helldivers/models/block/automaton_factorybase.json",
-          "src/main/resources/assets/helldivers/blockstates/automaton_factorybase.json",
-          "src/main/resources/assets/helldivers/models/item/automaton_factorybase.json"
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factorybase.json"
         ]
       },
       "path": "~/Blocks"
@@ -1365,18 +1365,18 @@
       "registry_name": "automaton_factory_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/automaton_factory_door.json",
-          "src/main/java/net/hytech/helldivers/block/AutomatonFactoryDoorBlock.java",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left_open.json",
-          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_door.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right_open.json",
           "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left.json",
           "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right_open.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right_open.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left_open.json",
-          "src/main/resources/assets/helldivers/blockstates/automaton_factory_door.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automaton_factory_door.json",
           "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_right.json",
           "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left.json",
-          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right.json"
+          "src/main/resources/assets/helldivers/models/item/automaton_factory_door.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_right.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonFactoryDoorBlock.java",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_top_left_open.json",
+          "src/main/resources/assets/helldivers/models/block/automaton_factory_door_bottom_left_open.json",
+          "src/main/resources/assets/helldivers/blockstates/automaton_factory_door.json"
         ]
       },
       "path": "~/Blocks"
@@ -5869,6 +5869,165 @@
         ]
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "Automatonfactorystair",
+      "type": "block",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatonfactorystair",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/blocks/automatonfactorystair.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactorystair_inner.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonfactorystairBlock.java",
+          "src/main/resources/assets/helldivers/blockstates/automatonfactorystair.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactorystair_outer.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactorystair.json",
+          "src/main/resources/assets/helldivers/models/item/automatonfactorystair.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Automatonfactorywall",
+      "type": "block",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatonfactorywall",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/loot_tables/blocks/automatonfactorywall.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactorywall.json",
+          "src/main/resources/assets/helldivers/blockstates/automatonfactorywall.json",
+          "src/main/resources/assets/helldivers/models/item/automatonfactorywall.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactorywall_side_tall.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactorywall_post.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactorywall_inventory.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonfactorywallBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Automatonfactoryslab",
+      "type": "block",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatonfactoryslab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/block/automatonfactoryslab_top.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonfactoryslabBlock.java",
+          "src/main/resources/assets/helldivers/models/block/automatonfactoryslab_full.json",
+          "src/main/resources/data/helldivers/loot_tables/blocks/automatonfactoryslab.json",
+          "src/main/resources/assets/helldivers/models/item/automatonfactoryslab.json",
+          "src/main/resources/assets/helldivers/models/block/automatonfactoryslab.json",
+          "src/main/resources/assets/helldivers/blockstates/automatonfactoryslab.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Automatonspawner",
+      "type": "block",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatonspawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/blockstates/automatonspawner.json",
+          "src/main/resources/assets/helldivers/models/block/automatonspawner.json",
+          "src/main/resources/assets/helldivers/models/item/automatonspawner.json",
+          "src/main/java/net/hytech/helldivers/block/AutomatonspawnerBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AutomatonSpawning",
+      "type": "procedure",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automaton_spawning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/AutomatonSpawningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PoweredAutomatonSpawner",
+      "type": "block",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powered_automaton_spawner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/block/PoweredAutomatonSpawnerBlock.java",
+          "src/main/resources/assets/helldivers/models/item/powered_automaton_spawner.json",
+          "src/main/resources/assets/helldivers/blockstates/powered_automaton_spawner.json",
+          "src/main/resources/assets/helldivers/models/block/powered_automaton_spawner.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PoweredAutomatonSpawnerOnTickUpdate",
+      "type": "procedure",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powered_automaton_spawner_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/PoweredAutomatonSpawnerOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -6032,6 +6191,8 @@
       "CUSTOM:EagleNapalmStrike"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:PoweredAutomatonSpawner",
+      "~CUSTOM:Automatonspawner",
       "~CUSTOM:BugBreachSpawner",
       "~CUSTOM:Terminiddustspore",
       "~CUSTOM:Terminidhive"
@@ -6052,6 +6213,9 @@
       "~CUSTOM:TerminidBiome"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Automatonfactoryslab",
+      "~CUSTOM:Automatonfactorywall",
+      "~CUSTOM:Automatonfactorystair",
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore",
       "~CUSTOM:StratagemMaker",
@@ -6062,7 +6226,15 @@
       "~CUSTOM:Terminidstone",
       "~CUSTOM:Terminidwall"
     ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:Automatonfactoryslab"
+    ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:PoweredAutomatonSpawner",
+      "~CUSTOM:Automatonspawner",
+      "~CUSTOM:Automatonfactoryslab",
+      "~CUSTOM:Automatonfactorywall",
+      "~CUSTOM:Automatonfactorystair",
       "~CUSTOM:BugBreachSpawner",
       "~CUSTOM:AutomatonFactoryTrapdoor",
       "~CUSTOM:AutomatonFactoryDoor",
@@ -6076,11 +6248,17 @@
     "ITEMS:mod:diamond_block": [
       "Blocks.DIAMOND_BLOCK"
     ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:Automatonfactorywall"
+    ],
     "ITEMS:mod:red_dye": [
       "Items.DYE#1"
     ],
     "ITEMS:mod:white_dye": [
       "Items.DYE#19"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:Automatonfactorystair"
     ],
     "ITEMS:mod:stratagem_core": [
       "CUSTOM:Stratagemcore"
@@ -6111,8 +6289,8 @@
       "gui.helldivers.orbital_rail_cannon_gui.label_program_core": "Program Core",
       "item.helldivers.basicarmor_helmet": "Helldiver\u0027s Helmet",
       "item.helldivers.trooper_spawn_egg": "Trooper Spawn Egg",
-      "subtitles.basic_shot": "Gun shot",
       "gui.helldivers.eagle_smoke_gui.label_program_core": "Program Core",
+      "subtitles.basic_shot": "Gun shot",
       "item.helldivers.m_105_stalwart": "M-105 Stalwart",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_air_strike_gui.label_program_core": "Program Core",
@@ -6146,6 +6324,7 @@
       "gui.helldivers.eagle_strafing_gui.button_eagle_smoke_strike1": "Eagle Strafing Run",
       "gui.helldivers.eagle_napalm_gui.button_eagle_napalm_strike": "Eagle Napalm Strike",
       "block.helldivers.terminidstone": "Terminid Stone",
+      "block.helldivers.automatonfactorywall": "Automaton Factory Stairs",
       "item.helldivers.armed_support_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.democraciteingot": "Democracite Ingot",
       "gui.helldivers.orbital_rail_cannon_gui.button_orbital_railcannon": "Orbital Railcannon",
@@ -6195,6 +6374,7 @@
       "item.helldivers.rocketpod": "Rocket Pod",
       "gui.helldivers.eagle_napalm_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
       "block.helldivers.terminidwall": "Terminid Wall",
+      "block.helldivers.automatonspawner": "Automaton Spawner",
       "gui.helldivers.orbital_gas_gui.label_program_core": "Program Core",
       "gui.helldivers.eagle_napalm_gui.label_program_core": "Program Core",
       "item.helldivers.eagle_110_mm_rocket_pod": "Eagle 110MM Rocket Pod",
@@ -6230,6 +6410,7 @@
       "gui.helldivers.ammoboxgui.label_ammo_box": "Ammo Box",
       "entity.helldivers.eagle_strike_bomb_entity": "Eagle Strike Bomb",
       "item.helldivers.purifiede_710": "Purified E-710",
+      "block.helldivers.automatonfactorystair": "Automaton Factory Stairs",
       "item.helldivers.stim": "Stim",
       "gui.helldivers.orbital_120_mmgui.button_orbital_railcannon": "Orbital 120MM Barrage",
       "item_group.helldivers.helldivers": "Helldivers",
@@ -6247,6 +6428,7 @@
       "subtitles.ar23_reload": "Gun reloads",
       "subtitles.ar23_dry_fire": "Gun clicks",
       "item.helldivers.heavy_fs_23_leggings": "FS-23 Leggings",
+      "block.helldivers.automatonfactoryslab": "Automaton Factory Stairs",
       "block.helldivers.automatoncontactmine": "Contact Mine",
       "gui.helldivers.eagle_smoke_recipe.button_eagle_cluster_bomb": "Eagle 500KG Strike",
       "gui.helldivers.orbital_gas_gui.button_orbital_precision_strike": "Orbital Gattling Barrage",
@@ -6263,7 +6445,8 @@
       "item.helldivers.commisar_spawn_egg": "Commisar Spawn Egg",
       "entity.helldivers.commisar": "Commisar",
       "item.helldivers.orbitallaser_spawn_egg": "Orbital Laser Spawn Egg",
-      "item.helldivers.automatonbullet": "Automatonbullet"
+      "item.helldivers.automatonbullet": "Automatonbullet",
+      "block.helldivers.powered_automaton_spawner": "Powered Automaton Spawner"
     }
   },
   "foldersRoot": {

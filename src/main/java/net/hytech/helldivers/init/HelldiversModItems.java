@@ -138,6 +138,11 @@ public class HelldiversModItems {
 	public static final RegistryObject<LightSC30Item> LIGHT_SC_30_CHESTPLATE = REGISTRY.register("light_sc_30_chestplate", () -> new LightSC30Item(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<LightSC30Item> LIGHT_SC_30_LEGGINGS = REGISTRY.register("light_sc_30_leggings", () -> new LightSC30Item(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<LightSC30Item> LIGHT_SC_30_BOOTS = REGISTRY.register("light_sc_30_boots", () -> new LightSC30Item(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<Item> AUTOMATONFACTORYSTAIR = block(HelldiversModBlocks.AUTOMATONFACTORYSTAIR);
+	public static final RegistryObject<Item> AUTOMATONFACTORYWALL = block(HelldiversModBlocks.AUTOMATONFACTORYWALL);
+	public static final RegistryObject<Item> AUTOMATONFACTORYSLAB = block(HelldiversModBlocks.AUTOMATONFACTORYSLAB);
+	public static final RegistryObject<Item> AUTOMATONSPAWNER = block(HelldiversModBlocks.AUTOMATONSPAWNER);
+	public static final RegistryObject<Item> POWERED_AUTOMATON_SPAWNER = block(HelldiversModBlocks.POWERED_AUTOMATON_SPAWNER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

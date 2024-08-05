@@ -89,6 +89,9 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.LIGHT_SC_30_CHESTPLATE.get());
 				tabData.accept(HelldiversModItems.LIGHT_SC_30_LEGGINGS.get());
 				tabData.accept(HelldiversModItems.LIGHT_SC_30_BOOTS.get());
+				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYSTAIR.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYWALL.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYSLAB.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

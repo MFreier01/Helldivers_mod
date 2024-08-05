@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "helldivers:powered_automaton_spawner",
+    "helldivers:automatonspawner",
     "helldivers:bug_breach_spawner",
     "helldivers:terminiddustspore",
     "helldivers:terminidhive"

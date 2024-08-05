@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "helldivers:automatonfactoryslab",
+    "helldivers:automatonfactorywall",
+    "helldivers:automatonfactorystair",
     "helldivers:democraciteblock",
     "helldivers:democraciteore",
     "helldivers:stratagem_maker",

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "helldivers:block/automaton_spawner",
+    "up": "helldivers:block/automaton_spawner",
+    "north": "helldivers:block/automaton_spawner",
+    "east": "helldivers:block/automaton_spawner",
+    "south": "helldivers:block/automaton_spawner",
+    "west": "helldivers:block/automaton_spawner",
+    "particle": "helldivers:block/automaton_spawner"
+  },
+  "render_type": "solid"
+}

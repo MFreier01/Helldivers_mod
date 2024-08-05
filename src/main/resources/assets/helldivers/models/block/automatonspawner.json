@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "helldivers:block/automaton_spawner",
+    "particle": "helldivers:block/automaton_spawner"
+  },
+  "render_type": "solid"
+}

@@ -16,9 +16,14 @@ import net.hytech.helldivers.block.TerminidreinforcedwallBlock;
 import net.hytech.helldivers.block.TerminidhiveBlock;
 import net.hytech.helldivers.block.TerminiddustsporeBlock;
 import net.hytech.helldivers.block.StratagemMakerBlock;
+import net.hytech.helldivers.block.PoweredAutomatonSpawnerBlock;
 import net.hytech.helldivers.block.DemocraciteoreBlock;
 import net.hytech.helldivers.block.DemocraciteblockBlock;
 import net.hytech.helldivers.block.BugBreachSpawnerBlock;
+import net.hytech.helldivers.block.AutomatonspawnerBlock;
+import net.hytech.helldivers.block.AutomatonfactorywallBlock;
+import net.hytech.helldivers.block.AutomatonfactorystairBlock;
+import net.hytech.helldivers.block.AutomatonfactoryslabBlock;
 import net.hytech.helldivers.block.AutomatoncontactmineBlock;
 import net.hytech.helldivers.block.AutomatonFactorybaseBlock;
 import net.hytech.helldivers.block.AutomatonFactoryTrapdoorBlock;
@@ -42,6 +47,11 @@ public class HelldiversModBlocks {
 	public static final RegistryObject<Block> DEMOCRACITEORE = REGISTRY.register("democraciteore", () -> new DemocraciteoreBlock());
 	public static final RegistryObject<Block> DEMOCRACITEBLOCK = REGISTRY.register("democraciteblock", () -> new DemocraciteblockBlock());
 	public static final RegistryObject<Block> BUG_BREACH_SPAWNER = REGISTRY.register("bug_breach_spawner", () -> new BugBreachSpawnerBlock());
+	public static final RegistryObject<Block> AUTOMATONFACTORYSTAIR = REGISTRY.register("automatonfactorystair", () -> new AutomatonfactorystairBlock());
+	public static final RegistryObject<Block> AUTOMATONFACTORYWALL = REGISTRY.register("automatonfactorywall", () -> new AutomatonfactorywallBlock());
+	public static final RegistryObject<Block> AUTOMATONFACTORYSLAB = REGISTRY.register("automatonfactoryslab", () -> new AutomatonfactoryslabBlock());
+	public static final RegistryObject<Block> AUTOMATONSPAWNER = REGISTRY.register("automatonspawner", () -> new AutomatonspawnerBlock());
+	public static final RegistryObject<Block> POWERED_AUTOMATON_SPAWNER = REGISTRY.register("powered_automaton_spawner", () -> new PoweredAutomatonSpawnerBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
