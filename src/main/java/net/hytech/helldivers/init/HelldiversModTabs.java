@@ -65,6 +65,9 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORYBASE.get().asItem());
 				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORY_DOOR.get().asItem());
 				tabData.accept(HelldiversModBlocks.AUTOMATON_FACTORY_TRAPDOOR.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYSTAIR.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYWALL.get().asItem());
+				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYSLAB.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDHIVE.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDWALL.get().asItem());
 				tabData.accept(HelldiversModBlocks.TERMINIDSTONE.get().asItem());
@@ -89,9 +92,6 @@ public class HelldiversModTabs {
 				tabData.accept(HelldiversModItems.LIGHT_SC_30_CHESTPLATE.get());
 				tabData.accept(HelldiversModItems.LIGHT_SC_30_LEGGINGS.get());
 				tabData.accept(HelldiversModItems.LIGHT_SC_30_BOOTS.get());
-				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYSTAIR.get().asItem());
-				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYWALL.get().asItem());
-				tabData.accept(HelldiversModBlocks.AUTOMATONFACTORYSLAB.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

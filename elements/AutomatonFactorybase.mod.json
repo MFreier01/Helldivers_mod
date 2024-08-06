@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Factory Block",
+    "name": "Automaton Factory Block",
     "specialInformation": {
       "fixedValue": []
     },
@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "MISCELLANEOUS"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
