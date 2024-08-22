@@ -9,12 +9,12 @@ import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
 public class EagleStrikeBombEntityModel extends GeoModel<EagleStrikeBombEntityEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(EagleStrikeBombEntityEntity entity) {
-		return new ResourceLocation("helldivers", "animations/air_strike_bomb.animation.json");
+		return new ResourceLocation("helldivers", "animations/500kg_bomb.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(EagleStrikeBombEntityEntity entity) {
-		return new ResourceLocation("helldivers", "geo/air_strike_bomb.geo.json");
+		return new ResourceLocation("helldivers", "geo/500kg_bomb.geo.json");
 	}
 
 	@Override

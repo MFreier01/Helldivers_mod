@@ -88,5 +88,23 @@
         "stream": false
       }
     ]
+  },
+  "orbital_laser_sound": {
+    "subtitle": "subtitles.orbital_laser_sound",
+    "sounds": [
+      {
+        "name": "helldivers:orbital_laser_sfx",
+        "stream": false
+      }
+    ]
+  },
+  "railcannon_sfx": {
+    "subtitle": "subtitles.railcannon_sfx",
+    "sounds": [
+      {
+        "name": "helldivers:railgun_sfx",
+        "stream": false
+      }
+    ]
   }
 }

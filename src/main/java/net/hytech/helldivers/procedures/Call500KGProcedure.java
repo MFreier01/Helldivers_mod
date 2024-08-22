@@ -25,6 +25,7 @@ public class Call500KGProcedure {
 						entityToSpawn.setKnockback(knockback);
 						entityToSpawn.setSilent(true);
 						entityToSpawn.setCritArrow(true);
+						entityToSpawn.pickup = AbstractArrow.Pickup.ALLOWED;
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);

@@ -18,11 +18,11 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
@@ -44,7 +44,7 @@ import net.hytech.helldivers.init.HelldiversModEntities;
 
 import javax.annotation.Nullable;
 
-public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
+public class EagleStrikeBombEntityEntity extends PathfinderMob implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(EagleStrikeBombEntityEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(EagleStrikeBombEntityEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(EagleStrikeBombEntityEntity.class, EntityDataSerializers.STRING);
@@ -62,7 +62,7 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(true);
-		setMaxUpStep(0.3f);
+		setMaxUpStep(0f);
 		setPersistenceRequired();
 	}
 
@@ -89,7 +89,7 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 
 	@Override
 	public MobType getMobType() {
-		return MobType.ARTHROPOD;
+		return MobType.UNDEFINED;
 	}
 
 	@Override
@@ -159,12 +159,18 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 		return super.getDimensions(p_33597_).scale((float) 1);
 	}
 
+	@Override
+	public void aiStep() {
+		super.aiStep();
+		this.updateSwingTime();
+	}
+
 	public static void init() {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.01);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
 		builder = builder.add(Attributes.MAX_HEALTH, 1);
 		builder = builder.add(Attributes.ARMOR, 2.5);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
@@ -174,7 +180,7 @@ public class EagleStrikeBombEntityEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.eagle_strike.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.500kg_bomb.idle"));
 		}
 		return PlayState.STOP;
 	}

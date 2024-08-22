@@ -1,0 +1,26 @@
+{
+  "name": "helldivers:automaton_factory",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "helldivers:automaton_factory",
+        "projection": "rigid",
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

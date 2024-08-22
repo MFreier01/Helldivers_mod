@@ -8,6 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
+import net.hytech.helldivers.init.HelldiversModBlocks;
 import net.hytech.helldivers.HelldiversMod;
 
 import java.util.List;
@@ -24,21 +25,8 @@ public class NapalmFireProcedure {
 				entityiterator.setSecondsOnFire(15);
 			}
 		}
-		world.setBlock(BlockPos.containing(x + 0, y + 1, z + 0), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 1, y + 1, z + 0), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 0, y + 1, z + 0), Blocks.LAVA.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 0, y + 1, z + 1), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 1, y + 1, z + 1), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + -1, y + 1, z + 0), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 0, y + 1, z + -1), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + -1, y + 1, z + -1), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 2, y + 1, z + 2), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 0, y + 1, z + 2), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 2, y + 1, z + 0), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + -2, y + 1, z + -2), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + -2, y + 1, z + 0), Blocks.FIRE.defaultBlockState(), 3);
-		world.setBlock(BlockPos.containing(x + 0, y + 1, z + -2), Blocks.FIRE.defaultBlockState(), 3);
-		HelldiversMod.queueServerWork(300, () -> {
+		world.setBlock(BlockPos.containing(x + 0, y + 1, z + 0), HelldiversModBlocks.NAPALM.get().defaultBlockState(), 3);
+		HelldiversMod.queueServerWork(90, () -> {
 			world.setBlock(BlockPos.containing(x + 0, y + 1, z + 0), Blocks.AIR.defaultBlockState(), 3);
 		});
 	}

@@ -17,12 +17,14 @@ import net.hytech.helldivers.client.renderer.TerminidStalkerRenderer;
 import net.hytech.helldivers.client.renderer.TerminidShriekerRenderer;
 import net.hytech.helldivers.client.renderer.TerminidScavengerRenderer;
 import net.hytech.helldivers.client.renderer.StaticFragGrenadeRenderer;
+import net.hytech.helldivers.client.renderer.SmallautomatonturretRenderer;
 import net.hytech.helldivers.client.renderer.RailbeamRenderer;
 import net.hytech.helldivers.client.renderer.OrbitallaserRenderer;
 import net.hytech.helldivers.client.renderer.HulkRenderer;
 import net.hytech.helldivers.client.renderer.HellpodRenderer;
 import net.hytech.helldivers.client.renderer.EagleStrikeBombEntityRenderer;
 import net.hytech.helldivers.client.renderer.CommisarRenderer;
+import net.hytech.helldivers.client.renderer.AutomatoncannonRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HelldiversModEntityRenderers {
@@ -60,5 +62,7 @@ public class HelldiversModEntityRenderers {
 		event.registerEntityRenderer(HelldiversModEntities.TROOPER.get(), TrooperRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.TERMINID_STALKER.get(), TerminidStalkerRenderer::new);
 		event.registerEntityRenderer(HelldiversModEntities.EAGLESMOKESTRIKEPROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.AUTOMATONCANNON.get(), AutomatoncannonRenderer::new);
+		event.registerEntityRenderer(HelldiversModEntities.SMALLAUTOMATONTURRET.get(), SmallautomatonturretRenderer::new);
 	}
 }

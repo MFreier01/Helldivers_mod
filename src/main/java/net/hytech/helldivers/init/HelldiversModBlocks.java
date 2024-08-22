@@ -17,6 +17,7 @@ import net.hytech.helldivers.block.TerminidhiveBlock;
 import net.hytech.helldivers.block.TerminiddustsporeBlock;
 import net.hytech.helldivers.block.StratagemMakerBlock;
 import net.hytech.helldivers.block.PoweredAutomatonSpawnerBlock;
+import net.hytech.helldivers.block.NapalmBlock;
 import net.hytech.helldivers.block.DemocraciteoreBlock;
 import net.hytech.helldivers.block.DemocraciteblockBlock;
 import net.hytech.helldivers.block.BugBreachSpawnerBlock;
@@ -52,6 +53,7 @@ public class HelldiversModBlocks {
 	public static final RegistryObject<Block> AUTOMATONFACTORYSLAB = REGISTRY.register("automatonfactoryslab", () -> new AutomatonfactoryslabBlock());
 	public static final RegistryObject<Block> AUTOMATONSPAWNER = REGISTRY.register("automatonspawner", () -> new AutomatonspawnerBlock());
 	public static final RegistryObject<Block> POWERED_AUTOMATON_SPAWNER = REGISTRY.register("powered_automaton_spawner", () -> new PoweredAutomatonSpawnerBlock());
+	public static final RegistryObject<Block> NAPALM = REGISTRY.register("napalm", () -> new NapalmBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

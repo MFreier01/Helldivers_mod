@@ -1,0 +1,51 @@
+{
+  "_fv": 60,
+  "_type": "fluid",
+  "definition": {
+    "name": "Napalm",
+    "bucketName": "Bucket of Napalm",
+    "textureStill": "napalm_still",
+    "textureFlowing": "napalm_flowing",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 7,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": true,
+    "dripParticle": {
+      "value": "CUSTOM:RedBeam"
+    },
+    "flowStrength": 2.0,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 2000,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "emptySound": {
+      "value": "item.bucket.empty_lava"
+    },
+    "rarity": "EPIC",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 98.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": true,
+    "tickRate": 0,
+    "flammability": 1,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
+    "onNeighbourChanges": {
+      "name": "Napalm_Set_Ground_On_Fire"
+    },
+    "onEntityCollides": {
+      "name": "Set_On_Fire_From_Napalm"
+    }
+  }
+}

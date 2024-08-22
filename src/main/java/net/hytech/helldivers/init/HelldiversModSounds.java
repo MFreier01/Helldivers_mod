@@ -25,4 +25,6 @@ public class HelldiversModSounds {
 	public static final RegistryObject<SoundEvent> SG225_DRY_FIRE = REGISTRY.register("sg225_dry_fire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("helldivers", "sg225_dry_fire")));
 	public static final RegistryObject<SoundEvent> APW1_SHOOT = REGISTRY.register("apw1_shoot", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("helldivers", "apw1_shoot")));
 	public static final RegistryObject<SoundEvent> AWP1_DRY_FIRE = REGISTRY.register("awp1_dry_fire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("helldivers", "awp1_dry_fire")));
+	public static final RegistryObject<SoundEvent> ORBITAL_LASER_SOUND = REGISTRY.register("orbital_laser_sound", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("helldivers", "orbital_laser_sound")));
+	public static final RegistryObject<SoundEvent> RAILCANNON_SFX = REGISTRY.register("railcannon_sfx", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("helldivers", "railcannon_sfx")));
 }

@@ -22,6 +22,8 @@ import net.hytech.helldivers.init.HelldiversModSounds;
 import net.hytech.helldivers.init.HelldiversModParticleTypes;
 import net.hytech.helldivers.init.HelldiversModMenus;
 import net.hytech.helldivers.init.HelldiversModItems;
+import net.hytech.helldivers.init.HelldiversModFluids;
+import net.hytech.helldivers.init.HelldiversModFluidTypes;
 import net.hytech.helldivers.init.HelldiversModEntities;
 import net.hytech.helldivers.init.HelldiversModBlocks;
 import net.hytech.helldivers.init.HelldiversModBlockEntities;
@@ -56,6 +58,8 @@ public class HelldiversMod {
 		HelldiversModParticleTypes.REGISTRY.register(bus);
 
 		HelldiversModMenus.REGISTRY.register(bus);
+		HelldiversModFluids.REGISTRY.register(bus);
+		HelldiversModFluidTypes.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

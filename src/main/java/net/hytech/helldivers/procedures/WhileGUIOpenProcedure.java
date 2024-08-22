@@ -32,6 +32,13 @@ public class WhileGUIOpenProcedure {
 				((Slot) _slots.get((int) outputSlot)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
+		} else if (Eagle500KGRecipeProcedure.execute(entity)) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(HelldiversModItems.EAGLE_500_KG.get()).copy();
+				_setstack.setCount(1);
+				((Slot) _slots.get((int) outputSlot)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
 		} else if (EagleClusterBombRecipeProcedure.execute(entity)) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(HelldiversModItems.EAGLE_CLUSTER_BOMB.get()).copy();

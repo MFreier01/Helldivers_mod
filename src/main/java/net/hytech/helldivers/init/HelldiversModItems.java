@@ -33,6 +33,7 @@ import net.hytech.helldivers.item.OrbitalAirburstItem;
 import net.hytech.helldivers.item.Orbital380MMHEBarrageItem;
 import net.hytech.helldivers.item.Orbital120MMHEBarrageItem;
 import net.hytech.helldivers.item.NapalmProjectileItem;
+import net.hytech.helldivers.item.NapalmItem;
 import net.hytech.helldivers.item.M105StalwartItem;
 import net.hytech.helldivers.item.LightSC30Item;
 import net.hytech.helldivers.item.HellpodItemItem;
@@ -143,6 +144,8 @@ public class HelldiversModItems {
 	public static final RegistryObject<Item> AUTOMATONFACTORYSLAB = block(HelldiversModBlocks.AUTOMATONFACTORYSLAB);
 	public static final RegistryObject<Item> AUTOMATONSPAWNER = block(HelldiversModBlocks.AUTOMATONSPAWNER);
 	public static final RegistryObject<Item> POWERED_AUTOMATON_SPAWNER = block(HelldiversModBlocks.POWERED_AUTOMATON_SPAWNER);
+	public static final RegistryObject<Item> NAPALM_BUCKET = REGISTRY.register("napalm_bucket", () -> new NapalmItem());
+	public static final RegistryObject<Item> SMALLAUTOMATONTURRET_SPAWN_EGG = REGISTRY.register("smallautomatonturret_spawn_egg", () -> new ForgeSpawnEggItem(HelldiversModEntities.SMALLAUTOMATONTURRET, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

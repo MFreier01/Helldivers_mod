@@ -10,12 +10,14 @@ import net.hytech.helldivers.entity.TerminidStalkerEntity;
 import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
+import net.hytech.helldivers.entity.SmallautomatonturretEntity;
 import net.hytech.helldivers.entity.RailbeamEntity;
 import net.hytech.helldivers.entity.OrbitallaserEntity;
 import net.hytech.helldivers.entity.HulkEntity;
 import net.hytech.helldivers.entity.HellpodEntity;
 import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
 import net.hytech.helldivers.entity.CommisarEntity;
+import net.hytech.helldivers.entity.AutomatoncannonEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -100,6 +102,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof TerminidStalkerEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof AutomatoncannonEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SmallautomatonturretEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -4,6 +4,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.SimpleParticleType;
 
@@ -28,7 +30,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 10), (y + 100), (z + 10));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -45,7 +47,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + -10), (y + 100), (z + 10));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -60,7 +62,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 10), (y + 100), (z + -10));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -77,7 +79,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 0), (y + 100), (z + 0));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -92,7 +94,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 0), (y + 100), (z + 10));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -107,7 +109,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 5), (y + 100), (z + 5));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -124,7 +126,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 0), (y + 100), (z + 4));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -141,7 +143,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 8), (y + 100), (z + 10));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -156,7 +158,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 12), (y + 100), (z + 8));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -173,7 +175,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 8), (y + 100), (z + 7));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -188,7 +190,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 8), (y + 100), (z + 7));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -205,7 +207,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 1), (y + 100), (z + 0));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -222,7 +224,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 4), (y + 100), (z + 10));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -239,7 +241,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 1), (y + 100), (z + 6));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -256,7 +258,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 10), (y + 100), (z + 10));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -271,7 +273,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 8), (y + 100), (z + 7));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -288,7 +290,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 11), (y + 100), (z + 6));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -305,7 +307,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 7), (y + 100), (z + 7));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -320,7 +322,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 5), (y + 100), (z + 6));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -335,7 +337,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 8), (y + 100), (z + 7));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -352,7 +354,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 1), (y + 100), (z + 8));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
@@ -369,7 +371,7 @@ public class Call120MMBarrageProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 5, 1);
-				_entityToSpawn.setPos((x + 4), (y + 100), (z + 8));
+				_entityToSpawn.setPos((x + Mth.nextInt(RandomSource.create(), -10, 10)), (y + 100), (z + Mth.nextInt(RandomSource.create(), -10, 10)));
 				_entityToSpawn.shoot(0, (-1), 0, 4, 5);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}

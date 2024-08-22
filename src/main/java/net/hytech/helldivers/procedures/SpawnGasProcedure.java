@@ -25,7 +25,9 @@ public class SpawnGasProcedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(15 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+					_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 3, true, true));
+				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2, true, true));
 			}
 		}
 		HelldiversMod.queueServerWork(20, () -> {
@@ -34,7 +36,9 @@ public class SpawnGasProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 2, true, true));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2, true, true));
 				}
 			}
 		});
@@ -44,7 +48,9 @@ public class SpawnGasProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 2, true, true));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2, true, true));
 				}
 			}
 		});
@@ -54,7 +60,9 @@ public class SpawnGasProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 2, true, true));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2, true, true));
 				}
 			}
 		});
@@ -64,7 +72,9 @@ public class SpawnGasProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 2, true, true));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2, true, true));
 				}
 			}
 		});
@@ -74,7 +84,9 @@ public class SpawnGasProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 2, true, true));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2, true, true));
 				}
 			}
 		});
@@ -84,7 +96,9 @@ public class SpawnGasProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 2, true, true));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2, true, true));
 				}
 			}
 		});
@@ -95,6 +109,8 @@ public class SpawnGasProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, 1, true, true));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 1, true, true));
 				}
 			}
 		});

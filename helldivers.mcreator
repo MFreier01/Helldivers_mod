@@ -943,10 +943,10 @@
       "registry_name": "air_strike_bomb_item",
       "metadata": {
         "files": [
-          "src/main/resources/assets/helldivers/models/item/air_strike_bomb_item.json",
-          "src/main/java/net/hytech/helldivers/item/AirStrikeBombItemItem.java",
+          "src/main/java/net/hytech/helldivers/item/renderer/AirStrikeBombItemItemRenderer.java",
           "src/main/java/net/hytech/helldivers/item/model/AirStrikeBombItemItemModel.java",
-          "src/main/java/net/hytech/helldivers/item/renderer/AirStrikeBombItemItemRenderer.java"
+          "src/main/resources/assets/helldivers/models/item/air_strike_bomb_item.json",
+          "src/main/java/net/hytech/helldivers/item/AirStrikeBombItemItem.java"
         ]
       },
       "path": "~/Stratagems/Stratagems/Eagle_Air_Strike"
@@ -1042,9 +1042,9 @@
       "registry_name": "eagle_strike_bomb_entity",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/client/renderer/EagleStrikeBombEntityRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/EagleStrikeBombEntityEntity.java",
           "src/main/java/net/hytech/helldivers/entity/model/EagleStrikeBombEntityModel.java",
-          "src/main/java/net/hytech/helldivers/entity/EagleStrikeBombEntityEntity.java"
+          "src/main/java/net/hytech/helldivers/client/renderer/EagleStrikeBombEntityRenderer.java"
         ]
       },
       "path": "~/Entity"
@@ -1833,9 +1833,6 @@
       "locked_code": false,
       "registry_name": "call_500_kg",
       "metadata": {
-        "files": [
-          "src/main/java/net/hytech/helldivers/procedures/Call500KGProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "x",
@@ -2239,10 +2236,10 @@
       "registry_name": "railbeam",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/entity/model/RailbeamModel.java",
           "src/main/java/net/hytech/helldivers/client/renderer/RailbeamRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/layer/RailbeamLayer.java",
-          "src/main/java/net/hytech/helldivers/entity/RailbeamEntity.java"
+          "src/main/java/net/hytech/helldivers/entity/RailbeamEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/RailbeamModel.java"
         ]
       },
       "path": "~/Stratagems/Stratagems/Rail_Cannon_Strike"
@@ -2626,6 +2623,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -2682,6 +2691,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -2698,9 +2719,9 @@
       "registry_name": "orbitallaser",
       "metadata": {
         "files": [
-          "src/main/java/net/hytech/helldivers/entity/OrbitallaserEntity.java",
           "src/main/java/net/hytech/helldivers/client/renderer/OrbitallaserRenderer.java",
           "src/main/java/net/hytech/helldivers/entity/layer/OrbitallaserLayer.java",
+          "src/main/java/net/hytech/helldivers/entity/OrbitallaserEntity.java",
           "src/main/java/net/hytech/helldivers/entity/model/OrbitallaserModel.java"
         ]
       },
@@ -6052,12 +6073,162 @@
       "registry_name": "smallautomatonoutpost",
       "metadata": {
         "files": [
+          "src/main/resources/data/helldivers/worldgen/structure_set/smallautomatonoutpost.json",
           "src/main/resources/data/helldivers/worldgen/structure/smallautomatonoutpost.json",
-          "src/main/resources/data/helldivers/worldgen/template_pool/smallautomatonoutpost.json",
-          "src/main/resources/data/helldivers/worldgen/structure_set/smallautomatonoutpost.json"
+          "src/main/resources/data/helldivers/worldgen/template_pool/smallautomatonoutpost.json"
         ]
       },
       "path": "~/BiomesandStructures"
+    },
+    {
+      "name": "AutomatonFactory",
+      "type": "structure",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automaton_factory",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/helldivers/worldgen/template_pool/automaton_factory.json",
+          "src/main/resources/data/helldivers/worldgen/structure_set/automaton_factory.json",
+          "src/main/resources/data/helldivers/worldgen/structure/automaton_factory.json"
+        ]
+      },
+      "path": "~/BiomesandStructures"
+    },
+    {
+      "name": "Automatoncannon",
+      "type": "animatedentity",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatoncannon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/entity/layer/AutomatoncannonLayer.java",
+          "src/main/java/net/hytech/helldivers/entity/AutomatoncannonEntity.java",
+          "src/main/java/net/hytech/helldivers/client/renderer/AutomatoncannonRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/model/AutomatoncannonModel.java"
+        ]
+      },
+      "path": "~/Entity/Automaton"
+    },
+    {
+      "name": "Set_On_Fire_From_Napalm",
+      "type": "procedure",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_on_fire_from_napalm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Set_On_Fire_From_NapalmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Napalm_Strike"
+    },
+    {
+      "name": "Napalm",
+      "type": "fluid",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/block/NapalmBlock.java",
+          "src/main/resources/assets/helldivers/blockstates/napalm.json",
+          "src/main/resources/assets/helldivers/models/item/napalm_bucket.json",
+          "src/main/resources/assets/helldivers/models/block/napalm.json",
+          "src/main/java/net/hytech/helldivers/item/NapalmItem.java",
+          "src/main/java/net/hytech/helldivers/fluid/NapalmFluid.java",
+          "src/main/java/net/hytech/helldivers/fluid/types/NapalmFluidType.java"
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Napalm_Strike"
+    },
+    {
+      "name": "Napalm_Set_Ground_On_Fire",
+      "type": "procedure",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "napalm_set_ground_on_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Napalm_Set_Ground_On_FireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stratagems/Stratagems/Eagle_Napalm_Strike"
+    },
+    {
+      "name": "Smallautomatonturret",
+      "type": "animatedentity",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smallautomatonturret",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/helldivers/models/item/smallautomatonturret_spawn_egg.json",
+          "src/main/java/net/hytech/helldivers/client/renderer/SmallautomatonturretRenderer.java",
+          "src/main/java/net/hytech/helldivers/entity/SmallautomatonturretEntity.java",
+          "src/main/java/net/hytech/helldivers/entity/model/SmallautomatonturretModel.java"
+        ]
+      },
+      "path": "~/Entity/Automaton/Turrets"
+    },
+    {
+      "name": "Small_Turret_Shoot",
+      "type": "procedure",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_turret_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hytech/helldivers/procedures/Small_Turret_ShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entity/Automaton/Turrets"
     }
   ],
   "variable_elements": [
@@ -6190,6 +6361,22 @@
       ],
       "category": "neutral",
       "subtitle": "Gun clicks"
+    },
+    {
+      "name": "orbital_laser_sound",
+      "files": [
+        "orbital_laser_sfx"
+      ],
+      "category": "hostile",
+      "subtitle": "Orbital Laser burns"
+    },
+    {
+      "name": "railcannon_sfx",
+      "files": [
+        "railgun_sfx"
+      ],
+      "category": "neutral",
+      "subtitle": "Railcannon fires"
     }
   ],
   "tag_elements": {
@@ -6199,6 +6386,16 @@
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:Democraciteblock",
       "~CUSTOM:Democraciteore"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Napalm"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:PoweredAutomatonSpawner",
+      "~CUSTOM:Automatonspawner",
+      "~CUSTOM:BugBreachSpawner",
+      "~CUSTOM:Terminiddustspore",
+      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:helldivers:stratagem_item": [
       "CUSTOM:EagleAirStrike",
@@ -6219,13 +6416,6 @@
       "CUSTOM:OrbitalGasStrike",
       "CUSTOM:OrbitalGattlingBarrage",
       "CUSTOM:EagleNapalmStrike"
-    ],
-    "BLOCKS:minecraft:mineable/hoe": [
-      "~CUSTOM:PoweredAutomatonSpawner",
-      "~CUSTOM:Automatonspawner",
-      "~CUSTOM:BugBreachSpawner",
-      "~CUSTOM:Terminiddustspore",
-      "~CUSTOM:Terminidhive"
     ],
     "ITEMS:mod:stratagem_recipe_block": [
       "CUSTOM:Democraciteblock"
@@ -6311,6 +6501,7 @@
       "gui.helldivers.eagle_air_strike_gui.label_eagle_air_strike": "Eagle Air Strike",
       "gui.helldivers.orbital_precision_strike_gui.label_program_core": "Program Core",
       "gui.helldivers.orbital_precision_strike_gui.button_orbital_railcannon": "Orbital EMS Strike",
+      "item.helldivers.smallautomatonturret_spawn_egg": "Small Automaton Turret Spawn Egg",
       "item.helldivers.eagle_air_strike": "Eagle Air Strike",
       "item.helldivers.sg_225_breaker": "SG-225 Breaker",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.label_eagle_air_strike": "Eagle 110MM Rocket Pod",
@@ -6328,6 +6519,7 @@
       "item.helldivers.orbital_rail_cannon_strike": "Orbital Rail Cannon Strike",
       "item.helldivers.heavy_fs_23_boots": "FS-23 Boots",
       "gui.helldivers.orbital_laser_gui.button_orbital_railcannon": "Orbital Laser",
+      "block.helldivers.napalm": "Napalm",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_110mm": "Eagle 110MM",
       "item.helldivers.light_sc_30_leggings": "SC-30 Leggings",
       "gui.helldivers.orbital_walking_barrage_gui.button_orbital_precision_strike": "Orbital Walking Barrage",
@@ -6335,6 +6527,7 @@
       "entity.helldivers.terminid_scavenger": "Scavenger",
       "gui.helldivers.eagle_110_mm_rocket_pod_gui.button_eagle_110mm_rocket_pod": "Eagle 110MM Rocket Pod",
       "subtitles.m105_reload": "Gun reload",
+      "subtitles.railcannon_sfx": "Railcannon fires",
       "item.helldivers.orbital_precision_strike": "Orbital Precision Strike",
       "entity.helldivers.terminid_shrieker": "Shrieker",
       "item.helldivers.eagle_strafing_run": "Eagle Strafing Run",
@@ -6351,6 +6544,7 @@
       "gui.helldivers.call_stratagems.Eagle_Air_Strike": "Eagle Air Strike",
       "item.helldivers.stratagemcore": "Stratagem Core",
       "entity.helldivers.trooper": "Trooper",
+      "item.helldivers.automatoncannon_spawn_egg": "Automaton Cannon Spawn Egg",
       "gui.helldivers.eagle_strafing_gui.button_eagle_smoke_strike1": "Eagle Strafing Run",
       "gui.helldivers.eagle_napalm_gui.button_eagle_napalm_strike": "Eagle Napalm Strike",
       "block.helldivers.terminidstone": "Terminid Stone",
@@ -6363,20 +6557,23 @@
       "key.helldivers.open_menu_keybind": "Open Menu Keybind",
       "block.helldivers.democraciteblock": "Democracite Block",
       "gui.helldivers.call_stratagems.button_eagle_500kg_strike": "Eagle 500KG Strike",
+      "item.helldivers.napalm_bucket": "Bucket of Napalm",
       "gui.helldivers.orbital_380_mmgui.label_program_core": "Program Core",
       "item.helldivers.hellpod_spawn_egg": "Hellpod Spawn Egg",
       "key.helldivers.full_auto": "Full Auto Fire",
-      "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle Strike Bomb Spawn Egg",
+      "item.helldivers.eagle_strike_bomb_entity_spawn_egg": "Eagle 500kg Bomb Spawn Egg",
       "key.helldivers.reload_key": "Reload Key",
       "gui.helldivers.orbital_rail_cannon_gui.button_eagle_smoke_strike1": "Eagle Strafing Run",
       "item.helldivers.terminid_scavenger_spawn_egg": "Scavenger Spawn Egg",
       "gui.helldivers.eagle_air_strike_gui.button_eagle_air": "Eagle Air",
       "gui.helldivers.eagle_500_kggui.label_program_core": "Program Core",
+      "fluid.helldivers.napalm": "Napalm",
       "item.helldivers.hellpod_item": "Hellpod Item",
       "biome.helldivers.on_ship_biome": "On Ship",
       "gui.helldivers.stratagem_maker_choose_gui.button_build_stratagem": "Build Stratagem    ",
       "item.helldivers.armed_attack_stratagem_orb": "Armed Stratagem Orb",
       "item.helldivers.orbital_gas_strike": "Orbital Gas Strike",
+      "subtitles.orbital_laser_sound": "Orbital Laser burns",
       "gui.helldivers.orbital_airburst_gui.label_program_core": "Program Core",
       "item.helldivers.e_710": "Raw E-710",
       "item.helldivers.orbital_laser_item": "Orbital Laser",
@@ -6395,10 +6592,12 @@
       "gui.helldivers.orbital_laser_gui.label_program_core": "Program Core",
       "entity.helldivers.hulk": "Hulk",
       "item.helldivers.orbital_120_mmhe_barrage": "Orbital 120MM HE Barrage",
+      "entity.helldivers.smallautomatonturret": "Small Automaton Turret",
       "subtitles.shotgun_shot": "Gun shot",
       "subtitles.amr_shot": "Gun shot",
       "item.helldivers.light_sc_30_helmet": "SC-30 Helmet",
       "item.helldivers.terminid_shrieker_spawn_egg": "Shrieker Spawn Egg",
+      "entity.helldivers.automatoncannon": "Automaton Cannon",
       "block.helldivers.stratagem_maker": "Stratagem Maker",
       "gui.helldivers.eagle_napalm_gui.label_eagle_napalm_strike": "Eagle Napalm Strike",
       "item.helldivers.rocketpod": "Rocket Pod",
@@ -6438,7 +6637,7 @@
       "item.helldivers.frag_grenade": "Frag Grenade",
       "block.helldivers.automaton_factory_trapdoor": "Automaton Factory Trapdoor",
       "gui.helldivers.ammoboxgui.label_ammo_box": "Ammo Box",
-      "entity.helldivers.eagle_strike_bomb_entity": "Eagle Strike Bomb",
+      "entity.helldivers.eagle_strike_bomb_entity": "Eagle 500kg Bomb",
       "item.helldivers.purifiede_710": "Purified E-710",
       "block.helldivers.automatonfactorystair": "Automaton Factory Stairs",
       "item.helldivers.stim": "Stim",
@@ -6529,7 +6728,12 @@
           },
           {
             "name": "Automaton",
-            "children": []
+            "children": [
+              {
+                "name": "Turrets",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -6697,7 +6901,7 @@
   "workspaceSettings": {
     "modid": "helldivers",
     "modName": "Helldivers",
-    "version": "0.0.5",
+    "version": "0.0.55",
     "description": "Distribute Managed Democracy across the world!",
     "author": "HyTech01",
     "websiteURL": "https://www.youtube.com/c/HyTechInc",

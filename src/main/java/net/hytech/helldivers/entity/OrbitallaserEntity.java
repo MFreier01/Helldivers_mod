@@ -70,7 +70,7 @@ public class OrbitallaserEntity extends PathfinderMob implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setMaxUpStep(0.6f);
+		setMaxUpStep(10f);
 	}
 
 	@Override
@@ -151,7 +151,7 @@ public class OrbitallaserEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		Orbital_laser_despawnProcedure.execute(world, this);
+		Orbital_laser_despawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 

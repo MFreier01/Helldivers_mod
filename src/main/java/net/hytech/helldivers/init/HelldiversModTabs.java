@@ -98,6 +98,7 @@ public class HelldiversModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(HelldiversModItems.BULLET_ITEM.get());
+			tabData.accept(HelldiversModItems.SMALLAUTOMATONTURRET_SPAWN_EGG.get());
 		}
 	}
 }

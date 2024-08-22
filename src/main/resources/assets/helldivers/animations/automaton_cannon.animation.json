@@ -1,0 +1,47 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.automaton_cannon.idle": {
+			"loop": true,
+			"bones": {
+				"barrel": {
+					"rotation": {
+						"vector": [15, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.automaton_cannon.lower_barrel": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5,
+			"bones": {
+				"barrel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [20, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.automaton_cannon.raise_barrel": {
+			"animation_length": 1.5,
+			"bones": {
+				"barrel": {
+					"rotation": {
+						"0.0": {
+							"vector": [20, 0, 0]
+						},
+						"1.5": {
+							"vector": [5, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

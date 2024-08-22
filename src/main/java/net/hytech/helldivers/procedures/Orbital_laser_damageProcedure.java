@@ -15,39 +15,28 @@ import java.util.Comparator;
 
 public class Orbital_laser_damageProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		double height = 0;
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, x, y, z, 1, 2, 2, 2, 1);
 		{
 			final Vec3 _center = new Vec3(x, y, z);
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
-				entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION)), 1);
+				entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION)), 2);
 				entityiterator.setSecondsOnFire(2);
 			}
 		}
-		{
-			final Vec3 _center = new Vec3(x, (y + 1), z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
-				entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION)), 1);
-				entityiterator.setSecondsOnFire(2);
+		height = 1;
+		for (int index0 = 0; index0 < 30; index0++) {
+			{
+				final Vec3 _center = new Vec3(x, (y + height), z);
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				for (Entity entityiterator : _entfound) {
+					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION)), 2);
+					entityiterator.setSecondsOnFire(2);
+				}
 			}
-		}
-		{
-			final Vec3 _center = new Vec3(x, (y + 2), z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
-				entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION)), 1);
-				entityiterator.setSecondsOnFire(2);
-			}
-		}
-		{
-			final Vec3 _center = new Vec3(x, (y + 3), z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
-				entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION)), 1);
-				entityiterator.setSecondsOnFire(2);
-			}
+			height = 1 + height;
 		}
 	}
 }

@@ -25,6 +25,7 @@ import net.hytech.helldivers.entity.TerminidShriekerEntity;
 import net.hytech.helldivers.entity.TerminidScavengerEntity;
 import net.hytech.helldivers.entity.StrafingRunProjectileEntity;
 import net.hytech.helldivers.entity.StaticFragGrenadeEntity;
+import net.hytech.helldivers.entity.SmallautomatonturretEntity;
 import net.hytech.helldivers.entity.RocketPodProjectileEntity;
 import net.hytech.helldivers.entity.RailcannonstrikeprojectileEntity;
 import net.hytech.helldivers.entity.RailbeamEntity;
@@ -45,6 +46,7 @@ import net.hytech.helldivers.entity.EagleStrikeBombEntityEntity;
 import net.hytech.helldivers.entity.CommisarEntity;
 import net.hytech.helldivers.entity.BileSpewProjectileEntity;
 import net.hytech.helldivers.entity.BasicBulletEntity;
+import net.hytech.helldivers.entity.AutomatoncannonEntity;
 import net.hytech.helldivers.entity.AutomatonbulletprojectileEntity;
 import net.hytech.helldivers.entity.AirburstProjectileEntity;
 import net.hytech.helldivers.entity.AirStrikeBombEntity;
@@ -75,7 +77,7 @@ public class HelldiversModEntities {
 			EntityType.Builder.<AirStrikeBombEntity>of(AirStrikeBombEntity::new, MobCategory.MISC).setCustomClientFactory(AirStrikeBombEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<Projectile500KGEntity>> PROJECTILE_500_KG = register("projectile_500_kg", EntityType.Builder.<Projectile500KGEntity>of(Projectile500KGEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(Projectile500KGEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<EagleStrikeBombEntityEntity>> EAGLE_STRIKE_BOMB_ENTITY = register("eagle_strike_bomb_entity", EntityType.Builder.<EagleStrikeBombEntityEntity>of(EagleStrikeBombEntityEntity::new, MobCategory.MONSTER)
+	public static final RegistryObject<EntityType<EagleStrikeBombEntityEntity>> EAGLE_STRIKE_BOMB_ENTITY = register("eagle_strike_bomb_entity", EntityType.Builder.<EagleStrikeBombEntityEntity>of(EagleStrikeBombEntityEntity::new, MobCategory.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EagleStrikeBombEntityEntity::new).fireImmune().sized(1f, 0.5f));
 	public static final RegistryObject<EntityType<HellpodEntity>> HELLPOD = register("hellpod",
 			EntityType.Builder.<HellpodEntity>of(HellpodEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HellpodEntity::new).fireImmune().sized(1f, 0.2f));
@@ -110,7 +112,7 @@ public class HelldiversModEntities {
 	public static final RegistryObject<EntityType<StrafingRunProjectileEntity>> STRAFING_RUN_PROJECTILE = register("strafing_run_projectile", EntityType.Builder.<StrafingRunProjectileEntity>of(StrafingRunProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(StrafingRunProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<OrbitallaserEntity>> ORBITALLASER = register("orbitallaser", EntityType.Builder.<OrbitallaserEntity>of(OrbitallaserEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OrbitallaserEntity::new).fireImmune().sized(0.6f, 0.2f));
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OrbitallaserEntity::new).fireImmune().sized(0.6f, 200f));
 	public static final RegistryObject<EntityType<AirburstProjectileEntity>> AIRBURST_PROJECTILE = register("airburst_projectile", EntityType.Builder.<AirburstProjectileEntity>of(AirburstProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(AirburstProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<OrbitalsmokeprojectileEntity>> ORBITALSMOKEPROJECTILE = register("orbitalsmokeprojectile", EntityType.Builder.<OrbitalsmokeprojectileEntity>of(OrbitalsmokeprojectileEntity::new, MobCategory.MISC)
@@ -136,6 +138,15 @@ public class HelldiversModEntities {
 	public static final RegistryObject<EntityType<EaglesmokestrikeprojectileEntity>> EAGLESMOKESTRIKEPROJECTILE = register("eaglesmokestrikeprojectile",
 			EntityType.Builder.<EaglesmokestrikeprojectileEntity>of(EaglesmokestrikeprojectileEntity::new, MobCategory.MISC).setCustomClientFactory(EaglesmokestrikeprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AutomatoncannonEntity>> AUTOMATONCANNON = register("automatoncannon",
+			EntityType.Builder.<AutomatoncannonEntity>of(AutomatoncannonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AutomatoncannonEntity::new)
+
+					.sized(3f, 1.5f));
+	public static final RegistryObject<EntityType<SmallautomatonturretEntity>> SMALLAUTOMATONTURRET = register("smallautomatonturret",
+			EntityType.Builder.<SmallautomatonturretEntity>of(SmallautomatonturretEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(16).setUpdateInterval(3)
+					.setCustomClientFactory(SmallautomatonturretEntity::new)
+
+					.sized(0.6f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -156,6 +167,8 @@ public class HelldiversModEntities {
 			OrbitallaserEntity.init();
 			TrooperEntity.init();
 			TerminidStalkerEntity.init();
+			AutomatoncannonEntity.init();
+			SmallautomatonturretEntity.init();
 		});
 	}
 
@@ -173,5 +186,7 @@ public class HelldiversModEntities {
 		event.put(ORBITALLASER.get(), OrbitallaserEntity.createAttributes().build());
 		event.put(TROOPER.get(), TrooperEntity.createAttributes().build());
 		event.put(TERMINID_STALKER.get(), TerminidStalkerEntity.createAttributes().build());
+		event.put(AUTOMATONCANNON.get(), AutomatoncannonEntity.createAttributes().build());
+		event.put(SMALLAUTOMATONTURRET.get(), SmallautomatonturretEntity.createAttributes().build());
 	}
 }

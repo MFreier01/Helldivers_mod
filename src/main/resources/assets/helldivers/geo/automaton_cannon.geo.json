@@ -1,0 +1,64 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.automaton_cannon",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 10,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "main",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [0, 0, -24], "size": [24, 2, 24], "uv": [145, 92]},
+						{"origin": [0, 0, 0], "size": [24, 2, 24], "uv": [145, 92]},
+						{"origin": [-24, 0, 0], "size": [24, 2, 24], "uv": [145, 92], "mirror": true},
+						{"origin": [-24, 0, -24], "size": [24, 2, 24], "uv": [145, 92], "mirror": true}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "main",
+					"pivot": [0, 12.57143, 0.42857],
+					"cubes": [
+						{"origin": [-28, 2, -28], "size": [56, 13, 53], "uv": [0, 0]},
+						{"origin": [-31, 4, -21], "size": [3, 10, 40], "uv": [90, 129]},
+						{"origin": [-32, 6, -11], "size": [1, 7, 21], "uv": [0, 0]},
+						{"origin": [-25, 2, 25], "size": [50, 13, 4], "uv": [136, 140]},
+						{"origin": [-25, 2, -32], "size": [50, 13, 4], "uv": [136, 123]},
+						{"origin": [-12, 2, 29], "size": [2, 13, 1], "uv": [0, 0]},
+						{"origin": [-23, 15, -28], "size": [46, 4, 53], "uv": [0, 66]},
+						{"origin": [-11, 19, -22], "size": [22, 3, 43], "uv": [0, 123]},
+						{"origin": [-16, 19, -19], "size": [5, 2, 36], "pivot": [-13.5, 20, -1], "rotation": [0, 0, -20], "uv": [140, 157]},
+						{"origin": [-11, 18, -33], "size": [22, 2, 11], "pivot": [0, 19, -27.5], "rotation": [15, 0, 0], "uv": [165, 37]},
+						{"origin": [10, 2, 29], "size": [2, 13, 1], "uv": [0, 0], "mirror": true},
+						{"origin": [31, 6, -11], "size": [1, 7, 21], "uv": [0, 0], "mirror": true},
+						{"origin": [28, 4, -21], "size": [3, 10, 40], "uv": [90, 129], "mirror": true},
+						{"origin": [11, 19, -19], "size": [5, 2, 36], "pivot": [13.5, 20, -1], "rotation": [0, 0, 20], "uv": [140, 157], "mirror": true}
+					]
+				},
+				{
+					"name": "barrel",
+					"parent": "head",
+					"pivot": [0, 10, -31],
+					"rotation": [-20, 0, 0],
+					"cubes": [
+						{"origin": [-4, 6, -60], "size": [8, 8, 29], "uv": [165, 0]},
+						{"origin": [-5, 5, -81], "size": [10, 10, 21], "uv": [0, 169]},
+						{"origin": [-4, 6, -89], "size": [8, 8, 8], "uv": [0, 28]}
+					]
+				}
+			]
+		}
+	]
+}

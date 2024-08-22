@@ -17,9 +17,18 @@ import net.hytech.helldivers.entity.RailcannonstrikeprojectileEntity;
 import net.hytech.helldivers.HelldiversMod;
 
 public class FireRailCannonProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		HelldiversMod.queueServerWork(50, () -> {
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:railcannon_sfx")), SoundSource.HOSTILE, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("helldivers:railcannon_sfx")), SoundSource.HOSTILE, 1, 1, false);
+				}
+			}
+		});
 		HelldiversMod.queueServerWork(70, () -> {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
